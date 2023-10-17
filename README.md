@@ -38,7 +38,7 @@
 	</tr>
 	<tr>
 		<td><b>Pilotar el avión</b></td>
-		<td>En cada nivel el avión se moverá constantemente hacia delante con una velocidad constante inicial. El usuario podrá girarlo hacia la derecha e izquierda con A y D respectivamente y podrá cambiar su altura con respecto al suelo con S(subir) y W(bajar).</td>
+		<td>En cada nivel el avión se moverá constantemente hacia delante con una velocidad constante inicial. El usuario podrá girarlo hacia la derecha e izquierda con A y D respectivamente y podrá cambiar su velocidad con la W(aumentar) y S(reducir).</td>
 		<td>W A S D</td>
 	</tr>
 	<tr>
@@ -48,7 +48,9 @@
 	</tr>
 	<tr>
 		<td><b>Aterrizar el avión</b></td>
-		<td>Una vez el usuario se situe </td>
+		<td>En cada región del mundo, cuando el avión pase por encima aparecerá en la parte superior central de la pantalla el texto "Aterrizar", indicando que
+		mientras este el texto este presente, si el jugador presiona la tecla ESPACIO, este podrá aterrizar. El jugador deberá atterizar en la región pedida por el 
+		cliente ppara conseguir el mayor número de estrellas, las cuales se van reduci</td>
 		<td>Barra espaceadora</td>
 	</tr>
 	<tr>
