@@ -20,7 +20,7 @@
 ## **1 - Ficha técnica**
 - **Título**: *GeoGuide*
 - **Género**: Juego serio de simulación
-- **Target**: Jugadores exploradores enfocados en la interacción con el mundo (tomando como referencia el Test de Bartle)
+- **Target**: Jugadores exploradores enfocados en la interacción con el mundo (tomando como referencia el [Test de Bartle](https://es.wikipedia.org/wiki/Taxonomía_de_Bartle))
 - **Rating**: PEGI 7
 - **Plataforma**: PC (Windows)
 - **Modos de juego**:
