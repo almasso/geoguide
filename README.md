@@ -57,6 +57,7 @@
 		<td>Click</td>
 	</tr>
 </table>
+
 ### **3.2 - Mapa**
 ### **3.3 - Mecánicas de escenario**
 ### **3.4 - Cámara**
