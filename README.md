@@ -38,23 +38,28 @@
 	</tr>
 	<tr>
 		<td><b>Pilotar el avión</b></td>
-		<td>Mover el avión por el mundo</td>
-		<td>WASD</td>
+		<td>En cada nivel el avión se moverá constantemente hacia delante con una velocidad constante inicial. El usuario podrá girarlo hacia la derecha e izquierda con A y D respectivamente y podrá cambiar su altura con respecto al suelo con S(subir) y W(bajar).</td>
+		<td>W A S D</td>
 	</tr>
 	<tr>
 		<td><b>Responder al cliente</b></td>
-		<td></td>
+		<td>Durante la partida, el cliente podrá preguntar o hablar sobre curiosidades geográficas. En caso de ser una pregunta, el usuario podrá clickar una de las respuestas dentro de un tiempo limitado. Estas conversaciones con el cliente son opcionales pero, de responderlas correctamente, ganará tiempo extra.</td>
 		<td>Click</td>
 	</tr>
 	<tr>
 		<td><b>Aterrizar el avión</b></td>
-		<td></td>
+		<td>Una vez el usuario se situe </td>
 		<td>Barra espaceadora</td>
 	</tr>
 	<tr>
 		<td><b>Consultar el mapa</b></td>
 		<td></td>
 		<td>Click</td>
+	</tr>
+	<tr>
+		<td><b>Cambio de velocidad</b></td>
+		<td></td>
+		<td>Shift</td>
 	</tr>
 </table>
 
