@@ -10,6 +10,7 @@ using UnityEngine;
 public class Planet : MonoBehaviour {
 
     [SerializeField] [Range(2,256)] int resolution = 10;
+    [SerializeField][Range(0, 1)] float roundnessPercent = 0;
 
     [SerializeField, HideInInspector] MeshFilter[] meshFilters;
     TerrainFace[] faces;
@@ -18,11 +19,11 @@ public class Planet : MonoBehaviour {
         Inicializar();
         GenerarMesh();
     }
+    Vector3[] direcciones = { Vector3.up, Vector3.down, Vector3.forward, Vector3.back, Vector3.left, Vector3.right };
 
     void Inicializar() {
         if(meshFilters == null || meshFilters.Length == 0) meshFilters = new MeshFilter[6];
         faces = new TerrainFace[6];
-        Vector3[] direcciones = { Vector3.up, Vector3.down, Vector3.forward, Vector3.back, Vector3.left, Vector3.right };
 
         for(int i = 0; i < meshFilters.Length; i++) {
             if (meshFilters[i] == null) {
@@ -33,7 +34,7 @@ public class Planet : MonoBehaviour {
                 meshFilters[i] = meshObject.AddComponent<MeshFilter>();
                 meshFilters[i].sharedMesh = new Mesh();
             }
-            faces[i] = new TerrainFace(meshFilters[i].sharedMesh, resolution, direcciones[i]);
+            faces[i] = new TerrainFace(meshFilters[i].sharedMesh, resolution, direcciones[i], roundnessPercent);
         }
     }
 

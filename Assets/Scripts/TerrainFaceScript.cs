@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 //Sacado del vídeo de Sebastian Lague acerca de la generación procedural de planetas (https://youtu.be/QN39W020LqU?si=bPH1h8OAmpn7sDmF)
@@ -17,12 +18,15 @@ public class TerrainFace {
     //Estos dos vectores formarían el espacio vectorial de nuestro plano
     Vector3 vectorDirectorA;
     Vector3 vectorDirectorB;
+    float roundnessPercent;
 
     //Constructora de TerrainFace en la que se guardan los valores pasados y se calculan los otros dos vectores
-    public TerrainFace(Mesh mesh, int resolution, Vector3 localUp) {
+    public TerrainFace(Mesh mesh, int resolution, Vector3 localUp, float roundnessPercent = 0)
+    {
         this.mesh = mesh;
         this.resolution = resolution;
         this.localUp = localUp;
+        this.roundnessPercent = roundnessPercent;
 
         vectorDirectorA = new Vector3(localUp.y, localUp.z, localUp.x); //Para generar el vectorDirectorA simplemente mezclamos las coordenadas de nuestro vector en el que mira la mesh
         vectorDirectorB = Vector3.Cross(localUp, vectorDirectorA); //Y para generar el otro vector, simplemente hacemos el producto vectorial entre los dos vectores de nuestro espacio vectorial (ya que tiene que ser perpendicular a ambos)
@@ -39,8 +43,7 @@ public class TerrainFace {
             for(int j = 0; j < resolution; ++j) {
                 Vector2 percent = new Vector2(j, i) / (resolution - 1); //Este vector nos sirve para ver por qué por ciento van los bucles for en cada uno de los ejes.
                 Vector3 puntoEnLaMesh = localUp + (percent.x - 0.5f) * 2 * vectorDirectorA + (percent.y - 0.5f) * 2 * vectorDirectorB; //Esto calcula el vector de posición de nuestro vértice en la mesh dado nuestro vector localUp, que empieza en el origen que nosotros establezcamos
-                Vector3 puntoEnLaMeshEsferica = puntoEnLaMesh.normalized;
-                vertices[k] = puntoEnLaMeshEsferica;
+                vertices[k] = Vector3.Lerp(puntoEnLaMesh, PuntoCuboAPuntoEsfera(puntoEnLaMesh), roundnessPercent); //Esto es simplemente para modificar la redondez desde el editor, no es necesario y se puede comentar en un futuro
 
                 if(i != resolution - 1 && j != resolution - 1) {
                     //Definimos los triángulos en la mesh en sentido horario excepto para la última coordenada de los ejes X e Y
@@ -59,6 +62,18 @@ public class TerrainFace {
         mesh.vertices = vertices;
         mesh.triangles = indicesTriangulos;
         mesh.RecalculateNormals();
+    }
+
+    // Este código transforma un punto de un cubo en un punto de una esfera, para que no haya un cluster de vértices en algunos sitios cuando redondeamos la esfera
+    // Sebastian saca las matemáticas de aquí: http://mathproofs.blogspot.com/2005/07/mapping-cube-to-sphere.html
+    public static Vector3 PuntoCuboAPuntoEsfera(Vector3 puntoCubo) {
+        float x2 = puntoCubo.x * puntoCubo.x / 2;
+        float y2 = puntoCubo.y * puntoCubo.y / 2;
+        float z2 = puntoCubo.z * puntoCubo.z / 2;
+        float x = puntoCubo.x * Mathf.Sqrt(1 - y2 - z2 + (puntoCubo.y * puntoCubo.y * puntoCubo.z * puntoCubo.z) / 3);
+        float y = puntoCubo.y * Mathf.Sqrt(1 - z2 - x2 + (puntoCubo.x * puntoCubo.x * puntoCubo.z * puntoCubo.z) / 3);
+        float z = puntoCubo.z * Mathf.Sqrt(1 - x2 - y2 + (puntoCubo.x * puntoCubo.x * puntoCubo.y * puntoCubo.y) / 3);
+        return new Vector3(x, y, z);
     }
    
 }
