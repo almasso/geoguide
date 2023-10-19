@@ -98,10 +98,46 @@ Juego casual, de simulación, enfocado en el aprendizaje y descubrimiento geogr�
 	</tr>
 </table>
 
-### 5.2 -  Mockup de la interfaz del menú principal
-#### 5.2.1 - Explicación de los elementos de la interfaz del menú principal y su funcionamiento
-### 5.3 - Mockup de la interfaz del menú de niveles
+### 5.2 -  Mockup de la interfaz del menú inicial
+#### 5.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento
+<table>
+	<tr>
+		<th><b>Elemento</b></th>
+		<th><b>Imagen</b></th>
+		<th><b>Explicación</b></th>
+	</tr>
+	<tr>
+		<td>Botón de "Jugar"</td>
+		<td>-Aquí va una imagen del botón de jugar-</td>
+		<td>Al pulsar este botón vamos al menú de los niveles, que va actuar como nuestro menú principal.</td>
+	</tr>
+	<tr>
+		<td>Botón de "Salir"</td>
+		<td>-Aquí va una imagen del botón de salir-</td>
+		<td>Al pulsar este botón salimos del juego.</td>
+	</tr>
+</table>
+
+### 5.3 - Mockup de la interfaz del menú de niveles/menú principal
 #### 5.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento
+<table>
+	<tr>
+		<th><b>Elemento</b></th>
+		<th><b>Imagen</b></th>
+		<th><b>Explicación</b></th>
+	</tr>
+	<tr>
+		<td>Lista de niveles</td>
+		<td>-Aquí va una imagen con la lista de niveles-</td>
+		<td>En la parte izquierda del menú de niveles encontramos una lista con todos los niveles jugables en nuestro juego. Los niveles están separados por continentes</td>
+	</tr>
+	<tr>
+		<td>Botón de "Salir"</td>
+		<td>-Aquí va una imagen del botón de jugar-</td>
+		<td>Al pulsar este botón salimos del juego.</td>
+	</tr>
+</table>
+
 ### 5.4 - Mockup de la interfaz del menú de información
 #### 5.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento
 ### 5.5 - Mockup de la interfaz del menú de pausa
