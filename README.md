@@ -20,13 +20,14 @@
 ## **1 - Ficha técnica**
 - **Título**: *GeoGuide*
 - **Género**: Juego serio de simulación
-- **Target**: Jugadores exploradores enfocados en la interacción con el mundo (tomando como referencia el [Test de Bartle](https://es.wikipedia.org/wiki/Taxonomía_de_Bartle))
+- **Público objetivo**: Estudiantes de 8 a 15 años interesados en el aprendizaje de Geografía, sin necesidad de una base previa, de forma dinámica y entretenida.
 - **Rating**: PEGI 7
 - **Plataforma**: PC (Windows)
 - **Modos de juego**:
-	- Un jugador. Campaña.
+	- Un jugador.
 
 ## **2 - Descripción**
+Juego casual, de simulación, enfocado en el aprendizaje y descubrimiento geográfico, en el que el jugador pilotará un avión transportando clientes por el mundo al destino que le pidan y aprenderá todo tipo de datos interesantes sobre los países visitados.
 
 ## **3 - Jugabilidad**
 ### **3.1 - Mecánicas del jugador**
@@ -72,6 +73,45 @@
 ## **4 - Diseño de nivel**
 
 ## **5 - HUD**
+### 5.1 - Mockup del HUD in-game
+#### 5.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento
+<table>
+	<tr>
+		<th><b>Elemento</b></th>
+		<th><b>Imagen</b></th>
+		<th><b>Explicación</b></th>
+	</tr>
+	<tr>
+		<td>Recuadro de misión</td>
+		<td>-Aquí va una imagen del recuadro de misiones una vez acabado el juego-</td>
+		<td>En la parte superior de la pantalla aparecerá un recuadro rectangular que contiene el objetivo de nuestra misión actual. Por ejemplo, si nuestro cliente quiere visitar un país al sur de Dinamarca, en la parte superior de la pantalla nos aparecerá un texto del estilo <i>Lleva al cliente a un país al sur de Dinamarca</i>.</td>
+	</tr>
+	<tr>
+		<td>Pistas</td>
+		<td>-Aquí va una imagen de las pistas una vez acabado el juego-</td>
+		<td>Justo debajo de la imagen de nuestro cliente, aparecerán las sucesivas pistas que este te va dando si no consigues encontrar el país que este te pide. Las pistas son una lista vertical de tres bocadillos con un pequeño texto a modo de pista. Por ejemplo, siguiendo con el ejemplo anterior, podemos tener de pistas <i>Un monumento importante es la Puerta de Brandemburgo</i>, <i>Es la cuna de la industria automotriz europea</i> y <i>Su capital es Berlín</i>.</td>
+	</tr>
+	<tr>
+		<td>Botón de menú de pausa</td>
+		<td>-Aquí va una imagen del botón de menú de pausa una vez acabado el juego</td>
+		<td>En la esquina inferior izquierda encontramos el botón que nos lleva al menú de pausa.</td>
+	</tr>
+</table>
+
+### 5.2 -  Mockup de la interfaz del menú principal
+#### 5.2.1 - Explicación de los elementos de la interfaz del menú principal y su funcionamiento
+### 5.3 - Mockup de la interfaz del menú de niveles
+#### 5.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento
+### 5.4 - Mockup de la interfaz del menú de información
+#### 5.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento
+### 5.5 - Mockup de la interfaz del menú de pausa
+#### 5.5.1 - Explicación de los elementos de la interfaz del menú de pausa y su funcionamiento
+### 5.6 - Mockup de la interfaz del menú de ajustes
+#### 5.6.1 - Explicación de los elementos de la interfaz del menú de ajustes y su funcionamiento
+### 5.7 - Mockup de la interfaz del menú de controles
+#### 5.7.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento
+
+
 
 ## **6 - Visual**
 

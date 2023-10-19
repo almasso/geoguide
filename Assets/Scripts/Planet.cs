@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Sacado del vídeo de Sebastian Lague acerca de la generación procedural de planetas (https://youtu.be/QN39W020LqU?si=bPH1h8OAmpn7sDmF)
+//Sacado del vï¿½deo de Sebastian Lague acerca de la generaciï¿½n procedural de planetas (https://youtu.be/QN39W020LqU?si=bPH1h8OAmpn7sDmF)
 
-//Nuestra clase Planet va a crear los planetas como un cubo con 6 meshes, cada una apuntando en una dirección distinta. Posteriormente, usando matemáticas,
-//haremos que cada uno de esos meshes se curve y se forme una esfera (haciendo que los vértices estén todos a la misma distancia del centro del cubo).
-//A mayor resolución tengamos en nuestros TerrainFaces, más continua aparecerá la superficie una vez se curve.
+//Nuestra clase Planet va a crear los planetas como un cubo con 6 meshes, cada una apuntando en una direcciï¿½n distinta. Posteriormente, usando matemï¿½ticas,
+//haremos que cada uno de esos meshes se curve y se forme una esfera (haciendo que los vï¿½rtices estï¿½n todos a la misma distancia del centro del cubo).
+//A mayor resoluciï¿½n tengamos en nuestros TerrainFaces, mï¿½s continua aparecerï¿½ la superficie una vez se curve.
 public class Planet : MonoBehaviour {
 
     [SerializeField] [Range(2,256)] int resolution = 10;
