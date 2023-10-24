@@ -11,6 +11,20 @@
 		- [**4.2 - Descripción del nivel introductorio**](#42---descripción-del-nivel-introductorio)
 		- [**4.3 - Descripción de niveles posteriores (o imprevistos)**](#43---descripción-de-niveles-posteriores-o-imprevistos)
 	- [**5 - HUD**](#5---hud)
+		- [**5.1 - Mockup del HUD in-game**](#51---mockup-del-hud-in-game)
+			- [**5.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**](511---explicación-de-los-elementos-del-hud-in-game-y-su-funcionamiento)
+		- [**5.2 - Mockup de la interfaz del menú inicial**](#52---mockup-de-la-interfaz-del-menú-inicial)
+			- [**5.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento**](521---explicación-de-los-elementos-de-la-interfaz-del-menú-inicial-y-su-funcionamiento)
+		- [**5.3 - Mockup de la interfaz del menú de niveles/menú principal**](#53---mockup-de-la-interfaz-del-menú-de-niveles\\menú-principal)
+			- [**5.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento**](531---explicación-de-los-elementos-de-la-interfaz-del-menú-de-niveles-y-su-funcionamiento)
+		- [**5.4 - Mockup de la interfaz del menú de información**](#54---mockup-de-la-interfaz-del-menú-de-información)
+			- [**5.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento**](541---explicación-de-los-elementos-de-la-interfaz-del-menú-de-información-y-su-funcionamiento)
+		- [**5.5 - Mockup de la interfaz del menú de pausa**](#55---mockup-de-la-interfaz-del-menú-de-pausa)
+			- [**5.5.1 - Explicación de los elementos de la interfaz del menú de pausa y su funcionamiento**](551---explicación-de-los-elementos-de-la-interfaz-del-menú-de-pausa-y-su-funcionamiento)
+		- [**5.6 - Mockup de la interfaz del menú de ajustes**](#56---mockup-de-la-interfaz-del-menú-de-ajustes)
+			- [**5.6.1 - Explicación de los elementos de la interfaz del menú de ajustes y su funcionamiento**](561---explicación-de-los-elementos-de-la-interfaz-del-menú-de-ajustes-y-su-funcionamiento)
+		- [**5.7 - Mockup de la interfaz del menú de controles**](#57---mockup-de-la-interfaz-del-menú-de-controles)
+			- [**5.7.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento**](571---explicación-de-los-elementos-de-la-interfaz-del-menú-de-controles-y-su-funcionamiento)
 	- [**6 - Estética**](#6---estética)
 	- [**7 - Menús y flujo de juego**](#7---menús-y-flujo-de-juego)
 	- [**8 - Historia y personaje principal**](#8---historia-y-personaje-principal)
@@ -103,8 +117,8 @@ Además, en niveles algo más avanzados, podrán aparecer tormentas o imprevisto
 En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesitará una para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las 3, conseguirá un recuerdo del cliente para adornar su tarjeta de info.
 
 ## **5 - HUD**
-### 5.1 - Mockup del HUD in-game
-#### 5.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento
+### **5.1 - Mockup del HUD in-game**
+#### **5.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
@@ -128,8 +142,8 @@ En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesita
 	</tr>
 </table>
 
-### 5.2 -  Mockup de la interfaz del menú inicial
-#### 5.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento
+### **5.2 -  Mockup de la interfaz del menú inicial**
+#### **5.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
@@ -148,8 +162,8 @@ En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesita
 	</tr>
 </table>
 
-### 5.3 - Mockup de la interfaz del menú de niveles/menú principal
-#### 5.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento
+### **5.3 - Mockup de la interfaz del menú de niveles/menú principal**
+#### **5.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
@@ -168,14 +182,14 @@ En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesita
 	</tr>
 </table>
 
-### 5.4 - Mockup de la interfaz del menú de información
-#### 5.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento
-### 5.5 - Mockup de la interfaz del menú de pausa
-#### 5.5.1 - Explicación de los elementos de la interfaz del menú de pausa y su funcionamiento
-### 5.6 - Mockup de la interfaz del menú de ajustes
-#### 5.6.1 - Explicación de los elementos de la interfaz del menú de ajustes y su funcionamiento
-### 5.7 - Mockup de la interfaz del menú de controles
-#### 5.7.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento
+### **5.4 - Mockup de la interfaz del menú de información**
+#### **5.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento**
+### **5.5 - Mockup de la interfaz del menú de pausa**
+#### **5.5.1 - Explicación de los elementos de la interfaz del menú de pausa y su funcionamiento**
+### **5.6 - Mockup de la interfaz del menú de ajustes**
+#### **5.6.1 - Explicación de los elementos de la interfaz del menú de ajustes y su funcionamiento**
+### **5.7 - Mockup de la interfaz del menú de controles**
+#### **5.7.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento**
 
 
 ## **6 - Estética**
