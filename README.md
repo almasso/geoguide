@@ -4,18 +4,18 @@
 	- [**2 - Descripción**](#2---descripción)
 	- [**3 - Jugabilidad**](#3---jugabilidad)
 		- [**3.1 - Mecánicas del jugador**](#31---mecánicas-del-jugador)
-		- [**3.2 - Mapa**](#32---mapa)
-		- [**3.3 - Mecánicas de escenario**](#33---mecánicas-de-escenario)
-		- [**3.4 - Cámara**](#34---cámara)
+		- [**3.2 - Cámara**](#32---cámara)
+		- [**3.3 - Mecánicas de gameplay**](#33---mecánicas-de-gameplay)
 	- [**4 - Diseño de nivel**](#4---diseño-de-nivel)
+		- [**4.1 - Organización de niveles por continentes**](#41---organización-de-niveles-por-continentes)
+		- [**4.2 - Descripción del nivel introductorio**](#42---descripción-del-nivel-introductorio)
+		- [**4.3 - Descripción de niveles posteriores (o imprevistos)**](#43---descripción-de-niveles-posteriores--o-imprevistos-)
 	- [**5 - HUD**](#5---hud)
-	- [**6 - Visual**](#6---visual)
+	- [**6 - Estética**](#6---estética)
 	- [**7 - Menús y flujo de juego**](#7---menús-y-flujo-de-juego)
 	- [**8 - Contenido**](#8---contenido)
-		- [**Personajes**](#personajes)
 	- [**9 - Recursos**](#9---recursos)
-	- [**10 - Arquitectura**](#10---arquitectura)
-	- [**11 - Referencias**](#11---referencias)
+	- [**10 - Referencias**](#10---referencias)
 
 ## **1 - Ficha técnica**
 - **Título**: *GeoGuide*
@@ -43,34 +43,64 @@ Juego casual, de simulación, enfocado en el aprendizaje y descubrimiento geogr�
 		<td>W A S D</td>
 	</tr>
 	<tr>
-		<td><b>Responder al cliente</b></td>
-		<td>Durante la partida, el cliente podrá preguntar o hablar sobre curiosidades geográficas. En caso de ser una pregunta, el usuario podrá clickar una de las respuestas dentro de un tiempo limitado. Estas conversaciones con el cliente son opcionales pero, de responderlas correctamente, ganará tiempo extra.</td>
-		<td>Click</td>
-	</tr>
-	<tr>
-		<td><b>Aterrizar el avión</b></td>
-		<td>En cada región del mundo, cuando el avión pase por encima aparecerá en la parte superior central de la pantalla el texto "Aterrizar", indicando que
-		mientras este el texto este presente, si el jugador presiona la tecla ESPACIO, este podrá aterrizar. El jugador deberá atterizar en la región pedida por el 
-		cliente ppara conseguir el mayor número de estrellas, las cuales se van reduci</td>
+		<td><b>Aterrizar avión</b></td>
+		<td>Cada país del mundo tendrá un aeropuerto. Una vez se ha llegado al aeropuerto del país destino, el jugador podrá aterrizar pulsando el espacio. Una vez aterrizado se decidirá las estrellas conseguidas.</td>
 		<td>Barra espaceadora</td>
 	</tr>
 	<tr>
-		<td><b>Consultar el mapa</b></td>
-		<td></td>
-		<td>Click</td>
+		<td><b>Cambio de velocidad</b></td>
+		<td>El avión tendrá únicamente tres tipos de velocidades constantes que se podrán modificar con las teclas 1(lento), 2(normal) y 3(rápido).</td>
+		<td>1 2 3</td>
+	</tr> 
+</table>
+
+### **3.2 - Cámara**
+La vista del juego será en tercera persona con respecto al avión, girando y moviéndose para mantener al jugador en el centro de la pantalla y mirando hacia delante en todo momento. 
+### **3.3 - Mecánicas de gameplay**
+<table>
+	<tr>
+		<th>Mecánica</th>
+		<th>Imagen</th>
+		<th>Funcionamiento</th>
 	</tr>
 	<tr>
-		<td><b>Cambio de velocidad</b></td>
+		<td>Brújula</td>
 		<td></td>
-		<td>Shift</td>
+		<td>Elemento que será útil para misiones que describan la ubicación del país destino como “al norte/sur/este/oeste de …”.</td>
+	</tr>
+	<tr>
+		<td>Minimapa</td>
+		<td></td>
+		<td>Pequeña pantalla que muestra una versión más ampliada del mundo para ayudar al jugador a ubicarse por el mapa.</td>
+	</tr>
+	<tr>
+		<td>Cliente</td>
+		<td></td>
+		<td>Durante la partida, el cliente mencionará curiosidades geográficas sobre el país destino. Además, transcurrido un tiempo específico, para ayudar al jugador y así evitar frustrar, el cliente le proporcionará una pista.El número total de pistas será 3, en caso de necesitarlas.</td>
+	</tr>
+	<tr>
+		<td>Aeropuerto</td>
+		<td></td>
+		<td>Área donde podrás depositar a los clientes una vez hayas localizado el país correcto. Sólo podrás hacer ésto si pones el avión a velocidad lenta o “de aterrizaje”.</td>
+	</tr>
+	<tr>
+		<td>Jefe</td>
+		<td></td>
+		<td>Personaje que te guiará en los niveles de aprendizaje y, pasado un tiempo suficientemente largo a determinar, te ofrecerá ayuda en los niveles normales / te avisará de imprevistos meteorológicos.</td>
 	</tr>
 </table>
 
-### **3.2 - Mapa**
-### **3.3 - Mecánicas de escenario**
-### **3.4 - Cámara**
-
 ## **4 - Diseño de nivel**
+### **4.1 - Organización de niveles por continentes**
+Los niveles del juego estarán organizados por continentes (Europa, Asia, África, América, Oceanía), y cada continente tendrá -n niveles (ej: 3). Antes de empezar las misiones de un nuevo continente, el jugador tendrá que jugar un nivel introductorio.
+### **4.2 - Descripción del nivel introductorio**
+En los niveles introductorios, el jefe te irá guiando por los “principales” países de ese continente, de los cuales ganarás tarjetas de información para consultar posteriormente (el jugador sigue conduciendo el avión, pero con marcadores en los países a los que tiene que ir).
+
+Las tarjetas* que ganes en los niveles introductorios incluirán recuerdo, pero la foto mostrará a tu jefe en lugar de un cliente.
+### **4.3 - Descripción de niveles posteriores (o imprevistos)**
+En los niveles normales, el jugador recibirá una misión de su cliente, pidiéndole que le lleve a algún país específico. A lo largo del nivel, dependiendo de la complejidad puede tener varios clientes que le pidan ir a varios países. Si tarda mucho, o falla en encontrar el país, el cliente le irá dando pistas para facilitar encontrarlo. 
+Además, en niveles algo más avanzados, podrán aparecer tormentas o imprevistos meteorológicos por el mapa que el jugador tendrá que esquivar.
+En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesitará una para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las 3, conseguirá un recuerdo del cliente para adornar su tarjeta de info.
 
 ## **5 - HUD**
 ### 5.1 - Mockup del HUD in-game
@@ -148,16 +178,12 @@ Juego casual, de simulación, enfocado en el aprendizaje y descubrimiento geogr�
 #### 5.7.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento
 
 
-
-## **6 - Visual**
+## **6 - Estética**
 
 ## **7 - Menús y flujo de juego**
 
-## **8 - Contenido**
-### **Personajes**
+## **8 - Historia y personaje principal**
 
 ## **9 - Recursos**
 
-## **10 - Arquitectura**
-
-## **11 - Referencias**
+## **10 - Referencias**
