@@ -9,11 +9,11 @@
 	- [**4 - Diseño de nivel**](#4---diseño-de-nivel)
 		- [**4.1 - Organización de niveles por continentes**](#41---organización-de-niveles-por-continentes)
 		- [**4.2 - Descripción del nivel introductorio**](#42---descripción-del-nivel-introductorio)
-		- [**4.3 - Descripción de niveles posteriores (o imprevistos)**](#43---descripción-de-niveles-posteriores--o-imprevistos-)
+		- [**4.3 - Descripción de niveles posteriores (o imprevistos)**](#43---descripción-de-niveles-posteriores-o-imprevistos)
 	- [**5 - HUD**](#5---hud)
 	- [**6 - Estética**](#6---estética)
 	- [**7 - Menús y flujo de juego**](#7---menús-y-flujo-de-juego)
-	- [**8 - Contenido**](#8---contenido)
+	- [**8 - Historia y personaje principal**](#8---historia-y-personaje-principal)
 	- [**9 - Recursos**](#9---recursos)
 	- [**10 - Referencias**](#10---referencias)
 
