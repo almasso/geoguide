@@ -75,7 +75,7 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 
 <figure>
 <p align="center"><img src="./imagenesGDD/vistaCamara.png" width=50% height=50%></p>
-<figcaption><p align="center">Imagen 1 - Ejemplo de vista en tercera persona de nuestro juego</p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 1</b> - Ejemplo de vista en tercera persona de nuestro juego</i></p></figcaption>
 </figure>
 
 ### **3.3 - Mecánicas de gameplay**
