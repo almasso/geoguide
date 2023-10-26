@@ -1,5 +1,5 @@
 # **GeoGuide - Game Design Document**
-<img src="./imagenesGDD/geoguideTitulo.png" width=50% height=50%>
+<img src="./imagenesGDD/geoguideTitulo.png">
 
 - [**GeoGuide - Game Design Document**](#geoguide---game-design-document)
 	- [**1 - Ficha técnica**](#1---ficha-técnica)
