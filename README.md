@@ -12,7 +12,7 @@
 		- [**4.1 - Organización de niveles por continentes**](#41---organización-de-niveles-por-continentes)
 		- [**4.2 - Descripción del nivel introductorio**](#42---descripción-del-nivel-introductorio)
 		- [**4.3 - Descripción de niveles posteriores (o imprevistos)**](#43---descripción-de-niveles-posteriores-o-imprevistos)
-	- [**5 - HUD**](#5---hud)
+	- [**5 - Interfaz**](#5---interfaz)
 		- [**5.1 - Mockup del HUD in-game**](#51---mockup-del-hud-in-game)
 			- [**5.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**](#511---explicación-de-los-elementos-del-hud-in-game-y-su-funcionamiento)
 		- [**5.2 - Mockup de la interfaz del menú inicial**](#52---mockup-de-la-interfaz-del-menú-inicial)
@@ -60,7 +60,7 @@ Juego casual, de simulación, enfocado en el aprendizaje y descubrimiento geogr�
 	</tr>
 	<tr>
 		<td><b>Aterrizar avión</b></td>
-		<td>Cada país del mundo tendrá un aeropuerto. Una vez se ha llegado al aeropuerto del país destino, el jugador podrá aterrizar pulsando el espacio. Una vez aterrizado se decidirá las estrellas conseguidas.</td>
+		<td>Cada país del mundo tendrá un <u><a href="#33---mecánicas-de-gameplay">aeropuerto</a></u>. Una vez se ha llegado al aeropuerto del país destino, el jugador podrá aterrizar pulsando el espacio. Una vez aterrizado se decidirá las <u><a href="#43---descripción-de-niveles-posteriores-o-imprevistos">estrellas<</a></u> conseguidas.</td>
 		<td>Barra espaceadora</td>
 	</tr>
 	<tr>
@@ -120,7 +120,7 @@ En los niveles normales, el jugador recibirá una misión de su cliente, pidién
 Además, en niveles algo más avanzados, podrán aparecer tormentas o imprevistos meteorológicos por el mapa que el jugador tendrá que esquivar.
 En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesitará una para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las 3, conseguirá un recuerdo del cliente para adornar su tarjeta de info.
 
-## **5 - HUD**
+## **5 - Interfaz**
 ### **5.1 - Mockup del HUD in-game**
 #### **5.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**
 <table>
@@ -288,6 +288,9 @@ En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesita
 
 
 ## **6 - Estética**
+La estética del juego se basa en un estilo _cartoon_, suave, sencillo y colorido, pero sobre todo atractivo para nuestro público objetivo ideal. Una estética más realista y decorada puede llevar a los jugadores a la distracción, algo poco conveniente cuando se trata de un juego principalmente educativo; por ello, hemos decidido una estética más sobria y sencilla, la cual evite cualquier tipo de distracción y permita al jugador centrarse en el aprendizaje.
+
+Este estilo se podrá ver en el diseño de las interfaces, las cuales están pensadas para ser sencillas y fáciles de usar; el diseño de los clientes, los cuales tendrán pocos detalles y serán muy sencillos; y, principalmente, el mapa terrestre, en el cual los países no tendrán ningún tipo de información acerca de los accidentes geográficos (es decir, montañas, ríos, valles, zonas nevadas, etc... no serán visibles en el mapa), ya que será un mapa plano en el que ¿¿(cada país tiene un color distinto a los países que lo rodean)??
 
 ## **7 - Menús y flujo de juego**
 
