@@ -15,7 +15,7 @@
 			- [**5.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**](#511---explicación-de-los-elementos-del-hud-in-game-y-su-funcionamiento)
 		- [**5.2 - Mockup de la interfaz del menú inicial**](#52---mockup-de-la-interfaz-del-menú-inicial)
 			- [**5.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento**](#521---explicación-de-los-elementos-de-la-interfaz-del-menú-inicial-y-su-funcionamiento)
-		- [**5.3 - Mockup de la interfaz del menú de niveles/menú principal**](#53---mockup-de-la-interfaz-del-menú-de-niveles/menú-principal)
+		- [**5.3 - Mockup de la interfaz del menú de niveles/menú principal**](#53---mockup-de-la-interfaz-del-menú-de-nivelesmenú-principal)
 			- [**5.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento**](#531---explicación-de-los-elementos-de-la-interfaz-del-menú-de-niveles-y-su-funcionamiento)
 		- [**5.4 - Mockup de la interfaz del menú de información**](#54---mockup-de-la-interfaz-del-menú-de-información)
 			- [**5.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento**](#541---explicación-de-los-elementos-de-la-interfaz-del-menú-de-información-y-su-funcionamiento)
