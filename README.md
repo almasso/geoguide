@@ -144,7 +144,7 @@ En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesita
 	</tr>
 </table>
 
-### **5.2 -  Mockup de la interfaz del menú inicial**
+### **5.2 - Mockup de la interfaz del menú inicial**
 #### **5.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento**
 <table>
 	<tr>
@@ -220,22 +220,22 @@ En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesita
 	<tr>
 		<td>Botón de volver al juego</td>
 		<td></td>
-		<td>Este botón nos permite volver al juego tal y donde lo dejamos</td>
+		<td>Este botón nos permite volver al juego tal y donde lo dejamos.</td>
 	</tr>
 	<tr>
 		<td>Botón de ajustes</td>
 		<td></td>
-		<td>Este botón nos permite ir al menú de ajustes</td>
+		<td>Este botón nos permite ir al menú de ajustes.</td>
 	</tr>
 	<tr>
-		<td>Botón de informacióm</td>
+		<td>Botón de información</td>
 		<td></td>
 		<td>Este botón nos permite ir al menú de información para poder consultar los países ya visitados en caso de que se nos olviden en mitad de la partida.</td>
 	</tr>
 	<tr>
 		<td>Botón de salir de la partida</td>
 		<td></td>
-		<td>Este botón nos permite volver al menú principal y abandonar el nivel en el que estamos actualmente</td>
+		<td>Este botón nos permite volver al menú principal y abandonar el nivel en el que estamos actualmente.</td>
 	</tr>
 </table>
 
@@ -280,8 +280,7 @@ En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesita
 	<tr>
 		<td>Lista de controles</td>
 		<td></td>
-		<td>En pleno centro del menú encontraremos una lista con los controles que hemos definido para los diversos elementos del juego, por ejemplo, manejo del avión,
-		interactuar con los clientes, aterrizar, cambiar velocidad del avión, etc...</td>
+		<td>En pleno centro del menú encontraremos una lista con los controles que hemos definido para los diversos elementos del juego, por ejemplo, manejo del avión, interactuar con los clientes, aterrizar, cambiar velocidad del avión, etc...</td>
 	</tr>
 </table>
 
