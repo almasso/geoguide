@@ -1,5 +1,5 @@
 # **GeoGuide - Game Design Document**
-<img src="./imagenesGDD/geoguideTitulo.png">
+<p align="center"><img src="./imagenesGDD/geoguideTitulo.png"></p>
 
 - [**GeoGuide - Game Design Document**](#geoguide---game-design-document)
 	- [**1 - Ficha técnica**](#1---ficha-técnica)
@@ -72,7 +72,8 @@ Juego casual, de simulación, enfocado en el aprendizaje y descubrimiento geogr�
 
 ### **3.2 - Cámara**
 La vista del juego será en tercera persona con respecto al avión, girando y moviéndose para mantener al jugador en el centro de la pantalla y mirando hacia delante en todo momento. 
-<img src="./imagenesGDD/vistaCamara.png" width=50% height=50%>
+
+<p align="center"><img src="./imagenesGDD/vistaCamara.png" width=50% height=50%></p>
 
 ### **3.3 - Mecánicas de gameplay**
 <table>
