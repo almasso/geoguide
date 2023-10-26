@@ -15,7 +15,7 @@
 			- [**5.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**](#511---explicación-de-los-elementos-del-hud-in-game-y-su-funcionamiento)
 		- [**5.2 - Mockup de la interfaz del menú inicial**](#52---mockup-de-la-interfaz-del-menú-inicial)
 			- [**5.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento**](#521---explicación-de-los-elementos-de-la-interfaz-del-menú-inicial-y-su-funcionamiento)
-		- [**5.3 - Mockup de la interfaz del menú de niveles/menú principal**](#53---mockup-de-la-interfaz-del-menú-de-niveles\\menú-principal)
+		- [**5.3 - Mockup de la interfaz del menú de niveles/menú principal**](#53---mockup-de-la-interfaz-del-menú-de-niveles/menú-principal)
 			- [**5.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento**](#531---explicación-de-los-elementos-de-la-interfaz-del-menú-de-niveles-y-su-funcionamiento)
 		- [**5.4 - Mockup de la interfaz del menú de información**](#54---mockup-de-la-interfaz-del-menú-de-información)
 			- [**5.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento**](#541---explicación-de-los-elementos-de-la-interfaz-del-menú-de-información-y-su-funcionamiento)
@@ -70,6 +70,8 @@ Juego casual, de simulación, enfocado en el aprendizaje y descubrimiento geogr�
 
 ### **3.2 - Cámara**
 La vista del juego será en tercera persona con respecto al avión, girando y moviéndose para mantener al jugador en el centro de la pantalla y mirando hacia delante en todo momento. 
+<img src="./imagenesGDD/vistaCamara.png">
+
 ### **3.3 - Mecánicas de gameplay**
 <table>
 	<tr>
@@ -173,23 +175,115 @@ En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesita
 	<tr>
 		<td>Lista de niveles</td>
 		<td>-Aquí va una imagen con la lista de niveles-</td>
-		<td>En la parte izquierda del menú de niveles encontramos una lista con todos los niveles jugables en nuestro juego. Los niveles están separados por continentes</td>
+		<td>En la parte izquierda del menú encontramos una lista con todos los niveles jugables en nuestro juego. Los niveles están separados por continentes, y cada uno de los botones del nivel tiene el número de nivel y el número de estrellas conseguidas, inicialmente, 3 estrellas en color gris para luego rellenarse con estrellas doradas.</td>
 	</tr>
 	<tr>
-		<td>Botón de "Salir"</td>
+		<td>Botón de ajustes</td>
 		<td>-Aquí va una imagen del botón de jugar-</td>
-		<td>Al pulsar este botón salimos del juego.</td>
+		<td>En la esquina inferior derecha tenemos el botón con la rueda de ajustes, que al pulsar, nos lleva al menú de ajustes.</td>
+	</tr>
+	<tr>
+		<td>Botón de tarjetas obtenidas</td>
+		<td>-Aquí va una imagen del botón de jugar-</td>
+		<td>En la esquina superior derecha nos encontramos con un botón, en forma de globo terráqueo, que contiene el submenú de las tarjetas obtenidas. En este menú tendremos una lista con todas las tarjetas de todos los países que hemos visitado a lo largo de los niveles que hemos jugado. Las tarjetas se explicarán mejor en el apartado <i><a href="#541---explicación-de-los-elementos-de-la-interfaz-del-menú-de-información-y-su-funcionamiento">5.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento.</a></i></td>
+	</tr>
+	<tr>
+		<td>Botón de volver atrás</td>
+		<td>-Aquí va una imagen del botón de jugar-</td>
+		<td>En la esquina inferior izquierda tenemos el botón que nos permite volver atrás al menú inicial, donde podremos salir del juego.</td>
 	</tr>
 </table>
 
 ### **5.4 - Mockup de la interfaz del menú de información**
 #### **5.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento**
+<table>
+	<tr>
+		<th><b>Elemento</b></th>
+		<th><b>Imagen</b></th>
+		<th><b>Explicación</b></th>
+	</tr>
+	<tr>
+		<td>Tarjetas de información</td>
+		<td></td>
+		<td>El menú entero está ocupado por una lista de tarjetas en las que encontraremos el nombre del país, su bandera, una foto de un lugar de interés del país e información referente a este, como por ejemplo capital, habitantes, comida típica, dato histórico curioso, etc... Las tarjetas se van desbloqueando conforme vayamos visitando países distintos durante el juego.</td>
+	</tr>
+</table>
+
 ### **5.5 - Mockup de la interfaz del menú de pausa**
 #### **5.5.1 - Explicación de los elementos de la interfaz del menú de pausa y su funcionamiento**
+<table>
+	<tr>
+		<th><b>Elemento</b></th>
+		<th><b>Imagen</b></th>
+		<th><b>Explicación</b></th>
+	</tr>
+	<tr>
+		<td>Botón de volver al juego</td>
+		<td></td>
+		<td>Este botón nos permite volver al juego tal y donde lo dejamos</td>
+	</tr>
+	<tr>
+		<td>Botón de ajustes</td>
+		<td></td>
+		<td>Este botón nos permite ir al menú de ajustes</td>
+	</tr>
+	<tr>
+		<td>Botón de informacióm</td>
+		<td></td>
+		<td>Este botón nos permite ir al menú de información para poder consultar los países ya visitados en caso de que se nos olviden en mitad de la partida.</td>
+	</tr>
+	<tr>
+		<td>Botón de salir de la partida</td>
+		<td></td>
+		<td>Este botón nos permite volver al menú principal y abandonar el nivel en el que estamos actualmente</td>
+	</tr>
+</table>
+
 ### **5.6 - Mockup de la interfaz del menú de ajustes**
 #### **5.6.1 - Explicación de los elementos de la interfaz del menú de ajustes y su funcionamiento**
+<table>
+	<tr>
+		<th><b>Elemento</b></th>
+		<th><b>Imagen</b></th>
+		<th><b>Explicación</b></th>
+	</tr>
+	<tr>
+		<td>Botón de ajustes gráficos</td>
+		<td></td>
+		<td>Este botón nos llevará al menú de ajustes gráficos, en el que encontraremos ajustes para el brillo de la pantalla, resolución, pantalla completa, etc... -aún por ver lo que se va a meter-</td>
+	</tr>
+	<tr>
+		<td>Botón de ajustes de sonido</td>
+		<td></td>
+		<td>Este botón nos llevará al menú de ajustes de sonido, en el que encontraremos ajustes para el volumen general, volumen de elementos de la interfaz, etc...</td>
+	</tr>
+	<tr>
+		<td>Botón de controles</td>
+		<td></td>
+		<td>Este botón nos llevará al menú de controles, en el que podremos consultar los controles a usar con los diferentes elementos del juego.</td>
+	</tr>
+	<tr>
+		<td>Botón de volver atrás</td>
+		<td></td>
+		<td>Este botón nos llevará al menú inmediatamente anterior, desde el cual hayamos accedido al menú de ajustes.</td>
+	</tr>
+</table>
+
 ### **5.7 - Mockup de la interfaz del menú de controles**
 #### **5.7.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento**
+<table>
+	<tr>
+		<th><b>Elemento</b></th>
+		<th><b>Imagen</b></th>
+		<th><b>Explicación</b></th>
+	</tr>
+	<tr>
+		<td>Lista de controles</td>
+		<td></td>
+		<td>En pleno centro del menú encontraremos una lista con los controles que hemos definido para los diversos elementos del juego, por ejemplo, manejo del avión,
+		interactuar con los clientes, aterrizar, cambiar velocidad del avión, etc...</td>
+	</tr>
+</table>
 
 
 ## **6 - Estética**
