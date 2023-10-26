@@ -60,7 +60,7 @@ Juego casual, de simulación, enfocado en el aprendizaje y descubrimiento geogr�
 	</tr>
 	<tr>
 		<td><b>Aterrizar avión</b></td>
-		<td>Cada país del mundo tendrá un <u><a href="#33---mecánicas-de-gameplay">aeropuerto</a></u>. Una vez se ha llegado al aeropuerto del país destino, el jugador podrá aterrizar pulsando el espacio. Una vez aterrizado se decidirá las <u><a href="#43---descripción-de-niveles-posteriores-o-imprevistos">estrellas<</a></u> conseguidas.</td>
+		<td>Cada país del mundo tendrá un <u><a href="#33---mecánicas-de-gameplay">aeropuerto</a></u>. Una vez se ha llegado al aeropuerto del país destino, el jugador podrá aterrizar pulsando el espacio. Una vez aterrizado se decidirá las <u><a href="#43---descripción-de-niveles-posteriores-o-imprevistos">estrellas</a></u> conseguidas.</td>
 		<td>Barra espaceadora</td>
 	</tr>
 	<tr>
