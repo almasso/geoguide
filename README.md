@@ -70,7 +70,7 @@ Juego casual, de simulación, enfocado en el aprendizaje y descubrimiento geogr�
 
 ### **3.2 - Cámara**
 La vista del juego será en tercera persona con respecto al avión, girando y moviéndose para mantener al jugador en el centro de la pantalla y mirando hacia delante en todo momento. 
-<img src="./imagenesGDD/vistaCamara.png">
+<img src="./imagenesGDD/vistaCamara.png" width=50% height=50%>
 
 ### **3.3 - Mecánicas de gameplay**
 <table>
