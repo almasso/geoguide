@@ -124,6 +124,9 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 </table>
 
 ## **5 - Diseño de nivel**
+La historia comienza en Europa, el primer nivel (introductorio), donde el jefe le dará la enhorabuena al jugador por conseguir el puesto de piloto junior en su agencia turística de viajes. El jefe le explicará al usuario que no debe preocuparse si no sabe pilotar o no domina mucho la geografía, que ya irá aprendiendo por el camino y que él se encargará de enseñarle lo básico.
+
+A continuación, el jefe enseñará al jugador los controles básicos para manejar el avión y le mostrará los primeros países, dándole unas [tarjetas de información](#54---tarjetas) que contendrán datos importantes e interesantes de cada país. A partir de ahí comenzará el juego, donde el jugador viajará por todo el mundo e irá coleccionando tarjetas informativas.
 ### **5.1 - Organización de niveles por continentes**
 Los niveles del juego estarán organizados por continentes (Europa, Asia, África, América, Oceanía), y cada continente tendrá un número de niveles (por ejemplo, 3). Antes de empezar las misiones de un nuevo continente, el jugador tendrá que jugar un nivel introductorio. Para desbloquear los distintos niveles, tanto dentro de un mismo continente, como entre continentes, será necesario tener un mínimo de estrellas, que se conseguirán en los niveles previamente desbloqueados.
 ### **5.2 - Descripción del nivel introductorio**
@@ -321,12 +324,7 @@ Este estilo se podrá ver en el diseño de las interfaces, las cuales están pen
 ## **8- Menús y flujo de juego**
 
 ## **9 - Historia y personaje principal**
-<table>
-	<tr>
-		<td>Jugador</td>
-		<td>El jugador encarnará a un nuevo piloto de una aerolínea encargada de llevar a clientes por el mundo, durante el juego irá ganando conocimiento sobre los distintos países gracias a sus clientes y a la experiencia de sus viajes hasta que es ascendido a piloto senior(?)</td>
-	</tr>
-</table>
+La historia comienza con nuestro protagonista principal, el jugador, que acaba de ser contratado como piloto junior en una aerolínea. Nuestro protagonista es un verdadero maestro a la hora de ponerse a los mandos de una nave, pero no tiene mucha idea de Geografía por eso, su compañía ha decidido experimentar con él un cursillo exprés 
 
 ## **10 - Recursos**
 
