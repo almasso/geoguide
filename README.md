@@ -1,7 +1,7 @@
 # **GeoGuide - Game Design Document**
 <p align="center"><img src="./imagenesGDD/geoguideTitulo.png"></p>
 
-- [**GeoGuide - Game Design Document**](#geoguide---game-design-document)
+- [**Índice**](#geoguide---game-design-document)
 	- [**1 - Ficha técnica**](#1---ficha-técnica)
 	- [**2 - Descripción**](#2---descripción)
 	- [**3 - Propósito educativo y contexto de uso**](#3---propósito-educativo-y-contexto-de-uso)
