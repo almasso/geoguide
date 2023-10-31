@@ -15,6 +15,7 @@
 		- [**5.3 - Descripción de niveles posteriores**](#53---descripción-de-niveles-posteriores)
 			- [**5.3.1 - Pistas**](#531---pistas)
 			- [**5.3.2 - Pistas**](#532---imprevistos)
+		- [**5.4 - Tarjetas**](#54---tarjetas)
 	- [**6 - Interfaz**](#6---interfaz)
 		- [**6.1 - Mockup del HUD in-game**](#61---mockup-del-hud-in-game)
 			- [**6.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**](#611---explicación-de-los-elementos-del-hud-in-game-y-su-funcionamiento)
@@ -139,7 +140,11 @@ Ya que nuestro juego se basa en el aprendizaje desde cero, no queremos frustrar 
 Además, en niveles algo más avanzados, podrán aparecer tormentas o imprevistos meteorológicos por el mapa que el jugador tendrá que esquivar.
 
 En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesitará una para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las 3, conseguirá un recuerdo del cliente para adornar su tarjeta de información.
+### **5.4 - Tarjetas**
+Cada país que visitemos en alguno de los niveles nos proporcionará una tarjeta con información sobre éste, como por ejemplo su bandera, su capital, el idioma que se habla y algún dato interesante. Además, si en el nivel en el que se consigue esa tarjeta hemos conseguido las tres estrellas, o era un nivel introductorio, la tarjeta incluirá también una pequeña postal con el cliente al que llevamos a ese país (o con nuestro jefe en caso de los niveles introductorios), posando con algún monumento famoso de ese país.
 
+Una vez conseguida cada tarjeta, esta estará disponible en el menú de información, al que podremos acceder tanto antes como durante los niveles de juego, y su información nos será útil tanto para encontrar otros países colindantes como para repasar lo aprendido.
+Además, el hecho de que las postales sólo aparecen si consigues las 3 estrellas, motivará al jugador a intentar conseguirlas para completar el álbum y tener un memento de su esfuerzo y su aprendizaje.
 
 ## **6 - Interfaz**
 ### **6.1 - Mockup del HUD in-game**
@@ -208,7 +213,7 @@ En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesita
 	<tr>
 		<td>Botón de tarjetas obtenidas</td>
 		<td>-Aquí va una imagen del botón de jugar-</td>
-		<td>En la esquina superior derecha nos encontramos con un botón, en forma de globo terráqueo, que contiene el submenú de las tarjetas obtenidas. En este menú tendremos una lista con todas las tarjetas de todos los países que hemos visitado a lo largo de los niveles que hemos jugado. Las tarjetas se explicarán mejor en el apartado <i><a href="#641---explicación-de-los-elementos-de-la-interfaz-del-menú-de-información-y-su-funcionamiento">5.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento.</a></i></td>
+		<td>En la esquina superior derecha nos encontramos con un botón, en forma de globo terráqueo, que contiene el submenú de las tarjetas obtenidas. En este menú tendremos una lista con todas las tarjetas de todos los países que hemos visitado a lo largo de los niveles que hemos jugado.</td>
 	</tr>
 	<tr>
 		<td>Botón de volver atrás</td>
@@ -228,7 +233,7 @@ En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesita
 	<tr>
 		<td>Tarjetas de información</td>
 		<td></td>
-		<td>El menú entero está ocupado por una lista de tarjetas en las que encontraremos el nombre del país, su bandera, una foto de un lugar de interés del país e información referente a este, como por ejemplo capital, habitantes, comida típica, dato histórico curioso, etc... Las tarjetas se van desbloqueando conforme vayamos visitando países distintos durante el juego.</td>
+		<td>El menú entero está ocupado por una lista de las tarjetas de los países, explicadas anteriormente en <a href="#54---tarjetas"><i>el apartado 5.4</i></a>.</td>
 	</tr>
 </table>
 
