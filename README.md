@@ -12,7 +12,9 @@
 	- [**5 - Diseño de nivel**](#5---diseño-de-nivel)
 		- [**5.1 - Organización de niveles por continentes**](#51---organización-de-niveles-por-continentes)
 		- [**5.2 - Descripción del nivel introductorio**](#52---descripción-del-nivel-introductorio)
-		- [**5.3 - Descripción de niveles posteriores (o imprevistos)**](#53---descripción-de-niveles-posteriores-o-imprevistos)
+		- [**5.3 - Descripción de niveles posteriores**](#53---descripción-de-niveles-posteriores)
+			- [**5.3.1 - Pistas**](#531---pistas)
+			- [**5.3.2 - Pistas**](#532---imprevistos)
 	- [**6 - Interfaz**](#6---interfaz)
 		- [**6.1 - Mockup del HUD in-game**](#61---mockup-del-hud-in-game)
 			- [**6.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**](#611---explicación-de-los-elementos-del-hud-in-game-y-su-funcionamiento)
@@ -47,11 +49,11 @@
 Juego casual, de simulación, enfocado en el aprendizaje y descubrimiento geográfico, en el que el jugador pilotará un avión transportando clientes por el mundo al destino que le pidan y aprenderá todo tipo de datos interesantes sobre los países visitados.
 
 ## **3 - Propósito educativo y contexto de uso**
-GeoGuide tiene como objetivo enseñar geografía mundial desde cero a estudiantes jóvenes, sin necesidad de base previa. Esto se realiza mediante  técnicas de enseñanza como el refuerzo positivo y la asociación de ideas en vez de las técnicas habituales de memorización y prueba y error.
+GeoGuide tiene como objetivo enseñar geografía mundial desde cero a estudiantes jóvenes, sin necesidad de base previa. Esto se realiza mediante técnicas de enseñanza como el refuerzo positivo y la asociación de conceptos en lugar de las técnicas habituales de memorización y prueba y error.
 
 Gracias a una breve introducción guiada de algunos países y a las cartas de información, llenas de datos interesantes sobre los lugares visitados, el usuario podrá llevar a sus clientes a cualquier parte del mundo, relacionando la información dada previamente, ampliando su conocimiento. Toda la información dada se guarda en las tarjetas informativas no sólo para ayudar al jugador a situarse, sino también para crear recuerdos y asociarlos a lugares.
 
-En cuanto al contexto de uso, GeoGuide puede ser usado en clase como ejercicio dinámico y divertido para que los alumno aprendan. El profesor podría pedirle a sus alumnos que intenten resolver los niveles del continente que estén estudiando. Pero también puede ser un apoyo extra para que los alumnos practiquen en su casa.
+En cuanto al contexto de uso, GeoGuide puede ser usado en clase como ejercicio dinámico y divertido para que los alumnos aprendan. El profesor podría pedirle a sus alumnos que intenten resolver los niveles del continente que estén estudiando. Pero también puede ser un apoyo extra para que los alumnos practiquen en su casa.
 
 ## **4 - Jugabilidad**
 ### **4.1 - Mecánicas del jugador**
@@ -122,19 +124,18 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 
 ## **5 - Diseño de nivel**
 ### **5.1 - Organización de niveles por continentes**
-Los niveles del juego estarán organizados por continentes (Europa, Asia, África, América, Oceanía), y cada continente tendrá -n niveles (ej: 3). Antes de empezar las misiones de un nuevo continente, el jugador tendrá que jugar un nivel introductorio.
+Los niveles del juego estarán organizados por continentes (Europa, Asia, África, América, Oceanía), y cada continente tendrá un número de niveles (por ejemplo, 3). Antes de empezar las misiones de un nuevo continente, el jugador tendrá que jugar un nivel introductorio. Para desbloquear los distintos niveles, tanto dentro de un mismo continente, como entre continentes, será necesario tener un mínimo de estrellas, que se conseguirán en los niveles previamente desbloqueados.
 ### **5.2 - Descripción del nivel introductorio**
 En los niveles introductorios, el jefe te irá guiando por los “principales” países de ese continente, de los cuales ganarás tarjetas de información para consultar posteriormente. Estas tarjetas incluirán recuerdos, pero la foto mostrará a tu jefe en lugar de un cliente.
 
 Las tarjetas* que ganes en los niveles introductorios incluirán recuerdo, pero la foto mostrará a tu jefe en lugar de un cliente.
-### **5.3 - Descripción de niveles posteriores (o imprevistos)**
-En los niveles normales, el jugador recibirá una misión de su cliente, pidiéndole que le lleve a algún país específico. Dependiendo de la complejidad, a lo largo del nivel habrá varios clientes a los que deberemos llevar al país pedido.
-#### **Pistas**
-Si tarda mucho, o falla en encontrar el país, el cliente le irá dando pistas para facilitar encontrarlo. Estas pistas estarán repartidas durante el juego usando un cronómetro interno o por intentos fallidos. Por ejemplo: pasados 2 minutos, si el jugador aún no sabe dónde ir, se dará la primera para evitar que se frustre e intentar guiarlo. Pasado 1 minuto desde la primera pista se proporcionará la siguiente y, tras otro minuto, la última.
+### **5.3 - Descripción de niveles posteriores**
+En los niveles normales, el jugador recibirá una misión de su cliente, pidiéndole que le lleve a algún país específico. El cliente puede pedirle directamente al jugador su destino indicando el nombre del país al que quiere viajar, o bien con una “prompt” sobre algún dato concreto del país. Estos datos **siempre** provendrán de información que el propio juego le proporciona al usuario con las tarjetas de información. Dependiendo de la complejidad, a lo largo del nivel habrá varios clientes a los que deberemos llevar al país pedido.
+#### **5.3.1 - Pistas**
+Si el jugador tarda mucho, o falla en encontrar el país, el cliente le irá dando pistas para facilitar encontrarlo. Estas pistas estarán repartidas durante el juego usando un cronómetro interno o por intentos fallidos. Por ejemplo: pasados 2 minutos, si el jugador aún no sabe dónde ir, se dará la primera para evitar que se frustre e intentar guiarlo. Pasado 1 minuto desde la primera pista se proporcionará la siguiente y, tras otro minuto, la última.
 
-Ya que nuestro juego se basa en el aprendizaje desde cero, no queremos frustrar ni castigar al usuario por fallar. Nuestra intención es que el usuario identifique y relacione los países a los datos proporcionados por el jefe, los clientes y las tarjetas. Queremos evitar la filosofía de “prueba y error” y que estos lugares sean más que un punto en el mapa. Por eso mismo, se le proporciona 3 pistas y tras ellas, si el jugador aún está perdido, se le guiará hacia el destino. 
-
-##### **Imprevistos**
+Ya que nuestro juego se basa en el aprendizaje desde cero, no queremos frustrar ni castigar al usuario por fallar. Nuestra intención es que el usuario identifique y relacione los países a los datos proporcionados por el jefe, los clientes y las tarjetas. Queremos evitar la filosofía de “prueba y error” y que estos lugares sean más que un punto en el mapa. Por eso mismo, se le proporcionarán 3 pistas y, tras ellas, si el jugador aún está perdido, se le guiará hacia el destino. 
+##### **5.3.2 - Imprevistos**
 Además, en niveles algo más avanzados, podrán aparecer tormentas o imprevistos meteorológicos por el mapa que el jugador tendrá que esquivar.
 
 En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesitará una para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las 3, conseguirá un recuerdo del cliente para adornar su tarjeta de información.
