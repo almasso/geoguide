@@ -4,7 +4,7 @@
 - [**GeoGuide - Game Design Document**](#geoguide---game-design-document)
 	- [**1 - Ficha técnica**](#1---ficha-técnica)
 	- [**2 - Descripción**](#2---descripción)
-	- [**3 - Propósito educativo y contexto de uso**](#3--propósito-educativo-y-contexto-de-uso)
+	- [**3 - Propósito educativo y contexto de uso**](#3---propósito-educativo-y-contexto-de-uso)
 	- [**4 - Jugabilidad**](#4---jugabilidad)
 		- [**4.1 - Mecánicas del jugador**](#41---mecánicas-del-jugador)
 		- [**4.2 - Cámara**](#42---cámara)
