@@ -5,37 +5,40 @@
 	- [**1 - Ficha técnica**](#1---ficha-técnica)
 	- [**2 - Descripción**](#2---descripción)
 	- [**3 - Propósito educativo y contexto de uso**](#3---propósito-educativo-y-contexto-de-uso)
-	- [**4 - Jugabilidad**](#4---jugabilidad)
-		- [**4.1 - Mecánicas del jugador**](#41---mecánicas-del-jugador)
-		- [**4.2 - Cámara**](#42---cámara)
-		- [**4.3 - Mecánicas de gameplay**](#43---mecánicas-de-gameplay)
-	- [**5 - Diseño de nivel**](#5---diseño-de-nivel)
-		- [**5.1 - Organización de niveles por continentes**](#51---organización-de-niveles-por-continentes)
-		- [**5.2 - Descripción del nivel introductorio**](#52---descripción-del-nivel-introductorio)
-		- [**5.3 - Descripción de niveles posteriores**](#53---descripción-de-niveles-posteriores)
-			- [**5.3.1 - Pistas**](#531---pistas)
-			- [**5.3.2 - Pistas**](#532---imprevistos)
-		- [**5.4 - Tarjetas**](#54---tarjetas)
-	- [**6 - Interfaz**](#6---interfaz)
-		- [**6.1 - Mockup del HUD in-game**](#61---mockup-del-hud-in-game)
-			- [**6.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**](#611---explicación-de-los-elementos-del-hud-in-game-y-su-funcionamiento)
-		- [**6.2 - Mockup de la interfaz del menú inicial**](#62---mockup-de-la-interfaz-del-menú-inicial)
-			- [**6.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento**](#621---explicación-de-los-elementos-de-la-interfaz-del-menú-inicial-y-su-funcionamiento)
-		- [**6.3 - Mockup de la interfaz del menú de niveles/menú principal**](#63---mockup-de-la-interfaz-del-menú-de-nivelesmenú-principal)
-			- [**6.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento**](#631---explicación-de-los-elementos-de-la-interfaz-del-menú-de-niveles-y-su-funcionamiento)
-		- [**6.4 - Mockup de la interfaz del menú de información**](#64---mockup-de-la-interfaz-del-menú-de-información)
-			- [**6.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento**](#641---explicación-de-los-elementos-de-la-interfaz-del-menú-de-información-y-su-funcionamiento)
-		- [**6.5 - Mockup de la interfaz del menú de pausa**](#65---mockup-de-la-interfaz-del-menú-de-pausa)
-			- [**6.5.1 - Explicación de los elementos de la interfaz del menú de pausa y su funcionamiento**](#651---explicación-de-los-elementos-de-la-interfaz-del-menú-de-pausa-y-su-funcionamiento)
-		- [**6.6 - Mockup de la interfaz del menú de ajustes**](#66---mockup-de-la-interfaz-del-menú-de-ajustes)
-			- [**6.6.1 - Explicación de los elementos de la interfaz del menú de ajustes y su funcionamiento**](#661---explicación-de-los-elementos-de-la-interfaz-del-menú-de-ajustes-y-su-funcionamiento)
-		- [**6.7 - Mockup de la interfaz del menú de controles**](#67---mockup-de-la-interfaz-del-menú-de-controles)
-			- [**6.7.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento**](#671---explicación-de-los-elementos-de-la-interfaz-del-menú-de-controles-y-su-funcionamiento)
-	- [**7 - Estética**](#7---estética)
-	- [**8 - Menús y flujo de juego**](#8---menús-y-flujo-de-juego)
-	- [**9 - Historia y personaje principal**](#9---historia-y-personaje-principal)
-	- [**10 - Recursos**](#10---recursos)
-	- [**11 - Referencias**](#11---referencias)
+	- [**4 - Interés y aprendizaje del jugador**](#4---interés-y-aprendizaje-del-jugador)
+	- [**5 - Jugabilidad**](#5---jugabilidad)
+		- [**5.1 - Mecánicas del jugador**](#51---mecánicas-del-jugador)
+		- [**5.2 - Cámara**](#52---cámara)
+		- [**5.3 - Mecánicas de gameplay**](#53---mecánicas-de-gameplay)
+	- [**6 - Historia y personaje principal**](#6---historia-y-personaje-principal)
+	- [**7 - Diseño de nivel**](#7---diseño-de-nivel)
+		- [**7.1 - Organización de niveles por continentes**](#71---organización-de-niveles-por-continentes)
+		- [**7.2 - Descripción del nivel introductorio**](#72---descripción-del-nivel-introductorio)
+		- [**7.3 - Descripción de niveles posteriores**](#73---descripción-de-niveles-posteriores)
+			- [**7.3.1 - Objetivo**](#731---objetivo)
+			- [**7.3.2 - Reparto de estrellas**](#732---reparto-de-estrellas)
+			- [**7.3.3 - Pistas**](#733---pistas)
+			- [**7.3.4 - Imprevistos**](#734---imprevistos)
+		- [**7.4 - Tarjetas**](#74---tarjetas)
+	- [**8 - Interfaz**](#8---interfaz)
+		- [**8.1 - Mockup del HUD in-game**](#81---mockup-del-hud-in-game)
+			- [**8.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**](#811---explicación-de-los-elementos-del-hud-in-game-y-su-funcionamiento)
+		- [**8.2 - Mockup de la interfaz del menú inicial**](#82---mockup-de-la-interfaz-del-menú-inicial)
+			- [**8.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento**](#821---explicación-de-los-elementos-de-la-interfaz-del-menú-inicial-y-su-funcionamiento)
+		- [**8.3 - Mockup de la interfaz del menú de niveles/menú principal**](#83---mockup-de-la-interfaz-del-menú-de-nivelesmenú-principal)
+			- [**8.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento**](#831---explicación-de-los-elementos-de-la-interfaz-del-menú-de-niveles-y-su-funcionamiento)
+		- [**8.4 - Mockup de la interfaz del menú de información**](#84---mockup-de-la-interfaz-del-menú-de-información)
+			- [**8.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento**](#841---explicación-de-los-elementos-de-la-interfaz-del-menú-de-información-y-su-funcionamiento)
+		- [**8.5 - Mockup de la interfaz del menú de pausa**](#85---mockup-de-la-interfaz-del-menú-de-pausa)
+			- [**8.5.1 - Explicación de los elementos de la interfaz del menú de pausa y su funcionamiento**](#851---explicación-de-los-elementos-de-la-interfaz-del-menú-de-pausa-y-su-funcionamiento)
+		- [**8.6 - Mockup de la interfaz del menú de ajustes**](#86---mockup-de-la-interfaz-del-menú-de-ajustes)
+			- [**8.6.1 - Explicación de los elementos de la interfaz del menú de ajustes y su funcionamiento**](#861---explicación-de-los-elementos-de-la-interfaz-del-menú-de-ajustes-y-su-funcionamiento)
+		- [**8.7 - Mockup de la interfaz del menú de controles**](#87---mockup-de-la-interfaz-del-menú-de-controles)
+			- [**8.7.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento**](#871---explicación-de-los-elementos-de-la-interfaz-del-menú-de-controles-y-su-funcionamiento)
+	- [**9 - Estética**](#9---estética)
+	- [**10 - Menús y flujo de juego**](#10---menús-y-flujo-de-juego)
+	- [**11 - Recursos**](#11---recursos)
+	- [**12 - Referencias**](#12---referencias)
 
 ## **1 - Ficha técnica**
 - **Título**: *GeoGuide*
@@ -54,10 +57,15 @@ GeoGuide tiene como objetivo enseñar geografía mundial desde cero a estudiante
 
 Gracias a una breve introducción guiada de algunos países y a las cartas de información, llenas de datos interesantes sobre los lugares visitados, el usuario podrá llevar a sus clientes a cualquier parte del mundo, relacionando la información dada previamente, ampliando su conocimiento. Toda la información dada se guarda en las tarjetas informativas no sólo para ayudar al jugador a situarse, sino también para crear recuerdos y asociarlos a lugares.
 
-En cuanto al contexto de uso, GeoGuide puede ser usado en clase como ejercicio dinámico y divertido para que los alumnos aprendan. El profesor podría pedirle a sus alumnos que intenten resolver los niveles del continente que estén estudiando. Pero también puede ser un apoyo extra para que los alumnos practiquen en su casa.
+En cuanto al contexto de uso, hemos tenido en cuenta los contenidos de las asignaturas de Geografía (y similares) que se imparten en los colegios e institutos (establecida por la actual ley LOMLOE) a alumnos dentro de nuestro rango de edad objetivo: en el colegio, principalmente se suele profundizar en la geografía física y política del territorio nacional (entre 1º de Primaria y 4º de Primaria), empezándose a ver las geografías política y física del territorio europeo a partir de 5º de Primaria; mientras que en el Instituto, entre los cursos de 1º de la ESO hasta 3º de la ESO se suelen ver, de manera sucesiva, tanto los mapas políticos de Europa, como los de África, América y Asia (no se suele hacer mucho hincapié en la geografía de Oceanía). 
 
-## **4 - Jugabilidad**
-### **4.1 - Mecánicas del jugador**
+Es por eso que GeoGuide puede ser usado en clase como ejercicio dinámico y divertido para que los alumnos aprendan (por ejemplo, el profesor podría pedirle a sus alumnos que intenten resolver los niveles del continente que estén estudiando); pero también puede ser un apoyo extra para que los alumnos practiquen de manera autónoma en casa, a modo de refuerzo de la lección estudiada anteriormente o a modo de repaso para un examen.
+
+## **4 - Interés y aprendizaje del jugador**
+
+
+## **5 - Jugabilidad**
+### **5.1 - Mecánicas del jugador**
 <table>
 	<tr>
 		<th>Acciones</th>
@@ -71,7 +79,7 @@ En cuanto al contexto de uso, GeoGuide puede ser usado en clase como ejercicio d
 	</tr>
 	<tr>
 		<td><b>Aterrizar avión</b></td>
-		<td>Cada país del mundo tendrá un <u><a href="#43---mecánicas-de-gameplay">aeropuerto</a></u>. Una vez se ha llegado al aeropuerto del país destino, el jugador podrá aterrizar pulsando el espacio. Una vez aterrizado se decidirá las <u><a href="#53---descripción-de-niveles-posteriores-o-imprevistos">estrellas</a></u> conseguidas.</td>
+		<td>Cada país del mundo tendrá un <u><a href="#53---mecánicas-de-gameplay">aeropuerto</a></u>. Una vez se ha llegado al aeropuerto del país destino, el jugador podrá aterrizar pulsando el espacio. Una vez aterrizado se decidirá las <u><a href="#73---descripción-de-niveles-posteriores">estrellas</a></u> conseguidas.</td>
 		<td>Barra espaceadora</td>
 	</tr>
 	<tr>
@@ -81,7 +89,7 @@ En cuanto al contexto de uso, GeoGuide puede ser usado en clase como ejercicio d
 	</tr> 
 </table>
 
-### **4.2 - Cámara**
+### **5.2 - Cámara**
 La vista del juego será en tercera persona con respecto al avión, girando y moviéndose para mantener al jugador en el centro de la pantalla y mirando hacia delante en todo momento. 
 
 <figure>
@@ -89,7 +97,7 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 <figcaption><p align="center"><i><b>Imagen 1</b> - Ejemplo de vista en tercera persona de nuestro juego</i></p></figcaption>
 </figure>
 
-### **4.3 - Mecánicas de gameplay**
+### **5.3 - Mecánicas de gameplay**
 <table>
 	<tr>
 		<th>Mecánica</th>
@@ -98,17 +106,17 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 	</tr>
 	<tr>
 		<td>Brújula</td>
-		<td></td>
+		<td><img src="./imagenesGDD/brujula.png" width=50% height=50%></td>
 		<td>Elemento que será útil para misiones que describan la ubicación del país destino como “al norte/sur/este/oeste de …”.</td>
 	</tr>
 	<tr>
 		<td>Minimapa</td>
-		<td></td>
+		<td><img src="./imagenesGDD/minimapa.png" width=100% height=100%></td>
 		<td>Pequeña pantalla que muestra una versión más ampliada del mundo para ayudar al jugador a ubicarse por el mapa.</td>
 	</tr>
 	<tr>
 		<td>Cliente</td>
-		<td></td>
+		<td><img src="./imagenesGDD/cliente.png" width=50% height=50%></td>
 		<td>Durante la partida, el cliente mencionará curiosidades geográficas sobre el país destino. Además, transcurrido un tiempo específico, para ayudar al jugador y así evitar frustrar, el cliente le proporcionará una pista.El número total de pistas será 3, en caso de necesitarlas.</td>
 	</tr>
 	<tr>
@@ -123,35 +131,60 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 	</tr>
 </table>
 
-## **5 - Diseño de nivel**
-La historia comienza en Europa, el primer nivel (introductorio), donde el jefe le dará la enhorabuena al jugador por conseguir el puesto de piloto junior en su agencia turística de viajes. El jefe le explicará al usuario que no debe preocuparse si no sabe pilotar o no domina mucho la geografía, que ya irá aprendiendo por el camino y que él se encargará de enseñarle lo básico.
+## **6 - Historia y personaje principal**
+Como jugador encarnarás al hijo de un director (en otros apartados aparecerá como “Jefe”) de una agencia de viajes aérea, que ha decidido jubilarse y dejar el negocio familiar en tus manos. Has estudiado muy duro, pero apenas tienes práctica, por lo que entrarás a la flota como piloto júnior. Es por eso que tu padre ha diseñado un plan para que llegues a ser un piloto sénior en el menor tiempo posible antes de delegar la empresa en ti. Este plan tiene como objetivo dominar los mandos del avión y aprender qué rutas ofrece la empresa a los distintos países.
 
-A continuación, el jefe enseñará al jugador los controles básicos para manejar el avión y le mostrará los primeros países, dándole unas [tarjetas de información](#54---tarjetas) que contendrán datos importantes e interesantes de cada país. A partir de ahí comenzará el juego, donde el jugador viajará por todo el mundo e irá coleccionando tarjetas informativas.
-### **5.1 - Organización de niveles por continentes**
-Los niveles del juego estarán organizados por continentes (Europa, Asia, África, América, Oceanía), y cada continente tendrá un número de niveles (por ejemplo, 3). Antes de empezar las misiones de un nuevo continente, el jugador tendrá que jugar un nivel introductorio. Para desbloquear los distintos niveles, tanto dentro de un mismo continente, como entre continentes, será necesario tener un mínimo de estrellas, que se conseguirán en los niveles previamente desbloqueados.
-### **5.2 - Descripción del nivel introductorio**
+Este plan en la historia se relaciona de manera directa con el gameplay del juego: que el protagonista aprenda a dominar los mandos del avión se relaciona con que el jugador humano aprenda los controles físicos (teclado) del avión; mientras que las rutas que se ofrecen son el contenido educativo geográfico que se plantea enseñar en nuestro juego.
+
+A lo largo del juego, el jugador irá aprendiendo y superando los diferentes niveles hasta que, finalmente, tras superarlos todos es nombrado piloto sénior, heredando la empresa y acabando con la historia.
+
+## **7 - Diseño de nivel**
+La historia comienza en Europa, el primer nivel (introductorio), donde el jefe le dará la enhorabuena al jugador por estar preparado al fin para aceptar el puesto de piloto junior en su agencia turística de viajes. El jefe le explicará al usuario cómo pilotar este tipo de avión, y le asegurará que no debe preocuparse si no domina mucho la geografía, que ya irá aprendiendo por el camino y que él se encargará de enseñarle lo básico.
+
+A continuación, el jefe enseñará al jugador los controles básicos para manejar el avión y le mostrará los primeros países, dándole unas [tarjetas de información](#74---tarjetas) que contendrán datos importantes e interesantes de cada país. A partir de ahí comenzará el juego, donde el jugador viajará por todo el mundo e irá coleccionando tarjetas informativas.
+### **7.1 - Organización de niveles por continentes**
+Los niveles del juego estarán organizados por continentes (Europa, Asia, África, América, Oceanía), cada uno conteniendo un número de niveles definido (por ejemplo, 3). Antes de empezar las misiones normales de un nuevo continente, el jugador tendrá que jugar un nivel introductorio. Para desbloquear los siguientes niveles, tanto dentro de un mismo continente, como entre continentes, será necesario tener un mínimo de **una** estrella en el nivel previamente desbloqueado.
+### **7.2 - Descripción del nivel introductorio**
 En los niveles introductorios, el jefe te irá guiando por los “principales” países de ese continente, de los cuales ganarás tarjetas de información para consultar posteriormente. Estas tarjetas incluirán recuerdos, pero la foto mostrará a tu jefe en lugar de un cliente.
+### **7.3 - Descripción de niveles posteriores**
+#### **7.3.1 - Objetivo**
+El **objetivo** de cada nivel es llevar al cliente o clientes a sus destinos deseados.
 
-Las tarjetas* que ganes en los niveles introductorios incluirán recuerdo, pero la foto mostrará a tu jefe en lugar de un cliente.
-### **5.3 - Descripción de niveles posteriores**
-En los niveles normales, el jugador recibirá una misión de su cliente, pidiéndole que le lleve a algún país específico. El cliente puede pedirle directamente al jugador su destino indicando el nombre del país al que quiere viajar, o bien con una “prompt” sobre algún dato concreto del país. Estos datos **siempre** provendrán de información que el propio juego le proporciona al usuario con las tarjetas de información. Dependiendo de la complejidad, a lo largo del nivel habrá varios clientes a los que deberemos llevar al país pedido.
-#### **5.3.1 - Pistas**
+En los niveles **normales**, el jugador recibirá una misión de su cliente, pidiéndole que le lleve a algún país específico. El cliente puede pedirle directamente al jugador su destino indicando el nombre del país al que quiere viajar, o bien algún dato concreto del país que pueda identificarlo fácilmente. Estos datos **siempre** provendrán de información que el propio juego le proporciona al usuario con las tarjetas de información.
+
+En los niveles difíciles, el jugador tendrá varias misiones consecutivas en un mismo nivel y afrontará algunos *imprevistos*. La dificultad incrementará con cada nivel dentro de un mismo continente.
+#### **7.3.2 - Reparto de estrellas**
+En cada nivel el jugador podrá ganar hasta **tres estrellas**. El reparto de estas depende de los intentos acumulados, independientemente del tiempo transcurrido. Por tanto, si el jugador acierta el país a la primera ganará 3 estrellas, si lo adivina a la segunda 2 estrellas y a la tercera 1. Tras el tercer intento, o bien transcurrido ya mucho tiempo desde el inicio de la partida, el jefe preguntará si quiere que le guíe al país destino y el nivel se contará como **no completado**, teniendo que repetirlo para poder seguir adelante.
+
+El jugador solo necesitará **1 estrella** para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las **3 estrellas**, conseguirá un recuerdo del cliente para adornar su tarjeta de información.
+#### **7.3.3 - Pistas**
 Si el jugador tarda mucho, o falla en encontrar el país, el cliente le irá dando pistas para facilitar encontrarlo. Estas pistas estarán repartidas durante el juego usando un cronómetro interno o por intentos fallidos. Por ejemplo: pasados 2 minutos, si el jugador aún no sabe dónde ir, se dará la primera para evitar que se frustre e intentar guiarlo. Pasado 1 minuto desde la primera pista se proporcionará la siguiente y, tras otro minuto, la última.
 
-Ya que nuestro juego se basa en el aprendizaje desde cero, no queremos frustrar ni castigar al usuario por fallar. Nuestra intención es que el usuario identifique y relacione los países a los datos proporcionados por el jefe, los clientes y las tarjetas. Queremos evitar la filosofía de “prueba y error” y que estos lugares sean más que un punto en el mapa. Por eso mismo, se le proporcionarán 3 pistas y, tras ellas, si el jugador aún está perdido, se le guiará hacia el destino. 
-#### **5.3.2 - Imprevistos**
-Además, en niveles algo más avanzados, podrán aparecer tormentas o imprevistos meteorológicos por el mapa que el jugador tendrá que esquivar.
+Ya que nuestro juego se basa en el aprendizaje desde cero, no queremos frustrar ni castigar al usuario por fallar. Nuestra intención es que el usuario identifique y relacione los países a los datos proporcionados por el jefe, los clientes y las tarjetas. Queremos evitar la filosofía de “prueba y error” y que estos lugares sean más que un punto en el mapa. Por eso mismo, se le proporcionarán 3 pistas y, tras ellas, si el jugador aún está perdido, se le guiará hacia el destino.
+#### **7.3.4 - Imprevistos**
+Durante los niveles **difíciles**, el jefe avisará por radio sobre posibles imprevistos meteorológicos (nieve, niebla o tormenta) por el mapa que el jugador tendrá que esquivar. 
 
-En cada nivel el jugador podrá ganar hasta tres estrellas, aunque solo necesitará una para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las 3, conseguirá un recuerdo del cliente para adornar su tarjeta de información.
-### **5.4 - Tarjetas**
+Estos imprevistos no se podrán ver físicamente en el mapa, sin embargo, si el jugador pasa por el país afectado, esta le causará daños en el equipamiento del avión y perderá una de estas tres cosas:
+- **Brújula**: El jugador no podrá usar la brújula para poder ubicar los distintos países del mapa, dificultando algunas misiones que tengan puntos cardinales como pista.
+- **Minimapa**: El jugador no podrá usar el mini mapa, perdiendo la opción de extrapolar su posición y aumentando la posibilidad de sentirse perdido o desubicado.
+- **Motores**: el avión perderá su velocidad turbo y solo podrá ir a velocidad normal o de aterrizaje.
+
+Estos imprevistos durarán hasta que el jugador lleve correctamente al cliente actual al país destino. No afectando al resto de clientes, en caso de haberlos.
+
+### **7.4 - Tarjetas**
 Cada país que visitemos en alguno de los niveles nos proporcionará una tarjeta con información sobre éste, como por ejemplo su bandera, su capital, el idioma que se habla y algún dato interesante. Además, si en el nivel en el que se consigue esa tarjeta hemos conseguido las tres estrellas, o era un nivel introductorio, la tarjeta incluirá también una pequeña postal con el cliente al que llevamos a ese país (o con nuestro jefe en caso de los niveles introductorios), posando con algún monumento famoso de ese país.
 
 Una vez conseguida cada tarjeta, esta estará disponible en el menú de información, al que podremos acceder tanto antes como durante los niveles de juego, y su información nos será útil tanto para encontrar otros países colindantes como para repasar lo aprendido.
 Además, el hecho de que las postales sólo aparecen si consigues las 3 estrellas, motivará al jugador a intentar conseguirlas para completar el álbum y tener un memento de su esfuerzo y su aprendizaje.
 
-## **6 - Interfaz**
-### **6.1 - Mockup del HUD in-game**
-#### **6.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**
+## **8 - Interfaz**
+### **8.1 - Mockup del HUD in-game**
+<figure>
+<p align="center"><img src="./imagenesGDD/hud_partida.png" width=100% height=100%></p>
+<figcaption><p align="center"><i><b>Imagen 2</b> - Mockup del HUD in-game</i></p></figcaption>
+</figure>
+
+#### **8.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
@@ -160,23 +193,23 @@ Además, el hecho de que las postales sólo aparecen si consigues las 3 estrella
 	</tr>
 	<tr>
 		<td>Recuadro de misión</td>
-		<td>-Aquí va una imagen del recuadro de misiones una vez acabado el juego-</td>
+		<td><img src="./imagenesGDD/cuadroMision.png" width=100% height=100%></td>
 		<td>En la parte superior de la pantalla aparecerá un recuadro rectangular que contiene el objetivo de nuestra misión actual. Por ejemplo, si nuestro cliente quiere visitar un país al sur de Dinamarca, en la parte superior de la pantalla nos aparecerá un texto del estilo <i>Lleva al cliente a un país al sur de Dinamarca</i>.</td>
 	</tr>
 	<tr>
 		<td>Pistas</td>
-		<td>-Aquí va una imagen de las pistas una vez acabado el juego-</td>
+		<td><img src="./imagenesGDD/pistas.png" width=100% height=100%></td>
 		<td>Justo debajo de la imagen de nuestro cliente, aparecerán las sucesivas pistas que este te va dando si no consigues encontrar el país que este te pide. Las pistas son una lista vertical de tres bocadillos con un pequeño texto a modo de pista. Por ejemplo, siguiendo con el ejemplo anterior, podemos tener de pistas <i>Un monumento importante es la Puerta de Brandemburgo</i>, <i>Es la cuna de la industria automotriz europea</i> y <i>Su capital es Berlín</i>.</td>
 	</tr>
 	<tr>
 		<td>Botón de menú de pausa</td>
-		<td>-Aquí va una imagen del botón de menú de pausa una vez acabado el juego</td>
-		<td>En la esquina inferior izquierda encontramos el botón que nos lleva al menú de pausa.</td>
+		<td><img src="./imagenesGDD/pausa.png" width=100% height=100%></td>
+		<td>En la esquina inferior derecha encontramos el botón que nos lleva al menú de pausa.</td>
 	</tr>
 </table>
 
-### **6.2 - Mockup de la interfaz del menú inicial**
-#### **6.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento**
+### **8.2 - Mockup de la interfaz del menú inicial**
+#### **8.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
@@ -195,8 +228,8 @@ Además, el hecho de que las postales sólo aparecen si consigues las 3 estrella
 	</tr>
 </table>
 
-### **6.3 - Mockup de la interfaz del menú de niveles/menú principal**
-#### **6.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento**
+### **8.3 - Mockup de la interfaz del menú de niveles/menú principal**
+#### **8.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
@@ -225,8 +258,8 @@ Además, el hecho de que las postales sólo aparecen si consigues las 3 estrella
 	</tr>
 </table>
 
-### **6.4 - Mockup de la interfaz del menú de información**
-#### **6.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento**
+### **8.4 - Mockup de la interfaz del menú de información**
+#### **8.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
@@ -236,12 +269,12 @@ Además, el hecho de que las postales sólo aparecen si consigues las 3 estrella
 	<tr>
 		<td>Tarjetas de información</td>
 		<td></td>
-		<td>El menú entero está ocupado por una lista de las tarjetas de los países, explicadas anteriormente en <a href="#54---tarjetas"><i>el apartado 5.4</i></a>.</td>
+		<td>El menú entero está ocupado por una lista de las tarjetas de los países, explicadas anteriormente en <a href="#74---tarjetas"><i>el apartado 7.4</i></a>.</td>
 	</tr>
 </table>
 
-### **6.5 - Mockup de la interfaz del menú de pausa**
-#### **6.5.1 - Explicación de los elementos de la interfaz del menú de pausa y su funcionamiento**
+### **8.5 - Mockup de la interfaz del menú de pausa**
+#### **8.5.1 - Explicación de los elementos de la interfaz del menú de pausa y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
@@ -270,8 +303,8 @@ Además, el hecho de que las postales sólo aparecen si consigues las 3 estrella
 	</tr>
 </table>
 
-### **6.6 - Mockup de la interfaz del menú de ajustes**
-#### **6.6.1 - Explicación de los elementos de la interfaz del menú de ajustes y su funcionamiento**
+### **8.6 - Mockup de la interfaz del menú de ajustes**
+#### **8.6.1 - Explicación de los elementos de la interfaz del menú de ajustes y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
@@ -300,8 +333,8 @@ Además, el hecho de que las postales sólo aparecen si consigues las 3 estrella
 	</tr>
 </table>
 
-### **6.7 - Mockup de la interfaz del menú de controles**
-#### **6.7.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento**
+### **8.7 - Mockup de la interfaz del menú de controles**
+#### **8.7.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
@@ -316,20 +349,21 @@ Además, el hecho de que las postales sólo aparecen si consigues las 3 estrella
 </table>
 
 
-## **7 - Estética**
+## **9 - Estética**
 La estética del juego se basa en un estilo _cartoon_, suave, sencillo y colorido, pero sobre todo atractivo para nuestro público objetivo ideal. Una estética más realista y decorada puede llevar a los jugadores a la distracción, algo poco conveniente cuando se trata de un juego principalmente educativo; por ello, hemos decidido una estética más sobria y sencilla, la cual evite cualquier tipo de distracción y permita al jugador centrarse en el aprendizaje.
 
 Este estilo se podrá ver en el diseño de las interfaces, las cuales están pensadas para ser sencillas y fáciles de usar; el diseño de los clientes, los cuales tendrán pocos detalles y serán muy sencillos; y, principalmente, el mapa terrestre, en el cual los países no tendrán ningún tipo de información acerca de los accidentes geográficos (es decir, montañas, ríos, valles, zonas nevadas, etc... no serán visibles en el mapa), ya que será un mapa plano en el que ¿¿(cada país tiene un color distinto a los países que lo rodean)??
 
-## **8- Menús y flujo de juego**
+## **10- Menús y flujo de juego**
+<figure>
+<p align="center"><img src="./imagenesGDD/flujoJuego.png" width=100% height=100%></p>
+<figcaption><p align="center"><i><b>Imagen 3</b> - Diagrama de flujo de juego de todos los menús e interfaces</i></p></figcaption>
+</figure>
 
-## **9 - Historia y personaje principal**
-La historia comienza con nuestro protagonista principal, el jugador, que acaba de ser contratado como piloto junior en una aerolínea. Nuestro protagonista es un verdadero maestro a la hora de ponerse a los mandos de una nave, pero no tiene mucha idea de Geografía por eso, su compañía ha decidido experimentar con él un cursillo exprés 
+## **11 - Recursos**
 
-## **10 - Recursos**
-
-## **11 - Referencias**
-### **11.1 - Videojuegos**
+## **12 - Referencias**
+### **12.1 - Videojuegos**
 - [*GeoGuessr* (2013)](https://www.geoguessr.com/es), videojuego en web diseñado por [**Anton Wallén**](https://twitter.com/antonwallen).
 - [*Geotastic* (2021)](https://geotastic.net/home), videojuego similar a *GeoGuessr* creado por [*Edutastic Games*](https://www.edutastic.de).
 - [*Geographical Adventures* (2022)](https://sebastian.itch.io/geographical-adventures), videojuego creado por [**Sebastian Lague**](https://www.youtube.com/@SebastianLague) en su serie de YouTube homónima.
