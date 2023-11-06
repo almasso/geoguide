@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class Earth : MonoBehaviour
 {
-    public float gravity = -9.8f;
-    private Transform _myTransform;
-    private Rigidbody _myRigidbody;
+    [SerializeField] private float gravity = -9.8f;
+    private Transform _earthTransform;
+    private Rigidbody _earthRigidbody;
 
     void Start()
     {
-        _myRigidbody = GetComponent<Rigidbody>();
-        _myTransform = GetComponent<Transform>();
+        _earthRigidbody = GetComponent<Rigidbody>();
+        _earthTransform = GetComponent<Transform>();
     }
 
     public void Attract(Transform playerTransform)
     {
-        Vector3 gravityUp = (playerTransform.position - _myTransform.position).normalized;
-        Vector3 localUp = playerTransform.up;
+        Vector3 gravityNormal = (playerTransform.position - _earthTransform.position).normalized;
+        Vector3 playerUp = playerTransform.up;
 
-        playerTransform.GetComponent<Rigidbody>().AddForce(gravityUp * gravity);
+        playerTransform.GetComponent<Rigidbody>().AddForce(gravityNormal * gravity);
 
-        Quaternion targetRotation = Quaternion.FromToRotation(localUp, gravityUp) * playerTransform.rotation;
+        Quaternion targetRotation = Quaternion.FromToRotation(playerUp, gravityNormal) * playerTransform.rotation;
         playerTransform.rotation = Quaternion.Slerp(playerTransform.rotation, targetRotation, 50f * Time.deltaTime);
     }
 }
