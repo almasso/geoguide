@@ -284,7 +284,6 @@ El jugador puede pausar el juego en cualquier momento tocando la letra ‘P’.
 	</tr>
 	<tr>
 		<td>Tarjetas de información</td>
-		<td></td>
 		<td>El menú entero está ocupado por una lista de las tarjetas de los países, explicadas anteriormente en <a href="#74---tarjetas"><i>el apartado 7.4</i></a>.</td>
 	</tr>
 </table>
