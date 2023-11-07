@@ -8,6 +8,9 @@ public class PlayerGravity : MonoBehaviour
     private Transform playerTransform;
     private Transform _myTransform;
     private Rigidbody _myRigidbody;
+    private Quaternion newRot;
+
+    public Quaternion getRot() { return newRot; }
 
     void Start()
     {
@@ -17,15 +20,13 @@ public class PlayerGravity : MonoBehaviour
         _myTransform = GetComponent<Transform>();
 
         playerTransform = _myTransform;
-
-
     }
 
     void FixedUpdate()
     {
         if (attractorPlanet != null)
         {
-            attractorPlanet.Attract(playerTransform);
+            newRot = attractorPlanet.Attract(playerTransform);
         }
     }
 }

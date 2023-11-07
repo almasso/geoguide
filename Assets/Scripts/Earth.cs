@@ -14,7 +14,7 @@ public class Earth : MonoBehaviour
         _earthTransform = GetComponent<Transform>();
     }
 
-    public void Attract(Transform playerTransform)
+    public Quaternion Attract(Transform playerTransform)
     {
         Vector3 gravityNormal = (playerTransform.position - _earthTransform.position).normalized;
         Vector3 playerUp = playerTransform.up;
@@ -22,6 +22,8 @@ public class Earth : MonoBehaviour
         playerTransform.GetComponent<Rigidbody>().AddForce(gravityNormal * gravity);
 
         Quaternion targetRotation = Quaternion.FromToRotation(playerUp, gravityNormal) * playerTransform.rotation;
-        playerTransform.rotation = Quaternion.Slerp(playerTransform.rotation, targetRotation, 50f * Time.deltaTime);
+        Quaternion tmp = Quaternion.Slerp(playerTransform.rotation, targetRotation, 50f * Time.deltaTime);
+        playerTransform.rotation = tmp;
+        return tmp;
     }
 }

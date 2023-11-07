@@ -181,7 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5525295603368428666, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
       propertyPath: m_Name
-      value: ComPlaneV1
+      value: Plane
       objectReference: {fileID: 0}
     - target: {fileID: 5950469200645188493, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
       propertyPath: m_IsKinematic

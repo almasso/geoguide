@@ -24,12 +24,14 @@ public class PlayerMovement : MonoBehaviour
     private float rollSmoothV;
     private float pitchSmoothV;
     private float totalTurnAngle;
+    private PlayerGravity playerGravity;
 
 
     void Start()
     {
         _myRigidbody = GetComponent<Rigidbody>();
         _myTransform = GetComponent<Transform>();
+        playerGravity = GetComponent<PlayerGravity>();
         worldRadius = 370;
     }
     void Update()
@@ -46,10 +48,17 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         _myRigidbody.MovePosition(_myRigidbody.position + _myTransform.TransformDirection(moveDirection));
+        
         smoothedTurnSpeed = Mathf.SmoothDamp(smoothedTurnSpeed, Input.GetAxisRaw("Horizontal") * turnSpeed, ref turnSmoothV, turnSmoothTime);
         float turnAmount = smoothedTurnSpeed * Time.deltaTime;
         totalTurnAngle += turnAmount;
         updateRotation(turnAmount);
+
+        float targetPitch = Input.GetAxisRaw("Vertical") * maxPitchAngle;
+        pitchAngle = Mathf.SmoothDampAngle(pitchAngle, targetPitch, ref pitchSmoothV, smoothPitchTime);
+
+        float targetRoll = Input.GetAxisRaw("Horizontal") * maxRollAngle;
+        rollAngle = Mathf.SmoothDampAngle(rollAngle, targetRoll, ref rollSmoothV, smoothRollTime);
     }
 
     private void updateRotation(float turnAmount)
@@ -58,6 +67,8 @@ public class PlayerMovement : MonoBehaviour
         transform.RotateAround(transform.position, gravityUp, turnAmount);
         transform.LookAt((transform.position + transform.forward * 10).normalized * (worldRadius), gravityUp);
         transform.rotation = Quaternion.FromToRotation(transform.up, gravityUp) * transform.rotation;
-        //_myTransform.localEulerAngles = new Vector3(pitchAngle, 0, rollAngle);
+        Debug.Log("Pitch: " + pitchAngle + " roll: " + rollAngle);
+        //_myTransform.localEulerAngles = new Vector3(playerGravity.getRot().x + pitchAngle, 0, playerGravity.getRot().z + rollAngle);
+        Debug.Log(_myTransform.localEulerAngles);
     }
 }

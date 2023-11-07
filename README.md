@@ -31,10 +31,8 @@
 			- [**8.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento**](#841---explicación-de-los-elementos-de-la-interfaz-del-menú-de-información-y-su-funcionamiento)
 		- [**8.5 - Mockup de la interfaz del menú de pausa**](#85---mockup-de-la-interfaz-del-menú-de-pausa)
 			- [**8.5.1 - Explicación de los elementos de la interfaz del menú de pausa y su funcionamiento**](#851---explicación-de-los-elementos-de-la-interfaz-del-menú-de-pausa-y-su-funcionamiento)
-		- [**8.6 - Mockup de la interfaz del menú de ajustes**](#86---mockup-de-la-interfaz-del-menú-de-ajustes)
-			- [**8.6.1 - Explicación de los elementos de la interfaz del menú de ajustes y su funcionamiento**](#861---explicación-de-los-elementos-de-la-interfaz-del-menú-de-ajustes-y-su-funcionamiento)
-		- [**8.7 - Mockup de la interfaz del menú de controles**](#87---mockup-de-la-interfaz-del-menú-de-controles)
-			- [**8.7.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento**](#871---explicación-de-los-elementos-de-la-interfaz-del-menú-de-controles-y-su-funcionamiento)
+		- [**8.6 - Mockup de la interfaz del menú de controles**](#86---mockup-de-la-interfaz-del-menú-de-controles)
+			- [**8.6.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento**](#861---explicación-de-los-elementos-de-la-interfaz-del-menú-de-controles-y-su-funcionamiento)
 	- [**9 - Estética**](#9---estética)
 	- [**10 - Menús y flujo de juego**](#10---menús-y-flujo-de-juego)
 	- [**11 - Recursos**](#11---recursos)
@@ -62,7 +60,9 @@ En cuanto al contexto de uso, hemos tenido en cuenta los contenidos de las asign
 Es por eso que GeoGuide puede ser usado en clase como ejercicio dinámico y divertido para que los alumnos aprendan (por ejemplo, el profesor podría pedirle a sus alumnos que intenten resolver los niveles del continente que estén estudiando); pero también puede ser un apoyo extra para que los alumnos practiquen de manera autónoma en casa, a modo de refuerzo de la lección estudiada anteriormente o a modo de repaso para un examen.
 
 ## **4 - Interés y aprendizaje del jugador**
-
+En el diseño del juego, hemos tenido en cuenta elementos que nos ayudan a mantener el interés de nuestros jugadores y a asegurarnos de que están aprendiendo, por ejemplo:
+la narrativa, que presenta una historia de progreso, con una meta final definida, apoyada por un sistema de niveles por estrellas, que les presentan a los jugadores el reto de conseguirlos todos con la mejor puntuación posible, reforzados por recompensas extra si consiguen las 3 (puntuación máxima). 
+Además, dentro de los propios niveles, nos aseguramos de que el jugador no se frustre en exceso y mantenga la atención mediante un reloj interno que comprueba si el jugador lleva demasiado tiempo sin acertar desde que comenzó el nivel y le aporta pistas correspondientemente. Pasados los tres intentos fallidos o demasiado tiempo, se le preguntará al jugador si quiere que se le “chive” donde estaba el país destino. El nivel no contará como completado pero evitará que el jugador se frustre en caso de atascarse.
 
 ## **5 - Jugabilidad**
 ### **5.1 - Mecánicas del jugador**
@@ -111,25 +111,33 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 	</tr>
 	<tr>
 		<td>Minimapa</td>
-		<td><img src="./imagenesGDD/minimapa.png" width=100% height=100%></td>
-		<td>Pequeña pantalla que muestra una versión más ampliada del mundo para ayudar al jugador a ubicarse por el mapa.</td>
+		<td><img src="./imagenesGDD/minimapa.png" width=50% height=50%></td>
+		<td>Pequeño globo que muestra la posición del jugador más alejada del suelo para ayudar al jugador a ubicarse por el mundo</td>
 	</tr>
 	<tr>
 		<td>Cliente</td>
-		<td><img src="./imagenesGDD/cliente.png" width=50% height=50%></td>
-		<td>Durante la partida, el cliente mencionará curiosidades geográficas sobre el país destino. Además, transcurrido un tiempo específico, para ayudar al jugador y así evitar frustrar, el cliente le proporcionará una pista.El número total de pistas será 3, en caso de necesitarlas.</td>
+		<td>
+			<figure>
+				<p align=left><img src="./imagenesGDD/cliente.png" width=50% height=50%></p>
+				<figcaption><p align="left"><i>Depende del cliente</i></p>
+			</figure>
+		</td>
+		<td>Durante la partida, el cliente mencionará curiosidades geográficas sobre el país destino. Además, transcurrido un tiempo específico, para ayudar al jugador y así evitar frustrar, el cliente le proporcionará una pista. El número total de pistas será 3, en caso de necesitarlas. </td>
 	</tr>
 	<tr>
 		<td>Aeropuerto</td>
-		<td></td>
-		<td>Área donde podrás depositar a los clientes una vez hayas localizado el país correcto. Sólo podrás hacer ésto si pones el avión a velocidad lenta o “de aterrizaje”.</td>
+		<td><img src="./imagenesGDD/aeropuerto.png" width=100% height=100%></td>
+		<td>Zona circular roja donde podrás dejar a los clientes. Sólo podrás hacer ésto si pones el avión a velocidad lenta o “de aterrizaje”. Una vez hayas aterrizado, si el país fue el correcto se pasará al siguiente cliente en caso de haberlo, o terminará el nivel. Si se ha fallado, se notificará, se restará un intento y el jugador podrá continuar.</td>
 	</tr>
 	<tr>
 		<td>Jefe</td>
-		<td></td>
-		<td>Personaje que te guiará en los niveles de aprendizaje y, pasado un tiempo suficientemente largo a determinar, te ofrecerá ayuda en los niveles normales / te avisará de imprevistos meteorológicos.</td>
+		<td><img src="./imagenesGDD/cliente.png" width=50% height=50%></td>
+		<td>Personaje que te guiará en los niveles de aprendizaje. Te avisará de imprevistos meteorológicos y, pasado un tiempo suficientemente largo, te preguntará si quieres que te guíe al país destino para que el jugador no se sienta bloqueado, ni se atasque en algún nivel.</td>
 	</tr>
 </table>
+
+**Todo el arte se hará a mano o se usarán assets previamente creados *free to use* o a los que tengamos permisos.**
+
 
 ## **6 - Historia y personaje principal**
 Como jugador encarnarás al hijo de un director (en otros apartados aparecerá como “Jefe”) de una agencia de viajes aérea, que ha decidido jubilarse y dejar el negocio familiar en tus manos. Has estudiado muy duro, pero apenas tienes práctica, por lo que entrarás a la flota como piloto júnior. Es por eso que tu padre ha diseñado un plan para que llegues a ser un piloto sénior en el menor tiempo posible antes de delegar la empresa en ti. Este plan tiene como objetivo dominar los mandos del avión y aprender qué rutas ofrece la empresa a los distintos países.
@@ -176,94 +184,102 @@ Cada país que visitemos en alguno de los niveles nos proporcionará una tarjeta
 
 Una vez conseguida cada tarjeta, esta estará disponible en el menú de información, al que podremos acceder tanto antes como durante los niveles de juego, y su información nos será útil tanto para encontrar otros países colindantes como para repasar lo aprendido.
 Además, el hecho de que las postales sólo aparecen si consigues las 3 estrellas, motivará al jugador a intentar conseguirlas para completar el álbum y tener un memento de su esfuerzo y su aprendizaje.
+<figure>
+<p align="center"><img src="./imagenesGDD/tarjetas.png" width=100% height=100%></p>
+<figcaption><p align="center"><i><b>Imagen 2</b> - Ejemplo de tarjeta de información española</i></p></figcaption>
+</figure>
 
 ## **8 - Interfaz**
 ### **8.1 - Mockup del HUD in-game**
 <figure>
 <p align="center"><img src="./imagenesGDD/hud_partida.png" width=100% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 2</b> - Mockup del HUD in-game</i></p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 3</b> - Mockup del HUD in-game</i></p></figcaption>
 </figure>
 
 #### **8.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
-		<th><b>Imagen</b></th>
 		<th><b>Explicación</b></th>
 	</tr>
 	<tr>
 		<td>Recuadro de misión</td>
-		<td><img src="./imagenesGDD/cuadroMision.png" width=100% height=100%></td>
-		<td>En la parte superior de la pantalla aparecerá un recuadro rectangular que contiene el objetivo de nuestra misión actual. Por ejemplo, si nuestro cliente quiere visitar un país al sur de Dinamarca, en la parte superior de la pantalla nos aparecerá un texto del estilo <i>Lleva al cliente a un país al sur de Dinamarca</i>.</td>
+		<td>En la parte superior de la pantalla aparecerá un recuadro conteniendo el objetivo de la misión actual.</td>
 	</tr>
 	<tr>
 		<td>Pistas</td>
-		<td><img src="./imagenesGDD/pistas.png" width=100% height=100%></td>
 		<td>Justo debajo de la imagen de nuestro cliente, aparecerán las sucesivas pistas que este te va dando si no consigues encontrar el país que este te pide. Las pistas son una lista vertical de tres bocadillos con un pequeño texto a modo de pista. Por ejemplo, siguiendo con el ejemplo anterior, podemos tener de pistas <i>Un monumento importante es la Puerta de Brandemburgo</i>, <i>Es la cuna de la industria automotriz europea</i> y <i>Su capital es Berlín</i>.</td>
 	</tr>
 	<tr>
 		<td>Botón de menú de pausa</td>
-		<td><img src="./imagenesGDD/pausa.png" width=100% height=100%></td>
-		<td>En la esquina inferior derecha encontramos el botón que nos lleva al menú de pausa.</td>
+		<td>Se mantiene en pantalla en todo momento durante la misión. Situado en la parte inferior izquierda.</td>
 	</tr>
 </table>
 
+El jugador puede pausar el juego en cualquier momento tocando la letra ‘P’.
+
 ### **8.2 - Mockup de la interfaz del menú inicial**
+<figure>
+<p align="center"><img src="./imagenesGDD/menu_inicial.png" width=100% height=100%></p>
+<figcaption><p align="center"><i><b>Imagen 4</b> - Mockup del menú inicial</i></p></figcaption>
+</figure>
+
 #### **8.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
-		<th><b>Imagen</b></th>
 		<th><b>Explicación</b></th>
 	</tr>
 	<tr>
 		<td>Botón de "Jugar"</td>
-		<td>-Aquí va una imagen del botón de jugar-</td>
 		<td>Al pulsar este botón vamos al menú de los niveles, que va actuar como nuestro menú principal.</td>
 	</tr>
 	<tr>
 		<td>Botón de "Salir"</td>
-		<td>-Aquí va una imagen del botón de salir-</td>
 		<td>Al pulsar este botón salimos del juego.</td>
 	</tr>
 </table>
 
 ### **8.3 - Mockup de la interfaz del menú de niveles/menú principal**
+<figure>
+<p align="center"><img src="./imagenesGDD/menu_niveles.png" width=100% height=100%></p>
+<figcaption><p align="center"><i><b>Imagen 5</b> - Mockup del menú principal</i></p></figcaption>
+</figure>
+
 #### **8.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
-		<th><b>Imagen</b></th>
 		<th><b>Explicación</b></th>
 	</tr>
 	<tr>
 		<td>Lista de niveles</td>
-		<td>-Aquí va una imagen con la lista de niveles-</td>
 		<td>En la parte izquierda del menú encontramos una lista con todos los niveles jugables en nuestro juego. Los niveles están separados por continentes, y cada uno de los botones del nivel tiene el número de nivel y el número de estrellas conseguidas, inicialmente, 3 estrellas en color gris para luego rellenarse con estrellas doradas.</td>
 	</tr>
 	<tr>
-		<td>Botón de ajustes</td>
-		<td>-Aquí va una imagen del botón de jugar-</td>
-		<td>En la esquina inferior derecha tenemos el botón con la rueda de ajustes, que al pulsar, nos lleva al menú de ajustes.</td>
+		<td>Botón de controles</td>
+		<td>En la esquina superior derecha tenemos el botón en forma mando, que al pulsar, nos lleva al menú de controles.</td>
 	</tr>
 	<tr>
 		<td>Botón de tarjetas obtenidas</td>
-		<td>-Aquí va una imagen del botón de jugar-</td>
-		<td>En la esquina superior derecha nos encontramos con un botón, en forma de globo terráqueo, que contiene el submenú de las tarjetas obtenidas. En este menú tendremos una lista con todas las tarjetas de todos los países que hemos visitado a lo largo de los niveles que hemos jugado.</td>
+		<td>En la esquina superior derecha nos encontramos con un botón, en forma de globo terráqueo, que contiene el submenú de las tarjetas obtenidas. En este menú tendremos una lista con todas las tarjetas de todos los países que hemos visitado a lo largo de los niveles que hemos jugado. Las tarjetas se explicarán mejor en el apartado <a href="#841---explicación-de-los-elementos-de-la-interfaz-del-menú-de-información-y-su-funcionamiento"><b>8.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento</b></a></td>
 	</tr>
 	<tr>
 		<td>Botón de volver atrás</td>
-		<td>-Aquí va una imagen del botón de jugar-</td>
 		<td>En la esquina inferior izquierda tenemos el botón que nos permite volver atrás al menú inicial, donde podremos salir del juego.</td>
 	</tr>
 </table>
 
 ### **8.4 - Mockup de la interfaz del menú de información**
+<figure>
+<p align="center"><img src="./imagenesGDD/menu_tarjetas.png" width=100% height=100%></p>
+<figcaption><p align="center"><i><b>Imagen 6</b> - Mockup del menú de información</i></p></figcaption>
+</figure>
+
 #### **8.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
-		<th><b>Imagen</b></th>
 		<th><b>Explicación</b></th>
 	</tr>
 	<tr>
@@ -274,77 +290,50 @@ Además, el hecho de que las postales sólo aparecen si consigues las 3 estrella
 </table>
 
 ### **8.5 - Mockup de la interfaz del menú de pausa**
+<figure>
+<p align="center"><img src="./imagenesGDD/menu_pausa.png" width=100% height=100%></p>
+<figcaption><p align="center"><i><b>Imagen 7</b> - Mockup del menú de pausa</i></p></figcaption>
+</figure>
+
 #### **8.5.1 - Explicación de los elementos de la interfaz del menú de pausa y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
-		<th><b>Imagen</b></th>
 		<th><b>Explicación</b></th>
 	</tr>
 	<tr>
 		<td>Botón de volver al juego</td>
-		<td></td>
 		<td>Este botón nos permite volver al juego tal y donde lo dejamos.</td>
 	</tr>
 	<tr>
-		<td>Botón de ajustes</td>
-		<td></td>
-		<td>Este botón nos permite ir al menú de ajustes.</td>
+		<td>Botón de controles</td>
+		<td>Este botón nos permite ir al menú de controles.</td>
 	</tr>
 	<tr>
 		<td>Botón de información</td>
-		<td></td>
 		<td>Este botón nos permite ir al menú de información para poder consultar los países ya visitados en caso de que se nos olviden en mitad de la partida.</td>
 	</tr>
 	<tr>
 		<td>Botón de salir de la partida</td>
-		<td></td>
 		<td>Este botón nos permite volver al menú principal y abandonar el nivel en el que estamos actualmente.</td>
 	</tr>
 </table>
 
-### **8.6 - Mockup de la interfaz del menú de ajustes**
-#### **8.6.1 - Explicación de los elementos de la interfaz del menú de ajustes y su funcionamiento**
-<table>
-	<tr>
-		<th><b>Elemento</b></th>
-		<th><b>Imagen</b></th>
-		<th><b>Explicación</b></th>
-	</tr>
-	<tr>
-		<td>Botón de ajustes gráficos</td>
-		<td></td>
-		<td>Este botón nos llevará al menú de ajustes gráficos, en el que encontraremos ajustes para el brillo de la pantalla, resolución, pantalla completa, etc... -aún por ver lo que se va a meter-</td>
-	</tr>
-	<tr>
-		<td>Botón de ajustes de sonido</td>
-		<td></td>
-		<td>Este botón nos llevará al menú de ajustes de sonido, en el que encontraremos ajustes para el volumen general, volumen de elementos de la interfaz, etc...</td>
-	</tr>
-	<tr>
-		<td>Botón de controles</td>
-		<td></td>
-		<td>Este botón nos llevará al menú de controles, en el que podremos consultar los controles a usar con los diferentes elementos del juego.</td>
-	</tr>
-	<tr>
-		<td>Botón de volver atrás</td>
-		<td></td>
-		<td>Este botón nos llevará al menú inmediatamente anterior, desde el cual hayamos accedido al menú de ajustes.</td>
-	</tr>
-</table>
+### **8.6 - Mockup de la interfaz del menú de controles**
+<figure>
+<p align="center"><img src="./imagenesGDD/menu_controles.png" width=100% height=100%></p>
+<figcaption><p align="center"><i><b>Imagen 8</b> - Mockup del menú de controles</i></p></figcaption>
+</figure>
 
-### **8.7 - Mockup de la interfaz del menú de controles**
-#### **8.7.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento**
+#### **8.6.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento**
 <table>
 	<tr>
 		<th><b>Elemento</b></th>
-		<th><b>Imagen</b></th>
 		<th><b>Explicación</b></th>
 	</tr>
 	<tr>
 		<td>Lista de controles</td>
-		<td></td>
-		<td>En pleno centro del menú encontraremos una lista con los controles que hemos definido para los diversos elementos del juego, por ejemplo, manejo del avión, interactuar con los clientes, aterrizar, cambiar velocidad del avión, etc...</td>
+		<td>Se explicarán los controles utilizados durante el gameplay. </td>
 	</tr>
 </table>
 
@@ -352,15 +341,17 @@ Además, el hecho de que las postales sólo aparecen si consigues las 3 estrella
 ## **9 - Estética**
 La estética del juego se basa en un estilo _cartoon_, suave, sencillo y colorido, pero sobre todo atractivo para nuestro público objetivo ideal. Una estética más realista y decorada puede llevar a los jugadores a la distracción, algo poco conveniente cuando se trata de un juego principalmente educativo; por ello, hemos decidido una estética más sobria y sencilla, la cual evite cualquier tipo de distracción y permita al jugador centrarse en el aprendizaje.
 
-Este estilo se podrá ver en el diseño de las interfaces, las cuales están pensadas para ser sencillas y fáciles de usar; el diseño de los clientes, los cuales tendrán pocos detalles y serán muy sencillos; y, principalmente, el mapa terrestre, en el cual los países no tendrán ningún tipo de información acerca de los accidentes geográficos (es decir, montañas, ríos, valles, zonas nevadas, etc... no serán visibles en el mapa), ya que será un mapa plano en el que ¿¿(cada país tiene un color distinto a los países que lo rodean)??
+Este estilo se podrá ver en el diseño de las interfaces, las cuales están pensadas para ser sencillas y fáciles de usar; el diseño de los clientes, los cuales tendrán pocos detalles y serán muy sencillos; y, principalmente, el mapa terrestre, en el cual los países no tendrán ningún tipo de información acerca de los accidentes geográficos (es decir, montañas, ríos, valles, zonas nevadas, etc... no serán visibles en el mapa), y cada país tendrá un color distintoal resto con bordes negros para diferenciar sus fronteras.
+
 
 ## **10- Menús y flujo de juego**
 <figure>
 <p align="center"><img src="./imagenesGDD/flujoJuego.png" width=100% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 3</b> - Diagrama de flujo de juego de todos los menús e interfaces</i></p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 9</b> - Diagrama de flujo de juego de todos los menús e interfaces</i></p></figcaption>
 </figure>
 
 ## **11 - Recursos**
+- [Mapas para la demo](https://www.mapsofindia.com/world-map/outline.html)
 
 ## **12 - Referencias**
 ### **12.1 - Videojuegos**
