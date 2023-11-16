@@ -8,9 +8,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject _rotationNode;
     private Transform _pTOTransform;
     [Header("Ajustes del avion")]
-    [SerializeField] private float rollSpeed = 0.01f;
-    [SerializeField] private float yawSpeed;
+    [SerializeField] private float pitchSpeed = 0.01f;
+    [SerializeField] private float yawSpeed = 0.01f;
+    [SerializeField] private float diveSpeed = 0.01f;
+    [SerializeField] private float maxRollTiltAngle;
+    [SerializeField] private float maxPitchTiltAngle;
     [SerializeField] private Vector3 _orbitOffset;
+
 
     private Transform _planeTransform;
     private Transform _planeNodeTransform;
@@ -27,7 +31,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //_planeTransform.position = _planetTransform.position + new Vector3(0, 350, 0);
-        _planeNodeTransform.Rotate(new Vector3(rollSpeed, 0, 0));
+        if (Input.GetKeyDown(KeyCode.Alpha1)) pitchSpeed = 0.01f;
+        else if (Input.GetKeyDown(KeyCode.Alpha2)) pitchSpeed = 0.05f;
+        else if (Input.GetKeyDown(KeyCode.Alpha3)) pitchSpeed = 0.1f;
+
+        _planeTransform.position += new Vector3(0, Input.GetAxisRaw("Vertical") * diveSpeed, 0);
+
+        _planeNodeTransform.Rotate(new Vector3(pitchSpeed, yawSpeed * Input.GetAxisRaw("Horizontal"), 0));
     }
 }
