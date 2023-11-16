@@ -42,7 +42,7 @@ public class CameraManager : MonoBehaviour
 
     void Start()
     {
-        _camera = Camera.main; //Obtenemos la cámara
+        _camera = Camera.main; //Obtenemos la cï¿½mara
         _player = GameObject.Find("Plane").GetComponent<PlayerMovement>();
         _playerTransform = _player.transform;
     }

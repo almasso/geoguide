@@ -24,14 +24,12 @@ public class PlayerMovement : MonoBehaviour
     private float rollSmoothV;
     private float pitchSmoothV;
     private float totalTurnAngle;
-    private PlayerGravity playerGravity;
 
 
     void Start()
     {
         _myRigidbody = GetComponent<Rigidbody>();
         _myTransform = GetComponent<Transform>();
-        playerGravity = GetComponent<PlayerGravity>();
         worldRadius = 370;
     }
     void Update()
@@ -68,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         transform.LookAt((transform.position + transform.forward * 10).normalized * (worldRadius), gravityUp);
         transform.rotation = Quaternion.FromToRotation(transform.up, gravityUp) * transform.rotation;
         Debug.Log("Pitch: " + pitchAngle + " roll: " + rollAngle);
-        //_myTransform.localEulerAngles = new Vector3(playerGravity.getRot().x + pitchAngle, 0, playerGravity.getRot().z + rollAngle);
+        _myTransform.localEulerAngles = new Vector3(pitchAngle, 0, rollAngle);
         Debug.Log(_myTransform.localEulerAngles);
     }
 }
