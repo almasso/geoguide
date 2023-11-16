@@ -377,8 +377,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _planetToOrbit: {fileID: 1522690166}
   _rotationNode: {fileID: 1136655263}
-  rollSpeed: 0.01
-  yawSpeed: 0
+  pitchSpeed: 0.01
+  yawSpeed: 0.1
+  diveSpeed: 0.1
+  maxRollTiltAngle: 0
+  maxPitchTiltAngle: 0
   _orbitOffset: {x: 0, y: 10, z: 0}
 --- !u!4 &1214255475 stripped
 Transform:
