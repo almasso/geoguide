@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 144501605}
   - component: {fileID: 144501604}
   - component: {fileID: 144501603}
+  - component: {fileID: 144501606}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -215,6 +216,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &144501606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144501602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86da210b6f56a4ce58526618d37ab483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _plane: {fileID: 1214255469}
+  _ajustes:
+    offset: {x: 0, y: 0.019, z: -9}
+    lookAtOffset: {x: 0, y: 0.2, z: 0}
 --- !u!1 &1011283850
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +375,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5688c2e50c3a47288ba6bf9ddf68a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _planetToOrbit: {fileID: 1522690166}
+  _rotationNode: {fileID: 1136655263}
+  rollSpeed: 0.01
+  yawSpeed: 0
+  _orbitOffset: {x: 0, y: 10, z: 0}
 --- !u!4 &1214255475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5180858929285816000, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
@@ -481,6 +503,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5180858929285816000, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180858929285816000, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180858929285816000, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -523,6 +553,10 @@ PrefabInstance:
     - target: {fileID: 5525295603368428666, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950469200645188493, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
