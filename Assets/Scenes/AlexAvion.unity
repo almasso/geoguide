@@ -461,13 +461,15 @@ MonoBehaviour:
   _planetToOrbit: {fileID: 37503687}
   _rotationNode: {fileID: 1136655263}
   pitchSpeed: 0.01
-  yawSpeed: 0.1
-  diveSpeed: 0.1
-  maxRollTiltAngle: 10
-  maxPitchTiltAngle: 10
-  smoothRollTime: 0.25
-  smoothPitchTime: 0.25
+  yawSpeed: 1
+  diveSpeed: 1
+  maxRollTiltAngle: 30
+  maxPitchTiltAngle: 30
+  smoothRollTime: 1
+  smoothPitchTime: 1
   _orbitOffset: {x: 0, y: 10, z: 0}
+  maximumHeight: 820
+  minimumHeight: 700
 --- !u!4 &1214255475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5180858929285816000, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
