@@ -147,7 +147,7 @@ Este plan en la historia se relaciona de manera directa con el gameplay del jueg
 A lo largo del juego, el jugador irá aprendiendo y superando los diferentes niveles hasta que, finalmente, tras superarlos todos es nombrado piloto sénior, heredando la empresa y acabando con la historia.
 
 ## **7 - Diseño de nivel**
-La historia comienza en Europa, el primer nivel (introductorio), donde el jefe le dará la enhorabuena al jugador por estar preparado al fin para aceptar el puesto de piloto junior en su agencia turística de viajes. El jefe le explicará al usuario cómo pilotar este tipo de avión, y le asegurará que no debe preocuparse si no domina mucho la geografía, que ya irá aprendiendo por el camino y que él se encargará de enseñarle lo básico.
+La historia comienza en Europa, el primer nivel (introductorio), donde el jefe le dará la enhorabuena al jugador (su hijo) por estar preparado al fin para aceptar el puesto de piloto junior y heredar así su agencia turística de viajes. El jefe le explicará al usuario cómo pilotar este tipo de avión, y le asegurará que él se encargará de enseñarle lo básico.
 
 A continuación, el jefe enseñará al jugador los controles básicos para manejar el avión y le mostrará los primeros países, dándole unas [tarjetas de información](#74---tarjetas) que contendrán datos importantes e interesantes de cada país. A partir de ahí comenzará el juego, donde el jugador viajará por todo el mundo e irá coleccionando tarjetas informativas.
 ### **7.1 - Organización de niveles por continentes**
@@ -338,10 +338,10 @@ El jugador puede pausar el juego en cualquier momento tocando la letra ‘P’.
 
 
 ## **9 - Estética**
-La estética del juego se basa en un estilo _cartoon_, suave, sencillo y colorido, pero sobre todo atractivo para nuestro público objetivo ideal. Una estética más realista y decorada puede llevar a los jugadores a la distracción, algo poco conveniente cuando se trata de un juego principalmente educativo; por ello, hemos decidido una estética más sobria y sencilla, la cual evite cualquier tipo de distracción y permita al jugador centrarse en el aprendizaje.
+La estética del juego se basa en un estilo cartoon, suave, sencillo y colorido, pero sobre todo atractivo para nuestro público objetivo ideal y permite al jugador centrarse en el aprendizaje.
+Este estilo se podrá ver en el diseño de las interfaces, las cuales están pensadas para ser sencillas y fáciles de usar y en el diseño de los clientes, los cuales tendrán pocos detalles y serán muy sencillos; 
 
-Este estilo se podrá ver en el diseño de las interfaces, las cuales están pensadas para ser sencillas y fáciles de usar; el diseño de los clientes, los cuales tendrán pocos detalles y serán muy sencillos; y, principalmente, el mapa terrestre, en el cual los países no tendrán ningún tipo de información acerca de los accidentes geográficos (es decir, montañas, ríos, valles, zonas nevadas, etc... no serán visibles en el mapa), y cada país tendrá un color distintoal resto con bordes negros para diferenciar sus fronteras.
-
+El mapa terrestre será realista y detallado, para que los jugadores puedan aprender también sobre la información física de los países.
 
 ## **10- Menús y flujo de juego**
 <figure>
