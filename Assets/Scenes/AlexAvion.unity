@@ -460,7 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _planetToOrbit: {fileID: 37503687}
   _rotationNode: {fileID: 1136655263}
-  pitchSpeed: 0.01
+  pitchSpeed: 0.1
   yawSpeed: 1
   diveSpeed: 1
   maxRollTiltAngle: 30

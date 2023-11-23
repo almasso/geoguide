@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha3)) pitchSpeed = 0.1f;
 
         _planeTransform.position += new Vector3(0, Input.GetAxisRaw("Vertical") * diveSpeed, 0);
+        //if (_planeTransform.position.y >= maximumHeight) _planeTransform.position = new Vector3(_planeTransform.position.x, maximumHeight, _planeTransform.position.z);
+        //else if (_planeTransform.position.y <= minimumHeight) _planeTransform.position = new Vector3(_planeTransform.position.x, minimumHeight, _planeTransform.position.z);
 
         _planeNodeTransform.Rotate(new Vector3(pitchSpeed, yawSpeed * Input.GetAxisRaw("Horizontal"), 0));
         _planeTransform.localEulerAngles = new Vector3(pitchAngle, 0, -rollAngle);

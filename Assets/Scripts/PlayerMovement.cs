@@ -1,3 +1,4 @@
+//EL MALO
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -52,10 +53,10 @@ public class PlayerMovement : MonoBehaviour
         totalTurnAngle += turnAmount;
         updateRotation(turnAmount);
 
-        float targetPitch = Input.GetAxisRaw("Vertical") * maxPitchAngle;
+        float targetPitch = Mathf.Lerp(Input.GetAxisRaw("Vertical") * maxPitchAngle, maxPitchAngle, 0.75f);
         pitchAngle = Mathf.SmoothDampAngle(pitchAngle, targetPitch, ref pitchSmoothV, smoothPitchTime);
 
-        float targetRoll = Input.GetAxisRaw("Horizontal") * maxRollAngle;
+        float targetRoll = Mathf.Lerp(Input.GetAxisRaw("Horizontal") * maxRollAngle, maxRollAngle, 0.75f);
         rollAngle = Mathf.SmoothDampAngle(rollAngle, targetRoll, ref rollSmoothV, smoothRollTime);
     }
 
