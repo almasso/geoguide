@@ -110,6 +110,11 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 		<td>Elemento que será útil para misiones que describan la ubicación del país destino como “al norte/sur/este/oeste de …”.</td>
 	</tr>
 	<tr>
+		<td>Velocímetro</td>
+		<td><img src="./imagenesGDD/velocimetro.jpeg" width=50% height=50%></td>
+		<td>Debajo de la brújula aparecerá un pequeño indicador que muestra la velocidad a la que el jugador va: 1 (lento, aterrizar); 2 (medio); 3 (rápido). En color verde se mostrará la velocidad actual.</td>
+	</tr>
+	<tr>
 		<td>Minimapa</td>
 		<td><img src="./imagenesGDD/minimapa.png" width=50% height=50%></td>
 		<td>Pequeño globo que muestra la posición del jugador más alejada del suelo para ayudar al jugador a ubicarse por el mundo</td>
