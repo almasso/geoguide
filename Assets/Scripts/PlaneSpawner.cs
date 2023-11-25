@@ -4,69 +4,42 @@ using UnityEngine;
 
 public class PlaneSpawner : MonoBehaviour
 {
-    public GameObject ship;
-    private SpriteRenderer ship_sprite;
-
-    public int ship_count = 0;
-    public int ship_limit = 3;
-    public int ships_per_frame = 1;
-    public float fastest_speed = 0.40f;
-    public float slowest_speed = 0.1f;
-
+    #region references
+    [SerializeField]
+    private GameObject _prefab;
+    #endregion
+    #region paramaters
+    [SerializeField]
+    private float _maxTimeInterval = 5.0f;
+    [SerializeField]
+    private float _minTimeInterval = 1.0f;
+    #endregion
+    #region properties
+    private float _elapsedTime;
+    private float _nextSpawnTime = 0;
     public float y_max, y_min;
     public float x_max, x_min;
-
-    void Start()
-    {
-        ship_sprite = ship.GetComponent<SpriteRenderer>();
-        InitialPopulation();
-    }
+    #endregion
 
     void Update()
     {
-        MaintainPopulation();
-    }
-
-    void InitialPopulation()
-    {
-        for (int i = 0; i < ship_limit; i++)
+        _elapsedTime += Time.deltaTime;
+        if (_elapsedTime >= _nextSpawnTime)
         {
-            Vector3 position = GetRandomPosition();
-            AddShip(position);
+            Instantiate(_prefab, GetRandomPosition(), Quaternion.identity);
+            _nextSpawnTime = Random.Range(_minTimeInterval, _maxTimeInterval + 1);
+            _elapsedTime = 0;
         }
     }
-
-    void MaintainPopulation()
-    {
-        if (ship_count < ship_limit)
-        {
-            for (int i = 0; i < ships_per_frame; i++)
-            {
-                Vector3 position = GetRandomPosition();
-                AddShip(position);
-            }
-        }
-    }
-
     Vector3 GetRandomPosition()
     {
+        SpriteRenderer sprite = _prefab.GetComponent<SpriteRenderer>();
         float aux = (Random.Range(-1,2));
+        float scale = Random.Range(0.01f, 0.03f);
         float posX;
-        if (aux <= 0) { posX = x_min; ship_sprite.flipX = true; }
-        else { posX = x_max; ship_sprite.flipX = false; }
+        if (aux <= 0) {  posX = x_min; sprite.flipX = true; _prefab.transform.localScale = new Vector3(scale, scale, scale); }
+        else {posX = x_max; sprite.flipX = false; _prefab.transform.localScale = new Vector3(scale, scale, scale); }
         Vector3 position = new Vector3(posX, Random.Range(y_min, y_max), -3);
         return position;
-    }
-
-    void AddShip(Vector3 position)
-    {
-        ++ship_count;
-        GameObject aux = Instantiate(ship, position, Quaternion.identity);
-        Plane ship_script = aux.GetComponent<Plane>();
-        ship_script.ship_spawner = this;
-        ship_script.speed = Random.Range(slowest_speed, fastest_speed);
-        ship_script.transform.Rotate(Vector3.forward * Random.Range(-45.0f, 45.0f));
-        ship_script.transform.position = position;
-
     }
 }
