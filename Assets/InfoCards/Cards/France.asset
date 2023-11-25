@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458fef8eb4d9e2947bb5f43a8af7cf3f, type: 3}
+  m_Name: France
+  m_EditorClassIdentifier: 
+  name: Francia
+  capital: Paris
+  languaje: "Franc\xE9s"
+  currency: Euro
+  climate: "Oce\xE1nico/mediterr\xE1neo, con inviernos suaves y lluvias frecuentes"
+  info: "Pa\xEDs del oeste europeo, fronterizo con Espa\xF1a, Alemania e Italia entre
+    otros. Famoso por la conocida Torre Eiffel y el Museo del Louvre, donde se encuentra
+    la Mona Lisa"
+  mapPos: {fileID: 0}
+  flag: {fileID: 21300000, guid: e856ac534088ecb4a8decd0ffd925184, type: 3}
+  memory: {fileID: 0}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458fef8eb4d9e2947bb5f43a8af7cf3f, type: 3}
+  m_Name: Germany
+  m_EditorClassIdentifier: 
+  name: Alemania
+  capital: "Berl\xEDn"
+  languaje: "Alem\xE1n"
+  currency: Euro
+  climate: "Templado, con inviernos fr\xEDos y temperatura media de 8,5"
+  info: "Pa\xEDs de centro-Europa, fronterizo con Francia, Polonia y Suiza entre
+    otros. Son lugares famosos la Puerta de Brandeburgo y la Catedral de Colonia"
+  mapPos: {fileID: 0}
+  flag: {fileID: 21300000, guid: 42545022b587c78458d5653cd6a7a652, type: 3}
+  memory: {fileID: 0}

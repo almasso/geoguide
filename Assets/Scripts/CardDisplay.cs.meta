@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 08f0112f78f8dcb4a99a751fe4c59017
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - card: {fileID: 11400000, guid: 831b39b54becc6a45af05aa0869c6a66, type: 2}
+  - nameText: {instanceID: 0}
+  - capitalText: {instanceID: 0}
+  - languajeText: {instanceID: 0}
+  - currencyText: {instanceID: 0}
+  - climateText: {instanceID: 0}
+  - infoText: {instanceID: 0}
+  - mapPosImage: {instanceID: 0}
+  - flagImage: {instanceID: 0}
+  - memoryImage: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

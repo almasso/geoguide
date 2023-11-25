@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458fef8eb4d9e2947bb5f43a8af7cf3f, type: 3}
+  m_Name: Spain
+  m_EditorClassIdentifier: 
+  name: "Espa\xF1a"
+  capital: Madrid
+  languaje: "Espa\xF1ol"
+  currency: Euro
+  climate: "Clima templado, mas fresco en el norte y c\xE1lido en el sur"
+  info: "Pa\xEDs mediterr\xE1neo, al extremo Oeste de Europa, fronterizo con Francia
+    y Portugal. Dos lugares famosos son la Alhambra y la Sagrada Familia"
+  mapPos: {fileID: 0}
+  flag: {fileID: 21300000, guid: a994363b5fe373d41b02d6da03b9ec6b, type: 3}
+  memory: {fileID: 0}
