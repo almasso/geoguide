@@ -19,6 +19,6 @@ MonoBehaviour:
   climate: "Clima templado, mas fresco en el norte y c\xE1lido en el sur"
   info: "Pa\xEDs mediterr\xE1neo, al extremo Oeste de Europa, fronterizo con Francia
     y Portugal. Dos lugares famosos son la Alhambra y la Sagrada Familia"
-  mapPos: {fileID: 0}
+  mapPos: {fileID: 21300000, guid: f4bdd3c13fcda784f92a0d878f1065c7, type: 3}
   flag: {fileID: 21300000, guid: a994363b5fe373d41b02d6da03b9ec6b, type: 3}
   memory: {fileID: 0}
