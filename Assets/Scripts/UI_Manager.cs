@@ -17,5 +17,9 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.QuitGame();
     }
+    public void TarjetasMenu()
+    {
+        GameManager.Instance.Tarjetasmenu();
+    }
     #endregion
 }

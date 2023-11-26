@@ -43,6 +43,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenuScene");
     }
+     public void Tarjetasmenu()
+    {
+        SceneManager.LoadScene("MenuTarjetas");
+    }
 
     public void QuitGame()
     {
