@@ -19,6 +19,6 @@ MonoBehaviour:
   climate: "Templado, con inviernos fr\xEDos y temperatura media de 8,5"
   info: "Pa\xEDs de centro-Europa, fronterizo con Francia, Polonia y Suiza entre
     otros. Son lugares famosos la Puerta de Brandeburgo y la Catedral de Colonia"
-  mapPos: {fileID: 0}
+  mapPos: {fileID: 21300000, guid: 21ddb8a0cd6773d4e92e18bae66cf804, type: 3}
   flag: {fileID: 21300000, guid: 42545022b587c78458d5653cd6a7a652, type: 3}
   memory: {fileID: 0}

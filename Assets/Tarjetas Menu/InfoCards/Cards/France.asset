@@ -20,6 +20,6 @@ MonoBehaviour:
   info: "Pa\xEDs del oeste europeo, fronterizo con Espa\xF1a, Alemania e Italia entre
     otros. Famoso por la conocida Torre Eiffel y el Museo del Louvre, donde se encuentra
     la Mona Lisa"
-  mapPos: {fileID: 0}
+  mapPos: {fileID: 21300000, guid: 0ef796295bc558546906cee2071e2dc5, type: 3}
   flag: {fileID: 21300000, guid: e856ac534088ecb4a8decd0ffd925184, type: 3}
   memory: {fileID: 0}
