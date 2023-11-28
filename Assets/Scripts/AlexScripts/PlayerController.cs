@@ -68,22 +68,18 @@ public class PlayerController : MonoBehaviour
         
 
         _planeTransform.localPosition += (new Vector3(0, Input.GetAxisRaw("Vertical") * diveSpeed, 0));
+        if(_planeTransform.localPosition.y >= maximumHeight) _planeTransform.localPosition = new Vector3(0, Mathf.Abs(maximumHeight), 0);
+        else if(_planeTransform.localPosition.y <= minimumHeight) _planeTransform.localPosition = new Vector3(0, Mathf.Abs(minimumHeight), 0);
 
-        //Debug.Log(_planeTransform.localPosition);
-        if (_planeTransform.localPosition.y >= maximumHeight)
-        {
-            _planeTransform.localPosition = new Vector3(0, Mathf.Abs(maximumHeight), 0);
+        if (_planeTransform.localPosition.y >= maximumHeight - 0.05f){ 
             _canTiltUp = false;
             _canTiltDown = true;
         }
-        else if (_planeTransform.localPosition.y <= minimumHeight)
-        {
-            _planeTransform.localPosition = new Vector3(0, Mathf.Abs(minimumHeight), 0);
+        else if (_planeTransform.localPosition.y <= minimumHeight + 0.05f) {
             _canTiltUp = true;
             _canTiltDown = false;
         }
-        else
-        {
+        else {
             _canTiltDown = true;
             _canTiltUp = true;
         }
