@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private GameObject _planetToOrbit;
     [SerializeField] private GameObject _rotationNode;
-    private Transform _pTOTransform;
     [Header("Ajustes del avion")]
     [SerializeField] private float pitchSpeed = 0.01f;
     [SerializeField] private float yawSpeed = 0.5f;
@@ -22,14 +21,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float maximumHeight = 820;
     [SerializeField] private float minimumHeight = 700;
     [SerializeField] private Velocidades velocidadesAvion;
+
     private float velocidadObjetivo;
     private bool _canTiltDown, _canTiltUp;
-    
-    private float height;
     private float pitchAngle;
     private float rollAngle;
-    private float rollSmoothV;
-    private float pitchSmoothV;
 
     private Transform _planeTransform;
     private Transform _planeNodeTransform;
@@ -37,7 +33,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _pTOTransform = _planetToOrbit.GetComponent<Transform>();
         _planeTransform = this.GetComponent<Transform>();
         _planeTransform.position = _planetToOrbit.GetComponent<Transform>().position + new Vector3(0, (minimumHeight + maximumHeight)/2, 0) + _orbitOffset;
         _planeNodeTransform = _rotationNode.GetComponent<Transform>();
