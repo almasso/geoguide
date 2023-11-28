@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458fef8eb4d9e2947bb5f43a8af7cf3f, type: 3}
+  m_Name: Suiza
+  m_EditorClassIdentifier: 
+  name: Suiza
+  capital: Berna
+  languaje: "Alem\xE1n, Franc\xE9s, Italiano"
+  currency: Franco Suizo
+  climate: Continental alpino, variable debido a su gran altura, pero templado en
+    general
+  info: "Pa\xEDs del centro de Europa, fronterizo con Francia, Italia y Alemania
+    entre otros. Famoso por su ubicaci\xF3n en la cordillera de los Alpes y por su
+    delicioso chocolate"
+  mapPos: {fileID: 21300000, guid: 9c00ce36e8942ff4da7ea019dc973c3d, type: 3}
+  flag: {fileID: 21300000, guid: 7c416747b6495a9419529e3e99b1b6ac, type: 3}
+  memory: {fileID: 0}

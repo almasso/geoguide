@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458fef8eb4d9e2947bb5f43a8af7cf3f, type: 3}
+  m_Name: Polonia
+  m_EditorClassIdentifier: 
+  name: Polonia
+  capital: Varsovia
+  languaje: Polaco
+  currency: Esloti
+  climate: "Continental h\xFAmedo, con inviernos fr\xEDos y muchas precipitaciones"
+  info: 
+  mapPos: {fileID: 21300000, guid: a6695a89a22cd8248b34777249fcaf7e, type: 3}
+  flag: {fileID: 21300000, guid: 9cb8685517fc1674a9675abc0582fc08, type: 3}
+  memory: {fileID: 0}

@@ -17,9 +17,9 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.QuitGame();
     }
-    public void TarjetasMenu()
-    {
-        GameManager.Instance.Tarjetasmenu();
-    }
+    //public void TarjetasMenu()
+    //{
+    //    GameManager.Instance.ExpandCard(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject);
+    //}
     #endregion
 }
