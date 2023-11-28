@@ -17,6 +17,10 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.QuitGame();
     }
+    public void SettingsMenu()
+    {
+        GameManager.Instance.SettingsMenu();
+    }
     public void TarjetasMenu()
     {
         GameManager.Instance.Tarjetasmenu();
