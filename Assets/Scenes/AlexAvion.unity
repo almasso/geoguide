@@ -368,7 +368,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: e1709d63928fd47099d7950286cbf8f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -513,7 +513,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: e1709d63928fd47099d7950286cbf8f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -663,9 +663,9 @@ MonoBehaviour:
   trails:
   - {fileID: 402928476}
   - {fileID: 349605300}
-  player: {fileID: 1214255469}
-  alphaMin: 0
-  alphaMax: 0.5
+  player: {fileID: 969922379}
+  alphaMin: 0.2
+  alphaMax: 0.9
 --- !u!114 &969922382
 MonoBehaviour:
   m_ObjectHideFlags: 0
