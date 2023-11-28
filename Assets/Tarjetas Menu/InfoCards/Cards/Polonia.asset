@@ -17,7 +17,8 @@ MonoBehaviour:
   languaje: Polaco
   currency: Esloti
   climate: "Continental h\xFAmedo, con inviernos fr\xEDos y muchas precipitaciones"
-  info: 
+  info: "Pa\xEDs del noreste europeo, fronterizo con Alemania y Rep\xFAblica Checa
+    entre otros. "
   mapPos: {fileID: 21300000, guid: a6695a89a22cd8248b34777249fcaf7e, type: 3}
   flag: {fileID: 21300000, guid: 9cb8685517fc1674a9675abc0582fc08, type: 3}
   memory: {fileID: 0}

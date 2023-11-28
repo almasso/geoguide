@@ -225,14 +225,14 @@ RectTransform:
   m_GameObject: {fileID: 33715366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.21222337, y: 0.8706605, z: 0.8706605}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1425908062}
+  m_Father: {fileID: 1743530195}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25.6, y: 2.7}
+  m_AnchoredPosition: {x: 2.215931, y: 1.722841}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33715368
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Informaci\xF3n de los pa\xEDses"
+  m_text: "Informaci\xF3n \nde los pa\xEDses"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80784ae17bd34b9488e52aec6a829c35, type: 2}
   m_sharedMaterial: {fileID: -8092046267662783148, guid: 80784ae17bd34b9488e52aec6a829c35, type: 2}
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -25.82
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -535,7 +535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TarjetasMenu
+      value: ExpandCard
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -919,7 +919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TarjetasMenu
+      value: ExpandCard
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1627,7 +1627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TarjetasMenu
+      value: ExpandCard
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -3183,11 +3183,10 @@ RectTransform:
   m_GameObject: {fileID: 1425908061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 11.546809, y: 2.8145332, z: 2.8145332}
+  m_LocalScale: {x: 8.17872, y: 1.9935621, z: 1.9935621}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1743530195}
-  - {fileID: 33715367}
   m_Father: {fileID: 514727457}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3437,7 +3436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TarjetasMenu
+      value: ExpandCard
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -3821,7 +3820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TarjetasMenu
+      value: ExpandCard
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -3899,14 +3898,15 @@ RectTransform:
   m_GameObject: {fileID: 1743530194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.21222337, y: 0.8706605, z: 0.8706605}
+  m_LocalScale: {x: 0.23098391, y: 0.9476269, z: 0.9476269}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 33715367}
   m_Father: {fileID: 1425908062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25.12973, y: 1.2}
+  m_AnchoredPosition: {x: 25.8, y: 12.334}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1743530196
@@ -3929,7 +3929,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Informaci\xF3n de los pa\xEDses"
+  m_text: "Informaci\xF3n \nde los pa\xEDses"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80784ae17bd34b9488e52aec6a829c35, type: 2}
   m_sharedMaterial: {fileID: -8092046267662783148, guid: 80784ae17bd34b9488e52aec6a829c35, type: 2}
@@ -3968,7 +3968,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -25
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -4286,7 +4286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TarjetasMenu
+      value: ExpandCard
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -4315,7 +4315,7 @@ GameObject:
   - component: {fileID: 1757594580}
   - component: {fileID: 1757594581}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: CardManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4345,7 +4345,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1757594579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3229c5b0632d044a820787a5c1cef5e, type: 3}
+  m_Script: {fileID: 11500000, guid: ca1e96719bbf498449a245c4dce221d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _UIManager: {fileID: 514727453}
@@ -4830,7 +4830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TarjetasMenu
+      value: ExpandCard
       objectReference: {fileID: 0}
     - target: {fileID: 8537215316096937025, guid: 50d48fbe9a65ee346ac4211ca847ae7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

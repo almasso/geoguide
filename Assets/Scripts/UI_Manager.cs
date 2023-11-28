@@ -17,10 +17,10 @@ public class UI_Manager : MonoBehaviour
     {
         GameManager.Instance.QuitGame();
     }
-    //public void TarjetasMenu()
-    //{
-    //    GameManager.Instance.ExpandCard(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject);
-    //}
+    public void ExpandCard()
+    {
+        CardManager.Instance.ExpandCard(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject);
+    }
     public void SettingsMenu()
     {
         GameManager.Instance.SettingsMenu();
