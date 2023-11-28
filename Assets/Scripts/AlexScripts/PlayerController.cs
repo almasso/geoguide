@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private GameObject _planetToOrbit;
     [SerializeField] private GameObject _rotationNode;
+    [SerializeField] private GameObject _planeModel;
+    [SerializeField] private GameObject _trailNode;
     [Header("Ajustes del avion")]
     [SerializeField] private float pitchSpeed = 0.01f;
     [SerializeField] private float yawSpeed = 0.5f;
@@ -28,13 +30,22 @@ public class PlayerController : MonoBehaviour
     private float rollAngle;
 
     private Transform _planeTransform;
+    private Transform _playerTransform;
     private Transform _planeNodeTransform;
+    private Transform _trailNodeTransform;
+
+    public float GetCurrentSpeed()
+    {
+        return pitchSpeed;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        _planeTransform = this.GetComponent<Transform>();
-        _planeTransform.position = _planetToOrbit.GetComponent<Transform>().position + new Vector3(0, (minimumHeight + maximumHeight)/2, 0) + _orbitOffset;
+        _playerTransform = this.GetComponent<Transform>();
+        _planeTransform = this._planeModel.GetComponent<Transform>();
+        _trailNodeTransform = this._trailNode.GetComponent<Transform>();
+        _playerTransform.position = _planetToOrbit.GetComponent<Transform>().position + new Vector3(0, (minimumHeight + maximumHeight)/2, 0) + _orbitOffset;
         _planeNodeTransform = _rotationNode.GetComponent<Transform>();
         velocidadObjetivo = velocidadesAvion.minima;
         _canTiltDown = _canTiltUp = true;
@@ -67,15 +78,15 @@ public class PlayerController : MonoBehaviour
         else pitchSpeed = velocidadObjetivo;
         
 
-        _planeTransform.localPosition += (new Vector3(0, Input.GetAxisRaw("Vertical") * diveSpeed, 0));
-        if(_planeTransform.localPosition.y >= maximumHeight) _planeTransform.localPosition = new Vector3(0, Mathf.Abs(maximumHeight), 0);
-        else if(_planeTransform.localPosition.y <= minimumHeight) _planeTransform.localPosition = new Vector3(0, Mathf.Abs(minimumHeight), 0);
+        _playerTransform.localPosition += (new Vector3(0, Input.GetAxisRaw("Vertical") * diveSpeed, 0));
+        if(_playerTransform.localPosition.y >= maximumHeight) _playerTransform.localPosition = new Vector3(0, Mathf.Abs(maximumHeight), 0);
+        else if(_playerTransform.localPosition.y <= minimumHeight) _playerTransform.localPosition = new Vector3(0, Mathf.Abs(minimumHeight), 0);
 
-        if (_planeTransform.localPosition.y >= maximumHeight - 0.05f){ 
+        if (_playerTransform.localPosition.y >= maximumHeight - 0.05f){ 
             _canTiltUp = false;
             _canTiltDown = true;
         }
-        else if (_planeTransform.localPosition.y <= minimumHeight + 0.05f) {
+        else if (_playerTransform.localPosition.y <= minimumHeight + 0.05f) {
             _canTiltUp = true;
             _canTiltDown = false;
         }
@@ -85,7 +96,10 @@ public class PlayerController : MonoBehaviour
         }
 
         _planeNodeTransform.Rotate(new Vector3(pitchSpeed, yawSpeed * Input.GetAxisRaw("Horizontal"), 0));
-        _planeTransform.localEulerAngles = new Vector3(pitchAngle, 0, -rollAngle);
+
+        Vector3 rot = new Vector3(pitchAngle, 0, -rollAngle);
+        _planeTransform.localEulerAngles = rot;
+        _trailNodeTransform.localEulerAngles = rot;
     }
 
     [System.Serializable]
