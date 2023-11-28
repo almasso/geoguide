@@ -47,6 +47,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("MenuTarjetas");
     }
+    public void SettingsMenu()
+    {
+        SceneManager.LoadScene("SettingsScene");
+    }
 
     public void QuitGame()
     {

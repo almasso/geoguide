@@ -10,7 +10,7 @@ public class NivelDisplay : MonoBehaviour
     private RawImage estrella_1;
     private RawImage estrella_2;
     private RawImage estrella_3;
-    private RawImage fondoNivel;
+    private Button boton;
     private TextMeshProUGUI nivel_Titulo;
     void Start()
     {
@@ -18,8 +18,8 @@ public class NivelDisplay : MonoBehaviour
         estrella_1 = gameObject.transform.GetChild(0).gameObject.GetComponent<RawImage>();
         estrella_2 = gameObject.transform.GetChild(1).gameObject.GetComponent<RawImage>();
         estrella_3 = gameObject.transform.GetChild(2).gameObject.GetComponent<RawImage>();
-        fondoNivel = gameObject.transform.GetChild(3).gameObject.GetComponent<RawImage>();
-        nivel_Titulo = gameObject.transform.GetChild(4).gameObject.GetComponent<TextMeshProUGUI>();
+        boton = gameObject.transform.GetChild(3).gameObject.GetComponent<Button>();
+        nivel_Titulo = boton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         if (_JSONReader != null)
         {
             if (_JSONReader.myLevelList.nivel[index].estrella1) estrella_1.texture = _JSONReader.estrellaActivada.texture;
@@ -30,10 +30,10 @@ public class NivelDisplay : MonoBehaviour
             else estrella_3.texture = _JSONReader.estrellaDesactivada.texture;
 
             nivel_Titulo.text = _JSONReader.myLevelList.nivel[index].name;
+           
             if (!_JSONReader.myLevelList.nivel[index].active)
             {
-                nivel_Titulo.color = Color.black;
-                fondoNivel.color = Color.gray;
+                boton.interactable = false;
             }
         }
         else Debug.Log("No existe");
