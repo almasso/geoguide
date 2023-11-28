@@ -21,5 +21,13 @@ public class UI_Manager : MonoBehaviour
     //{
     //    GameManager.Instance.ExpandCard(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject);
     //}
+    public void SettingsMenu()
+    {
+        GameManager.Instance.SettingsMenu();
+    }
+    public void TarjetasMenu()
+    {
+        GameManager.Instance.Tarjetasmenu();
+    }
     #endregion
 }

@@ -7,7 +7,6 @@ public class JSONReader : MonoBehaviour
     public TextAsset levelsJSON;
     public Sprite estrellaActivada;
     public Sprite estrellaDesactivada;
-    public Sprite fondo;
 
     [Serializable]
     public class Nivel
