@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -313,8 +313,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _plane: {fileID: 1214255469}
   _ajustes:
-    offset: {x: 0, y: 0.019, z: -9}
-    lookAtOffset: {x: 0, y: 0.2, z: 0}
+    offset: {x: 0, y: 0.05, z: -9}
+    lookAtOffset: {x: 0, y: 0, z: 0}
+--- !u!1 &427580964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b324b23c01d5d494b90e534cf0ff9c8f, type: 3}
+  m_PrefabInstance: {fileID: 1877907767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1011283850
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,18 +463,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5688c2e50c3a47288ba6bf9ddf68a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _planetToOrbit: {fileID: 37503687}
+  _planetToOrbit: {fileID: 427580964}
   _rotationNode: {fileID: 1136655263}
   pitchSpeed: 0.1
-  yawSpeed: 1
-  diveSpeed: 1
+  yawSpeed: 0.01
+  diveSpeed: 0.01
   maxRollTiltAngle: 30
   maxPitchTiltAngle: 30
   smoothRollTime: 1
   smoothPitchTime: 1
   _orbitOffset: {x: 0, y: 10, z: 0}
-  maximumHeight: 100
-  minimumHeight: 90
+  maximumHeight: 120
+  minimumHeight: 105
 --- !u!4 &1214255475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5180858929285816000, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
@@ -622,6 +627,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b324b23c01d5d494b90e534cf0ff9c8f, type: 3}
       propertyPath: m_Name
       value: earth
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b324b23c01d5d494b90e534cf0ff9c8f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

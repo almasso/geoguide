@@ -1,5 +1,8 @@
+using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -18,6 +21,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Vector3 _orbitOffset;
     [SerializeField] private float maximumHeight = 820;
     [SerializeField] private float minimumHeight = 700;
+    [SerializeField] private Velocidades velocidadesAvion;
+    
     private float height;
     private float pitchAngle;
     private float rollAngle;
@@ -46,15 +51,43 @@ public class PlayerController : MonoBehaviour
         rollAngle = Mathf.SmoothDampAngle(rollAngle, targetRoll, ref rollSmoothV, smoothRollTime);
 
         // Input para el cambio de velocidad
-        if (Input.GetKeyDown(KeyCode.Alpha1)) pitchSpeed = 0.01f;
-        else if (Input.GetKeyDown(KeyCode.Alpha2)) pitchSpeed = 0.05f;
-        else if (Input.GetKeyDown(KeyCode.Alpha3)) pitchSpeed = 0.1f;
+        if (Input.GetKeyDown(KeyCode.Alpha1)) StartCoroutine(corrutinaCambioVelocidad(velocidadesAvion.minima));
+        else if (Input.GetKeyDown(KeyCode.Alpha2)) StartCoroutine(corrutinaCambioVelocidad(velocidadesAvion.media));
+        else if (Input.GetKeyDown(KeyCode.Alpha3)) StartCoroutine(corrutinaCambioVelocidad(velocidadesAvion.maxima));
 
-        _planeTransform.position += new Vector3(0, Input.GetAxisRaw("Vertical") * diveSpeed, 0);
-        //if (_planeTransform.position.y >= maximumHeight) _planeTransform.position = new Vector3(_planeTransform.position.x, maximumHeight, _planeTransform.position.z);
-        //else if (_planeTransform.position.y <= minimumHeight) _planeTransform.position = new Vector3(_planeTransform.position.x, minimumHeight, _planeTransform.position.z);
+        _planeTransform.Translate(new Vector3(0, Input.GetAxisRaw("Vertical") * diveSpeed, 0));
+
+        Debug.Log(_planeTransform.localPosition);
+
+        if (_planeTransform.localPosition.y >= maximumHeight) _planeTransform.localPosition = new Vector3(_planeTransform.localPosition.x, Mathf.Abs(maximumHeight), _planeTransform.localPosition.z);
+        else if (_planeTransform.localPosition.y <= minimumHeight) _planeTransform.localPosition = new Vector3(_planeTransform.localPosition.x, Mathf.Abs(minimumHeight), _planeTransform.localPosition.z);
 
         _planeNodeTransform.Rotate(new Vector3(pitchSpeed, yawSpeed * Input.GetAxisRaw("Horizontal"), 0));
         _planeTransform.localEulerAngles = new Vector3(pitchAngle, 0, -rollAngle);
+    }
+
+    IEnumerator corrutinaCambioVelocidad(float velocidadObjectivo)
+    {
+        while(Mathf.Abs(pitchSpeed - velocidadObjectivo) >= 0.005)
+        {
+            Mathf.Lerp(pitchSpeed, velocidadObjectivo, 15 * Time.deltaTime);
+        }
+        pitchSpeed = velocidadObjectivo;
+        yield return null;
+    }
+
+    [System.Serializable]
+    public struct Velocidades
+    {
+        public float minima;
+        public float media;
+        public float maxima;
+
+        Velocidades(float minima, float media, float maxima)
+        {
+            this.minima = minima;
+            this.media = media;
+            this.maxima = maxima;
+        }
     }
 }
