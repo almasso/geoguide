@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -465,16 +465,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _planetToOrbit: {fileID: 427580964}
   _rotationNode: {fileID: 1136655263}
-  pitchSpeed: 0.1
-  yawSpeed: 0.01
-  diveSpeed: 0.01
+  pitchSpeed: 0.02
+  yawSpeed: 0.5
+  diveSpeed: 0.1
   maxRollTiltAngle: 30
   maxPitchTiltAngle: 30
   smoothRollTime: 1
   smoothPitchTime: 1
   _orbitOffset: {x: 0, y: 10, z: 0}
-  maximumHeight: 120
-  minimumHeight: 105
+  maximumHeight: 116
+  minimumHeight: 102
+  velocidadesAvion:
+    minima: 0.05
+    media: 0.1
+    maxima: 0.2
 --- !u!4 &1214255475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5180858929285816000, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
