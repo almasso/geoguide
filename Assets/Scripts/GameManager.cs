@@ -20,14 +20,8 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
-    /// <summary>
-    /// Reference to UI Manager.
-    /// </summary>
-    [SerializeField]
-    private GameObject _UIManager;
-    private UI_Manager _myUIManager;
+  
     #endregion
-
 
     #region methods
     private void Awake()
@@ -38,6 +32,12 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("LevelsScene");
+    }
+
+    public void StartGamePrueba(int _i)
+    {
+        IndexController._index = _i;
+        SceneManager.LoadScene("PruebaGameScene");
     }
     public void BackToMainMenu()
     {
@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        _myUIManager = _UIManager.GetComponent<UI_Manager>();
+    
     }
 
 }

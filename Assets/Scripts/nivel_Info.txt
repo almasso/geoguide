@@ -1,0 +1,16 @@
+{
+	"nivel_Info" : [
+		{
+			"name": "  Introductorio Europa",
+			"intentos":3
+		},
+		{
+			"name": "  Nivel 1",
+			"intentos": 3
+		},
+		{
+			"name": "  Nivel 2",
+			"intentos": 3
+		}
+	]
+}
