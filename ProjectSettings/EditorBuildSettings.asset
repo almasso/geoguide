@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/AlexAvion.unity
+    path: Assets/Scenes/GameScene.unity
     guid: 20ce752751f2c447d958cbf38f6ccb1f
   - enabled: 1
     path: Assets/Scenes/MainMenuScene.unity
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SettingsScene.unity
     guid: 328ccd50a6f2991419d23c7d4273e71e
+  - enabled: 1
+    path: Assets/Scenes/PruebaGameScene.unity
+    guid: 89d43cdc3838b814aa843186c7b91037
   m_configObjects: {}

@@ -4,7 +4,28 @@ using UnityEngine;
 
 public class UI_Manager : MonoBehaviour
 {
+    #region references
+    /// <summary>
+    /// Unique GameManager instance (Singleton Pattern).
+    /// </summary>
+    static private UI_Manager _instance;
+    /// <summary>
+    /// Public accesor for GameManager instance.
+    /// </summary>
+    static public UI_Manager Instance
+    {
+        get
+        {
+            return _instance;
+        }
+    } 
+    #endregion
+
     #region methods
+    private void Awake()
+    {
+        _instance = this;
+    }
     public void StartGame()
     {
         GameManager.Instance.StartGame();
