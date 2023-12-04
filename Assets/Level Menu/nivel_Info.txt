@@ -2,103 +2,203 @@
 "nivel_Info" : [
 {
 "name":"  Introductorio Europa",
-"intentos":"0"
+"intentos":"0",
+"cliente": "Assets/Clients/client1.png",
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1"
 },
 {
 "name":"  Europa 1",
-"intentos":"4"
+"intentos":"2",
+"cliente": "Assets/Clients/client2.png",
+"pista1": "Pista 1 Nivel 2",
+"pista2": "Pista 2 Nivel 2",
+"pista3": "Pista 3 Nivel 2"
 },
 {
 "name":"  Europa 2",
-"intentos":"4"
+"intentos":"0",
+"cliente": "Assets/Clients/client3.png",
+"pista1": "Pista 1 Nivel 3",
+"pista2": "Pista 2 Nivel 3",
+"pista3": "Pista 3 Nivel 3"
 },
 {
 "name":"  Europa 3",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client4.png",
+"pista1": "Pista 1 Nivel 4",
+"pista2": "Pista 2 Nivel 4",
+"pista3": "Pista 3 Nivel 4"
 },
 {
 "name":"  Europa 4",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client5.png",
+"pista1": "Pista 1 Nivel 5",
+"pista2": "Pista 2 Nivel 5",
+"pista3": "Pista 3 Nivel 5"
 },
 {
 "name":"  Introductorio America",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client6.png",
+"pista1": "Pista 1 Nivel 6",
+"pista2": "Pista 2 Nivel 6",
+"pista3": "Pista 3 Nivel 6"
 },
 {
 "name":"  America 1",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client7.png",
+"pista1": "Pista 1 Nivel 7",
+"pista2": "Pista 2 Nivel 7",
+"pista3": "Pista 3 Nivel 7"
 },
 {
 "name":"  America 2",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client8.png",
+"pista1": "Pista 1 Nivel 8",
+"pista2": "Pista 2 Nivel 8",
+"pista3": "Pista 3 Nivel 8"
 },
 {
 "name":"  America 3",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client9.png",
+"pista1": "Pista 1 Nivel 9",
+"pista2": "Pista 2 Nivel 9",
+"pista3": "Pista 3 Nivel 9"
 },
 {
 "name":"  America 4",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client10.png",
+"pista1": "Pista 1 Nivel 10",
+"pista2": "Pista 2 Nivel 10",
+"pista3": "Pista 3 Nivel 10"
 },
 {
 "name":"  Introductorio Asia",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client11.png",
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1"
 },
 {
 "name":"  Asia 1",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client12.png",
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1"
 },
 {
 "name":"  Asia 2",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client13.png",
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1"
 },
 {
 "name":"  Asia 3",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client14.png",
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1"
 },
 {
 "name":"  Asia 4",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client15.png",
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1"
 },
 {
 "name":"  Introductorio Africa",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client16.png",
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1"
 },
 {
 "name":"  Africa 1",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client17.png",
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1"
 },
 {
 "name":"  Africa 2",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client18.png",
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1"
 },
 {
 "name":"  Africa 3",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client19.png",
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1"
 },
 {
 "name":"  Africa 4",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client20.png",
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1"
 },
 {
 "name":"  Introductorio Oceania",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client21.png",
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1"
 },
 {
 "name":"  Oceania 1",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client22.png",
+"pista1": "Hello number 1",
+"pista2": "Hello number 2",
+"pista3": "Hello number 3"
 },
 {
 "name":"  Oceania 2",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client1.png",
+"pista1": "Hello number 1",
+"pista2": "Hello number 2",
+"pista3": "Hello number 3"
 },
 {
 "name":"  Oceania 3",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client2.png",
+"pista1": "Hello number 1",
+"pista2": "Hello number 2",
+"pista3": "Hello number 3"
 },
 {
 "name":"  Oceania 4",
-"intentos":"4"
+"intentos":"4",
+"cliente": "Assets/Clients/client3.png",
+"pista1": "Hello number 1",
+"pista2": "Hello number 2",
+"pista3": "Hello number 3"
 }
 ]
 }

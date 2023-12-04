@@ -23,7 +23,7 @@ public class JSONWriter : Save_Load
                 if (line.Contains(myLevel_writer.name))
                 {
                     line = "\"name\"" + ":" + "\"" + myLevel_writer.name + "\"" + "," + "\n" +
-                           "\"intentos\"" + ":" + "\"" + myLevel_writer.intentos + "\"";
+                           "\"intentos\"" + ":" + "\"" + myLevel_writer.intentos + "\"" + ",";
                     sbText.AppendLine(line);
                     line = reader.ReadLine();
                     changeLevelButton();
