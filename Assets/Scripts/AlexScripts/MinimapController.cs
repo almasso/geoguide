@@ -7,24 +7,23 @@ public class MinimapController : MonoBehaviour
 {
     [SerializeField] private GameObject _plane;
     [SerializeField] private Camera _minimapCamera;
-    private Transform _playerTransform;
+    [SerializeField] private float heightOffset;
+    private Quaternion initialRotation;
+    private Transform _planeTransform;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        _playerTransform = _plane.GetComponent<Transform>();
+        initialRotation = _minimapCamera.GetComponent<Transform>().localRotation;
+        _planeTransform = _plane.transform;
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        _minimapCamera.GetComponent<Transform>().position = _playerTransform.position;
-
-        Vector3 lookTarget = _playerTransform.position;
-        lookTarget += _playerTransform.right;
-        lookTarget += _playerTransform.up;
-        lookTarget += _playerTransform.forward;
-        _minimapCamera.GetComponent<Transform>().LookAt(lookTarget, _playerTransform.position);
+        Vector3 targetPosition = _planeTransform.position + _planeTransform.position.normalized * heightOffset;
+        transform.position = targetPosition;
+        _minimapCamera.transform.LookAt(_planeTransform.position);
     }
 }
