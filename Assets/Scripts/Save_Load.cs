@@ -7,22 +7,29 @@ using UnityEditor;
 public class Save_Load : MonoBehaviour
 {
     #region JSON_TEXTS
+    //levels
     protected string level_Info_JSON;
     protected string level_Info_path;
     protected string level_Info_path_real = "Assets/Level Menu/nivel_Info.txt";
     protected string levelsJSON;
     protected string levels_path;
     protected string levels_path_real = "Assets/Level Menu/Levels.txt";
+    //cartas
+    protected string cards_info_path = "Assets/Tarjetas Menu/InfoCards/Cards_Info.txt";
     #endregion
 
     #region UI_ELEMENTS
+    //levels
     protected Sprite estrellaActivada;
     protected Sprite estrellaDesactivada;
+    //cartas
+    protected Sprite cartaActivada;
+    protected Sprite cartaDesactivada;
     #endregion
 
     #region INFO_MANAGEMENT
-        #region NIVEL_GAME
-        [Serializable]
+    #region NIVEL_GAME
+    [Serializable]
         public class Nivel
         {
             public int index;
@@ -38,10 +45,35 @@ public class Save_Load : MonoBehaviour
             public Nivel[] nivel;
         }
         public NivelList myLevelList = new NivelList();
-        #endregion
+    #endregion
 
-        #region LISTA_NIVELES
+    #region CARTA
         [Serializable]
+        public class Card
+        {
+            public int index;
+            public bool isActive;
+            public string name;
+            public string capital;
+            public string languaje;
+            public string currency;
+            public string climate;
+            public string info;
+            public string mapPos;
+            public string flag;
+            public string memory;
+        }
+
+        [Serializable]
+        public class CardList
+        {
+            public Card[] card;
+        }
+        public CardList myCardList = new CardList();
+    #endregion
+
+    #region LISTA_NIVELES
+    [Serializable]
         public class Nivel_Info
         {
             public string name;
@@ -57,6 +89,7 @@ public class Save_Load : MonoBehaviour
     #endregion
     void Awake()
     {
+        //levels
         estrellaActivada = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png");
         estrellaDesactivada = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s2.png");
         TextAsset levels = AssetDatabase.LoadAssetAtPath<TextAsset>(levels_path_real);
@@ -65,6 +98,11 @@ public class Save_Load : MonoBehaviour
         TextAsset level_Info = AssetDatabase.LoadAssetAtPath<TextAsset>(level_Info_path_real);
         level_Info_path = level_Info.text;
         myLevel_Info_List = JsonUtility.FromJson<Nivel_Info_List>(level_Info.text);
+        //cartas
+        cartaActivada = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Tarjetas Menu/InfoCards/Tarjeta Pais.png");
+        cartaDesactivada = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Tarjetas Menu/InfoCards/Tarjeta Pais Bloqueada.png");
+        TextAsset cards_info = AssetDatabase.LoadAssetAtPath<TextAsset>(cards_info_path);
+        myCardList = JsonUtility.FromJson<CardList>(cards_info.text);
     }
 
 }
