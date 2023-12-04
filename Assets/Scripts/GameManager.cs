@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -29,26 +30,35 @@ public class GameManager : MonoBehaviour
         _instance = this;
     }
 
+    public void refreshData()
+    {
+        AssetDatabase.Refresh();
+    }
     public void StartGame()
     {
+        refreshData();
         SceneManager.LoadScene("LevelsScene");
     }
 
     public void StartGamePrueba(int _i)
     {
+        refreshData();
         IndexController._index = _i;
         SceneManager.LoadScene("PruebaGameScene");
     }
     public void BackToMainMenu()
     {
+        refreshData();
         SceneManager.LoadScene("MainMenuScene");
     }
      public void Tarjetasmenu()
     {
+        refreshData();
         SceneManager.LoadScene("MenuTarjetas");
     }
     public void SettingsMenu()
     {
+        refreshData();
         SceneManager.LoadScene("SettingsScene");
     }
 
@@ -57,12 +67,6 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
     #endregion
-
-    void Start()
-    {
-    
-    }
-
 }
 
 

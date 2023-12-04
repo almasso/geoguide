@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &35896409
+--- !u!1 &62081238
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,37 +131,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 35896411}
-  - component: {fileID: 35896410}
+  - component: {fileID: 62081240}
+  - component: {fileID: 62081239}
+  - component: {fileID: 62081241}
+  - component: {fileID: 62081242}
   m_Layer: 0
-  m_Name: JSONWriter
+  m_Name: Save&Load
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &35896410
+--- !u!114 &62081239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35896409}
+  m_GameObject: {fileID: 62081238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07c98ee3bd29999429c70f5107191897, type: 3}
+  m_Script: {fileID: 11500000, guid: a708338ce1b8368438512201fefc234c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myLevelList:
+    nivel: []
   myLevel_Info_List:
-    name: 
-    intentos: 0
---- !u!4 &35896411
+    nivel_Info: []
+--- !u!4 &62081240
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35896409}
+  m_GameObject: {fileID: 62081238}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1027.6936, y: 622.07025, z: 1.6512451}
@@ -170,6 +173,43 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &62081241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62081238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c98ee3bd29999429c70f5107191897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myLevelList:
+    nivel: []
+  myLevel_Info_List:
+    nivel_Info: []
+  myLevel_writer:
+    name: '  Introductorio Europa'
+    intentos: 99
+--- !u!114 &62081242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62081238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31f56919ee97f941b58d29a05ba60e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myLevelList:
+    nivel: []
+  myLevel_Info_List:
+    nivel_Info: []
+  _name: 
+  _intentos: 0
 --- !u!1 &139595142
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,37 +463,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &702070159
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 702070161}
-  m_Layer: 0
-  m_Name: Info
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &702070161
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702070159}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1027.6936, y: 622.07025, z: 1.6512451}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &914408564
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +546,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 35896410}
+      - m_Target: {fileID: 62081241}
         m_TargetAssemblyTypeName: JSONWriter, Assembly-CSharp
         m_MethodName: outputJSON
         m_Mode: 1
@@ -705,68 +714,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1105826227
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1105826229}
-  - component: {fileID: 1105826230}
-  - component: {fileID: 1105826231}
-  m_Layer: 0
-  m_Name: JSONReader
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1105826229
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105826227}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1027.6936, y: 622.07025, z: 1.6512451}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1105826230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105826227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef2b68fb147823748a8973e96ede31b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level_Info_JSON: {fileID: 4900000, guid: 4fddda001e6318646b1c69d48407e892, type: 3}
-  myLevel_Info_List:
-    nivel_Info: []
---- !u!114 &1105826231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105826227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a31f56919ee97f941b58d29a05ba60e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _name: 
-  _intentos: 0
 --- !u!1 &1162422345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,6 +1378,4 @@ SceneRoots:
   - {fileID: 926936197}
   - {fileID: 1740133020}
   - {fileID: 329963113}
-  - {fileID: 35896411}
-  - {fileID: 1105826229}
-  - {fileID: 702070161}
+  - {fileID: 62081240}

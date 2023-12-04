@@ -5617,6 +5617,7 @@ GameObject:
   - component: {fileID: 1574482537}
   - component: {fileID: 1574482536}
   - component: {fileID: 1574482540}
+  - component: {fileID: 1574482541}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5726,6 +5727,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0e70244c3eea649b6aa3ddfe204b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1574482541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574482535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a708338ce1b8368438512201fefc234c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myLevelList:
+    nivel: []
+  myLevel_Info_List:
+    nivel_Info: []
 --- !u!1 &1706996919
 GameObject:
   m_ObjectHideFlags: 0
@@ -5810,7 +5827,6 @@ GameObject:
   - component: {fileID: 1756895851}
   - component: {fileID: 1756895853}
   - component: {fileID: 1756895852}
-  - component: {fileID: 1756895854}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -5882,23 +5898,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1756895854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756895850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ef749f2879ee0c439d57c2105f1bbcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelsJSON: {fileID: 4900000, guid: 6cc46eccc310b2e48a105a9eb6890a67, type: 3}
-  estrellaActivada: {fileID: 21300000, guid: 4a96e9202b254ee4484b633acd24e0ae, type: 3}
-  estrellaDesactivada: {fileID: 21300000, guid: 8ea59c5ac11d201439c134d0f57c3c04, type: 3}
-  myLevelList:
-    nivel: []
 --- !u!1 &1781014171
 GameObject:
   m_ObjectHideFlags: 0

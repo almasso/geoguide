@@ -1,0 +1,179 @@
+{
+"nivel" : [
+{
+"index": 0,
+"name": "  Introductorio Europa",
+"estrella1": true,
+"estrella2": false,
+"estrella3": false
+},
+{
+"index": 1,
+"name": "  Europa 1",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 2,
+"name": "  Europa 2",
+"estrella1": false,
+"estrella2": false,
+"estrella3": false
+},
+{
+"index": 3,
+"name": "  Europa 3",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 4,
+"name": "  Europa 4",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 5,
+"name": "  Introductorio America",
+"estrella1": false,
+"estrella2": false,
+"estrella3": false
+},
+{
+"index": 6,
+"name": "  America 1",
+"estrella1": false,
+"estrella2": false,
+"estrella3": false
+},
+{
+"index": 7,
+"name": "  America 2",
+"estrella1": false,
+"estrella2": false,
+"estrella3": false
+},
+{
+"index": 8,
+"name": "  America 3",
+"estrella1": false,
+"estrella2": false,
+"estrella3": false
+},
+{
+"index": 9,
+"name": "  America 4",
+"estrella1": false,
+"estrella2": false,
+"estrella3": false
+},
+{
+"index": 10,
+"name": "  Introductorio Asia",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 11,
+"name": "  Asia 1",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 12,
+"name": "  Asia 2",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 13,
+"name": "  Asia 3",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 14,
+"name": "  Asia 4",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 15,
+"name": "  Introductorio Africa",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 16,
+"name": "  Africa 1",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 17,
+"name": "  Africa 2",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 18,
+"name": "  Africa 3",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 19,
+"name": "  Africa 4",
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
+},
+{
+"index": 20,
+"name": "  Introductorio Oceania",
+"estrella1": false,
+"estrella2": false,
+"estrella3": false
+},
+{
+"index": 21,
+"name": "  Oceania 1",
+"estrella1": false,
+"estrella2": false,
+"estrella3": false
+},
+{
+"index": 22,
+"name": "  Oceania 2",
+"estrella1": false,
+"estrella2": false,
+"estrella3": false
+},
+{
+"index": 23,
+"name": "  Oceania 3",
+"estrella1": false,
+"estrella2": false,
+"estrella3": false
+},
+{
+"index": 24,
+"name": "  Oceania 4",
+"estrella1": false,
+"estrella2": false,
+"estrella3": false
+}
+]
+}

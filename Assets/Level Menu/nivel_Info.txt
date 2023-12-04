@@ -1,0 +1,104 @@
+{
+"nivel_Info" : [
+{
+"name":"  Introductorio Europa",
+"intentos":"0"
+},
+{
+"name":"  Europa 1",
+"intentos":"4"
+},
+{
+"name":"  Europa 2",
+"intentos":"4"
+},
+{
+"name":"  Europa 3",
+"intentos":"4"
+},
+{
+"name":"  Europa 4",
+"intentos":"4"
+},
+{
+"name":"  Introductorio America",
+"intentos":"4"
+},
+{
+"name":"  America 1",
+"intentos":"4"
+},
+{
+"name":"  America 2",
+"intentos":"4"
+},
+{
+"name":"  America 3",
+"intentos":"4"
+},
+{
+"name":"  America 4",
+"intentos":"4"
+},
+{
+"name":"  Introductorio Asia",
+"intentos":"4"
+},
+{
+"name":"  Asia 1",
+"intentos":"4"
+},
+{
+"name":"  Asia 2",
+"intentos":"4"
+},
+{
+"name":"  Asia 3",
+"intentos":"4"
+},
+{
+"name":"  Asia 4",
+"intentos":"4"
+},
+{
+"name":"  Introductorio Africa",
+"intentos":"4"
+},
+{
+"name":"  Africa 1",
+"intentos":"4"
+},
+{
+"name":"  Africa 2",
+"intentos":"4"
+},
+{
+"name":"  Africa 3",
+"intentos":"4"
+},
+{
+"name":"  Africa 4",
+"intentos":"4"
+},
+{
+"name":"  Introductorio Oceania",
+"intentos":"4"
+},
+{
+"name":"  Oceania 1",
+"intentos":"4"
+},
+{
+"name":"  Oceania 2",
+"intentos":"4"
+},
+{
+"name":"  Oceania 3",
+"intentos":"4"
+},
+{
+"name":"  Oceania 4",
+"intentos":"4"
+}
+]
+}
