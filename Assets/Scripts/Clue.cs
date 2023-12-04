@@ -16,6 +16,7 @@ public class Clue : MonoBehaviour
         _myTransform = transform;
         maxIzq = _myTransform.position.x;
         maxDer = _myTransform.position.x + 500;
+        _myTransform.position = new Vector3(maxDer, _myTransform.position.y, _myTransform.position.z);
     }
 
     public void MoveClue(int _dir)

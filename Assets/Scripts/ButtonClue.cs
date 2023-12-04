@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class ButtonClue : MonoBehaviour
 {
+    [SerializeField]
+    private float timeToActivate;
+    private float _elapsedTime;
     private Clue text;
     private Clue bckgrndText;
    [SerializeField]
@@ -12,31 +15,34 @@ public class ButtonClue : MonoBehaviour
     [SerializeField]
     public GameObject _myBackgorungText;
     public bool _enabled = false;
+    public bool active = false;
     private Button boton;
     private Image image;
     private void Start()
     {
         boton = gameObject.GetComponent<Button>();
         image = gameObject.GetComponent<Image>();
-        EnableButton(true);
-        text = _myText.GetComponent<Clue>();
+        boton.interactable = false;
+         text = _myText.GetComponent<Clue>();
         bckgrndText = _myBackgorungText.GetComponent<Clue>();
     }
-    public void EnableButton(bool active)
+    public void EnableButton()
     {
-        boton.interactable = active;
+        boton.interactable = true;
+        ShowClue();
+        _enabled = true;
     }
 
     public void ShowClue()
     {
-        text.MoveClue(1);
-        bckgrndText.MoveClue(1);
+        text.MoveClue(-1);
+        bckgrndText.MoveClue(-1);
     }
 
     public void HideClue()
     {
-        text.MoveClue(-1);
-        bckgrndText.MoveClue(-1);
+        text.MoveClue(1);
+        bckgrndText.MoveClue(1);
     }
   
     public void OnPressed()
@@ -45,5 +51,18 @@ public class ButtonClue : MonoBehaviour
         else ShowClue();
         _enabled = !_enabled;
         image.transform.Rotate(new Vector3(0, 0, 180));
+    }
+
+    void Update()
+    {
+        if (!active)
+        {
+            _elapsedTime += Time.deltaTime;
+            if (_elapsedTime >= timeToActivate)
+            {
+                active = true;
+                EnableButton();
+            }
+        }
     }
 }

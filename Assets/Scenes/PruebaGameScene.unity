@@ -192,6 +192,9 @@ MonoBehaviour:
     name: '  Introductorio Europa'
     intentos: 99
     cliente: 
+    pista1: 
+    pista2: 
+    pista3: 
 --- !u!1 &139595142
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,6 +421,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pista3
       objectReference: {fileID: 0}
+    - target: {fileID: 7152203808483118062, guid: 8496e5e91f68bd248a1a30d738d24f66, type: 3}
+      propertyPath: timeToActivate
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -512,7 +519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 329963113}
-  - component: {fileID: 329963112}
+  - component: {fileID: 329963114}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -520,18 +527,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &329963112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329963111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3229c5b0632d044a820787a5c1cef5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &329963113
 Transform:
   m_ObjectHideFlags: 0
@@ -547,6 +542,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &329963114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329963111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfd6d0629c3cd8478f6a5a94c3c3757, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &447937253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,6 +1276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pista2
       objectReference: {fileID: 0}
+    - target: {fileID: 7152203808483118062, guid: 8496e5e91f68bd248a1a30d738d24f66, type: 3}
+      propertyPath: timeToActivate
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1568,6 +1579,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1966164670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1966164672}
+  - component: {fileID: 1966164671}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1966164671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966164670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d012296868e56704181f3664658cd976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1966164672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966164670}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1694, y: 855, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &2055598650 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4166130871569360548, guid: 8496e5e91f68bd248a1a30d738d24f66, type: 3}
@@ -1798,6 +1853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pista1
       objectReference: {fileID: 0}
+    - target: {fileID: 7152203808483118062, guid: 8496e5e91f68bd248a1a30d738d24f66, type: 3}
+      propertyPath: timeToActivate
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1813,3 +1872,4 @@ SceneRoots:
   - {fileID: 1740133020}
   - {fileID: 329963113}
   - {fileID: 62081240}
+  - {fileID: 1966164672}
