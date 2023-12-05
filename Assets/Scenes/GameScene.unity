@@ -1595,9 +1595,9 @@ MonoBehaviour:
   _rotationNode: {fileID: 1136655263}
   _planeModel: {fileID: 1214255469}
   _trailNode: {fileID: 1571564197}
-  pitchSpeed: 0.02
-  yawSpeed: 0.5
-  diveSpeed: 0.1
+  pitchSpeed: 1
+  yawSpeed: 40
+  diveSpeed: 5
   maxRollTiltAngle: 30
   maxPitchTiltAngle: 30
   smoothRollTime: 1
@@ -1606,9 +1606,9 @@ MonoBehaviour:
   maximumHeight: 116
   minimumHeight: 102
   velocidadesAvion:
-    minima: 0.05
-    media: 0.1
-    maxima: 0.2
+    minima: 1
+    media: 3
+    maxima: 5
 --- !u!1 &992036129
 GameObject:
   m_ObjectHideFlags: 0
