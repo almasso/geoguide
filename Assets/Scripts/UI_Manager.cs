@@ -28,15 +28,15 @@ public class UI_Manager : MonoBehaviour
     }
     public void StartGame()
     {
-        GameManager.Instance.StartGame();
+        Scene_Manager.Instance.StartGame();
     }
     public void BackToMainMenu()
     {
-        GameManager.Instance.BackToMainMenu();
+        Scene_Manager.Instance.BackToMainMenu();
     }
     public void QuitGame()
     {
-        GameManager.Instance.QuitGame();
+        Scene_Manager.Instance.QuitGame();
     }
     //public void TarjetasMenu()
     //{
@@ -44,11 +44,11 @@ public class UI_Manager : MonoBehaviour
     //}
     public void SettingsMenu()
     {
-        GameManager.Instance.SettingsMenu();
+        Scene_Manager.Instance.SettingsMenu();
     }
     public void TarjetasMenu()
     {
-        GameManager.Instance.Tarjetasmenu();
+        Scene_Manager.Instance.Tarjetasmenu();
     }
     #endregion
 }

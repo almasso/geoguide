@@ -12,7 +12,7 @@ public class JSONWriter : Save_Load
     public void outputJSON()
     {
         myLevel_writer.name = myLevel_Info_List.nivel_Info[IndexController._index].name;
-        myLevel_writer.intentos = Random.Range(0, 4).ToString(); //luego cambiarlo
+        myLevel_writer.intentos = Random.Range(0, 3).ToString(); //luego cambiarlo
 
 
         string line = "";
@@ -23,7 +23,7 @@ public class JSONWriter : Save_Load
                 if (line.Contains(myLevel_writer.name))
                 {
                     line = "\"name\"" + ":" + "\"" + myLevel_writer.name + "\"" + "," + "\n" +
-                           "\"intentos\"" + ":" + "\"" + myLevel_writer.intentos + "\"";
+                           "\"intentos\"" + ":" + "\"" + myLevel_writer.intentos + "\"" + ",";
                     sbText.AppendLine(line);
                     line = reader.ReadLine();
                     changeLevelButton();
