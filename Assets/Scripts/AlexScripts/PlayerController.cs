@@ -34,19 +34,6 @@ public class PlayerController : MonoBehaviour
     private Transform _planeNodeTransform;
     private Transform _trailNodeTransform;
 
-    public bool isMinimumSpeed()
-    {
-        return velocidadObjetivo == velocidadesAvion.minima;
-    }
-    public bool isMediumSpeed()
-    {
-        return velocidadObjetivo == velocidadesAvion.media;
-    }
-    public bool isMaximumSpeed()
-    {
-        return velocidadObjetivo == velocidadesAvion.maxima;
-    }
-
     public float GetCurrentSpeed()
     {
         return pitchSpeed;
