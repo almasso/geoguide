@@ -9,6 +9,10 @@ public class JSONWriter : Save_Load
     public Nivel_Info myLevel_writer = new Nivel_Info();
     StringBuilder sbText = new StringBuilder();
     StringBuilder sbText2 = new StringBuilder();
+
+    public Card myCard_writer = new Card();
+    StringBuilder sbCard = new StringBuilder();
+
     public void outputJSON()
     {
         myLevel_writer.name = myLevel_Info_List.nivel_Info[IndexController._index].name;
@@ -36,6 +40,30 @@ public class JSONWriter : Save_Load
         }
         File.WriteAllText(level_Info_path_real, sbText.ToString());
     }
+
+    public void cardJSON(int cardIndex) // como conseguir card index(??)
+    {
+        string line = "";
+        using (var reader = new System.IO.StreamReader(cards_info_path))
+        {
+            while ((line = reader.ReadLine()) != null)
+            {
+                if (line.Contains("\"" + "index" + "\"" + ":" + " " + cardIndex + ","))
+                {
+                    sbCard.AppendLine(line);
+                    line = reader.ReadLine();
+                    line = "\"isActive\"" + ":" + " " + "true" + ",";
+                    sbCard.AppendLine(line);
+                }
+                else
+                {
+                    sbCard.AppendLine(line);
+                }
+            }
+        }
+        File.WriteAllText(cards_info_path, sbCard.ToString());
+    }
+
     private void changeLevelButton()
     {
         using (var reader = new System.IO.StreamReader(levels_path_real))

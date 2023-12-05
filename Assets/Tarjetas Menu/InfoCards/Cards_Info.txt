@@ -181,6 +181,32 @@
 			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/noruega.png",
 			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/noruega.png",
 			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+		},
+		{
+			"index": 14,
+			"isActive": false,
+			"name": "Suecia",
+			"capital": "Estocolmo",
+			"languaje": "Sueco",
+			"currency": "Corona Sueca",
+			"climate": "Subpolar al norte, y temperaturas suaves en el resto del país",
+			"info": "País del norte europeo, fronterizo con Noruega, Finlandia y Dinamarca. Son lugares famosos el Palacio Real de Estocolmo y las Piedras de Ale",
+			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/suecia.png",
+			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/suecia.png",
+			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+		},
+		{
+			"index": 15,
+			"isActive": false,
+			"name": "Finlandia",
+			"capital": "Helsinki",
+			"languaje": "Finés y Sueco",
+			"currency": "Euro",
+			"climate": "Subpolar, de inviernos húmedos y fríos",
+			"info": "País del norte europeo, fronterizo con Noruega, Suecia y Rusia. Son lugares famosos la Aldea de Santa Claus y el Castillo de Olavinlinna",
+			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/finlandia.png",
+			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/finlandia.png",
+			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
 		}
 
 	]
