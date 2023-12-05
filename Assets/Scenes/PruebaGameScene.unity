@@ -195,6 +195,7 @@ MonoBehaviour:
     pista1: 
     pista2: 
     pista3: 
+    objetivo: 
 --- !u!1 &139595142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1871,5 +1872,5 @@ SceneRoots:
   - {fileID: 926936197}
   - {fileID: 1740133020}
   - {fileID: 329963113}
-  - {fileID: 62081240}
   - {fileID: 1966164672}
+  - {fileID: 62081240}

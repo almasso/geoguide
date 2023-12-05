@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     private float _firstClue = 5;
     private float _secondClue = 10;
     private float _thirdClue = 15;
-    private bool inGame = false;
     private bool firstClue = false;
     private bool secondClue = false;
     private bool thirdClue = false;

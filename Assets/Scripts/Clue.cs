@@ -32,7 +32,7 @@ public class Clue : MonoBehaviour
             if ((dir == -1 &&_myTransform.position.x <= maxIzq) || (dir == 1 && _myTransform.position.x >= maxDer)) { 
                 move = false;
             }
-            else _myTransform.Translate(new Vector3(dir*3, 0, 0));
+            else _myTransform.Translate(new Vector3(dir*5, 0, 0));
         }
     }
 }

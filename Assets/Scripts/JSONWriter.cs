@@ -12,7 +12,7 @@ public class JSONWriter : Save_Load
     public void outputJSON()
     {
         myLevel_writer.name = myLevel_Info_List.nivel_Info[IndexController._index].name;
-        myLevel_writer.intentos = Random.Range(0, 4).ToString(); //luego cambiarlo
+        myLevel_writer.intentos = Random.Range(0, 3).ToString(); //luego cambiarlo
 
 
         string line = "";

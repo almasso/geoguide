@@ -4,10 +4,10 @@
 "name":"  Introductorio Europa",
 "intentos":"0",
 "cliente": "Assets/Clients/client1.png",
-"pista1": "Vete a dormir ya",
-"pista2": "Deja la universidad",
-"pista3": "Deshidrata unas salchichas",
-"objetivo": "ME QUIERO MORIR"
+"pista1": "Pista 1 Nivel 1",
+"pista2": "Pista 2 Nivel 1",
+"pista3": "Pista 3 Nivel 1",
+"objetivo": "Objetivo del nivel"
 },
 {
 "name":"  Europa 1",
@@ -20,7 +20,7 @@
 },
 {
 "name":"  Europa 2",
-"intentos":"0",
+"intentos":"4",
 "cliente": "Assets/Clients/client3.png",
 "pista1": "Pista 1 Nivel 3",
 "pista2": "Pista 2 Nivel 3",

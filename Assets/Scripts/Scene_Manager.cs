@@ -27,16 +27,12 @@ public class Scene_Manager : MonoBehaviour
     #region methods
     private void Awake()
     {
-        if (Scene_Manager._instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
         _instance = this;
-        DontDestroyOnLoad(gameObject);
     }
-
+    private void Start()
+    {
+        refreshData();
+    }
     public void refreshData()
     {
         AssetDatabase.Refresh();
@@ -51,7 +47,7 @@ public class Scene_Manager : MonoBehaviour
     {
         refreshData();
         IndexController._index = _i;
-        SceneManager.LoadScene("PruebaGameScene");
+        SceneManager.LoadScene("GameScene");
     }
     public void BackToMainMenu()
     {
