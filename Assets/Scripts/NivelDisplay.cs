@@ -19,7 +19,7 @@ public class NivelDisplay : Save_Load
         estrella_3 = gameObject.transform.GetChild(2).gameObject.GetComponent<RawImage>();
         boton = gameObject.transform.GetChild(3).gameObject.GetComponent<Button>();
         nivel_Titulo = boton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-        boton.onClick.AddListener(delegate () { GameManager.Instance.StartGamePrueba(index); });
+        boton.onClick.AddListener(delegate () { Scene_Manager.Instance.StartGamePrueba(index); });
        
         if (myLevelList.nivel[index].estrella1) estrella_1.texture = estrellaActivada.texture;
         else estrella_1.texture = estrellaDesactivada.texture;

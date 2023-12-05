@@ -78,6 +78,11 @@ public class Save_Load : MonoBehaviour
         {
             public string name;
             public string intentos;
+            public string cliente;
+            public string pista1;
+            public string pista2;
+            public string pista3;
+            public string objetivo;
         }
         [Serializable]
         public class Nivel_Info_List
