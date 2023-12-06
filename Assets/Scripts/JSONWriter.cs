@@ -41,14 +41,14 @@ public class JSONWriter : Save_Load
         File.WriteAllText(level_Info_path_real, sbText.ToString());
     }
 
-    public void cardJSON(int cardIndex) // como conseguir card index(??)
+    public void cardJSON(string countryName)
     {
         string line = "";
         using (var reader = new System.IO.StreamReader(cards_info_path))
         {
             while ((line = reader.ReadLine()) != null)
             {
-                if (line.Contains("\"" + "index" + "\"" + ":" + " " + cardIndex + ","))
+                if (line.Contains("\"" + countryName + "\"" + ","))
                 {
                     sbCard.AppendLine(line);
                     line = reader.ReadLine();

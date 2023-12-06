@@ -16,6 +16,8 @@ public class Save_Load : MonoBehaviour
     protected string levels_path_real = "Assets/Level Menu/Levels.txt";
     //cartas
     protected string cards_info_path = "Assets/Tarjetas Menu/InfoCards/Cards_Info.txt";
+    //introLevels
+    protected string introLevels_path = "Assets/Introductory Game/IntroductoryLevels.txt";
     #endregion
 
     #region UI_ELEMENTS
@@ -52,8 +54,8 @@ public class Save_Load : MonoBehaviour
         public class Card
         {
             public int index;
-            public bool isActive;
             public string name;
+            public bool isActive;
             public string capital;
             public string languaje;
             public string currency;
@@ -70,6 +72,27 @@ public class Save_Load : MonoBehaviour
             public Card[] card;
         }
         public CardList myCardList = new CardList();
+    #endregion
+
+    #region INTROLEVELS
+        [Serializable]
+        public class IntroLevel
+        {
+            public string Continent;
+            public bool Country1;
+            public string Objective1;
+            public bool Country2;
+            public string Objective2;
+            public bool Country3;
+            public string Objective3;
+        }
+
+        [Serializable]
+        public class IntroLevelList
+        {
+            public IntroLevel[] IntroLevel;
+        }
+        public IntroLevelList myIntroLevelList = new IntroLevelList();
     #endregion
 
     #region LISTA_NIVELES
@@ -108,6 +131,9 @@ public class Save_Load : MonoBehaviour
         cartaDesactivada = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Tarjetas Menu/InfoCards/Tarjeta Pais Bloqueada.png");
         TextAsset cards_info = AssetDatabase.LoadAssetAtPath<TextAsset>(cards_info_path);
         myCardList = JsonUtility.FromJson<CardList>(cards_info.text);
+        // introLevels
+        TextAsset introLevels_info = AssetDatabase.LoadAssetAtPath<TextAsset>(introLevels_path);
+        myIntroLevelList = JsonUtility.FromJson<IntroLevelList>(introLevels_info.text);
     }
 
 }

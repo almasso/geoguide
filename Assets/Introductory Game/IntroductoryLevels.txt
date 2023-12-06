@@ -1,0 +1,54 @@
+{
+	"IntroLevel" : [
+		{
+			"Continent": "Europa",
+			"Country1" : "Francia",
+			"Objective1" : "Como primera misión, intenta llegar a Francia",
+			"Country2" : "Alemania",
+			"Objective2" : "Ahora viajaremos hasta Alemania",
+			"Country3" : "Reino Unido",
+			"Objective3" : "Por último, tendrás que llevarnos a Reino Unido"
+			
+		},
+		{
+			"Continent": "América",
+			"Country1" : "Estados Unidos",
+			"Objective1" : "Primero vamos a Estados Unidos",
+			"Country2" : "Brasil",
+			"Objective2" : "Vamos a ver si puedes llegar a Brasil",
+			"Country3" : "Argentina",
+			"Objective3" : "Y para terminar, Argentina"
+			
+		},
+		{
+			"Continent": "Asia",
+			"Country1" : "Rusia",
+			"Objective1" : "Para empezar, vamos hasta Rusia",
+			"Country2" : "China",
+			"Objective2" : "Ahora pasaremos por China",
+			"Country3" : "India",
+			"Objective3" : "Por último, visitemos la India"
+			
+		},
+		{
+			"Continent": "África",
+			"Country1" : "Algeria",
+			"Objective1" : "Primero llévanos a Algeria",
+			"Country2" : "Egipto",
+			"Objective2" : "Ahora intenta llegar a Egipto",
+			"Country3" : "Sudáfrica",
+			"Objective3" : "Para terminar, visitemos Sudáfrica"
+			
+		},
+		{
+			"Continent": "Oceanía",
+			"Country1" : "Australia",
+			"Objective1" : "Empezemos llendo hasta Australia",
+			"Country2" : "Indonesia",
+			"Objective2" : "Ahora vayamos a Indonesia",
+			"Country3" : "Nueva Zelanda",
+			"Objective3" : "Como última misión, llévanos a Nueva Zelanda"
+			
+		}
+	]
+}
