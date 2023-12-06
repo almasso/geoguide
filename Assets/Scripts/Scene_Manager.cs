@@ -7,13 +7,7 @@ using UnityEngine.SceneManagement;
 public class Scene_Manager : MonoBehaviour
 {
     #region references
-    /// <summary>
-    /// Unique GameManager instance (Singleton Pattern).
-    /// </summary>
     static private Scene_Manager _instance;
-    /// <summary>
-    /// Public accesor for GameManager instance.
-    /// </summary>
     static public Scene_Manager Instance
     {
         get
@@ -21,7 +15,6 @@ public class Scene_Manager : MonoBehaviour
             return _instance;
         }
     }
-
     #endregion
 
     #region methods
@@ -47,7 +40,7 @@ public class Scene_Manager : MonoBehaviour
     {
         refreshData();
         IndexController._index = _i;
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("PruebaGameScene");
     }
     public void BackToMainMenu()
     {

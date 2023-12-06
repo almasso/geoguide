@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pista 1 Texto explicativo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 80784ae17bd34b9488e52aec6a829c35, type: 2}
+  m_sharedMaterial: {fileID: -8092046267662783148, guid: 80784ae17bd34b9488e52aec6a829c35, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -244,7 +244,6 @@ GameObject:
   - component: {fileID: 4407143454148047038}
   - component: {fileID: 2003351748387114736}
   - component: {fileID: 9013817894140897218}
-  - component: {fileID: 7152203808483118062}
   m_Layer: 5
   m_Name: Boton
   m_TagString: Untagged
@@ -353,7 +352,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7152203808483118062}
+      - m_Target: {fileID: 674242037853828739}
         m_TargetAssemblyTypeName: ButtonClue, Assembly-CSharp
         m_MethodName: OnPressed
         m_Mode: 1
@@ -365,21 +364,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7152203808483118062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6447835804698302146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f630fe4a206b2c46afb4a963eb30278, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _myText: {fileID: 2398421688558855968}
-  _myBackgorungText: {fileID: 3706916844824998922}
-  _enabled: 0
 --- !u!1 &6687653196821265210
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4166130871569360548}
+  - component: {fileID: 674242037853828739}
   m_Layer: 5
   m_Name: Pista
   m_TagString: Untagged
@@ -418,3 +403,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &674242037853828739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6687653196821265210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f630fe4a206b2c46afb4a963eb30278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToActivate: 0
+  _myText: {fileID: 2398421688558855968}
+  _myBackgorungText: {fileID: 3706916844824998922}
+  _enabled: 0
+  active: 0

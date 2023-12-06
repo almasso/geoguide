@@ -20,11 +20,11 @@ public class ButtonClue : MonoBehaviour
     private Image image;
     private void Start()
     {
-        boton = gameObject.GetComponent<Button>();
-        image = gameObject.GetComponent<Image>();
+        boton = gameObject.transform.GetChild(2).gameObject.GetComponent<Button>();
+        image = gameObject.transform.GetChild(2).gameObject.GetComponent<Image>();
         boton.interactable = false;
-         text = _myText.GetComponent<Clue>();
-        bckgrndText = _myBackgorungText.GetComponent<Clue>();
+        text = gameObject.transform.GetChild(1).gameObject.GetComponent<Clue>();
+        bckgrndText = gameObject.transform.GetChild(0).gameObject.GetComponent<Clue>();
     }
     public void EnableButton()
     {
@@ -32,17 +32,24 @@ public class ButtonClue : MonoBehaviour
         ShowClue();
         _enabled = true;
     }
-
+    public void DesableButton()
+    {
+        boton.interactable = false;
+        HideClue();
+         _enabled = false;
+    }
     public void ShowClue()
     {
         text.MoveClue(-1);
         bckgrndText.MoveClue(-1);
+        image.transform.Rotate(new Vector3(0, 0, 180));
     }
 
     public void HideClue()
     {
         text.MoveClue(1);
         bckgrndText.MoveClue(1);
+        image.transform.rotation = Quaternion.Euler(0, 0, 0);
     }
   
     public void OnPressed()
@@ -50,9 +57,15 @@ public class ButtonClue : MonoBehaviour
         if (_enabled) HideClue();
         else ShowClue();
         _enabled = !_enabled;
-        image.transform.Rotate(new Vector3(0, 0, 180));
+        
     }
 
+    public void hasChangedClient()
+    {
+        DesableButton();
+        _elapsedTime = 0;
+        active = false;
+    }
     void Update()
     {
         if (!active)

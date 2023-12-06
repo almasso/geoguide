@@ -5,13 +5,9 @@ using UnityEngine;
 public class UI_Manager : MonoBehaviour
 {
     #region references
-    /// <summary>
-    /// Unique GameManager instance (Singleton Pattern).
-    /// </summary>
+    [SerializeField] private GameObject _winHUD;
+    [SerializeField] private GameObject _looseHUD;
     static private UI_Manager _instance;
-    /// <summary>
-    /// Public accesor for GameManager instance.
-    /// </summary>
     static public UI_Manager Instance
     {
         get
@@ -25,6 +21,11 @@ public class UI_Manager : MonoBehaviour
     private void Awake()
     {
         _instance = this;
+    }
+    public void StartGameHUD()
+    {
+        _winHUD.SetActive(false);
+        _looseHUD.SetActive(false);
     }
     public void StartGame()
     {
@@ -49,6 +50,11 @@ public class UI_Manager : MonoBehaviour
     public void TarjetasMenu()
     {
         Scene_Manager.Instance.Tarjetasmenu();
+    }
+    public void EndGameHUD(bool win)
+    {
+        if (win) _winHUD.SetActive(true);
+        else _looseHUD.SetActive(true);
     }
     #endregion
 }
