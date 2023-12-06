@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -556,7 +556,7 @@ Transform:
   m_GameObject: {fileID: 349605298}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1528, y: 0.321, z: -0.1908}
+  m_LocalPosition: {x: 0.873, y: 0.321, z: -0.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -604,7 +604,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 3
+  m_Time: 2
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -701,7 +701,7 @@ Transform:
   m_GameObject: {fileID: 402928474}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1578, y: 0.3232, z: -0.1946}
+  m_LocalPosition: {x: -0.82, y: 0.3232, z: -0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -749,7 +749,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 3
+  m_Time: 2
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -1551,7 +1551,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 641888324}
-  - {fileID: 1571564198}
   - {fileID: 1214255475}
   - {fileID: 634506813}
   - {fileID: 1949078035}
@@ -1594,14 +1593,13 @@ MonoBehaviour:
   _planetToOrbit: {fileID: 427580964}
   _rotationNode: {fileID: 1136655263}
   _planeModel: {fileID: 1214255469}
-  _trailNode: {fileID: 1571564197}
   pitchSpeed: 1
   yawSpeed: 40
   diveSpeed: 5
-  maxRollTiltAngle: 30
-  maxPitchTiltAngle: 30
-  smoothRollTime: 1
-  smoothPitchTime: 1
+  maxRollTiltAngle: 40
+  maxPitchTiltAngle: 50
+  pitchLerpSpeed: 0
+  rollLerpSpeed: 0
   _orbitOffset: {x: 0, y: 10, z: 0}
   maximumHeight: 116
   minimumHeight: 102
@@ -2320,7 +2318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5525295603368428666, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5950469200645188493, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
       propertyPath: m_UseGravity
@@ -2549,13 +2547,13 @@ Transform:
   m_GameObject: {fileID: 1571564197}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.050000083, z: -0.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 402928475}
   - {fileID: 349605299}
-  m_Father: {fileID: 969922380}
+  m_Father: {fileID: 1214255475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1679007893
 GameObject:
@@ -2662,7 +2660,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5180858929285816000, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1571564198}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6d4109da7a8fb14598e335baed19ec6, type: 3}
 --- !u!1 &1749735833

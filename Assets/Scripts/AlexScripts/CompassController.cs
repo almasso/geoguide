@@ -27,7 +27,7 @@ public class CompassController : MonoBehaviour
 
         float angle = Vector3.SignedAngle(northPoleToPlaneCenter, planeCenterToPlaneNose, Vector3.forward);
 
-        Debug.Log(angle);
+        //Debug.Log(angle);
         compassTransform.eulerAngles = new Vector3(0, 0, -angle);
     }
 }

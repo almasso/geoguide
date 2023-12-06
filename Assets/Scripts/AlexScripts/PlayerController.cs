@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject _planetToOrbit;
     [SerializeField] private GameObject _rotationNode;
     [SerializeField] private GameObject _planeModel;
-    [SerializeField] private GameObject _trailNode;
     [Header("Ajustes del avion")]
     [SerializeField] private float pitchSpeed = 0.01f;
     [SerializeField] private float yawSpeed = 0.5f;
@@ -32,7 +31,6 @@ public class PlayerController : MonoBehaviour
     private Transform _planeTransform;
     private Transform _playerTransform;
     private Transform _planeNodeTransform;
-    private Transform _trailNodeTransform;
 
     public bool isMinimumSpeed()
     {
@@ -57,7 +55,6 @@ public class PlayerController : MonoBehaviour
     {
         _playerTransform = this.GetComponent<Transform>();
         _planeTransform = this._planeModel.GetComponent<Transform>();
-        _trailNodeTransform = this._trailNode.GetComponent<Transform>();
         _playerTransform.position = _planetToOrbit.GetComponent<Transform>().position + new Vector3(0, (minimumHeight + maximumHeight)/2, 0) + _orbitOffset;
         _planeNodeTransform = _rotationNode.GetComponent<Transform>();
         velocidadObjetivo = velocidadesAvion.minima;
@@ -101,7 +98,6 @@ public class PlayerController : MonoBehaviour
 
         Vector3 rot = new Vector3(pitchAngle, 0, -rollAngle);
         _planeTransform.localEulerAngles = rot;
-        _trailNodeTransform.localEulerAngles = rot;
     }
 
     // Update is called once per frame
