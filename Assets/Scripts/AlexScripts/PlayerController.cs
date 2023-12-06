@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
         else pitchAngle = Mathf.Lerp(pitchAngle, 0, 7 * Time.fixedDeltaTime);
 
         float targetRoll = Input.GetAxisRaw("Horizontal") * maxRollTiltAngle;
-        rollAngle = Mathf.Lerp(rollAngle, targetRoll, Time.fixedDeltaTime);
+        rollAngle = Mathf.Lerp(rollAngle, targetRoll, 7 * Time.fixedDeltaTime);
 
         if (Mathf.Abs(pitchSpeed - velocidadObjetivo) >= 0.005) pitchSpeed = Mathf.Lerp(pitchSpeed, velocidadObjetivo, 2 * Time.fixedDeltaTime);
         else pitchSpeed = velocidadObjetivo;

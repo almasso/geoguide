@@ -32,9 +32,9 @@ public class CameraController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        _mainCamera.GetComponent<Transform>().position = Vector3.Lerp(_mainCamera.GetComponent<Transform>().position, _playerTransform.position + _playerTransform.forward * _ajustes.offset.z + _playerTransform.position * _ajustes.offset.y, 7 * Time.deltaTime);
+        _mainCamera.GetComponent<Transform>().position = Vector3.Lerp(_mainCamera.GetComponent<Transform>().position, _playerTransform.position + _playerTransform.forward * _ajustes.offset.z + _playerTransform.position * _ajustes.offset.y, 7 * Time.fixedDeltaTime);
 
         Vector3 lookTarget = _playerTransform.position;
         lookTarget += _playerTransform.right * _ajustes.lookAtOffset.x;
