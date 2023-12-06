@@ -6,28 +6,27 @@ using UnityEngine.UI;
 public class CompassController : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private GameObject _planeNose;
     [SerializeField] private GameObject _northPole;
-    [SerializeField] private GameObject _planeCenter;
+    [SerializeField] private GameObject _southPole;
+    [SerializeField] private GameObject _planeNode;
+    [SerializeField] private GameObject _planeModel;
 
-    private Transform noseTransform, NpoleTransform, centerTransform, compassTransform;
+    private Transform NpoleTransform, SpoleTransform, compassTransform, planeNodeTransform, planeModelTransform;
     void Start()
     {
-        noseTransform = _planeNose.transform;
         NpoleTransform = _northPole.transform;
-        centerTransform = _planeCenter.transform;
+        SpoleTransform = _southPole.transform;
         compassTransform = this.transform;
+        planeNodeTransform = _planeNode.transform;
+        planeModelTransform = _planeModel.transform;
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        Vector3 northPoleToPlaneCenter = (NpoleTransform.position - centerTransform.position).normalized;
-        Vector3 planeCenterToPlaneNose = (centerTransform.position - noseTransform.position).normalized;
+        Vector3 planeForward = planeModelTransform.forward;
+        Vector3 northDirection = Quaternion.Euler(-90, 0, 0) * Vector3.forward;
 
-        float angle = Vector3.SignedAngle(northPoleToPlaneCenter, planeCenterToPlaneNose, Vector3.forward);
-
-        //Debug.Log(angle);
-        compassTransform.eulerAngles = new Vector3(0, 0, -angle);
+        float angle = Vector3.SignedAngle(northDirection, planeForward, Vector3.up);
+        compassTransform.localEulerAngles = new Vector3(0, 0, angle);
     }
 }
