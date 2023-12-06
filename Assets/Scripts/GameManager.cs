@@ -6,47 +6,58 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    #region parameters
-    private float _elapsedTime;
-    private float _firstClue = 5;
-    private float _secondClue = 10;
-    private float _thirdClue = 15;
-    private bool firstClue = false;
-    private bool secondClue = false;
-    private bool thirdClue = false;
-
-    [SerializeField]
-    private ButtonClue[] buttonList;
+    #region references
+    static private GameManager _instance;
+    static public GameManager Instance
+    {
+        get
+        {
+            return _instance;
+        }
+    }
     #endregion
 
     #region methods
+    private void Awake()
+    {
+        _instance = this;
+    }
+    [SerializeField]
+    private GameObject _gameObj;
+    private GameDisplay _game;
+
+    [SerializeField]
+    private GameObject[] _ClueObj;
+
+    [SerializeField]
+    private GameObject _HandObj;
+    private HandWave _hand;
+    
+    [SerializeField]
+    public int intentos = 0;
     void Start()
     {
-        for (int i = 0; i < buttonList.Length; ++i) buttonList[i] = gameObject.GetComponent<ButtonClue>();
+        _game = _gameObj.GetComponent<GameDisplay>();
+        _hand = _HandObj.GetComponent<HandWave>();
+        UI_Manager.Instance.StartGameHUD();
     }
 
-    void Update()
+    public void ChangeClient()
     {
-        _elapsedTime += Time.deltaTime;
-        if (_elapsedTime >= _firstClue && !firstClue)
+        if (_game.HasMoreClients())
         {
-            Debug.Log("Primera Pista");
-            firstClue = true;
-            buttonList[0].EnableButton();
+            _game.nextClient();
+            for (int i = 0; i < 3; ++i) _ClueObj[i].GetComponent<ButtonClue>().hasChangedClient();
+            _hand.InstanciateHand();
         }
-        else if (_elapsedTime >= _secondClue && !secondClue)
+        else
         {
-            Debug.Log("Segunda Pista");
-            secondClue = true;
-            buttonList[1].EnableButton();
+            UI_Manager.Instance.EndGameHUD(intentos <= 3);
         }
-        else if (_elapsedTime >= _thirdClue && !thirdClue)
-        {
-            Debug.Log("Tercera Pista");
-            thirdClue = true;
-            buttonList[2].EnableButton();
-        }
+
     }
+
+  
     #endregion
 }
 

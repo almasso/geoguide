@@ -1,0 +1,148 @@
+{
+"nivel_Info" : [
+{
+"name":"  Introductorio Europa",
+"intentos":"0",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Europa 1",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Europa 2",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Europa 3",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Europa 4",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Introductorio America",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  America 1",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  America 2",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  America 3",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  America 4",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Introductorio Asia",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Asia 1",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Asia 2",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false},
+{
+"name":"  Asia 3",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false},
+{
+"name":"  Asia 4",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Introductorio Africa",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false},
+{
+"name":"  Africa 1",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Africa 2",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false},
+{
+"name":"  Africa 3",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false},
+{
+"name":"  Africa 4",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Introductorio Oceania",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false},
+{
+"name":"  Oceania 1",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Oceania 2",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Oceania 3",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+},
+{
+"name":"  Oceania 4",
+"intentos":"4",
+"clientesTotales" : 1,
+"imprevistos" : false
+}
+]
+}
