@@ -17,8 +17,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float diveSpeed = 0.01f;
     [SerializeField] private float maxRollTiltAngle;
     [SerializeField] private float maxPitchTiltAngle;
-    [SerializeField] private float smoothRollTime = 0.25f;
-    [SerializeField] private float smoothPitchTime = 0.25f;
+    [SerializeField] private float pitchLerpSpeed;
+    [SerializeField] private float rollLerpSpeed;
     [SerializeField] private Vector3 _orbitOffset;
     [SerializeField] private float maximumHeight = 820;
     [SerializeField] private float minimumHeight = 700;
@@ -64,55 +64,53 @@ public class PlayerController : MonoBehaviour
         _canTiltDown = _canTiltUp = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float targetPitch = Input.GetAxisRaw("Vertical") * maxPitchTiltAngle;
-        //pitchAngle = Mathf.SmoothDampAngle(pitchAngle, -targetPitch, ref pitchSmoothV, smoothPitchTime);
-        if(targetPitch < 0 && _canTiltDown || targetPitch > 0 && _canTiltUp)
-        {
-            pitchAngle = Mathf.Lerp(pitchAngle, -targetPitch, 7 * Time.deltaTime);
-        }
-        else
-        {
-            pitchAngle = Mathf.Lerp(pitchAngle, 0, 7 * Time.deltaTime);
-        }
+        if (targetPitch < 0 && _canTiltDown || targetPitch > 0 && _canTiltUp) pitchAngle = Mathf.Lerp(pitchAngle, -targetPitch, 7 * Time.fixedDeltaTime);
+        else pitchAngle = Mathf.Lerp(pitchAngle, 0, 7 * Time.fixedDeltaTime);
 
         float targetRoll = Input.GetAxisRaw("Horizontal") * maxRollTiltAngle;
-        //rollAngle = Mathf.SmoothDampAngle(rollAngle, targetRoll, ref rollSmoothV, smoothRollTime);
-        rollAngle = Mathf.Lerp(rollAngle, targetRoll, 7 * Time.deltaTime);
+        rollAngle = Mathf.Lerp(rollAngle, targetRoll, Time.fixedDeltaTime);
 
-        // Input para el cambio de velocidad
-        if (Input.GetKeyDown(KeyCode.Alpha1)) velocidadObjetivo = velocidadesAvion.minima;
-        else if (Input.GetKeyDown(KeyCode.Alpha2)) velocidadObjetivo = velocidadesAvion.media;
-        else if (Input.GetKeyDown(KeyCode.Alpha3)) velocidadObjetivo = velocidadesAvion.maxima;
-
-        if (Mathf.Abs(pitchSpeed - velocidadObjetivo) >= 0.005) pitchSpeed = Mathf.Lerp(pitchSpeed, velocidadObjetivo, 2 * Time.deltaTime);
+        if (Mathf.Abs(pitchSpeed - velocidadObjetivo) >= 0.005) pitchSpeed = Mathf.Lerp(pitchSpeed, velocidadObjetivo, 2 * Time.fixedDeltaTime);
         else pitchSpeed = velocidadObjetivo;
 
-        _playerTransform.localPosition += (new Vector3(0, Input.GetAxisRaw("Vertical") * diveSpeed, 0) * Time.deltaTime);
+        _playerTransform.localPosition += (new Vector3(0, Input.GetAxisRaw("Vertical") * diveSpeed, 0) * Time.fixedDeltaTime);
 
-        if(_playerTransform.localPosition.y >= maximumHeight) _playerTransform.localPosition = new Vector3(0, Mathf.Abs(maximumHeight), 0);
-        else if(_playerTransform.localPosition.y <= minimumHeight) _playerTransform.localPosition = new Vector3(0, Mathf.Abs(minimumHeight), 0);
+        if (_playerTransform.localPosition.y >= maximumHeight) _playerTransform.localPosition = new Vector3(0, Mathf.Abs(maximumHeight), 0);
+        else if (_playerTransform.localPosition.y <= minimumHeight) _playerTransform.localPosition = new Vector3(0, Mathf.Abs(minimumHeight), 0);
 
-        if (_playerTransform.localPosition.y >= maximumHeight - 0.05f){ 
+        if (_playerTransform.localPosition.y >= maximumHeight - 0.05f)
+        {
             _canTiltUp = false;
             _canTiltDown = true;
         }
-        else if (_playerTransform.localPosition.y <= minimumHeight + 0.05f) {
+        else if (_playerTransform.localPosition.y <= minimumHeight + 0.05f)
+        {
             _canTiltUp = true;
             _canTiltDown = false;
         }
-        else {
+        else
+        {
             _canTiltDown = true;
             _canTiltUp = true;
         }
 
-        _planeNodeTransform.Rotate(new Vector3(pitchSpeed, yawSpeed * Input.GetAxisRaw("Horizontal"), 0) * Time.deltaTime);
+        _planeNodeTransform.Rotate(new Vector3(pitchSpeed, yawSpeed * Input.GetAxisRaw("Horizontal"), 0) * Time.fixedDeltaTime);
 
         Vector3 rot = new Vector3(pitchAngle, 0, -rollAngle);
         _planeTransform.localEulerAngles = rot;
         _trailNodeTransform.localEulerAngles = rot;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // Input para el cambio de velocidad
+        if (Input.GetKeyDown(KeyCode.Alpha1)) velocidadObjetivo = velocidadesAvion.minima;
+        else if (Input.GetKeyDown(KeyCode.Alpha2)) velocidadObjetivo = velocidadesAvion.media;
+        else if (Input.GetKeyDown(KeyCode.Alpha3)) velocidadObjetivo = velocidadesAvion.maxima;
     }
 
     [System.Serializable]
