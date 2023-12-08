@@ -13,6 +13,10 @@ public class PlaneColliderCheck : MonoBehaviour
         _apMan = _apManGO.GetComponent<AirportManager>();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        _apMan.Aterrizar(other.gameObject);
+    }
     private void OnTriggerStay(Collider other)
     {
         _apMan.Aterrizar(other.gameObject);
