@@ -390,6 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e39354212229f645abf11c7fc1302fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objCountry: "Espa\xF1a"
   airports:
     _serializedList:
     - Key: {fileID: 1488647869}

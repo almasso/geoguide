@@ -7,7 +7,8 @@
 "pista1": "Pista 1 Nivel 1",
 "pista2": "Pista 2 Nivel 1",
 "pista3": "Pista 3 Nivel 1",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Portugal"]
 },
 {
 "name":"  Europa 1",
@@ -16,7 +17,8 @@
 "pista1": "Pista 1 Nivel 2",
 "pista2": "Pista 2 Nivel 2",
 "pista3": "Pista 3 Nivel 2",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Francia"]
 },
 {
 "name":"  Europa 2",
@@ -26,6 +28,7 @@
 "pista2": "Pista 2 Nivel 3",
 "pista3": "Pista 3 Nivel 3",
 "objetivo": "Objetivo del nivel"
+"pais": ["Reino Unido"]
 },
 {
 "name":"  Europa 3",
@@ -34,7 +37,8 @@
 "pista1": "Pista 1 Nivel 4",
 "pista2": "Pista 2 Nivel 4",
 "pista3": "Pista 3 Nivel 4",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  Europa 4",
@@ -43,7 +47,8 @@
 "pista1": "Pista 1 Nivel 5",
 "pista2": "Pista 2 Nivel 5",
 "pista3": "Pista 3 Nivel 5",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  Introductorio America",
@@ -52,7 +57,8 @@
 "pista1": "Pista 1 Nivel 6",
 "pista2": "Pista 2 Nivel 6",
 "pista3": "Pista 3 Nivel 6",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  America 1",
@@ -61,7 +67,8 @@
 "pista1": "Pista 1 Nivel 7",
 "pista2": "Pista 2 Nivel 7",
 "pista3": "Pista 3 Nivel 7",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  America 2",
@@ -70,7 +77,8 @@
 "pista1": "Pista 1 Nivel 8",
 "pista2": "Pista 2 Nivel 8",
 "pista3": "Pista 3 Nivel 8",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  America 3",
@@ -79,7 +87,8 @@
 "pista1": "Pista 1 Nivel 9",
 "pista2": "Pista 2 Nivel 9",
 "pista3": "Pista 3 Nivel 9",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  America 4",
@@ -88,7 +97,8 @@
 "pista1": "Pista 1 Nivel 10",
 "pista2": "Pista 2 Nivel 10",
 "pista3": "Pista 3 Nivel 10",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  Introductorio Asia",
@@ -97,7 +107,8 @@
 "pista1": "Pista 1 Nivel 1",
 "pista2": "Pista 2 Nivel 1",
 "pista3": "Pista 3 Nivel 1",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  Asia 1",
@@ -106,7 +117,8 @@
 "pista1": "Pista 1 Nivel 1",
 "pista2": "Pista 2 Nivel 1",
 "pista3": "Pista 3 Nivel 1",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  Asia 2",
@@ -115,7 +127,8 @@
 "pista1": "Pista 1 Nivel 1",
 "pista2": "Pista 2 Nivel 1",
 "pista3": "Pista 3 Nivel 1",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  Asia 3",
@@ -124,7 +137,8 @@
 "pista1": "Pista 1 Nivel 1",
 "pista2": "Pista 2 Nivel 1",
 "pista3": "Pista 3 Nivel 1",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  Asia 4",
@@ -133,7 +147,8 @@
 "pista1": "Pista 1 Nivel 1",
 "pista2": "Pista 2 Nivel 1",
 "pista3": "Pista 3 Nivel 1",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  Introductorio Africa",
@@ -142,7 +157,8 @@
 "pista1": "Pista 1 Nivel 1",
 "pista2": "Pista 2 Nivel 1",
 "pista3": "Pista 3 Nivel 1",
-"objetivo": "Objetivo del nivel"
+"objetivo": "Objetivo del nivel",
+"pais": ["Reino Unido"]
 },
 {
 "name":"  Africa 1",

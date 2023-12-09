@@ -5,16 +5,9 @@ using UnityEngine;
 public class LevelChanger : MonoBehaviour
 {
     [SerializeField] private Animator animator;
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void FadeScreen()
     {
         animator.SetTrigger("FadeOutTrigger");
+        // TODO: Conectar esta escena con la siguiente.
     }
 }

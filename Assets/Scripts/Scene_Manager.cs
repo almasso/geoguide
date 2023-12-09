@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Scene_Manager : MonoBehaviour
 {
+    public static List<string> _countriesToVisit;
     #region references
     /// <summary>
     /// Unique GameManager instance (Singleton Pattern).
