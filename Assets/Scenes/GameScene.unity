@@ -2633,6 +2633,7 @@ MonoBehaviour:
   _apManGO: {fileID: 134377900}
   _obstacleGenGO: {fileID: 1971902936}
   _notDetectObstacleTime: 5
+  _compassGO: {fileID: 0}
 --- !u!1 &1243092736
 GameObject:
   m_ObjectHideFlags: 0
@@ -4171,6 +4172,7 @@ MonoBehaviour:
   _southPole: {fileID: 1679007893}
   _planeNode: {fileID: 1136655263}
   _planeModel: {fileID: 969922379}
+  _malfunctioningTime: 6
 --- !u!1 &1971902936
 GameObject:
   m_ObjectHideFlags: 0
@@ -4210,6 +4212,7 @@ MonoBehaviour:
       Value: 
   _walkieGO: {fileID: 829333676}
   _airportManGO: {fileID: 134377900}
+  _plane: {fileID: 0}
 --- !u!4 &1971902938
 Transform:
   m_ObjectHideFlags: 0
