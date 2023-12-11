@@ -33,6 +33,7 @@ public class GameDisplay : Save_Load
         texto_Pista2.text = myLevel_Info_List.nivel_Info[IndexController._index].pista2;
         texto_Pista3.text = myLevel_Info_List.nivel_Info[IndexController._index].pista3;
         objetivo.text = myLevel_Info_List.nivel_Info[IndexController._index].objetivo;
+        GameSceneInfo.setObjectiveCountry(myLevel_Info_List.nivel_Info[IndexController._index].pais);
     }
 
 }

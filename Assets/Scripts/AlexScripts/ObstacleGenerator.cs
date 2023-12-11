@@ -58,6 +58,10 @@ public class ObstacleGenerator : MonoBehaviour
         if(_elapsedTime >= _randomTime)
         {
             _randomCountry = UnityEngine.Random.Range(0, _airportGOs.Count);
+            while (_airportManager.airports[_airportGOs[_randomCountry]] == GameSceneInfo.getObjectiveCountry())
+            {
+                _randomCountry = UnityEngine.Random.Range(0, _airportGOs.Count);
+            }
             _randomImprevisto = UnityEngine.Random.Range(0, _imprevistosNombres.Count);
             imprevistos[_imprevistosNombres[_randomImprevisto]] = _airportManager.airports[_airportGOs[_randomCountry]];
             _lastObstacle = new Tuple<string, string>(_imprevistosNombres[_randomImprevisto], imprevistos[_imprevistosNombres[_randomImprevisto]]);

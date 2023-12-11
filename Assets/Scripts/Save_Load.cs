@@ -51,7 +51,7 @@ public class Save_Load : MonoBehaviour
             public string pista2;
             public string pista3;
             public string objetivo;
-            public string countryName;
+            public string pais;
         }
         [Serializable]
         public class Nivel_Info_List
