@@ -462,7 +462,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e39354212229f645abf11c7fc1302fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objCountry: "Espa\xF1a"
   airports:
     _serializedList:
     - Key: {fileID: 1488647869}
@@ -2633,6 +2632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _apManGO: {fileID: 134377900}
   _obstacleGenGO: {fileID: 1971902936}
+  _notDetectObstacleTime: 5
 --- !u!1 &1243092736
 GameObject:
   m_ObjectHideFlags: 0
@@ -3818,7 +3818,7 @@ MonoBehaviour:
     pista2: 
     pista3: 
     objetivo: 
-    countryName: []
+    pais: 
 --- !u!4 &1820656470
 Transform:
   m_ObjectHideFlags: 0

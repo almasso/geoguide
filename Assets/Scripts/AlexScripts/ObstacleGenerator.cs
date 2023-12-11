@@ -9,8 +9,10 @@ public class ObstacleGenerator : MonoBehaviour
     [SerializedDictionary("Nombre (en minusculas) del evento", "Nombre del país al que afecta")] public SerializedDictionary<string, string> imprevistos;
     [SerializeField] private GameObject _walkieGO;
     [SerializeField] private GameObject _airportManGO;
+    [SerializeField] private GameObject _plane;
     private WalkieController _walkieController;
     private AirportManager _airportManager;
+    private PlaneColliderCheck _planeColliderCheck;
     private List<GameObject> _airportGOs;
     private List<string> _imprevistosNombres;
 
@@ -26,6 +28,7 @@ public class ObstacleGenerator : MonoBehaviour
     {
         _walkieController = _walkieGO.GetComponent<WalkieController>();
         _airportManager = _airportManGO.GetComponent<AirportManager>();
+        _planeColliderCheck = _plane.GetComponent<PlaneColliderCheck>();
         _elapsedTime = 0.0f;
         _airportGOs = new List<GameObject>(_airportManager.airports.Keys);
         _randomTime = UnityEngine.Random.Range(10f, 20f);
@@ -58,7 +61,7 @@ public class ObstacleGenerator : MonoBehaviour
         if(_elapsedTime >= _randomTime)
         {
             _randomCountry = UnityEngine.Random.Range(0, _airportGOs.Count);
-            while (_airportManager.airports[_airportGOs[_randomCountry]] == GameSceneInfo.getObjectiveCountry())
+            while (_airportManager.airports[_airportGOs[_randomCountry]] == GameSceneInfo.getObjectiveCountry() || (_planeColliderCheck.getCurrentCountry() != null && _airportManager.airports[_airportGOs[_randomCountry]] == _airportManager.airports[_planeColliderCheck.getCurrentCountry()]))
             {
                 _randomCountry = UnityEngine.Random.Range(0, _airportGOs.Count);
             }
