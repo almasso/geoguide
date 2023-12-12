@@ -18,6 +18,8 @@ public class GameDisplay : Save_Load
     int actualClient = 0;
     int clientesTotales = 1;
     int index = 0;
+    public int introIndex = 0;
+
     void Start()
     {
         clientesTotales = myLevel_Info_List.nivel_Info[IndexController._index].clientesTotales;
@@ -32,7 +34,6 @@ public class GameDisplay : Save_Load
             texto_Pista1 = pistaPrefab1.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
             texto_Pista2 = pistaPrefab2.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
             texto_Pista3 = pistaPrefab3.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
-            objetivo.text = myLevel_Info_List.nivel_Info[IndexController._index].objetivo;
 
             while (myCliente_Info_List.cliente_Info[index].name != myLevel_Info_List.nivel_Info[IndexController._index].name) ++index;
 
@@ -46,10 +47,18 @@ public class GameDisplay : Save_Load
         {
             objetivo = gameObject.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
             cliente.texture = AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/Clients/dad.png");
-            objetivo.text = myIntroLevelList.IntroLevel[0].Objective1;
+            objetivo.text = myIntroLevelList.IntroLevel[introIndex].Objective1;
+            
         }
 
     }
+    public void updateIntroObjective()
+    {
+        if (objetivo.text == myIntroLevelList.IntroLevel[introIndex].Objective1) objetivo.text = myIntroLevelList.IntroLevel[introIndex].Objective2;
+        else if (objetivo.text == myIntroLevelList.IntroLevel[introIndex].Objective2) objetivo.text = myIntroLevelList.IntroLevel[introIndex].Objective3;
+        else Debug.Log("FINISH");
+    }
+
     void AddClient()
     {
         var aux = myLevel_Info_List.nivel_Info[IndexController._index].clientes_Info[actualClient];
