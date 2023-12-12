@@ -32,7 +32,7 @@ public class GameDisplay : Save_Load
             texto_Pista1 = pistaPrefab1.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
             texto_Pista2 = pistaPrefab2.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
             texto_Pista3 = pistaPrefab3.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
-            objetivo.text = myLevel_Info_List.nivel_Info[IndexController._index].objetivo;
+            //objetivo.text = myLevel_Info_List.nivel_Info[IndexController._index].objetivo;
 
             while (myCliente_Info_List.cliente_Info[index].name != myLevel_Info_List.nivel_Info[IndexController._index].name) ++index;
 
