@@ -39,9 +39,6 @@ public class WalkieController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)) showWalkie();
-        else if (Input.GetKeyDown(KeyCode.G)) hideWalkie();
-
         if (posFinal) _elapsedTime += Time.deltaTime;
 
         if(_elapsedTime >= _showTime)
