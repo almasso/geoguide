@@ -75,6 +75,7 @@ public class GameDisplay : Save_Load
     {
         ++actualClient;
         AddClient();
+        GameSceneInfo.setObjectiveCountry(myLevel_Info_List.nivel_Info[IndexController._index].pais);
     }
 
     public bool HasMoreClients() { return actualClient < clientesTotales - 1;}
