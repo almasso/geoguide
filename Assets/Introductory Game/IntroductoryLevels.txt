@@ -7,7 +7,7 @@
 			"Country2" : "Alemania",
 			"Objective2" : "Ahora viajaremos hasta Alemania",
 			"Country3" : "Reino Unido",
-			"Objective3" : "Por último, tendr�s que llevarnos a Reino Unido"
+			"Objective3" : "Por último, tendrás que llevarnos a Reino Unido"
 			
 		},
 		{
