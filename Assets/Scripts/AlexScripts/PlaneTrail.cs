@@ -31,7 +31,7 @@ public class PlaneTrail : MonoBehaviour
 
     void Update()
     {
-        float alpha = Mathf.Lerp(alphaMin, alphaMax, player.GetComponent<PlayerController>().GetCurrentSpeed());
+        float alpha = Mathf.Lerp(alphaMin, alphaMax, player.GetComponent<PlayerController>().GetCurrentSpeed()); //Cambiamos la transparencia de las estelas dependiendo de la velocidad del avión.
 
         for (int i = 0; i < trails.Length; i++)
         {
