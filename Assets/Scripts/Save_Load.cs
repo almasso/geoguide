@@ -97,7 +97,6 @@ public class Save_Load : MonoBehaviour
         #region INFO_POR_CLIENTE
         [Serializable]
         public class Cliente_Info
-
         {
             public string name;
             public string pais;
@@ -106,7 +105,6 @@ public class Save_Load : MonoBehaviour
             public string pista2;
             public string pista3;
             public string objetivo;
-            public string pais;
         }
         [Serializable]
         public class Cliente_Info_List
@@ -124,6 +122,7 @@ public class Save_Load : MonoBehaviour
             public string intentos;
             public int clientesTotales;
             public bool imprevistos;
+            public string pais;
             public List<Cliente_Info> clientes_Info = new List<Cliente_Info>();
         }
         [Serializable]

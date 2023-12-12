@@ -3,13 +3,13 @@
 {
 "name":"  Introductorio Europa",
 "intentos":"0",
-"clientesTotales" : 3,
+"clientesTotales" : 1,
 "imprevistos" : false
 },
 {
 "name":"  Europa 1",
 "intentos":"4",
-"clientesTotales" : 2,
+"clientesTotales" : 1,
 "imprevistos" : false
 },
 {
@@ -76,12 +76,14 @@
 "name":"  Asia 2",
 "intentos":"4",
 "clientesTotales" : 1,
-"imprevistos" : false},
+"imprevistos" : false
+},
 {
 "name":"  Asia 3",
 "intentos":"4",
 "clientesTotales" : 1,
-"imprevistos" : false},
+"imprevistos" : false
+},
 {
 "name":"  Asia 4",
 "intentos":"4",
@@ -92,7 +94,8 @@
 "name":"  Introductorio Africa",
 "intentos":"4",
 "clientesTotales" : 1,
-"imprevistos" : false},
+"imprevistos" : false
+},
 {
 "name":"  Africa 1",
 "intentos":"4",
@@ -103,12 +106,14 @@
 "name":"  Africa 2",
 "intentos":"4",
 "clientesTotales" : 1,
-"imprevistos" : false},
+"imprevistos" : false
+},
 {
 "name":"  Africa 3",
 "intentos":"4",
 "clientesTotales" : 1,
-"imprevistos" : false},
+"imprevistos" : false
+},
 {
 "name":"  Africa 4",
 "intentos":"4",
@@ -119,7 +124,8 @@
 "name":"  Introductorio Oceania",
 "intentos":"4",
 "clientesTotales" : 1,
-"imprevistos" : false},
+"imprevistos" : false
+},
 {
 "name":"  Oceania 1",
 "intentos":"4",

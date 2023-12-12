@@ -2,7 +2,7 @@
 "cliente_Info" : [
 {
 	"name": "  Introductorio Europa",
-	"pais": "espania",
+	"pais": "España",
 	"cliente": "Assets/Clients/client1.png",
 	"pista1": "Pista 1 Nivel España",
 	"pista2": "Pista 2 Nivel España",
@@ -11,7 +11,7 @@
 },
 {
 	"name": "  Introductorio Europa",
-	"pais": "francia",
+	"pais": "Francia",
 	"cliente": "Assets/Clients/client2.png",
 	"pista1": "Pista 1 Nivel Francia",
 	"pista2": "Pista 2 Nivel Francia",
@@ -20,7 +20,7 @@
 },
 {
 	"name": "  Introductorio Europa",
-	"pais": "estonia",
+	"pais": "Estonia",
 	"cliente": "Assets/Clients/client3.png",
 	"pista1": "Pista 1 Nivel Estonia",
 	"pista2": "Pista 2 Nivel Estonia",
@@ -29,7 +29,7 @@
 },
 {
 	"name": "  Europa 1",
-	"pais": "inglaterra",
+	"pais": "Inglaterra",
 	"cliente": "Assets/Clients/client4.png",
 	"pista1": "Pista 1 Nivel Inglaterra",
 	"pista2": "Pista 2 Nivel Inglaterra",
@@ -39,7 +39,7 @@
 
 {
 	"name": "  Europa 1",
-	"pais": "alemania",
+	"pais": "Alemania",
 	"cliente": "Assets/Clients/client5.png",
 	"pista1": "Pista 1 Nivel Alemania",
 	"pista2": "Pista 2 Nivel Alemania",
@@ -48,7 +48,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "italia",
+	"pais": "Italia",
 	"cliente": "Assets/Clients/client6.png",
 	"pista1": "Pista 1 Nivel Italia",
 	"pista2": "Pista 2 Nivel Italia",
@@ -57,7 +57,7 @@
 },
 {
 	"name": "  Europa 3",
-	"pais": "noruega",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client7.png",
 	"pista1": "Pista 1 Nivel Noruega",
 	"pista2": "Pista 2 Nivel Noruega",
@@ -67,7 +67,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client8.png",
 	"pista1": "Pista 1 Nivel 8",
 	"pista2": "Pista 2 Nivel 8",
@@ -76,7 +76,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client9.png",
 	"pista1": "Pista 1 Nivel 9",
 	"pista2": "Pista 2 Nivel 9",
@@ -85,7 +85,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client10.png",
 	"pista1": "Pista 1 Nivel 10",
 	"pista2": "Pista 2 Nivel 10",
@@ -94,7 +94,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client11.png",
 	"pista1": "Pista 1 Nivel 1",
 	"pista2": "Pista 2 Nivel 1",
@@ -103,7 +103,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client12.png",
 	"pista1": "Pista 1 Nivel 1",
 	"pista2": "Pista 2 Nivel 1",
@@ -112,7 +112,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client13.png",
 	"pista1": "Pista 1 Nivel 1",
 	"pista2": "Pista 2 Nivel 1",
@@ -121,7 +121,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client14.png",
 	"pista1": "Pista 1 Nivel 1",
 	"pista2": "Pista 2 Nivel 1",
@@ -130,7 +130,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client15.png",
 	"pista1": "Pista 1 Nivel 1",
 	"pista2": "Pista 2 Nivel 1",
@@ -140,7 +140,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client16.png",
 	"pista1": "Pista 1 Nivel 1",
 	"pista2": "Pista 2 Nivel 1",
@@ -149,7 +149,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client17.png",
 	"pista1": "Pista 1 Nivel 1",
 	"pista2": "Pista 2 Nivel 1",
@@ -158,7 +158,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client18.png",
 	"pista1": "Pista 1 Nivel 1",
 	"pista2": "Pista 2 Nivel 1",
@@ -167,7 +167,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client19.png",
 	"pista1": "Pista 1 Nivel 1",
 	"pista2": "Pista 2 Nivel 1",
@@ -177,7 +177,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client20.png",
 	"pista1": "Pista 1 Nivel 1",
 	"pista2": "Pista 2 Nivel 1",
@@ -188,7 +188,7 @@
 {
 
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client21.png",
 	"pista1": "Pista 1 Nivel 1",
 	"pista2": "Pista 2 Nivel 1",
@@ -198,7 +198,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client22.png",
 	"pista1": "Hello number 1",
 	"pista2": "Hello number 2",
@@ -207,7 +207,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client1.png",
 	"pista1": "Hello number 1",
 	"pista2": "Hello number 2",
@@ -216,7 +216,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client2.png",
 	"pista1": "Hello number 1",
 	"pista2": "Hello number 2",
@@ -225,7 +225,7 @@
 },
 {
 	"name": "  Europa 2",
-	"pais": "espania",
+	"pais": "Noruega",
 	"cliente": "Assets/Clients/client3.png",
 	"pista1": "Hello number 1",
 	"pista2": "Hello number 2",

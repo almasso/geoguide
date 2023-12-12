@@ -42,7 +42,8 @@ public class Scene_Manager : MonoBehaviour
     {
         refreshData();
         IndexController._index = _i;
-        SceneManager.LoadScene("PruebaGameScene");
+        SceneManager.LoadScene("GameScene");
+        //SceneManager.LoadScene("PruebaGameScene");
     }
     public void BackToMainMenu()
     {
