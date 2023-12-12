@@ -3,15 +3,15 @@
 		{
 			"Continent": "Europa",
 			"Country1" : "Francia",
-			"Objective1" : "Como primera misiÛn, intenta llegar a Francia",
+			"Objective1" : "Como primera misi√≥n, intenta llegar a Francia",
 			"Country2" : "Alemania",
 			"Objective2" : "Ahora viajaremos hasta Alemania",
 			"Country3" : "Reino Unido",
-			"Objective3" : "Por ˙ltimo, tendr·s que llevarnos a Reino Unido"
+			"Objective3" : "Por √∫ltimo, tendrÔøΩs que llevarnos a Reino Unido"
 			
 		},
 		{
-			"Continent": "AmÈrica",
+			"Continent": "Am√©rica",
 			"Country1" : "Estados Unidos",
 			"Objective1" : "Primero vamos a Estados Unidos",
 			"Country2" : "Brasil",
@@ -27,27 +27,27 @@
 			"Country2" : "China",
 			"Objective2" : "Ahora pasaremos por China",
 			"Country3" : "India",
-			"Objective3" : "Por ˙ltimo, visitemos la India"
+			"Objective3" : "Por √∫ltimo, visitemos la India"
 			
 		},
 		{
-			"Continent": "¡frica",
+			"Continent": "√Åfrica",
 			"Country1" : "Algeria",
-			"Objective1" : "Primero llÈvanos a Algeria",
+			"Objective1" : "Primero ll√©vanos a Argelia",
 			"Country2" : "Egipto",
 			"Objective2" : "Ahora intenta llegar a Egipto",
-			"Country3" : "Sud·frica",
-			"Objective3" : "Para terminar, visitemos Sud·frica"
+			"Country3" : "Sud√°frica",
+			"Objective3" : "Para terminar, visitemos Sud√°frica"
 			
 		},
 		{
-			"Continent": "OceanÌa",
+			"Continent": "Ocean√≠a",
 			"Country1" : "Australia",
 			"Objective1" : "Empezemos llendo hasta Australia",
 			"Country2" : "Indonesia",
 			"Objective2" : "Ahora vayamos a Indonesia",
 			"Country3" : "Nueva Zelanda",
-			"Objective3" : "Como ˙ltima misiÛn, llÈvanos a Nueva Zelanda"
+			"Objective3" : "Como √∫ltima misi√≥n, ll√©vanos a Nueva Zelanda"
 			
 		}
 	]
