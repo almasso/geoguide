@@ -39,7 +39,7 @@ public class SpeechBubbleController : MonoBehaviour
     {
         if (_walkieController.isCompletelyShown() && !_isPlaying)
         {
-            sentence = $"¡Ten mucho cuidado! ¡El radar ha detectado {_obstacleGenerator.getLastObstacle().Item1} en {_obstacleGenerator.getLastObstacle().Item2}! ¡Evita pasar por ese país a toda costa!";
+            sentence = $"Â¡Ten mucho cuidado! Â¡El radar ha detectado {_obstacleGenerator.getLastObstacle().Item1} en {_obstacleGenerator.getLastObstacle().Item2}! Â¡Evita pasar por ese paÃ­s a toda costa!";
             _isPlaying = true;
             _img.enabled = true;
             _textMesh.enabled = true;
