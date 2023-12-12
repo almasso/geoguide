@@ -2,12 +2,12 @@
 "cliente_Info" : [
 {
 	"name": "  Introductorio Europa",
-	"pais": "España",
+	"pais": "EspaÃ±a",
 	"cliente": "Assets/Clients/client1.png",
-	"pista1": "Pista 1 Nivel España",
-	"pista2": "Pista 2 Nivel España",
-	"pista3": "Pista 3 Nivel España",
-	"objetivo": "LLegar hasta España"
+	"pista1": "Pista 1 Nivel EspaÃ±a",
+	"pista2": "Pista 2 Nivel EspaÃ±a",
+	"pista3": "Pista 3 Nivel EspaÃ±a",
+	"objetivo": "Llegar hasta EspaÃ±a"
 },
 {
 	"name": "  Introductorio Europa",
@@ -16,7 +16,7 @@
 	"pista1": "Pista 1 Nivel Francia",
 	"pista2": "Pista 2 Nivel Francia",
 	"pista3": "Pista 3 Nivel Francia",
-	"objetivo": "LLegar hasta Francia"
+	"objetivo": "Llegar hasta Francia"
 },
 {
 	"name": "  Introductorio Europa",
@@ -25,7 +25,7 @@
 	"pista1": "Pista 1 Nivel Estonia",
 	"pista2": "Pista 2 Nivel Estonia",
 	"pista3": "Pista 3 Nivel Estonia",
-	"objetivo": "LLegar hasta Estonia"
+	"objetivo": "Llegar hasta Estonia"
 },
 {
 	"name": "  Europa 1",
@@ -34,7 +34,7 @@
 	"pista1": "Pista 1 Nivel Inglaterra",
 	"pista2": "Pista 2 Nivel Inglaterra",
 	"pista3": "Pista 3 Nivel Inglaterra",
-	"objetivo": "LLegar hasta Inglaterra"
+	"objetivo": "Llegar hasta Inglaterra"
 },
 
 {
@@ -44,7 +44,7 @@
 	"pista1": "Pista 1 Nivel Alemania",
 	"pista2": "Pista 2 Nivel Alemania",
 	"pista3": "Pista 3 Nivel Alemania",
-	"objetivo": "LLegar hasta Alemania"
+	"objetivo": "Llegar hasta Alemania"
 },
 {
 	"name": "  Europa 2",
@@ -53,7 +53,7 @@
 	"pista1": "Pista 1 Nivel Italia",
 	"pista2": "Pista 2 Nivel Italia",
 	"pista3": "Pista 3 Nivel Italia",
-	"objetivo": "LLegar hasta Italia"
+	"objetivo": "Llegar hasta Italia"
 },
 {
 	"name": "  Europa 3",
@@ -62,7 +62,7 @@
 	"pista1": "Pista 1 Nivel Noruega",
 	"pista2": "Pista 2 Nivel Noruega",
 	"pista3": "Pista 3 Nivel Noruega",
-	"objetivo": "LLegar hasta Noruega"
+	"objetivo": "Llegar hasta Noruega"
 
 },
 {
