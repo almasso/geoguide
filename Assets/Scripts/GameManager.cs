@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private string actualCountry;
+    //private string actualCountry;
     private GameObject actualCountryObject;
 
     #endregion
@@ -45,14 +45,12 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("BRUH??");
         _game = _gameObj.GetComponent<GameDisplay>();
-        actualCountry = _game.myIntroLevelList.IntroLevel[_game.introIndex].Country1;
+        GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country1);
         _hand = _HandObj.GetComponent<HandWave>();
         //UI_Manager.Instance.StartGameHUD();
-        Debug.Log("BRUH?? PARTE 2");
-        updateCountryObject(actualCountry);
-        changeCountryColor(actualCountryObject);
+        updateCountryObject(GameSceneInfo.getObjectiveCountry());
+        changeCountryColor(Color.green);
     }
 
     public void ChangeClient()
@@ -69,38 +67,34 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void checkCountry(string name)
+    public void updateIntroCountry(string country)
     {
-        if (name == actualCountry) {
-            actualCountryObject.GetComponent<MeshRenderer>().material.color = Color.red;
-            Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAA");
-            if (actualCountry == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country1) actualCountry = _game.myIntroLevelList.IntroLevel[_game.introIndex].Country2;
-            else if (actualCountry == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country2) actualCountry = _game.myIntroLevelList.IntroLevel[_game.introIndex].Country3;
-            else Debug.Log("FINISH MANGERRR");
+        changeCountryColor(Color.red);
+        if (country == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country1) GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country2);
+        else if (country == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country2) GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country3);
+        else Debug.Log("ultimo");
 
-            updateCountryObject(actualCountry);
-            changeCountryColor(actualCountryObject);
+        updateCountryObject(GameSceneInfo.getObjectiveCountry());
+        changeCountryColor(Color.green);
 
-            _game.updateIntroObjective();
-        }
+        _game.updateIntroObjective();
     }
 
     void updateCountryObject(string country)
     {
-        Debug.Log("ENTRO EN EL METODO I GUESS");
         for (int i = 0; i < _countries.Length; i++)
         {
-            Debug.Log(_countries[i].name);
-            Debug.Log(country);
+            //Debug.Log(_countries[i].name);
+            //Debug.Log(country);
             if (_countries[i].name == country) {
                 actualCountryObject = _countries[i].transform.GetChild(0).gameObject; 
             }
         }
     }
 
-    void changeCountryColor(GameObject country)
+    void changeCountryColor(Color c)
     {
-        country.GetComponent<MeshRenderer>().material.color = Color.green;
+        actualCountryObject.GetComponent<MeshRenderer>().material.color = c;
     }
 
   

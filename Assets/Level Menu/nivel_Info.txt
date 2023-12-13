@@ -2,7 +2,7 @@
 "nivel_Info" : [
 {
 "name":"  Introductorio Europa",
-"intentos":"0",
+"intentos":"1",
 "clientesTotales" : 1,
 "imprevistos" : false
 },
