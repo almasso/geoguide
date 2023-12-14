@@ -8,9 +8,13 @@ public class PlaneColliderCheck : MonoBehaviour
     [SerializeField] private GameObject _obstacleGenGO;
     [SerializeField] private float _notDetectObstacleTime;
     [SerializeField] private GameObject _compassGO;
+    [SerializeField] private GameObject _minimapGO;
+    [SerializeField] private GameObject _plane;
     private AirportManager _apMan;
     private ObstacleGenerator _obstacleGenerator;
     private CompassController _compassController;
+    private MinimapController _minimapController;
+    private PlayerController _playerController;
     private bool _isAffected = false;
     private float _elapsedTime = 0.0f;
     private GameObject _currentVisitedCountry;
@@ -24,6 +28,8 @@ public class PlaneColliderCheck : MonoBehaviour
         _apMan = _apManGO.GetComponent<AirportManager>();
         _obstacleGenerator = _obstacleGenGO.GetComponent<ObstacleGenerator>();
         _compassController = _compassGO.GetComponent<CompassController>();
+        _minimapController = _minimapGO.GetComponent<MinimapController>();
+        _playerController = _plane.GetComponent<PlayerController>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -42,17 +48,15 @@ public class PlaneColliderCheck : MonoBehaviour
                     break;
                 case 1:
                     {
-                        //Lógica para minimapa
+                        _minimapController.setMalfunction();
                     }
                     break;
                 case 2:
                     {
-                        //Lógica para motores
+                        _playerController.setMalfunction();
                     }
                     break;
             }
-
-
         }
         else _apMan.Aterrizar(other.gameObject);
     }
@@ -65,9 +69,21 @@ public class PlaneColliderCheck : MonoBehaviour
             int rand = Random.Range(0, 3);
             switch (rand)
             {
-                case 0: break;
-                case 1: break;
-                case 2: break;
+                case 0:
+                    {
+                        _compassController.setMalfunction();
+                    }
+                    break;
+                case 1:
+                    {
+                        _minimapController.setMalfunction();
+                    }
+                    break;
+                case 2:
+                    {
+                        _playerController.setMalfunction();
+                    }
+                    break;
             }
         }
         else _apMan.Aterrizar(other.gameObject);
