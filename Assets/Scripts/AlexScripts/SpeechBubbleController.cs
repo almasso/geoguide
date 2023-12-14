@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class SpeechBubbleController : MonoBehaviour
 {
-    public enum Frases {RADAR_DETECCION = 0, OBSTACLE_END = 1, }; 
+    public enum Frases {RADAR_DETECCION = 0, OBSTACLE_END = 1, GADGET_BROKEN = 2, COUNTRY_FAILED = 3, MISSION_FAILED = 4}; 
     [SerializeField] GameObject _obstacleGenGO;
     [SerializeField] private float _showSpeed = 0.01f;
     private string sentence;
@@ -15,7 +15,7 @@ public class SpeechBubbleController : MonoBehaviour
     private TextMeshProUGUI _textMesh;
     private ObstacleGenerator _obstacleGenerator;
     bool _isPlaying = false;
-    private string[] defaultSentences;
+    static private int sentenceToShow = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,11 +25,6 @@ public class SpeechBubbleController : MonoBehaviour
         _obstacleGenerator = _obstacleGenGO.GetComponent<ObstacleGenerator>();
         _img.enabled = false;
         _textMesh.enabled = false;
-        defaultSentences = new string[] {
-           $"¡Ten mucho cuidado! ¡El radar ha detectado {_obstacleGenerator.getLastObstacle().Item1} en {_obstacleGenerator.getLastObstacle().Item2}! ¡Evita pasar por ese país a toda costa!",
-           $"¡Parece ser que la {_obstacleGenerator.getLastObstacle().Item1} en {_obstacleGenerator.getLastObstacle().Item2} ha terminado!",
-           $"¡Oh, no! ¡Parece que tu -objeto- está fallando!"
-    };
     }
 
     private IEnumerator ShowBubbleText()
@@ -41,12 +36,24 @@ public class SpeechBubbleController : MonoBehaviour
         }
     }
 
+    static public void setShowString(Frases f)
+    {
+        sentenceToShow = (int)f;
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (_walkieController.isCompletelyShown() && !_isPlaying)
         {
-            sentence = $"¡Ten mucho cuidado! ¡El radar ha detectado {_obstacleGenerator.getLastObstacle().Item1} en {_obstacleGenerator.getLastObstacle().Item2}! ¡Evita pasar por ese país a toda costa!";
+            switch ((Frases)sentenceToShow)
+            {
+                case Frases.RADAR_DETECCION: sentence = $"¡Ten mucho cuidado! ¡El radar ha detectado {_obstacleGenerator.getLastObstacle().Item1} en {_obstacleGenerator.getLastObstacle().Item2}! ¡Evita pasar por ese país a toda costa!"; break;
+                case Frases.OBSTACLE_END: sentence = $"¡Parece ser que la {_obstacleGenerator.getLastObstacle().Item1} en {_obstacleGenerator.getLastObstacle().Item2} ha terminado!"; break;
+                case Frases.GADGET_BROKEN: sentence = $"¡Parece ser que tu {0} ha dejado de funcionar! ¡Ten más cuidado a la próxima!"; break;
+                case Frases.COUNTRY_FAILED: sentence = "¡Ups! Parece que ese país no es tu objetivo"; break;
+                case Frases.MISSION_FAILED: sentence = "¡No te preocupes, estás aprendiendo! Te he marcado tu objetivo. ¡Seguro que te irá mejor si lo vuelves a intentar!"; break; 
+            }
             _isPlaying = true;
             _img.enabled = true;
             _textMesh.enabled = true;
