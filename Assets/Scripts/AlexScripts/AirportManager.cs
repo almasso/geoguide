@@ -21,7 +21,7 @@ public class AirportManager : MonoBehaviour
             if (airports[go] == GameSceneInfo.getObjectiveCountry()) playerController.SecuenciaAterrizaje();
             else
             {
-                Debug.Log("FALLO");
+                GameManager.Instance.WrongCountry();
             }
         }
     }

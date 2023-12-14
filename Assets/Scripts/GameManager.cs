@@ -23,8 +23,11 @@ public class GameManager : MonoBehaviour
         _instance = this;
     }
     [SerializeField]
-    private GameObject _gameObj;
-    private GameDisplay _game;
+    private GameObject _gameUIObj;
+    private GameDisplay _gameUI;
+
+    [SerializeField]
+    private GameObject _endUIObj;
 
     [SerializeField]
     private GameObject[] _ClueObj;
@@ -35,29 +38,46 @@ public class GameManager : MonoBehaviour
     
     [SerializeField]
     public int intentos = 0;
+    public bool help = false;
     void Start()
     {
-        _game = _gameObj.GetComponent<GameDisplay>();
+        _gameUI = _gameUIObj.GetComponentInChildren<GameDisplay>();
+        Debug.Log(_gameUI);
+        _gameUIObj.SetActive(true);
+        _endUIObj.SetActive(false);
         _hand = _HandObj.GetComponent<HandWave>();
         UI_Manager.Instance.StartGameHUD();
     }
 
+    private void Update()
+    {
+        if (help)
+        {
+            Debug.Log("Necesitas ayuda bb <3 o-o");
+            help = false;
+        }
+    }
     public void ChangeClient()
     {
-        if (_game.HasMoreClients())
+        Debug.Log(_gameUI);
+        if (_gameUI.HasMoreClients())
         {
-            _game.nextClient();
+            Debug.Log("Cambiando de cliente desde el Manager");
+            _gameUI.nextClient();
             for (int i = 0; i < 3; ++i) _ClueObj[i].GetComponent<ButtonClue>().hasChangedClient();
             _hand.InstanciateHand();
         }
         else
         {
             UI_Manager.Instance.EndGameHUD(intentos <= 3);
+            _gameUIObj.SetActive(false);
+            _endUIObj.SetActive(true);
         }
 
     }
 
-  
+   public void WrongCountry() { ++intentos; Debug.Log("Pais incorrecto"); if (intentos >= 3) help = true; }
+    public bool hasMoreClients() { return _gameUI.HasMoreClients(); }
     #endregion
 }
 

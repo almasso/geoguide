@@ -10,4 +10,10 @@ public class LevelChanger : MonoBehaviour
         animator.SetTrigger("FadeOutTrigger");
         // TODO: Conectar esta escena con la siguiente.
     }
+    public void FadeInScreen()
+    {
+        animator.SetTrigger("FadeInTrigger");
+    }
+
+
 }

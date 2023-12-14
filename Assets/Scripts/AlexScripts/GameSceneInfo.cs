@@ -9,6 +9,7 @@ public class GameSceneInfo
     public static void setObjectiveCountry(string s)
     {
         objectiveCountry = s;
+        Debug.Log(objectiveCountry);
     }
 
     public static string getObjectiveCountry() {  return objectiveCountry; }

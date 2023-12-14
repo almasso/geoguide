@@ -60,14 +60,14 @@ public class GameDisplay : Save_Load
         texto_Pista2.text = aux.pista2;
         texto_Pista3.text = aux.pista3;
         objetivo.text = aux.objetivo;
+        GameSceneInfo.setObjectiveCountry(aux.pais);
     }
    
     public void nextClient()
     {
         ++actualClient;
         AddClient();
-        GameSceneInfo.setObjectiveCountry(myLevel_Info_List.nivel_Info[IndexController._index].pais);
     }
 
-    public bool HasMoreClients() { return actualClient < clientesTotales - 1;}
+    public bool HasMoreClients() { Debug.Log("Cliente Actual " + actualClient); Debug.Log("Clientes Totales " + clientesTotales); return actualClient < clientesTotales - 1;}
 }
