@@ -61,7 +61,7 @@ public class ObstacleGenerator : MonoBehaviour
         if(_elapsedTime >= _randomTime)
         {
             _randomCountry = UnityEngine.Random.Range(0, _airportGOs.Count);
-            while (_airportManager.airports[_airportGOs[_randomCountry]] == GameSceneInfo.getObjectiveCountry() || (_planeColliderCheck.getCurrentCountry() != null && _airportManager.airports[_airportGOs[_randomCountry]] == _airportManager.airports[_planeColliderCheck.getCurrentCountry()]) && checkForObstacle(_airportGOs[_randomCountry]))
+            while (_airportManager.airports[_airportGOs[_randomCountry]] == GameSceneInfo.getObjectiveCountry() || (_planeColliderCheck.getCurrentCountry() != null && _airportManager.airports[_airportGOs[_randomCountry]] == _airportManager.airports[_planeColliderCheck.getCurrentCountry()]) || checkForObstacle(_airportGOs[_randomCountry]))
             {
                 _randomCountry = UnityEngine.Random.Range(0, _airportGOs.Count);
             }
