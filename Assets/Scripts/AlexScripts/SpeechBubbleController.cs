@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class SpeechBubbleController : MonoBehaviour
 {
+    public enum Frases {RADAR_DETECCION = 0, OBSTACLE_END = 1, }; 
     [SerializeField] GameObject _obstacleGenGO;
     [SerializeField] private float _showSpeed = 0.01f;
     private string sentence;
@@ -14,6 +15,7 @@ public class SpeechBubbleController : MonoBehaviour
     private TextMeshProUGUI _textMesh;
     private ObstacleGenerator _obstacleGenerator;
     bool _isPlaying = false;
+    private string[] defaultSentences;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,11 @@ public class SpeechBubbleController : MonoBehaviour
         _obstacleGenerator = _obstacleGenGO.GetComponent<ObstacleGenerator>();
         _img.enabled = false;
         _textMesh.enabled = false;
+        defaultSentences = new string[] {
+           $"¡Ten mucho cuidado! ¡El radar ha detectado {_obstacleGenerator.getLastObstacle().Item1} en {_obstacleGenerator.getLastObstacle().Item2}! ¡Evita pasar por ese país a toda costa!",
+           $"¡Parece ser que la {_obstacleGenerator.getLastObstacle().Item1} en {_obstacleGenerator.getLastObstacle().Item2} ha terminado!",
+           $"¡Oh, no! ¡Parece que tu -objeto- está fallando!"
+    };
     }
 
     private IEnumerator ShowBubbleText()
