@@ -6372,7 +6372,7 @@ MonoBehaviour:
   _walkieGO: {fileID: 829333676}
   _airportManGO: {fileID: 134377900}
   _plane: {fileID: 1214255469}
-  _obstacleDuration: 10
+  _obstacleDuration: 30
 --- !u!4 &1971902938
 Transform:
   m_ObjectHideFlags: 0
