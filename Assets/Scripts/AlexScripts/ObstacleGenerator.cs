@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class ObstacleGenerator : MonoBehaviour
 {
-    [SerializedDictionary("Nombre (en minusculas) del evento", "Nombre del pa�s al que afecta")] public SerializedDictionary<string, string> imprevistos;
+    [SerializedDictionary("Nombre (en minusculas) del evento", "Nombre del país al que afecta")] public SerializedDictionary<string, string> imprevistos;
     [SerializeField] private GameObject _walkieGO;
     [SerializeField] private GameObject _airportManGO;
     [SerializeField] private GameObject _plane;

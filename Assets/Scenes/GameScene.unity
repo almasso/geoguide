@@ -522,6 +522,7 @@ MonoBehaviour:
     - Key: {fileID: 348806255}
       Value: Portugal
   plane: {fileID: 969922379}
+  _walkieGO: {fileID: 829333676}
 --- !u!1 &144501602
 GameObject:
   m_ObjectHideFlags: 0
@@ -3807,6 +3808,7 @@ MonoBehaviour:
   _compassGO: {fileID: 1966122396}
   _minimapGO: {fileID: 641888323}
   _plane: {fileID: 969922379}
+  _walkieGO: {fileID: 829333676}
 --- !u!1 &1243092736
 GameObject:
   m_ObjectHideFlags: 0

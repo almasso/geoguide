@@ -16,6 +16,7 @@ public class SpeechBubbleController : MonoBehaviour
     private ObstacleGenerator _obstacleGenerator;
     bool _isPlaying = false;
     static private int sentenceToShow = 0;
+    static private string brokenGadget = "";
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +42,11 @@ public class SpeechBubbleController : MonoBehaviour
         sentenceToShow = (int)f;
     }
 
+    static public void setBrokenGadgetString(string s)
+    {
+        brokenGadget = s;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -50,7 +56,7 @@ public class SpeechBubbleController : MonoBehaviour
             {
                 case Frases.RADAR_DETECCION: sentence = $"¡Ten mucho cuidado! ¡El radar ha detectado {_obstacleGenerator.getLastObstacle().Item1} en {_obstacleGenerator.getLastObstacle().Item2}! ¡Evita pasar por ese país a toda costa!"; break;
                 case Frases.OBSTACLE_END: sentence = $"¡Parece ser que la {_obstacleGenerator.getLastObstacle().Item1} en {_obstacleGenerator.getLastObstacle().Item2} ha terminado!"; break;
-                case Frases.GADGET_BROKEN: sentence = $"¡Parece ser que tu {0} ha dejado de funcionar! ¡Ten más cuidado a la próxima!"; break;
+                case Frases.GADGET_BROKEN: sentence = $"¡Parece ser que tu {brokenGadget} ha dejado de funcionar! Debería arreglarse en unos segundos. ¡Ten más cuidado a la próxima!"; break;
                 case Frases.COUNTRY_FAILED: sentence = "¡Ups! Parece que ese país no es tu objetivo"; break;
                 case Frases.MISSION_FAILED: sentence = "¡No te preocupes, estás aprendiendo! Te he marcado tu objetivo. ¡Seguro que te irá mejor si lo vuelves a intentar!"; break; 
             }
