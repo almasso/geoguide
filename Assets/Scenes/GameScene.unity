@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -207,20 +207,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1820656469}
-        m_TargetAssemblyTypeName: JSONWriter, Assembly-CSharp
-        m_MethodName: outputJSON
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1763509946}
-        m_TargetAssemblyTypeName: Scene_Manager, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -459,14 +447,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 458726628}
-  - {fileID: 1967117062}
-  - {fileID: 1203738097}
-  - {fileID: 1787650914}
   - {fileID: 448819844}
+  - {fileID: 458726628}
   - {fileID: 553426202}
+  - {fileID: 1787650914}
+  - {fileID: 1203738097}
+  - {fileID: 1967117062}
   - {fileID: 48787084}
-  m_Father: {fileID: 1423394194}
+  m_Father: {fileID: 598711881}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -534,6 +522,7 @@ MonoBehaviour:
     - Key: {fileID: 348806255}
       Value: Portugal
   plane: {fileID: 969922379}
+  _walkieGO: {fileID: 829333676}
 --- !u!1 &144501602
 GameObject:
   m_ObjectHideFlags: 0
@@ -2276,6 +2265,7 @@ GameObject:
   - component: {fileID: 598711880}
   - component: {fileID: 598711879}
   - component: {fileID: 598711878}
+  - component: {fileID: 598711882}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -2358,15 +2348,17 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 506412221}
   - {fileID: 1301540906}
   - {fileID: 924432891}
+  - {fileID: 117205972}
+  - {fileID: 1525852298}
   - {fileID: 1936919471}
   - {fileID: 1966122397}
   - {fileID: 325418949}
   - {fileID: 1206905472}
   - {fileID: 1363949900}
   - {fileID: 1363431627}
+  - {fileID: 506412221}
   - {fileID: 805483821}
   - {fileID: 87721567}
   - {fileID: 829333677}
@@ -2377,6 +2369,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &598711882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598711877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0e70244c3eea649b6aa3ddfe204b0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _winHUD: {fileID: 117205971}
+  _looseHUD: {fileID: 1525852297}
 --- !u!1 &634506812
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,7 +3012,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 598711882}
         m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -3451,7 +3457,6 @@ MonoBehaviour:
     media: 3
     maxima: 5
   _malfunctioningTime: 6
-  betweenClients: 3
 --- !u!1 &992650519
 GameObject:
   m_ObjectHideFlags: 0
@@ -3688,7 +3693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 8ea59c5ac11d201439c134d0f57c3c04, type: 3}
+  m_Texture: {fileID: 2800000, guid: 4a96e9202b254ee4484b633acd24e0ae, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3803,6 +3808,7 @@ MonoBehaviour:
   _compassGO: {fileID: 1966122396}
   _minimapGO: {fileID: 641888323}
   _plane: {fileID: 969922379}
+  _walkieGO: {fileID: 829333676}
 --- !u!1 &1243092736
 GameObject:
   m_ObjectHideFlags: 0
@@ -3966,16 +3972,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3229c5b0632d044a820787a5c1cef5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameUIObj: {fileID: 598711877}
-  _endUIObj: {fileID: 1423394189}
+  _gameObj: {fileID: 1301540905}
   _ClueObj:
   - {fileID: 1486768500}
   - {fileID: 196074170}
   - {fileID: 1325562384}
   _HandObj: {fileID: 1936919470}
-  _player: {fileID: 969922379}
   intentos: 0
-  help: 0
 --- !u!4 &1261646436
 Transform:
   m_ObjectHideFlags: 0
@@ -4639,124 +4642,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415500875}
   m_CullTransparentMesh: 1
---- !u!1 &1423394189
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1423394194}
-  - component: {fileID: 1423394193}
-  - component: {fileID: 1423394192}
-  - component: {fileID: 1423394191}
-  - component: {fileID: 1423394190}
-  m_Layer: 5
-  m_Name: UI_EndGame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1423394190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423394189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0e70244c3eea649b6aa3ddfe204b0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _winHUD: {fileID: 117205971}
-  _looseHUD: {fileID: 1525852297}
---- !u!114 &1423394191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423394189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &1423394192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423394189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &1423394193
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423394189}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &1423394194
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423394189}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 117205972}
-  - {fileID: 1525852298}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1471566864
 GameObject:
   m_ObjectHideFlags: 0
@@ -5147,7 +5032,7 @@ RectTransform:
   - {fileID: 562645323}
   - {fileID: 410471535}
   - {fileID: 1932662750}
-  m_Father: {fileID: 1423394194}
+  m_Father: {fileID: 598711881}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5735,7 +5620,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 8ea59c5ac11d201439c134d0f57c3c04, type: 3}
+  m_Texture: {fileID: 2800000, guid: 4a96e9202b254ee4484b633acd24e0ae, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -5988,20 +5873,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1820656469}
-        m_TargetAssemblyTypeName: JSONWriter, Assembly-CSharp
-        m_MethodName: outputJSON
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1763509946}
-        m_TargetAssemblyTypeName: Scene_Manager, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -6136,7 +6009,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 476}
+  m_AnchoredPosition: {x: 0, y: 468}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1942617687
@@ -6444,7 +6317,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 8ea59c5ac11d201439c134d0f57c3c04, type: 3}
+  m_Texture: {fileID: 2800000, guid: 4a96e9202b254ee4484b633acd24e0ae, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -6499,6 +6372,7 @@ MonoBehaviour:
   _walkieGO: {fileID: 829333676}
   _airportManGO: {fileID: 134377900}
   _plane: {fileID: 1214255469}
+  _obstacleDuration: 30
 --- !u!4 &1971902938
 Transform:
   m_ObjectHideFlags: 0
@@ -6695,4 +6569,3 @@ SceneRoots:
   - {fileID: 134377901}
   - {fileID: 1620934368}
   - {fileID: 1971902938}
-  - {fileID: 1423394194}

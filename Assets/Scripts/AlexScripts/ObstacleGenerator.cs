@@ -6,10 +6,11 @@ using UnityEngine;
 
 public class ObstacleGenerator : MonoBehaviour
 {
-    [SerializedDictionary("Nombre (en minusculas) del evento", "Nombre del país al que afecta")] public SerializedDictionary<string, string> imprevistos;
+    [SerializedDictionary("Nombre (en minusculas) del evento", "Nombre del paÃ­s al que afecta")] public SerializedDictionary<string, string> imprevistos;
     [SerializeField] private GameObject _walkieGO;
     [SerializeField] private GameObject _airportManGO;
     [SerializeField] private GameObject _plane;
+    [SerializeField] private float _obstacleDuration;
     private WalkieController _walkieController;
     private AirportManager _airportManager;
     private PlaneColliderCheck _planeColliderCheck;
@@ -17,9 +18,11 @@ public class ObstacleGenerator : MonoBehaviour
     private List<string> _imprevistosNombres;
 
     private float _elapsedTime;
+    private float _instantiatedElapsedTime;
     private int _randomCountry;
     private float _randomTime;
     private int _randomImprevisto;
+    private bool instantiated = false;
 
     private Tuple<string, string> _lastObstacle;
 
@@ -31,7 +34,7 @@ public class ObstacleGenerator : MonoBehaviour
         _planeColliderCheck = _plane.GetComponent<PlaneColliderCheck>();
         _elapsedTime = 0.0f;
         _airportGOs = new List<GameObject>(_airportManager.airports.Keys);
-        _randomTime = UnityEngine.Random.Range(10f, 20f);
+        _randomTime = UnityEngine.Random.Range(20f, 30f);
         imprevistos = new SerializedDictionary<string, string>
         {
             ["niebla"] = "",
@@ -56,7 +59,9 @@ public class ObstacleGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _elapsedTime += Time.deltaTime;
+        if(!instantiated) _elapsedTime += Time.deltaTime;
+
+        if (instantiated) _instantiatedElapsedTime += Time.deltaTime;
 
         if(_elapsedTime >= _randomTime)
         {
@@ -68,9 +73,20 @@ public class ObstacleGenerator : MonoBehaviour
             _randomImprevisto = UnityEngine.Random.Range(0, _imprevistosNombres.Count);
             imprevistos[_imprevistosNombres[_randomImprevisto]] = _airportManager.airports[_airportGOs[_randomCountry]];
             _lastObstacle = new Tuple<string, string>(_imprevistosNombres[_randomImprevisto], imprevistos[_imprevistosNombres[_randomImprevisto]]);
+            SpeechBubbleController.setShowString(SpeechBubbleController.Frases.RADAR_DETECCION);
             _walkieController.showWalkie();
-            _randomTime = UnityEngine.Random.Range(10f, 20f);
+            _randomTime = UnityEngine.Random.Range(20f, 30f);
             _elapsedTime = 0.0f;
+            instantiated = true;
+        }
+
+        if(_instantiatedElapsedTime >= _obstacleDuration)
+        {
+            imprevistos[_imprevistosNombres[_randomImprevisto]] = "";
+            instantiated = false;
+            _instantiatedElapsedTime = 0.0f;
+            SpeechBubbleController.setShowString(SpeechBubbleController.Frases.OBSTACLE_END);
+            _walkieController.showWalkie();
         }
     }
 }

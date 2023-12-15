@@ -7,6 +7,8 @@ public class AirportManager : MonoBehaviour
 {
     [SerializedDictionary("Gameobject del collider", "Nombre del pais")] public SerializedDictionary<GameObject, string> airports;
     [SerializeField] private GameObject plane;
+    [SerializeField] private GameObject _walkieGO;
+    private WalkieController _walkieController;
     private PlayerController playerController;
     private float timeInBetween = 5.0f;
     private float _elapsedTime = 0;
@@ -17,6 +19,7 @@ public class AirportManager : MonoBehaviour
     {
         playerController = plane.GetComponent<PlayerController>();
         canLand = true;
+        _walkieController = _walkieGO.GetComponent<WalkieController>();
     }
 
     public void Aterrizar(GameObject go)
@@ -32,6 +35,8 @@ public class AirportManager : MonoBehaviour
                     GameManager.Instance.WrongCountry();
                 }
                 canLand = false;
+                SpeechBubbleController.setShowString(SpeechBubbleController.Frases.COUNTRY_FAILED);
+                _walkieController.showWalkie();
             }
         }
     }
