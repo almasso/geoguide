@@ -2,20 +2,20 @@
 "nivel_Info" : [
 {
 "name":"  Introductorio Europa",
-"intentos":"1",
-"clientesTotales" : 2,
+"intentos":"2",
+"clientesTotales" : 1,
 "imprevistos" : false
 },
 {
 "name":"  Europa 1",
-"intentos":"4",
-"clientesTotales" : 1,
+"intentos":"3",
+"clientesTotales" : 3,
 "imprevistos" : false
 },
 {
 "name":"  Europa 2",
-"intentos":"4",
-"clientesTotales" : 1,
+"intentos":"1",
+"clientesTotales" : 3,
 "imprevistos" : false
 },
 {

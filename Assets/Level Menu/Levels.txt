@@ -10,15 +10,15 @@
 {
 "index": 1,
 "name": "  Europa 1",
-"estrella1":false,
-"estrella2":false,
+"estrella1":true,
+"estrella2":true,
 "estrella3":false
 },
 {
 "index": 2,
 "name": "  Europa 2",
-"estrella1":false,
-"estrella2":false,
+"estrella1":true,
+"estrella2":true,
 "estrella3":false
 },
 {

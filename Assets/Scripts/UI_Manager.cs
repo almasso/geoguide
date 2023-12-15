@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UI_Manager : MonoBehaviour
 {
@@ -53,8 +55,37 @@ public class UI_Manager : MonoBehaviour
     }
     public void EndGameHUD(bool win)
     {
-        if (win) _winHUD.SetActive(true);
+        if (win)
+        {
+            _winHUD.SetActive(true);
+            AssignStarts();
+        }
         else _looseHUD.SetActive(true);
+
+      
+    }
+    public void AssignStarts()
+    {
+        RawImage estrella1 = _winHUD.transform.GetChild(1).gameObject.GetComponent<RawImage>();
+        RawImage estrella2 = _winHUD.transform.GetChild(2).gameObject.GetComponent<RawImage>();
+        RawImage estrella3 = _winHUD.transform.GetChild(3).gameObject.GetComponent<RawImage>();
+        int tries = GameManager.Instance.GetTries();
+        if (tries == 0)
+        {
+            estrella1.texture = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png").texture;
+            estrella2.texture = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png").texture;
+            estrella3.texture = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png").texture;
+           
+        }
+        else if(tries == 1)
+        {
+            estrella1.texture = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png").texture;
+            estrella2.texture = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png").texture;
+        }
+        else if(tries == 2)
+        {
+            estrella1.texture = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png").texture;
+        }
     }
     #endregion
 }

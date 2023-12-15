@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Velocidades velocidadesAvion;
     [Header("Ajustes del castigo por imprevisto")]
     [SerializeField] private float _malfunctioningTime;
-    [SerializeField] private float betweenClients = 1.0f;
+    [SerializeField] private float betweenClients = 10.0f;
 
     private float velocidadObjetivo;
     private bool _canTiltDown, _canTiltUp;
@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour
         _lvlChngr.FadeScreen();
         landingPlane = true;
         _time = 0.0f;
-
+        GameManager.Instance.DeactivateTrails();
     }
 
     private void InicializePlane()
@@ -161,16 +161,15 @@ public class PlayerController : MonoBehaviour
     public void DeactivatePlayer()
     {
         detectInput = false;
-        descendAnim = true;
         moving = false;
         velocidadObjetivo = velocidadesAvion.minima;
-        minimumHeight = animMinimumHeight;
+        GameManager.Instance.DeactivateTrails();
     }
     // Update is called once per frame
     void Update()
     {
         if (_malfunctioning) _elapsedTime += Time.deltaTime;
-        if (landingPlane) { Debug.Log(_time); _time += Time.deltaTime; }
+        if (landingPlane) {_time += Time.deltaTime; }
 
         if(_elapsedTime >= _malfunctioningTime)
         {
@@ -179,8 +178,6 @@ public class PlayerController : MonoBehaviour
         }
         if(landingPlane && _time >= betweenClients)
         {
-            Debug.Log("Aterrizando");
-            if (!GameManager.Instance.hasMoreClients()) DeactivatePlayer();
             InicializePlane();
             GameManager.Instance.ChangeClient();
             _lvlChngr.FadeInScreen();

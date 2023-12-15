@@ -62,7 +62,11 @@ public class ButtonClue : MonoBehaviour
 
     public void hasChangedClient()
     {
-        DesableButton();
+        text.HideClue();
+        bckgrndText.HideClue();
+        boton.interactable = false;
+        image.transform.rotation = Quaternion.Euler(0, 0, 0);
+        _enabled = false;
         _elapsedTime = 0;
         active = false;
     }

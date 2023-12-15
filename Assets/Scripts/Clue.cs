@@ -7,6 +7,7 @@ public class Clue : MonoBehaviour
     private Transform _myTransform;
     private bool move = false;
     private int dir = -1;
+    private int vel = 200;
     private float maxIzq;
     private float maxDer;  
 
@@ -23,16 +24,23 @@ public class Clue : MonoBehaviour
     {
         dir = _dir;
         move = true;
+        vel = 200;
     }
-    // Update is called once per frame
-    void Update()
+    public void HideClue()
+    {
+        dir = 1;
+        vel = 2000;
+        move = true;
+    }
+
+    void FixedUpdate()
     {
         if (move)
         {
             if ((dir == -1 &&_myTransform.position.x <= maxIzq) || (dir == 1 && _myTransform.position.x >= maxDer)) { 
                 move = false;
             }
-            else _myTransform.Translate(new Vector3(dir*5, 0, 0));
+            else _myTransform.localPosition += (new Vector3(dir*vel, 0, 0)) * Time.fixedDeltaTime; 
         }
     }
 }

@@ -13,15 +13,18 @@ public class PlaneTrail : MonoBehaviour
 
     [SerializeField] private float alphaMin = 0;
     [SerializeField] private float alphaMax = 0.5f;
+    private bool _active;
 
     void Awake()
     {
         trailHolder.SetActive(false);
+        _active = false;
     }
 
     void Start()
     {
         trailHolder.gameObject.SetActive(true);
+        _active = true;
 
         for (int i = 0; i < trails.Length; i++)
         {
@@ -31,12 +34,20 @@ public class PlaneTrail : MonoBehaviour
 
     void Update()
     {
-        float alpha = Mathf.Lerp(alphaMin, alphaMax, player.GetComponent<PlayerController>().GetCurrentSpeed()); //Cambiamos la transparencia de las estelas dependiendo de la velocidad del avión.
-
-        for (int i = 0; i < trails.Length; i++)
+        if (_active)
         {
-            trails[i].sharedMaterial.color = new Color(trailCol.r, trailCol.g, trailCol.b, alpha);
+            float alpha = Mathf.Lerp(alphaMin, alphaMax, player.GetComponent<PlayerController>().GetCurrentSpeed()); //Cambiamos la transparencia de las estelas dependiendo de la velocidad del avión.
+
+            for (int i = 0; i < trails.Length; i++)
+            {
+                trails[i].sharedMaterial.color = new Color(trailCol.r, trailCol.g, trailCol.b, alpha);
+            }
         }
 
+    }
+    public void Activate(bool active)
+    {
+        trailHolder.SetActive(active);
+        _active = active;
     }
 }

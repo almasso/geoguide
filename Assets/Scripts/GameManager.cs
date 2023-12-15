@@ -35,25 +35,32 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject _HandObj;
     private HandWave _hand;
-    
+
+    [SerializeField]
+    private GameObject _player;
+    private PlaneTrail _planeTrail;
+    private PlayerController _planeController;
+
     [SerializeField]
     public int intentos = 0;
     public bool help = false;
     void Start()
     {
         _gameUI = _gameUIObj.GetComponentInChildren<GameDisplay>();
+        _planeController = _player.GetComponent<PlayerController>();
+        _planeTrail = _player.GetComponent<PlaneTrail>();
         Debug.Log(_gameUI);
         _gameUIObj.SetActive(true);
         _endUIObj.SetActive(false);
         _hand = _HandObj.GetComponent<HandWave>();
         UI_Manager.Instance.StartGameHUD();
+        _planeTrail.Activate(true);
     }
 
     private void Update()
     {
         if (help)
         {
-            Debug.Log("Necesitas ayuda bb <3 o-o");
             help = false;
         }
     }
@@ -62,22 +69,29 @@ public class GameManager : MonoBehaviour
         Debug.Log(_gameUI);
         if (_gameUI.HasMoreClients())
         {
-            Debug.Log("Cambiando de cliente desde el Manager");
             _gameUI.nextClient();
             for (int i = 0; i < 3; ++i) _ClueObj[i].GetComponent<ButtonClue>().hasChangedClient();
             _hand.InstanciateHand();
+            _planeTrail.Activate(true);
         }
         else
         {
-            UI_Manager.Instance.EndGameHUD(intentos <= 3);
+            UI_Manager.Instance.EndGameHUD(intentos < 3);
             _gameUIObj.SetActive(false);
             _endUIObj.SetActive(true);
+            _planeController.DeactivatePlayer();
+            _planeTrail.Activate(false);
         }
 
     }
 
-   public void WrongCountry() { ++intentos; Debug.Log("Pais incorrecto"); if (intentos >= 3) help = true; }
+   public void WrongCountry() { ++intentos; Debug.Log(intentos); if(intentos >= 2) help = true; }
     public bool hasMoreClients() { return _gameUI.HasMoreClients(); }
+    public void DeactivateTrails()
+    {
+        _planeTrail.Activate(false);
+    }
+    public int GetTries(){ return intentos; }
     #endregion
 }
 

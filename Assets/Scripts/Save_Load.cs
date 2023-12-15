@@ -95,8 +95,6 @@ public class Save_Load : MonoBehaviour
         public IntroLevelList myIntroLevelList = new IntroLevelList();
     #endregion
 
-
-    
         #region INFO_POR_CLIENTE
         [Serializable]
         public class Cliente_Info
