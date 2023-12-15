@@ -66,9 +66,9 @@ public class UI_Manager : MonoBehaviour
     }
     public void AssignStarts()
     {
-        RawImage estrella1 = _winHUD.transform.GetChild(1).gameObject.GetComponent<RawImage>();
-        RawImage estrella2 = _winHUD.transform.GetChild(2).gameObject.GetComponent<RawImage>();
-        RawImage estrella3 = _winHUD.transform.GetChild(3).gameObject.GetComponent<RawImage>();
+        RawImage estrella1 = _winHUD.transform.GetChild(2).gameObject.GetComponent<RawImage>();
+        RawImage estrella2 = _winHUD.transform.GetChild(3).gameObject.GetComponent<RawImage>();
+        RawImage estrella3 = _winHUD.transform.GetChild(4).gameObject.GetComponent<RawImage>();
         int tries = GameManager.Instance.GetTries();
         if (tries == 0)
         {

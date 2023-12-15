@@ -5,7 +5,7 @@
 "name": "  Introductorio Europa",
 "estrella1":true,
 "estrella2":true,
-"estrella3":false
+"estrella3":true
 },
 {
 "index": 1,
