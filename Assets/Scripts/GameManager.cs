@@ -43,6 +43,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject[] _countries;
 
+    Color red = new Color32(255, 0, 0, 94);
+    Color green = new Color32(0, 255, 0, 94);
+
     void Start()
     {
         _game = _gameObj.GetComponent<GameDisplay>();
@@ -50,7 +53,7 @@ public class GameManager : MonoBehaviour
         _hand = _HandObj.GetComponent<HandWave>();
         //UI_Manager.Instance.StartGameHUD();
         updateCountryObject(GameSceneInfo.getObjectiveCountry());
-        changeCountryColor(Color.green);
+        changeCountryColor(green);
     }
 
     public void ChangeClient()
@@ -69,13 +72,13 @@ public class GameManager : MonoBehaviour
 
     public void updateIntroCountry(string country)
     {
-        changeCountryColor(Color.red);
+        changeCountryColor(red);
         if (country == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country1) GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country2);
         else if (country == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country2) GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country3);
         else Debug.Log("ultimo");
 
         updateCountryObject(GameSceneInfo.getObjectiveCountry());
-        changeCountryColor(Color.green);
+        changeCountryColor(green);
 
         _game.updateIntroObjective();
     }
@@ -87,7 +90,7 @@ public class GameManager : MonoBehaviour
             //Debug.Log(_countries[i].name);
             //Debug.Log(country);
             if (_countries[i].name == country) {
-                actualCountryObject = _countries[i].transform.GetChild(0).gameObject; 
+                actualCountryObject = _countries[i].gameObject; 
             }
         }
     }
