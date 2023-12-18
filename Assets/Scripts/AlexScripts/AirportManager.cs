@@ -36,9 +36,9 @@ public class AirportManager : MonoBehaviour
                         GameManager.Instance.updateIntroCountry(GameSceneInfo.getObjectiveCountry());
                     }
                     else if(GameManager.Instance.GetTries() <= 3) playerController.SecuenciaAterrizaje();
-                    else
+                    else if(GameManager.Instance.GetTries() > 3)
                     {
-                        UI_Manager.Instance.EndGameHUD(false);
+                        GameManager.Instance.fail();
                     }
                 }
                 else if(GameManager.Instance.GetTries() < 3)

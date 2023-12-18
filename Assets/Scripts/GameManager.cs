@@ -82,12 +82,17 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            UI_Manager.Instance.EndGameHUD(intentos < 3);
-            _gameUIObj.SetActive(false);
-            _endUIObj.SetActive(true);
-            _planeController.DeactivatePlayer();
-            _planeTrail.Activate(false);
+            fail();
         }
+    }
+
+    public void fail()
+    {
+        UI_Manager.Instance.EndGameHUD(intentos < 3);
+        _gameUIObj.SetActive(false);
+        _endUIObj.SetActive(true);
+        _planeController.DeactivatePlayer();
+        _planeTrail.Activate(false);
     }
 
     public void updateIntroCountry(string country)
