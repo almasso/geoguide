@@ -140,39 +140,39 @@
 },
 {
 	"name": "  Europa 4",
-	"pais": "Noruega",
+	"pais": "Dinamarca",
 	"cliente": "Assets/Clients/client16.png",
-	"pista1": "Pista 1 Nivel 1",
-	"pista2": "Pista 2 Nivel 1",
-	"pista3": "Pista 3 Nivel 1",
-	"objetivo": "Objetivo del nivel"
+	"pista1": "Está en el centro norte europeo",
+	"pista2": "Le baña el Mar del Norte",
+	"pista3": "Está al norte de Alemania",
+	"objetivo": "Me gustaría visitar la Estatua de la Sirenita, que está en Dinamarca. ¿Podrías llevarme?"
 },
 {
 	"name": "  Europa 4",
-	"pais": "Noruega",
+	"pais": "Suecia",
 	"cliente": "Assets/Clients/client17.png",
-	"pista1": "Pista 1 Nivel 1",
-	"pista2": "Pista 2 Nivel 1",
-	"pista3": "Pista 3 Nivel 1",
-	"objetivo": "Objetivo del nivel"
+	"pista1": "Está conectado al continente europeo por dos zonas",
+	"pista2": "Es un país del norte europeo,
+	"pista3": "Está al norte de Alemania y Dinamarca",
+	"objetivo": "Quiero visitar el país más poblado de Escandinavia, que es Suecia. ¿Sabes ir?"
 },
 {
 	"name": "  Europa 4",
 	"pais": "Noruega",
 	"cliente": "Assets/Clients/client18.png",
-	"pista1": "Pista 1 Nivel 1",
-	"pista2": "Pista 2 Nivel 1",
-	"pista3": "Pista 3 Nivel 1",
-	"objetivo": "Objetivo del nivel"
+	"pista1": "Es el país no insular más al norte de Europa",
+	"pista2": "Es uno de los países escandinavos",
+	"pista3": "Está al oeste de Suecia",
+	"objetivo": "Quiero visitar los famosos fiordos noruegos. ¿Podrías acercarme?"
 },
 {
 	"name": "  Europa 4",
-	"pais": "Noruega",
+	"pais": "Finlandia",
 	"cliente": "Assets/Clients/client19.png",
-	"pista1": "Pista 1 Nivel 1",
-	"pista2": "Pista 2 Nivel 1",
-	"pista3": "Pista 3 Nivel 1",
-	"objetivo": "Objetivo del nivel"
+	"pista1": "Es uno de los tres países escandinavos",
+	"pista2": "El sueco es uno de sus idiomas oficiales",
+	"pista3": "Tiene frontera con Noruega y Suecia",
+	"objetivo": "Me gustaría viajar a la Aldea de Santa Claus, ahora que se acercan las Navidades, que está en Finlandia. ¿Te importaría llevarme?"
 
 }
 ]
