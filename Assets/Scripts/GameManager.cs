@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
         _planeTrail.Activate(true);
         GameSceneInfo.setObjectiveCountry(_gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country1);
         updateCountryObject(GameSceneInfo.getObjectiveCountry());
-        changeCountryColor(green);
+        if(SceneManager.GetActiveScene().name == "IntroductoryLevels") changeCountryColor(green);
     }
 
     public void ChangeClient()
