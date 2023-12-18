@@ -59,7 +59,7 @@
 			"capital": "Roma",
 			"languaje": "Italiano",
 			"currency": "Euro",
-			"climate": "Mediterráno, pero frío en el norte, debido a la cordillera de los Alpes",
+			"climate": "Mediterráneo, pero frío en el norte, debido a la cordillera de los Alpes",
 			"info": "País del sur de Europa fronterizo con Francia, Suiza y Austria entre otros, fácilmente reconocible por su curiosa forma, que parece una bota de tacón. Son lugares famosos el Coliseo y la Torre de Pisa",
 			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/italia.png",
 			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/italia.png",

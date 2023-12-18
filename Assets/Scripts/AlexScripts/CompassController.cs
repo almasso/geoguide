@@ -7,33 +7,27 @@ public class CompassController : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] private GameObject _northPole;
-    [SerializeField] private GameObject _southPole;
-    [SerializeField] private GameObject _planeNode;
-    [SerializeField] private GameObject _planeModel;
+    [SerializeField] private GameObject _plane;
     [SerializeField] private float _malfunctioningTime;
     private bool normalFunctioning = true;
     private float _elapsedTime = 0.0f;
 
 
-    private Transform NpoleTransform, SpoleTransform, compassTransform, planeNodeTransform, planeModelTransform;
+    private Transform NpoleTransform, compassTransform, planeTransform;
     void Start()
     {
         NpoleTransform = _northPole.transform;
-        SpoleTransform = _southPole.transform;
         compassTransform = this.transform;
-        planeNodeTransform = _planeNode.transform;
-        planeModelTransform = _planeModel.transform;
+        planeTransform = _plane.transform;
     }
 
     void FixedUpdate()
     {
         if (normalFunctioning)
         {
-            Vector3 planeForward = planeModelTransform.forward;
-            Vector3 northDirection = Quaternion.Euler(-90, 0, 0) * Vector3.forward;
-
-            float angle = Vector3.SignedAngle(northDirection, planeForward, Vector3.up);
-            compassTransform.localEulerAngles = new Vector3(0, 0, angle);
+            Vector3 northDir = CalculateNorth(planeTransform.position);
+            float angle = Vector3.SignedAngle(planeTransform.forward, northDir, -planeTransform.up);
+            compassTransform.eulerAngles = Vector3.forward * (angle);
         }
         else
         {
@@ -52,6 +46,15 @@ public class CompassController : MonoBehaviour
             normalFunctioning = true;
             _elapsedTime = 0.0f;
         }
+    }
+
+
+    private Vector3 CalculateNorth(Vector3 pos)
+    {
+        pos = pos.normalized;
+        Vector3 posNorth = NpoleTransform.position;
+        Vector3 greatCircleNormal = Vector3.Cross(posNorth, pos);
+        return Vector3.Cross(pos, greatCircleNormal).normalized;
     }
 }
 
