@@ -35,7 +35,11 @@ public class AirportManager : MonoBehaviour
                     {
                         GameManager.Instance.updateIntroCountry(GameSceneInfo.getObjectiveCountry());
                     }
-                    else playerController.SecuenciaAterrizaje();
+                    else if(GameManager.Instance.GetTries() <= 3) playerController.SecuenciaAterrizaje();
+                    else
+                    {
+                        UI_Manager.Instance.EndGameHUD(false);
+                    }
                 }
                 else if(GameManager.Instance.GetTries() < 3)
                 {
@@ -47,6 +51,7 @@ public class AirportManager : MonoBehaviour
                 {
                     SpeechBubbleController.setShowString(SpeechBubbleController.Frases.MISSION_FAILED);
                     _walkieController.showWalkie();
+                    GameManager.Instance.updateCountryObject(GameSceneInfo.getObjectiveCountry());
                     GameManager.Instance.changeCountryColor(new Color32(0, 255, 0, 94));
                     GameManager.Instance.WrongCountry();
                 }
