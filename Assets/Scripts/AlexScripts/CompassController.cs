@@ -30,10 +30,19 @@ public class CompassController : MonoBehaviour
         if (normalFunctioning)
         {
             Vector3 planeForward = planeModelTransform.forward;
-            Vector3 northDirection = Quaternion.Euler(-90, 0, 0) * Vector3.forward;
+            Vector3 toNorthPole = NpoleTransform.position - planeModelTransform.position;
+            Vector3 toSouthPole = SpoleTransform.position - planeModelTransform.position;
 
-            float angle = Vector3.SignedAngle(northDirection, planeForward, Vector3.up);
-            compassTransform.localEulerAngles = new Vector3(0, 0, angle);
+            float angleToNorth = Vector3.SignedAngle(planeForward, toNorthPole, planeModelTransform.up);
+            float angleToSouth = Vector3.SignedAngle(planeForward, toSouthPole, planeModelTransform.up);
+            if(Mathf.Abs(angleToNorth) < Mathf.Abs(angleToSouth))
+            {
+                //
+            }
+            else
+            {
+                //sur
+            }
         }
         else
         {
