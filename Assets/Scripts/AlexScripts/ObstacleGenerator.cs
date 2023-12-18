@@ -59,7 +59,7 @@ public class ObstacleGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IndexController._imprevisto)
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "GameScene" && IndexController._imprevisto)
         {
             if (!instantiated) _elapsedTime += Time.deltaTime;
 
