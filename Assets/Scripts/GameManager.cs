@@ -25,9 +25,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject _gameUIObj;
     private GameDisplay _gameUI;
-
     [SerializeField]
     private GameObject _endUIObj;
+    [SerializeField]
+    private GameObject _pauseUIObj;
 
     [SerializeField]
     private GameObject[] _ClueObj;
@@ -52,6 +53,7 @@ public class GameManager : MonoBehaviour
         Debug.Log(_gameUI);
         _gameUIObj.SetActive(true);
         _endUIObj.SetActive(false);
+        _pauseUIObj.SetActive(false);
         _hand = _HandObj.GetComponent<HandWave>();
         UI_Manager.Instance.StartGameHUD();
         _planeTrail.Activate(true);
@@ -59,14 +61,10 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (help)
-        {
-            help = false;
-        }
+     
     }
     public void ChangeClient()
     {
-        Debug.Log(_gameUI);
         if (_gameUI.HasMoreClients())
         {
             _gameUI.nextClient();
@@ -92,6 +90,16 @@ public class GameManager : MonoBehaviour
         _planeTrail.Activate(false);
     }
     public int GetTries(){ return intentos; }
+
+    public void PauseState() {
+        _pauseUIObj.SetActive(true);
+        _gameUIObj.SetActive(false);
+    }
+
+    public void returnToGame() { 
+        _pauseUIObj.SetActive(false);
+        _gameUIObj.SetActive(true);
+    }
     #endregion
 }
 
