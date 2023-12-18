@@ -10,7 +10,7 @@ public class ButtonClue : MonoBehaviour
     private float _elapsedTime;
     private Clue text;
     private Clue bckgrndText;
-   [SerializeField]
+    [SerializeField]
     public GameObject _myText;
     [SerializeField]
     public GameObject _myBackgorungText;
@@ -18,6 +18,9 @@ public class ButtonClue : MonoBehaviour
     public bool active = false;
     private Button boton;
     private Image image;
+    private int intentos = 0;
+    [SerializeField]
+    private int intentosMax;
     private void Start()
     {
         boton = gameObject.transform.GetChild(2).gameObject.GetComponent<Button>();
@@ -70,12 +73,16 @@ public class ButtonClue : MonoBehaviour
         _elapsedTime = 0;
         active = false;
     }
+    public void intentoFallido(int inte)
+    {
+        intentos = inte;
+    }
     void Update()
     {
         if (!active)
         {
             _elapsedTime += Time.deltaTime;
-            if (_elapsedTime >= timeToActivate)
+            if (_elapsedTime >= timeToActivate || intentosMax == intentos)
             {
                 active = true;
                 EnableButton();

@@ -40,12 +40,12 @@ public class JSONWriter : Save_Load
                 }
             }
         }
+        if (intentosActuales < 3) cardJSON();
         File.WriteAllText(level_Info_path, sbText.ToString());
     }
 
     public void cardJSON()
     {
-        Debug.Log("MUY BUENAS PRINGADO");
         string line = "";
         using (var reader = new System.IO.StreamReader(cards_info_path))
         {

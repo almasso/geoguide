@@ -83,7 +83,10 @@ public class GameManager : MonoBehaviour
 
     }
 
-   public void WrongCountry() { ++intentos; if(intentos >= 2) help = true; }
+   public void WrongCountry() { 
+        ++intentos;
+        for (int i = 0; i < 3; ++i) _ClueObj[i].GetComponent<ButtonClue>().intentoFallido(intentos);
+    }
     public bool hasMoreClients() { return _gameUI.HasMoreClients(); }
     public void DeactivateTrails()
     {

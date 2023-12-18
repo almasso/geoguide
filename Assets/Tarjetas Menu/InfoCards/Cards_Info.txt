@@ -3,7 +3,7 @@
 		{
 			"index": 0,
 			"name": "España",
-"isActive": true,
+			"isActive": false,
 			"capital": "Madrid",
 			"languaje": "Español",
 			"currency": "Euro",
@@ -29,7 +29,7 @@
 		{
 			"index": 2,
 			"name": "Alemania",
-"isActive": true,
+			"isActive": false,
 			"capital": "Berlín",
 			"languaje": "Alemán",
 			"currency": "Euro",
@@ -42,7 +42,7 @@
 		{
 			"index": 3,
 			"name": "Portugal",
-"isActive": true,
+			"isActive": false,
 			"capital": "Lisboa",
 			"languaje": "Portugués",
 			"currency": "Euro",
@@ -107,7 +107,7 @@
 		{
 			"index": 8,
 			"name": "Reino Unido",
-"isActive": true,
+			"isActive": false,
 			"capital": "Londres",
 			"languaje": "Inglés",
 			"currency": "Libra Esterlina",
