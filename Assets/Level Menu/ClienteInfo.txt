@@ -152,7 +152,7 @@
 	"pais": "Suecia",
 	"cliente": "Assets/Clients/client17.png",
 	"pista1": "Está conectado al continente europeo por dos zonas",
-	"pista2": "Es un país del norte europeo,
+	"pista2": "Es un país del norte europeo",
 	"pista3": "Está al norte de Alemania y Dinamarca",
 	"objetivo": "Quiero visitar el país más poblado de Escandinavia, que es Suecia. ¿Sabes ir?"
 },
@@ -173,7 +173,6 @@
 	"pista2": "El sueco es uno de sus idiomas oficiales",
 	"pista3": "Tiene frontera con Noruega y Suecia",
 	"objetivo": "Me gustaría viajar a la Aldea de Santa Claus, ahora que se acercan las Navidades, que está en Finlandia. ¿Te importaría llevarme?"
-
 }
 ]
 }

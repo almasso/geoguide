@@ -75,7 +75,8 @@ public class Scene_Manager : MonoBehaviour
         Debug.Log(_i);
         IndexController._index = _i;
         IndexController.namePreviousScene = "GameScene";
-        SceneManager.LoadScene("GameScene");
+        if (IndexController._index == 0 || IndexController._index % 5 == 0) SceneManager.LoadScene("IntroductoryLevels");
+        else SceneManager.LoadScene("GameScene");
     }
     public void BackToMainMenu()
     {
