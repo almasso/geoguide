@@ -39,14 +39,15 @@ public class Scene_Manager : MonoBehaviour
     {
         refreshData();
         SceneManager.LoadScene("LevelsScene");
+        IndexController.namePreviousScene = "LevelScene";
     }
 
     public void StartGamePause()
     {
         LevelChanger _lvlChngr = _levelChanger.GetComponent<LevelChanger>();
         _lvlChngr.FadeScreen();
-       // SceneManager.UnloadScene("GameScene");
         SceneManager.LoadScene("LevelsScene");
+        IndexController.namePreviousScene = "LevelScene";
     }
 
     public void PauseGame()
@@ -56,7 +57,9 @@ public class Scene_Manager : MonoBehaviour
     }
 
     public void BackToPause() {
-        UnloadScene("MenuTarjetas");
+        if (IndexController.namePreviousScene == "GameScene")
+            UnloadScene("MenuTarjetas");
+        else StartGame();
     }
 
     public void BackToGame()
@@ -71,11 +74,13 @@ public class Scene_Manager : MonoBehaviour
 
         Debug.Log(_i);
         IndexController._index = _i;
+        IndexController.namePreviousScene = "GameScene";
         SceneManager.LoadScene("GameScene");
     }
     public void BackToMainMenu()
     {
         refreshData();
+        IndexController.namePreviousScene = "LevelScene";
         SceneManager.LoadScene("MainMenuScene");
     }
     public void Tarjetasmenu()

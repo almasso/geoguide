@@ -3,7 +3,7 @@
 		{
 			"index": 0,
 			"name": "España",
-			"isActive": true,
+"isActive": true,
 			"capital": "Madrid",
 			"languaje": "Español",
 			"currency": "Euro",
@@ -16,7 +16,7 @@
 		{
 			"index": 1,
 			"name": "Francia",
-			"isActive": true,
+			"isActive": false,
 			"capital": "París",
 			"languaje": "Francés",
 			"currency": "Euro",
@@ -29,7 +29,7 @@
 		{
 			"index": 2,
 			"name": "Alemania",
-			"isActive": true,
+"isActive": true,
 			"capital": "Berlín",
 			"languaje": "Alemán",
 			"currency": "Euro",
@@ -42,7 +42,7 @@
 		{
 			"index": 3,
 			"name": "Portugal",
-			"isActive": true,
+"isActive": true,
 			"capital": "Lisboa",
 			"languaje": "Portugués",
 			"currency": "Euro",
@@ -55,7 +55,7 @@
 		{
 			"index": 4,
 			"name": "Italia",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Roma",
 			"languaje": "Italiano",
 			"currency": "Euro",
@@ -68,7 +68,7 @@
 		{
 			"index": 5,
 			"name": "Grecia",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Atenas",
 			"languaje": "Griego",
 			"currency": "Euro",
@@ -81,7 +81,7 @@
 		{
 			"index": 6,
 			"name": "Suiza",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Berna",
 			"languaje": "Alemán, Francés, Italiano",
 			"currency": "Franco Suizo",
@@ -94,7 +94,7 @@
 		{
 			"index": 7,
 			"name": "Polonia",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Varsovia",
 			"languaje": "Polaco",
 			"currency": "Esloti",
@@ -107,7 +107,7 @@
 		{
 			"index": 8,
 			"name": "Reino Unido",
-			"isActive": true,
+"isActive": true,
 			"capital": "Londres",
 			"languaje": "Inglés",
 			"currency": "Libra Esterlina",
@@ -120,7 +120,7 @@
 		{
 			"index": 9,
 			"name": "Irlanda",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Dublín",
 			"languaje": "Irlandés, Inglés",
 			"currency": "Euro",
@@ -133,7 +133,7 @@
 		{
 			"index": 10,
 			"name": "Islandia",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Reikiavik",
 			"languaje": "Islandés",
 			"currency": "Corona Islandesa",
@@ -146,7 +146,7 @@
 		{
 			"index": 11,
 			"name": "Austria",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Viena",
 			"languaje": "Alemán, Húngaro",
 			"currency": "Euro",
@@ -159,7 +159,7 @@
 		{
 			"index": 12,
 			"name": "Dinamarca",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Copenhague",
 			"languaje": "Danés",
 			"currency": "Corona Danesa",
@@ -172,7 +172,7 @@
 		{
 			"index": 13,
 			"name": "Noruega",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Oslo",
 			"languaje": "Noruego",
 			"currency": "Corona Noruega",
@@ -185,7 +185,7 @@
 		{
 			"index": 14,
 			"name": "Suecia",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Estocolmo",
 			"languaje": "Sueco",
 			"currency": "Corona Sueca",
@@ -198,7 +198,7 @@
 		{
 			"index": 15,
 			"name": "Finlandia",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Helsinki",
 			"languaje": "Finés y Sueco",
 			"currency": "Euro",

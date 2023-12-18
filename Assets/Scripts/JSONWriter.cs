@@ -32,8 +32,6 @@ public class JSONWriter : Save_Load
                     line = reader.ReadLine();
                     string[] lineChars = line.Split('\"');
                     int.TryParse(lineChars[3], out intentosAnteriores);
-                    Debug.Log("intentosActuales" + intentosActuales);
-                    Debug.Log("intentosAnteriores " +intentosAnteriores);
                     if (intentosActuales <= intentosAnteriores) changeLevelButton();
                 }
                 else
@@ -45,19 +43,24 @@ public class JSONWriter : Save_Load
         File.WriteAllText(level_Info_path, sbText.ToString());
     }
 
-    public void cardJSON(string countryName)
+    public void cardJSON()
     {
+        Debug.Log("MUY BUENAS PRINGADO");
         string line = "";
         using (var reader = new System.IO.StreamReader(cards_info_path))
         {
             while ((line = reader.ReadLine()) != null)
             {
-                if (line.Contains("\"" + countryName + "\"" + ","))
+                if (line.Contains("name"))
                 {
                     sbCard.AppendLine(line);
-                    line = reader.ReadLine();
-                    line = "\"isActive\"" + ":" + " " + "true" + ",";
-                    sbCard.AppendLine(line);
+                    string[] lineChars = line.Split('\"');
+                    if (buscaPais(lineChars[3]))
+                    {
+                        line = reader.ReadLine();
+                        line = "\"isActive\"" + ":" + " " + "true" + ",";
+                        sbCard.AppendLine(line);
+                    }
                 }
                 else
                 {
@@ -66,6 +69,18 @@ public class JSONWriter : Save_Load
             }
         }
         File.WriteAllText(cards_info_path, sbCard.ToString());
+    }
+
+    private bool buscaPais(string name)
+    {
+        int i = 0;
+        bool found = false;
+        while (i < IndexController.paisesPorNivel.Count && !found)
+        {
+            if(name == IndexController.paisesPorNivel[i]) found = true;
+            i++;
+        }
+        return found;
     }
 
     private void changeLevelButton()

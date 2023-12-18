@@ -8,7 +8,7 @@
 },
 {
 "name":"  Europa 1",
-"intentos":"3",
+"intentos":"0",
 "clientesTotales" : 3,
 "imprevistos" : false
 },

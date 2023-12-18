@@ -20,6 +20,7 @@ public class GameDisplay : Save_Load
     int index = 0;
     void Start()
     {
+        IndexController.paisesPorNivel.Clear();
         clientesTotales = myLevel_Info_List.nivel_Info[IndexController._index].clientesTotales;
         cliente = gameObject.transform.GetChild(0).gameObject.GetComponent<RawImage>();
         if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "GameScene")
@@ -38,6 +39,7 @@ public class GameDisplay : Save_Load
             for (int j = 0; j < clientesTotales; ++j)
             {
                 myLevel_Info_List.nivel_Info[IndexController._index].clientes_Info.Add(myCliente_Info_List.cliente_Info[index+j]);
+                IndexController.paisesPorNivel.Add(myCliente_Info_List.cliente_Info[index + j].pais);
             }
             AddClient();
         }
@@ -68,5 +70,5 @@ public class GameDisplay : Save_Load
         AddClient();
     }
 
-    public bool HasMoreClients() { Debug.Log("Cliente Actual " + actualClient); Debug.Log("Clientes Totales " + clientesTotales); return actualClient < clientesTotales - 1;}
+    public bool HasMoreClients() {  return actualClient < clientesTotales - 1;}
 }
