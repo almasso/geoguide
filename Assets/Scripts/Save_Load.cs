@@ -29,7 +29,7 @@ public class Save_Load : MonoBehaviour
     #endregion
 
     #region INFO_MANAGEMENT
-    #region NIVEL_GAME
+        #region NIVEL_GAME
     [Serializable]
         public class Nivel
         {
@@ -47,7 +47,6 @@ public class Save_Load : MonoBehaviour
         }
         public NivelList myLevelList = new NivelList();
     #endregion
-
 
         #region CARTA
         [Serializable]
@@ -79,11 +78,11 @@ public class Save_Load : MonoBehaviour
         public class IntroLevel
         {
             public string Continent;
-            public bool Country1;
+            public string Country1;
             public string Objective1;
-            public bool Country2;
+            public string Country2;
             public string Objective2;
-            public bool Country3;
+            public string Country3;
             public string Objective3;
         }
 

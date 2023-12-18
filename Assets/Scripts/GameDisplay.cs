@@ -18,6 +18,8 @@ public class GameDisplay : Save_Load
     int actualClient = 0;
     int clientesTotales = 1;
     int index = 0;
+    public int introIndex = 0;
+
     void Start()
     {
         IndexController.paisesPorNivel.Clear();
@@ -48,6 +50,7 @@ public class GameDisplay : Save_Load
             objetivo = gameObject.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
             cliente.texture = AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/Clients/dad.png");
             objetivo.text = myIntroLevelList.IntroLevel[0].Objective1;
+            GameSceneInfo.setObjectiveCountry(myIntroLevelList.IntroLevel[0].Objective1);
         }
 
     }
@@ -69,6 +72,10 @@ public class GameDisplay : Save_Load
         ++actualClient;
         AddClient();
     }
+    public bool HasMoreClients() { return actualClient < clientesTotales - 1;}
 
-    public bool HasMoreClients() {  return actualClient < clientesTotales - 1;}
+    public void updateIntroObjective() {
+        if (objetivo.text == myIntroLevelList.IntroLevel[introIndex].Objective1) objetivo.text = myIntroLevelList.IntroLevel[introIndex].Objective2;
+        else if (objetivo.text == myIntroLevelList.IntroLevel[introIndex].Objective2) objetivo.text = myIntroLevelList.IntroLevel[introIndex].Objective3;
+    }
 }

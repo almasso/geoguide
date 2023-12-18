@@ -24,9 +24,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float minimumHeight = 700;
     [SerializeField] private float animMinimumHeight = 650;
     [SerializeField] private Velocidades velocidadesAvion;
-    [Header("Ajustes del castigo por imprevisto")]
-    [SerializeField] private float _malfunctioningTime;
-    [SerializeField] private float betweenClients = 10.0f;
 
     private float velocidadObjetivo;
     private bool _canTiltDown, _canTiltUp;
@@ -35,11 +32,6 @@ public class PlayerController : MonoBehaviour
     private bool detectInput = true;
     private bool descendAnim = false;
     private bool moving = true;
-    private float _elapsedTime =0.0f;
-    private bool _malfunctioning = false;
-    private float _time = 0.0f;
-    private bool landingPlane = false;
-    private float iniminimumHeight;
 
     private Transform _planeTransform;
     private Transform _playerTransform;
@@ -60,10 +52,6 @@ public class PlayerController : MonoBehaviour
         return velocidadObjetivo == velocidadesAvion.maxima;
     }
 
-    public bool isMalfunctioning() {
-        return _malfunctioning;
-    }
-
     public bool isInputEnabled()
     {
         return detectInput;
@@ -72,12 +60,6 @@ public class PlayerController : MonoBehaviour
     public float GetCurrentSpeed()
     {
         return pitchSpeed;
-    }
-    
-    public void setMalfunction()
-    {
-        _malfunctioning = true;
-        velocidadObjetivo = velocidadesAvion.minima;
     }
 
     // Start is called before the first frame update
@@ -90,7 +72,6 @@ public class PlayerController : MonoBehaviour
         velocidadObjetivo = velocidadesAvion.minima;
         _canTiltDown = _canTiltUp = true;
         _lvlChngr = _levelChanger.GetComponent<LevelChanger>();
-        iniminimumHeight = minimumHeight;
     }
 
     void FixedUpdate()
@@ -141,52 +122,15 @@ public class PlayerController : MonoBehaviour
         velocidadObjetivo = velocidadesAvion.minima;
         minimumHeight = animMinimumHeight;
         _lvlChngr.FadeScreen();
-        landingPlane = true;
-        _time = 0.0f;
-        GameManager.Instance.DeactivateTrails();
     }
 
-    private void InicializePlane()
-    {
-        _playerTransform.position = _planetToOrbit.GetComponent<Transform>().position + new Vector3(0, (minimumHeight + maximumHeight) / 2, 0) + _orbitOffset;
-        _planeNodeTransform = _rotationNode.GetComponent<Transform>();
-        velocidadObjetivo = velocidadesAvion.minima;
-        _canTiltDown = _canTiltUp = true;
-        minimumHeight = iniminimumHeight;
-        detectInput = true;
-        descendAnim = false;
-        moving = true;
-    }
-
-    public void DeactivatePlayer()
-    {
-        detectInput = false;
-        moving = false;
-        velocidadObjetivo = velocidadesAvion.minima;
-        GameManager.Instance.DeactivateTrails();
-    }
     // Update is called once per frame
     void Update()
     {
-        if (_malfunctioning) _elapsedTime += Time.deltaTime;
-        if (landingPlane) {_time += Time.deltaTime; }
-
-        if(_elapsedTime >= _malfunctioningTime)
-        {
-            _malfunctioning = false;
-            _elapsedTime = 0.0f;
-        }
-        if(landingPlane && _time >= betweenClients)
-        {
-            InicializePlane();
-            GameManager.Instance.ChangeClient();
-            _lvlChngr.FadeInScreen();
-            landingPlane = false;
-        }
         // Input para el cambio de velocidad
-        if (Input.GetKeyDown(KeyCode.Alpha1) && detectInput && !_malfunctioning) velocidadObjetivo = velocidadesAvion.minima;
-        else if (Input.GetKeyDown(KeyCode.Alpha2) && detectInput && !_malfunctioning) velocidadObjetivo = velocidadesAvion.media;
-        else if (Input.GetKeyDown(KeyCode.Alpha3) && detectInput && !_malfunctioning) velocidadObjetivo = velocidadesAvion.maxima;
+        if (Input.GetKeyDown(KeyCode.Alpha1) && detectInput) { velocidadObjetivo = velocidadesAvion.minima; SoundManager.Instance.ChangePlaneSpeedSound(1); }
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && detectInput) { velocidadObjetivo = velocidadesAvion.media; SoundManager.Instance.ChangePlaneSpeedSound(2); }
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && detectInput) { velocidadObjetivo = velocidadesAvion.maxima; SoundManager.Instance.ChangePlaneSpeedSound(3); }
     }
 
     [System.Serializable]

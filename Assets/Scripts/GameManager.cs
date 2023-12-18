@@ -15,6 +15,10 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
+
+    //private string actualCountry;
+    private GameObject actualCountryObject;
+
     #endregion
 
     #region methods
@@ -44,7 +48,11 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     public int intentos = 0;
-    public bool help = false;
+    [SerializeField]
+    private GameObject[] _countries;
+
+    Color red = new Color32(255, 0, 0, 94);
+    Color green = new Color32(0, 255, 0, 94);
     void Start()
     {
         _gameUI = _gameUIObj.GetComponentInChildren<GameDisplay>();
@@ -57,12 +65,11 @@ public class GameManager : MonoBehaviour
         _hand = _HandObj.GetComponent<HandWave>();
         UI_Manager.Instance.StartGameHUD();
         _planeTrail.Activate(true);
+        GameSceneInfo.setObjectiveCountry(_gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country1);
+        updateCountryObject(GameSceneInfo.getObjectiveCountry());
+        changeCountryColor(green);
     }
 
-    private void Update()
-    {
-     
-    }
     public void ChangeClient()
     {
         if (_gameUI.HasMoreClients())
@@ -80,7 +87,34 @@ public class GameManager : MonoBehaviour
             _planeController.DeactivatePlayer();
             _planeTrail.Activate(false);
         }
+    }
 
+    public void updateIntroCountry(string country)
+    {
+        changeCountryColor(red);
+        if (country == _gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country1) GameSceneInfo.setObjectiveCountry(_gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country2);
+        else if (country == _gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country2) GameSceneInfo.setObjectiveCountry(_gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country3);
+        else Debug.Log("ultimo");
+
+        updateCountryObject(GameSceneInfo.getObjectiveCountry());
+        changeCountryColor(green);
+
+        _gameUI.updateIntroObjective();
+    }
+
+    void updateCountryObject(string country)
+    {
+        for (int i = 0; i < _countries.Length; i++)
+        {
+            if (_countries[i].name == country) {
+                actualCountryObject = _countries[i].gameObject; 
+            }
+        }
+    }
+
+    void changeCountryColor(Color c)
+    {
+        actualCountryObject.GetComponent<MeshRenderer>().material.color = c;
     }
 
    public void WrongCountry() { 

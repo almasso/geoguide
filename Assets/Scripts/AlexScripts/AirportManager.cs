@@ -29,7 +29,14 @@ public class AirportManager : MonoBehaviour
             if (canLand)
             {
                 active = true;
-                if (airports[go] == GameSceneInfo.getObjectiveCountry()) playerController.SecuenciaAterrizaje();
+                if (airports[go] == GameSceneInfo.getObjectiveCountry())
+                {
+                    if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
+                    {
+                        GameManager.Instance.updateIntroCountry(GameSceneInfo.getObjectiveCountry());
+                    }
+                    else playerController.SecuenciaAterrizaje();
+                }
                 else
                 {
                     GameManager.Instance.WrongCountry();

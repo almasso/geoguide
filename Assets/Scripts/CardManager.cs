@@ -64,6 +64,7 @@ public class CardManager : MonoBehaviour
         myCard.transform.position = new Vector2(Screen.width * 0.5f, Screen.height * 0.5f);
 
         cardExpanded = true;
+        SoundManager.Instance.PlaySFX(SoundManager.Instance.cardFlip);
     }
 
     void destroyCard()
