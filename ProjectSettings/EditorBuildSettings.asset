@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PruebaGameScene.unity
     guid: 89d43cdc3838b814aa843186c7b91037
+  - enabled: 1
+    path: Assets/Scenes/IntroductoryLevels.unity
+    guid: 1bd1921c13be3c44a829a09fee1c0af4
   m_configObjects: {}
