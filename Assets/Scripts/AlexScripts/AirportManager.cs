@@ -21,7 +21,14 @@ public class AirportManager : MonoBehaviour
     {
         if(playerController.isInputEnabled() && Input.GetKeyDown("space") && playerController.isMinimumSpeed())
         {
-            if (airports[go] == GameSceneInfo.getObjectiveCountry()) playerController.SecuenciaAterrizaje();
+            if (airports[go] == GameSceneInfo.getObjectiveCountry()) { 
+                
+                if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
+                {
+                    GameManager.Instance.updateIntroCountry(GameSceneInfo.getObjectiveCountry());
+                }
+                else playerController.SecuenciaAterrizaje(); 
+            }
             else
             {
                 SpeechBubbleController.setShowString(SpeechBubbleController.Frases.COUNTRY_FAILED);

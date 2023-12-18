@@ -38,6 +38,7 @@ public class HandWave : MonoBehaviour
                 Destroy(aux);
                 _elapsedTime = 0;
                 alive = false;
+                SoundManager.Instance.PlaySFX(SoundManager.Instance.clientSound);
             }
         }
     }
