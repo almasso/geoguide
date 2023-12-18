@@ -37,10 +37,17 @@ public class AirportManager : MonoBehaviour
                     }
                     else playerController.SecuenciaAterrizaje();
                 }
-                else
+                else if(GameManager.Instance.GetTries() < 3)
                 {
                     SpeechBubbleController.setShowString(SpeechBubbleController.Frases.COUNTRY_FAILED);
                     _walkieController.showWalkie();
+                    GameManager.Instance.WrongCountry();
+                }
+                else
+                {
+                    SpeechBubbleController.setShowString(SpeechBubbleController.Frases.MISSION_FAILED);
+                    _walkieController.showWalkie();
+                    GameManager.Instance.changeCountryColor(new Color32(0, 255, 0, 94));
                     GameManager.Instance.WrongCountry();
                 }
                 canLand = false;
