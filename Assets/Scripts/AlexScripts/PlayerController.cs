@@ -149,7 +149,7 @@ public class PlayerController : MonoBehaviour
 
     private void InicializePlane()
     {
-        _playerTransform.position = _planetToOrbit.GetComponent<Transform>().position + new Vector3(0, (minimumHeight + maximumHeight) / 2, 0) + _orbitOffset;
+        //_playerTransform.localPosition = _planetToOrbit.GetComponent<Transform>().position + new Vector3(0, (minimumHeight + maximumHeight) / 2, 0) + _orbitOffset;
         _planeNodeTransform = _rotationNode.GetComponent<Transform>();
         velocidadObjetivo = velocidadesAvion.minima;
         _canTiltDown = _canTiltUp = true;

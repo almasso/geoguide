@@ -1649,6 +1649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Rep\xFAblica Checa"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.2986012
@@ -1873,6 +1877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Pa\xEDses Bajos"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.0194662
@@ -1946,6 +1954,10 @@ PrefabInstance:
     - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_Name
       value: Bulgaria
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
@@ -2718,6 +2730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Suecia
       objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.5713434
@@ -3307,6 +3323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portugal
       objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.6138237
@@ -3571,6 +3591,10 @@ PrefabInstance:
     - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_Name
       value: Italia
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3856,6 +3880,10 @@ PrefabInstance:
     - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_Name
       value: Islandia
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4545,6 +4573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Ruman\xEDa"
       objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.2624514
@@ -4618,6 +4650,10 @@ PrefabInstance:
     - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_Name
       value: Estonia
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4693,6 +4729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Finlandia
       objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.5713434
@@ -4766,6 +4806,10 @@ PrefabInstance:
     - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_Name
       value: Suiza
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
@@ -5337,6 +5381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Polonia
       objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.5713434
@@ -5688,7 +5736,7 @@ MonoBehaviour:
   _walkieGO: {fileID: 1951978591}
   _airportManGO: {fileID: 441189535}
   _plane: {fileID: 1214255469}
-  _obstacleDuration: 0
+  _obstacleDuration: 30
 --- !u!4 &1015622073
 Transform:
   m_ObjectHideFlags: 0
@@ -5715,6 +5763,10 @@ PrefabInstance:
     - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_Name
       value: Noruega
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
@@ -5841,6 +5893,10 @@ PrefabInstance:
     - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_Name
       value: Eslovaquia
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
@@ -6132,6 +6188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Austria
       objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.2986012
@@ -6370,6 +6430,10 @@ PrefabInstance:
     - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_Name
       value: "Espa\xF1a"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7210,6 +7274,10 @@ PrefabInstance:
     - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_Name
       value: "B\xE9lgica"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
@@ -8242,6 +8310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dinamarca
       objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.3895237
@@ -8492,6 +8564,10 @@ PrefabInstance:
     - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_Name
       value: "Hungr\xEDa"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
@@ -8966,6 +9042,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grecia
       objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.6138237
@@ -9433,6 +9513,10 @@ PrefabInstance:
     - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_Name
       value: Irlanda
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009188577279004504, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
       propertyPath: m_LocalScale.x

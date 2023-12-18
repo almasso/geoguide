@@ -58,13 +58,14 @@ public class GameManager : MonoBehaviour
         _gameUI = _gameUIObj.GetComponentInChildren<GameDisplay>();
         _planeController = _player.GetComponent<PlayerController>();
         _planeTrail = _player.GetComponent<PlaneTrail>();
-        Debug.Log(_gameUI);
+        //Debug.Log(_gameUI);
         _gameUIObj.SetActive(true);
         _endUIObj.SetActive(false);
         _pauseUIObj.SetActive(false);
         _hand = _HandObj.GetComponent<HandWave>();
-        UI_Manager.Instance.StartGameHUD();
+        if (SceneManager.GetActiveScene().name == "GameScene") UI_Manager.Instance.StartGameHUD();
         _planeTrail.Activate(true);
+        Debug.Log(_gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country1);
         GameSceneInfo.setObjectiveCountry(_gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country1);
         updateCountryObject(GameSceneInfo.getObjectiveCountry());
         if(SceneManager.GetActiveScene().name == "IntroductoryLevels") changeCountryColor(green);
@@ -94,7 +95,7 @@ public class GameManager : MonoBehaviour
         changeCountryColor(red);
         if (country == _gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country1) GameSceneInfo.setObjectiveCountry(_gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country2);
         else if (country == _gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country2) GameSceneInfo.setObjectiveCountry(_gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country3);
-        else Debug.Log("ultimo");
+        else Scene_Manager.Instance.StartGame();
 
         updateCountryObject(GameSceneInfo.getObjectiveCountry());
         changeCountryColor(green);
@@ -118,8 +119,11 @@ public class GameManager : MonoBehaviour
     }
 
    public void WrongCountry() { 
-        ++intentos;
-        for (int i = 0; i < 3; ++i) _ClueObj[i].GetComponent<ButtonClue>().intentoFallido(intentos);
+        if(SceneManager.GetActiveScene().name == "GameScene")
+        {
+            ++intentos;
+            for (int i = 0; i < 3; ++i) _ClueObj[i].GetComponent<ButtonClue>().intentoFallido(intentos);
+        }
     }
     public bool hasMoreClients() { return _gameUI.HasMoreClients(); }
     public void DeactivateTrails()

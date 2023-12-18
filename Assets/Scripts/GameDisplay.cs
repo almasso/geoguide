@@ -22,8 +22,6 @@ public class GameDisplay : Save_Load
 
     void Start()
     {
-        Debug.Log(IndexController._index);
-        Debug.Log(index);
         IndexController.paisesPorNivel.Clear();
         clientesTotales = myLevel_Info_List.nivel_Info[IndexController._index].clientesTotales;
         cliente = gameObject.transform.GetChild(0).gameObject.GetComponent<RawImage>();
@@ -41,7 +39,7 @@ public class GameDisplay : Save_Load
             while (myCliente_Info_List.cliente_Info[index].name != myLevel_Info_List.nivel_Info[IndexController._index].name)
             {
                 Debug.Log(index);
-                ++index;
+                ++index; 
             } 
 
             for (int j = 0; j < clientesTotales; ++j)
