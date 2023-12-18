@@ -24,6 +24,7 @@ public class GameDisplay : Save_Load
     {
         IndexController.paisesPorNivel.Clear();
         clientesTotales = myLevel_Info_List.nivel_Info[IndexController._index].clientesTotales;
+        IndexController._imprevisto = myLevel_Info_List.nivel_Info[IndexController._index].imprevistos;
         cliente = gameObject.transform.GetChild(0).gameObject.GetComponent<RawImage>();
         if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "GameScene")
         {

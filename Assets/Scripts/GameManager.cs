@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
         _gameUI.updateIntroObjective();
     }
 
-    void updateCountryObject(string country)
+    public void updateCountryObject(string country)
     {
         for (int i = 0; i < _countries.Length; i++)
         {
@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void changeCountryColor(Color c)
+    public void changeCountryColor(Color c)
     {
         actualCountryObject.GetComponent<MeshRenderer>().material.color = c;
     }
