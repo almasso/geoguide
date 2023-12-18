@@ -59,34 +59,37 @@ public class ObstacleGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!instantiated) _elapsedTime += Time.deltaTime;
-
-        if (instantiated) _instantiatedElapsedTime += Time.deltaTime;
-
-        if(_elapsedTime >= _randomTime)
+        if (IndexController._imprevisto)
         {
-            _randomCountry = UnityEngine.Random.Range(0, _airportGOs.Count);
-            while (_airportManager.airports[_airportGOs[_randomCountry]] == GameSceneInfo.getObjectiveCountry() || (_planeColliderCheck.getCurrentCountry() != null && _airportManager.airports[_airportGOs[_randomCountry]] == _airportManager.airports[_planeColliderCheck.getCurrentCountry()]) || checkForObstacle(_airportGOs[_randomCountry]))
+            if (!instantiated) _elapsedTime += Time.deltaTime;
+
+            if (instantiated) _instantiatedElapsedTime += Time.deltaTime;
+
+            if (_elapsedTime >= _randomTime)
             {
                 _randomCountry = UnityEngine.Random.Range(0, _airportGOs.Count);
+                while (_airportManager.airports[_airportGOs[_randomCountry]] == GameSceneInfo.getObjectiveCountry() || (_planeColliderCheck.getCurrentCountry() != null && _airportManager.airports[_airportGOs[_randomCountry]] == _airportManager.airports[_planeColliderCheck.getCurrentCountry()]) || checkForObstacle(_airportGOs[_randomCountry]))
+                {
+                    _randomCountry = UnityEngine.Random.Range(0, _airportGOs.Count);
+                }
+                _randomImprevisto = UnityEngine.Random.Range(0, _imprevistosNombres.Count);
+                imprevistos[_imprevistosNombres[_randomImprevisto]] = _airportManager.airports[_airportGOs[_randomCountry]];
+                _lastObstacle = new Tuple<string, string>(_imprevistosNombres[_randomImprevisto], imprevistos[_imprevistosNombres[_randomImprevisto]]);
+                SpeechBubbleController.setShowString(SpeechBubbleController.Frases.RADAR_DETECCION);
+                _walkieController.showWalkie();
+                _randomTime = UnityEngine.Random.Range(20f, 30f);
+                _elapsedTime = 0.0f;
+                instantiated = true;
             }
-            _randomImprevisto = UnityEngine.Random.Range(0, _imprevistosNombres.Count);
-            imprevistos[_imprevistosNombres[_randomImprevisto]] = _airportManager.airports[_airportGOs[_randomCountry]];
-            _lastObstacle = new Tuple<string, string>(_imprevistosNombres[_randomImprevisto], imprevistos[_imprevistosNombres[_randomImprevisto]]);
-            SpeechBubbleController.setShowString(SpeechBubbleController.Frases.RADAR_DETECCION);
-            _walkieController.showWalkie();
-            _randomTime = UnityEngine.Random.Range(20f, 30f);
-            _elapsedTime = 0.0f;
-            instantiated = true;
-        }
 
-        if(_instantiatedElapsedTime >= _obstacleDuration)
-        {
-            imprevistos[_imprevistosNombres[_randomImprevisto]] = "";
-            instantiated = false;
-            _instantiatedElapsedTime = 0.0f;
-            SpeechBubbleController.setShowString(SpeechBubbleController.Frases.OBSTACLE_END);
-            _walkieController.showWalkie();
+            if (_instantiatedElapsedTime >= _obstacleDuration)
+            {
+                imprevistos[_imprevistosNombres[_randomImprevisto]] = "";
+                instantiated = false;
+                _instantiatedElapsedTime = 0.0f;
+                SpeechBubbleController.setShowString(SpeechBubbleController.Frases.OBSTACLE_END);
+                _walkieController.showWalkie();
+            }
         }
     }
 }

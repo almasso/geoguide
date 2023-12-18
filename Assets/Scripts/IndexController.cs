@@ -8,4 +8,6 @@ public class IndexController
     public static List<string> paisesPorNivel = new List<string>();
 
     public static string namePreviousScene = "LevelScene";
+
+    public static bool _imprevisto;
 }
