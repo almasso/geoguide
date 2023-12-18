@@ -133,8 +133,8 @@
 	"pais": "Polonia",
 	"cliente": "Assets/Clients/client15.png",
 	"pista1": "Se encuentra en el noreste europeo",
-	"pista2": "",
-	"pista3": "Pista 3 Nivel 1",
+	"pista2": "Tiene frontera con Alemania, República Checa y Austria",
+	"pista3": "Está justo al este de Alemania",
 	"objetivo": "Voy de viaje de estudios a Polonia. ¿Puedes volar hasta allí?"
 
 },
