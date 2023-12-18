@@ -128,9 +128,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Input para el cambio de velocidad
-        if (Input.GetKeyDown(KeyCode.Alpha1) && detectInput) velocidadObjetivo = velocidadesAvion.minima;
-        else if (Input.GetKeyDown(KeyCode.Alpha2) && detectInput) velocidadObjetivo = velocidadesAvion.media;
-        else if (Input.GetKeyDown(KeyCode.Alpha3) && detectInput) velocidadObjetivo = velocidadesAvion.maxima;
+        if (Input.GetKeyDown(KeyCode.Alpha1) && detectInput) { velocidadObjetivo = velocidadesAvion.minima; SoundManager.Instance.ChangePlaneSpeedSound(1); }
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && detectInput) { velocidadObjetivo = velocidadesAvion.media; SoundManager.Instance.ChangePlaneSpeedSound(2); }
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && detectInput) { velocidadObjetivo = velocidadesAvion.maxima; SoundManager.Instance.ChangePlaneSpeedSound(3); }
     }
 
     [System.Serializable]

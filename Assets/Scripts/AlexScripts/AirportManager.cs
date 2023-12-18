@@ -19,6 +19,7 @@ public class AirportManager : MonoBehaviour
         if(playerController.isInputEnabled() && Input.GetKeyDown("space") && playerController.isMinimumSpeed())
         {
             if (airports[go] == GameSceneInfo.getObjectiveCountry()) { 
+                
                 if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
                 {
                     GameManager.Instance.updateIntroCountry(GameSceneInfo.getObjectiveCountry());
@@ -31,15 +32,4 @@ public class AirportManager : MonoBehaviour
             }
         }
     }
-
-    //actualCountryObject.GetComponent<MeshRenderer>().material.color = Color.red;
-    //        Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAA");
-    //        if (actualCountry == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country1) actualCountry = _game.myIntroLevelList.IntroLevel[_game.introIndex].Country2;
-    //        else if (actualCountry == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country2) actualCountry = _game.myIntroLevelList.IntroLevel[_game.introIndex].Country3;
-    //        else Debug.Log("FINISH MANGERRR");
-
-    //        updateCountryObject(actualCountry);
-    //changeCountryColor(actualCountryObject);
-
-    //_game.updateIntroObjective();
 }

@@ -207,7 +207,111 @@
 			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/finlandia.png",
 			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/finlandia.png",
 			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
-		}
+		},
+		{
+			"index": 16,
+			"name": "República Checa",
+			"isActive": true,
+			"capital": "Praga",
+			"languaje": "Checo",
+			"currency": "Corona Checa",
+			"climate": "Continental templado, con veranos cálidos e inviernos fríos.",
+			"info": "País del centro europeo, fronterizo con Alemania, Polonia y Austria entre otros. Son lugares famosos la Casa Danzante y el Monasterio de Strahov",
+			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/repúblicaCheca.png",
+			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/repúblicaCheca.png",
+			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+		},
+		{
+			"index": 17,
+			"name": "Eslovaquia",
+			"isActive": true,
+			"capital": "Bratislava",
+			"languaje": "Eslovaco",
+			"currency": "Euro",
+			"climate": "Continental templado, con veranos cálidos e inviernos húmedos.",
+			"info": "País del centro/este europeo, fronterizo con Polonia, Chequia y Hungría entro otros. Son lugares famosos el Castillo de Devín y y la Catedral de Santa Isabel",
+			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/eslovaquia.png",
+			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/eslovaquia.png",
+			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+		},
+		{
+			"index": 18,
+			"name": "Hungría",
+			"isActive": true,
+			"capital": "Budapest",
+			"languaje": "Húngaro",
+			"currency": "Forinto Húngaro",
+			"climate": "Continental templado, con veranos calurosos e inviernos fríos.",
+			"info": "País del centro/este europeo, fronterizo con Austria, Eslovaquia y Rumanía entro otros. Son lugares famosos el Castillo de Buda y el Mercado Central de Budapest",
+			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/hungría.png",
+			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/hungría.png",
+			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+		},
+		{
+			"index": 19,
+			"name": "Rumanía",
+			"isActive": true,
+			"capital": "Bucarest",
+			"languaje": "Rumano",
+			"currency": "Leu",
+			"climate": "Continental, con veranos húmedos e inviernos templados.",
+			"info": "País del este europeo, fronterizo con Hungría y Bulgaria entro otros. Son lugares famosos el Castillo de Bran y el Castillo de Hunedoara",
+			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/rumanía.png",
+			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/rumanía.png",
+			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+		},
+		{
+			"index": 20,
+			"name": "Bulgaria",
+			"isActive": true,
+			"capital": "Sofía",
+			"languaje": "Búlgaro",
+			"currency": "Leva",
+			"climate": "Continental, con veranos secos e inviernos duros y fríos.",
+			"info": "País del sureste europeo, fronterizo con Rumanía y Grecia entro otros. Son lugares famosos el Monasterio de Rila y la Catedral de San Alejandro Nevski de Sofía",
+			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/bulgaria.png",
+			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/bulgaria.png",
+			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+		},
+		{
+            "index": 21,
+            "name": "Bélgica",
+            "isActive": true,
+            "capital": "Bruselas",
+            "languaje": "Neerlandés, Francés, Alemán",
+            "currency": "Euro",
+            "climate": "Marítimo templado, nuboso y precipitaciones regulares",
+            "info": "País del norte europeo, fronterizo con Paises Bajos, Francia y Alemania entre otros. Son lugares reconocibles el Atonium y la ciudad de Brujas",
+            "mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/bélgica.png",
+            "flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/bélgica.png",
+            "memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+        },
+		{
+            "index": 22,
+            "name": "Países Bajos",
+            "isActive": true,
+            "capital": "Ámsterdam",
+            "languaje": "Neerlandés",
+            "currency": "Euro",
+            "climate": "Oceánico con veranos frescos e inviernos lluviosos.",
+            "info": "País del norte europeo, fronterizo con Alemania y Bélgica. Son lugares famosos la casa de Anne Frank y el Museo de Van Gogh",
+            "mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/paísesBajos.png",
+            "flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/paísesBajos.png",
+            "memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+        },
+		{
+            "index": 23,
+            "name": "Estonia",
+            "isActive": true,
+            "capital": "Tallín",
+            "languaje": "Estonio",
+            "currency": "Euro",
+            "climate": "Atlántico continental, con temperaturas suaves e inviernos fríos",
+            "info": "País del noreste europeo, fronterizo con Rusia entre otros. Son lugares famosos el parque Nacional Lahemaa y el Castillo de Kuressaare",
+            "mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/estonia.png",
+            "flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/estonia.png",
+            "memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+        }
 
 	]
 }

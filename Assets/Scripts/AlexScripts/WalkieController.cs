@@ -20,7 +20,7 @@ public class WalkieController : MonoBehaviour
 
     public bool isCompletelyShown() { return posFinal; }
 
-    public void showWalkie() { mostrar = true; }
+    public void showWalkie() { mostrar = true; SoundManager.Instance.PlaySFX(SoundManager.Instance.walkieTalkie); }
     public void hideWalkie() { mostrar = false; }
 
     private void FixedUpdate()
