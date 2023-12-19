@@ -37,6 +37,7 @@
 	- [**10 - Menús y flujo de juego**](#10---menús-y-flujo-de-juego)
 	- [**11 - Recursos**](#11---recursos)
 	- [**12 - Referencias**](#12---referencias)
+	- [**13 - Menciones**](#13---menciones)
 
 ## **1 - Ficha técnica**
 - **Título**: *GeoGuide*
@@ -62,7 +63,7 @@ Es por eso que GeoGuide puede ser usado en clase como ejercicio dinámico y dive
 ## **4 - Interés y aprendizaje del jugador**
 En el diseño del juego, hemos tenido en cuenta elementos que nos ayudan a mantener el interés de nuestros jugadores y a asegurarnos de que están aprendiendo, por ejemplo:
 la narrativa, que presenta una historia de progreso, con una meta final definida, apoyada por un sistema de niveles por estrellas, que les presentan a los jugadores el reto de conseguirlos todos con la mejor puntuación posible, reforzados por recompensas extra si consiguen las 3 (puntuación máxima). 
-Además, dentro de los propios niveles, nos aseguramos de que el jugador no se frustre en exceso y mantenga la atención mediante un reloj interno que comprueba si el jugador lleva demasiado tiempo sin acertar desde que comenzó el nivel y le aporta pistas correspondientemente. Pasados los tres intentos fallidos o demasiado tiempo, se le preguntará al jugador si quiere que se le “chive” donde estaba el país destino. El nivel no contará como completado pero evitará que el jugador se frustre en caso de atascarse.
+Además, dentro de los propios niveles, nos aseguramos de que el jugador no se frustre en exceso y mantenga la atención mediante un reloj interno que comprueba si el jugador lleva demasiado tiempo sin acertar desde que comenzó el nivel y le aporta pistas correspondientemente. Pasados los tres intentos fallidos o demasiado tiempo, se le "chivará" al jugador dónde estaba el país destino. El nivel no contará como completado pero evitará que el jugador se frustre en caso de atascarse, y siempre será libre de volver a repetirlo desde el inicio.
 
 ## **5 - Jugabilidad**
 ### **5.1 - Mecánicas del jugador**
@@ -107,17 +108,17 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 	<tr>
 		<td>Brújula</td>
 		<td><img src="./imagenesGDD/brujula.png" width=50% height=50%></td>
-		<td>Elemento que será útil para misiones que describan la ubicación del país destino como “al norte/sur/este/oeste de …”.</td>
+		<td>Elemento que será útil para misiones que describan la ubicación del país destino como “al norte/sur/este/oeste de …”. La parte central es estática y simboliza la dirección en la que siempre está mirando el avión; mientras que la exterior rota conforme la dirección en la que va mirando el propio avión.</td>
 	</tr>
 	<tr>
 		<td>Velocímetro</td>
 		<td><img src="./imagenesGDD/velocimetro.jpeg" width=50% height=50%></td>
-		<td>Debajo de la brújula aparecerá un pequeño indicador que muestra la velocidad a la que el jugador va: 1 (lento, aterrizar); 2 (medio); 3 (rápido). En color verde se mostrará la velocidad actual.</td>
+		<td>Debajo de la brújula aparecerá un pequeño indicador que muestra la velocidad a la que el jugador va: 1 (lento, aterrizar); 2 (medio); 3 (rápido). En color verde se mostrará la velocidad actual. Si en algún momento tenemos alguno de los motores nos fallase, tanto las velocidades 2 como 3 aparecerán en rojo, indicando que están bloqueadas y que por tanto solo se puede ir en la velocidad más baja.</td>
 	</tr>
 	<tr>
 		<td>Minimapa</td>
 		<td><img src="./imagenesGDD/minimapa.png" width=50% height=50%></td>
-		<td>Pequeño rectángulo, ubicado en la esquina inferior derecha del HUD, que muestra la posición del jugador más alejada del suelo para ayudar al jugador a ubicarse por el mundo, en vista bidimensional, al estilo de un mapa.</td>
+		<td>Pequeño rectángulo, ubicado en la esquina inferior derecha del HUD, que muestra la posición del jugador más alejada del suelo para ayudar al jugador a ubicarse por el mundo, en vista bidimensional, al estilo de un mapa. Para indicar de forma precisa al jugador, este aparecerá como un avión rojo. El minimapa solo rotará cuando sea necesario cambiar la vista al norte, esto es, si atravesamos alguno de los polos y la vista se invierte.</td>
 	</tr>
 	<tr>
 		<td>Cliente</td>
@@ -127,21 +128,26 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 				<figcaption><p align="left"><i>Depende del cliente</i></p>
 			</figure>
 		</td>
-		<td>Transcurrido un tiempo específico, establecido en un minuto, el cliente le proporcionará una pista al jugador para ayudar y así evitar frustrar. El número total de pistas será de 3, en caso de necesitarlas. </td>
+		<td>Transcurrido un tiempo específico, establecido en un minuto, el cliente le proporcionará una pista al jugador para ayudar y así evitar frustrar. El número total de pistas será de 3, en caso de necesitarlas. Solo aparecen en los niveles normales y nunca en los introductorios. En total hay 22 modelos distintos de cliente.</td>
 	</tr>
 	<tr>
 		<td>Aeropuerto</td>
 		<td><img src="./imagenesGDD/aeropuerto.png" width=100% height=100%></td>
-		<td>Zona circular roja donde podrás dejar a los clientes. Sólo podrás hacer ésto si pones el avión a velocidad lenta o “de aterrizaje”. Una vez hayas aterrizado, si el país fue el correcto se pasará al siguiente cliente en caso de haberlo, o terminará el nivel. Si se ha fallado, se notificará, se restará un intento y el jugador podrá continuar.</td>
+		<td>Esfera flotante, que marcará el lugar en el que el jugador debe aterrizar en cada país. Sólo podrás hacer ésto si pones el avión a velocidad lenta o “de aterrizaje”. Una vez hayas aterrizado, si el país fue el correcto se pasará al siguiente cliente en caso de haberlo, o terminará el nivel. Si se ha fallado, se notificará, se restará un intento y el jugador podrá continuar. Los aeropuertos, tendrán todos color rojo, excepto, en los niveles introductorios o una vez que tu jefe te guíe al país destino, en cuyo caso, el aeropuerto destino se iluminará de color verde, resaltando entre los demás para facilitar la vista del objetivo.</td>
 	</tr>
 	<tr>
-		<td>Jefe / Walkie-talkie</td>
-		<td><img src="./imagenesGDD/cliente.png" width=50% height=50%></td>
-		<td>Personaje que te guiará en los niveles de aprendizaje. En el resto de niveles aparecerá mediante avisos en el walkie-talkie, donde te avisará de imprevistos meteorológicos y, si pasado un tiempo suficientemente largo no has adivinado el país o fallas una vez desbloqueadas las tres pistas, te preguntará si quieres que te guíe al país destino para que el jugador no se sienta bloqueado, ni se atasque en algún nivel.</td>
+		<td>Jefe</td>
+		<td><img src="./imagenesGDD/dad.png" width=50% height=50%></td>
+		<td>Personaje que te guiará en los niveles de aprendizaje/introductorios. Tendrá el mismo funcionamiento que los clientes en los niveles normales, pero sin proporcionar pistas. Si pasado un tiempo suficientemente largo no has adivinado el país o fallas una vez desbloqueadas las tres pistas, te guiará al país destino para que evitar que el jugador se sienta bloqueado, ni se atasque en algún nivel.En los demás niveles será sustituido por un walkie-talkie, ya que los clientes ocuparán su lugar en el HUD.</td>
+	</tr>
+	<tr>
+		<td>Walkie-talkie</td>
+		<td><img src="./imagenesGDD/walkie.png" width=50% height=50%></td>
+		<td>En los niveles normales, y siempre que haya un imprevisto, se haya fallado de país, etc..., aparecerá desde la parte inferior de la pantalla un walkie-talkie con un bocadillo explicando la situación, con frases como <i>¡Vaya, parece que hay niebla en Polonia! ¡Evita pasar por ese país a toda costa!</i> o <i>¡Vaya! Ese país no era tu objetivo. ¡Sigue intentándolo!</i>, etc...
 	</tr>
 </table>
 
-**Todo el arte se hará a mano o se usarán assets previamente creados *free to use* o a los que tengamos permisos.**
+**Todo el arte se hará a mano o se usarán assets previamente creados *free to use* o a los que tengamos permisos. Cualquier asset externo será incluido en la parte de [recursos](#11---recursos)**
 
 
 ## **6 - Historia y personaje principal**
@@ -167,22 +173,22 @@ En los niveles **normales**, el jugador recibirá una misión de su cliente, pid
 
 En los niveles difíciles, el jugador tendrá varias misiones consecutivas en un mismo nivel y afrontará algunos *imprevistos*. La dificultad incrementará con cada nivel dentro de un mismo continente.
 #### **7.3.2 - Reparto de estrellas**
-En cada nivel el jugador podrá ganar hasta **tres estrellas**. El reparto de estas depende de los intentos acumulados, independientemente del tiempo transcurrido. Por tanto, si el jugador acierta el país a la primera ganará 3 estrellas, si lo adivina a la segunda 2 estrellas y a la tercera 1. Los fallos se acumulan si el nivel tiene varios países a los que visitar. Si se vuelve a fallar tras el tercer intento, o bien transcurrido ya mucho tiempo desde el inicio de la partida (3 minutos), el jefe preguntará si quiere que le guíe al país destino y el nivel se contará como **no completado**, teniendo que repetirlo para poder seguir adelante.
+En cada nivel el jugador podrá ganar hasta **tres estrellas**. El reparto de estas depende de los intentos acumulados, independientemente del tiempo transcurrido. Por tanto, si el jugador acierta el país a la primera ganará 3 estrellas, si lo adivina a la segunda 2 estrellas y a la tercera 1. Los fallos se acumulan si el nivel tiene varios países a los que visitar. Si se vuelve a fallar tras el tercer intento, o bien transcurrido ya mucho tiempo desde el inicio de la partida (4 minutos), el jefe guiará al jugador al país destino y el nivel se contará como **no completado**, teniendo que repetirlo para poder seguir adelante.
 
 El jugador solo necesitará **1 estrella** para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las **3 estrellas**, conseguirá un recuerdo del cliente para adornar su tarjeta de información.
 #### **7.3.3 - Pistas**
-Si el jugador tarda mucho, o falla en encontrar el país, el cliente le irá dando pistas para facilitar encontrarlo. Estas pistas estarán repartidas durante el juego usando un cronómetro interno o por intentos fallidos. Por ejemplo: pasados 2 minutos, si el jugador aún no sabe dónde ir, se dará la primera para evitar que se frustre e intentar guiarlo. Pasado 1 minuto desde la primera pista se proporcionará la siguiente y, tras otro minuto, la última.
+Si el jugador tarda mucho en encontrar el país o falla, el cliente le irá dando pistas para facilitar encontrarlo. Estas pistas estarán repartidas durante el juego usando un cronómetro interno o por intentos fallidos. Por ejemplo: pasado 1 minuto, si el jugador aún no sabe dónde ir, se dará la primera para evitar que se frustre e intentar guiarlo. Pasado 1 minuto desde la primera pista o si se falla se proporcionará la siguiente y, tras otro minuto o si se vuelve a fallar, la última.
 
 Ya que nuestro juego se basa en el aprendizaje desde cero, no queremos frustrar ni castigar al usuario por fallar. Nuestra intención es que el usuario identifique y relacione los países a los datos proporcionados por el jefe, los clientes y las tarjetas. Queremos evitar la filosofía de “prueba y error” y que estos lugares sean más que un punto en el mapa. Por eso mismo, se le proporcionarán 3 pistas y, tras ellas, si el jugador aún está perdido, se le guiará hacia el destino.
 #### **7.3.4 - Imprevistos**
 Durante los niveles **difíciles**, el jefe avisará por radio sobre posibles imprevistos meteorológicos (nieve, niebla o tormenta) por el mapa que el jugador tendrá que esquivar. 
 
 Estos imprevistos no se podrán ver físicamente en el mapa, sin embargo, si el jugador pasa por el país afectado, esta le causará daños en el equipamiento del avión y perderá una de estas tres cosas:
-- **Brújula**: El jugador no podrá usar la brújula para poder ubicar los distintos países del mapa, dificultando algunas misiones que tengan puntos cardinales como pista.
-- **Minimapa**: El jugador no podrá usar el mini mapa, perdiendo la opción de extrapolar su posición y aumentando la posibilidad de sentirse perdido o desubicado.
+- **Brújula**: La brújula empezará a girar erráticamente, por lo que impedirá usarla para poder ubicar los distintos países del mapa, dificultando algunas misiones que tengan puntos cardinales como pista.
+- **Minimapa**: El minimapa se romperá y en su lugar aparecerá una niebla/estática, por lo que el jugador perderá la opción de extrapolar su posición y aumentará la posibilidad de sentirse perdido o desubicado.
 - **Motores**: el avión perderá su velocidad turbo y solo podrá ir a velocidad normal o de aterrizaje.
 
-Estos imprevistos durarán hasta que el jugador lleve correctamente al cliente actual al país destino. No afectando al resto de clientes, en caso de haberlos.
+Estos imprevistos durarán alrededor de unos 10 segundos, en los que el jugador verá limitados los usos de una de estas mecánicas, dificultando, en alguna ocasión, el poder ubicarse bien en el mapa, haciendo de esta mecánica un desafío añadido a la búsqueda del país correcto.
 
 ### **7.4 - Tarjetas**
 Cada país que visitemos en alguno de los niveles nos proporcionará una tarjeta con información sobre éste, como por ejemplo su bandera, su capital, el idioma que se habla y algún dato interesante. Además, si en el nivel en el que se consigue esa tarjeta hemos conseguido las tres estrellas, o era un nivel introductorio, la tarjeta incluirá también una pequeña postal con el cliente al que llevamos a ese país (o con nuestro jefe en caso de los niveles introductorios), posando con algún monumento famoso de ese país.
@@ -191,14 +197,18 @@ Una vez conseguida cada tarjeta, esta estará disponible en el menú de informac
 Además, el hecho de que las postales sólo aparecen si consigues las 3 estrellas, motivará al jugador a intentar conseguirlas para completar el álbum y tener un memento de su esfuerzo y su aprendizaje.
 <figure>
 <p align="center"><img src="./imagenesGDD/tarjetas.png" width=100% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 2</b> - Ejemplo de tarjeta de información española</i></p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 2</b> - Mockup inicial de tarjeta de información española</i></p></figcaption>
+</figure>
+<figure>
+<p align="center"><img src="./imagenesGDD/tarjetas-fin.png" width=50% height=100%></p>
+<figcaption><p align="center"><i><b>Imagen 3</b> - Implementación final de las tarjetas de información. Nótese que el apartado "recuerdo del viaje" sigue en desarrollo.</i></p></figcaption>
 </figure>
 
 ## **8 - Interfaz**
 ### **8.1 - Mockup del HUD in-game**
 <figure>
 <p align="center"><img src="./imagenesGDD/hud_partida.png" width=100% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 3</b> - Mockup del HUD in-game</i></p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 4</b> - Imagen final del HUD in-game</i></p></figcaption>
 </figure>
 
 #### **8.1.1 - Explicación de los elementos del HUD in-game y su funcionamiento**
@@ -209,24 +219,22 @@ Además, el hecho de que las postales sólo aparecen si consigues las 3 estrella
 	</tr>
 	<tr>
 		<td>Recuadro de misión</td>
-		<td>En la parte superior de la pantalla aparecerá un recuadro conteniendo el objetivo de la misión actual.</td>
+		<td>En la parte superior de la pantalla aparecerá un recuadro conteniendo el objetivo de la misión actual. Por ejemplo, se nos podría pedir <i>si podemos visitar un país muy poblado al sur de Dinamarca</i>.</td>
 	</tr>
 	<tr>
 		<td>Pistas</td>
-		<td>Justo debajo de la imagen de nuestro cliente, aparecerán las sucesivas pistas que este te va dando si no consigues encontrar el país que este te pide. Las pistas son una lista vertical de tres bocadillos con un pequeño texto a modo de pista. Por ejemplo, siguiendo con el ejemplo anterior, podemos tener de pistas <i>Un monumento importante es la Puerta de Brandemburgo</i>, <i>Es la cuna de la industria automotriz europea</i> y <i>Su capital es Berlín</i>.</td>
+		<td>Justo debajo de la imagen de nuestro cliente, aparecerán las sucesivas pistas que este te va dando si no consigues encontrar el país que este te pide. Las pistas son una lista vertical de tres recuadros con un pequeño texto a modo de pista. Las flechas que aparecen permiten ocultar y mostrar en pantalla las pistas en caso de que no se quiera perder visibilidad. Por ejemplo, siguiendo con el ejemplo anterior, podemos tener de pistas <i>Un monumento importante es la Puerta de Brandeburgo</i>, <i>Es la cuna de la industria automotriz europea</i> y <i>Su capital es Berlín</i>.</td>
 	</tr>
 	<tr>
 		<td>Botón de menú de pausa</td>
-		<td>Se mantiene en pantalla en todo momento durante la misión. Situado en la parte inferior izquierda.</td>
+		<td>Se mantiene en pantalla en todo momento durante la misión. Situado en la parte inferior izquierda, tiene forma de engranaje.</td>
 	</tr>
 </table>
-
-El jugador puede pausar el juego en cualquier momento tocando la letra ‘P’.
 
 ### **8.2 - Mockup de la interfaz del menú inicial**
 <figure>
 <p align="center"><img src="./imagenesGDD/menu_inicial.png" width=100% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 4</b> - Mockup del menú inicial</i></p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 5</b> - Diseño final del menú inicial</i></p></figcaption>
 </figure>
 
 #### **8.2.1 - Explicación de los elementos de la interfaz del menú inicial y su funcionamiento**
@@ -236,11 +244,11 @@ El jugador puede pausar el juego en cualquier momento tocando la letra ‘P’.
 		<th><b>Explicación</b></th>
 	</tr>
 	<tr>
-		<td>Botón de "Jugar"</td>
+		<td>Botón "Start"</td>
 		<td>Al pulsar este botón vamos al menú de los niveles, que va actuar como nuestro menú principal.</td>
 	</tr>
 	<tr>
-		<td>Botón de "Salir"</td>
+		<td>Botón "Quit"</td>
 		<td>Al pulsar este botón salimos del juego.</td>
 	</tr>
 </table>
@@ -248,7 +256,7 @@ El jugador puede pausar el juego en cualquier momento tocando la letra ‘P’.
 ### **8.3 - Mockup de la interfaz del menú de niveles/menú principal**
 <figure>
 <p align="center"><img src="./imagenesGDD/menu_niveles.png" width=100% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 5</b> - Mockup del menú principal</i></p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 6</b> - Diseño final del menú principal</i></p></figcaption>
 </figure>
 
 #### **8.3.1 - Explicación de los elementos de la interfaz del menú de niveles y su funcionamiento**
@@ -262,23 +270,23 @@ El jugador puede pausar el juego en cualquier momento tocando la letra ‘P’.
 		<td>En la parte izquierda del menú encontramos una lista con todos los niveles jugables en nuestro juego. Los niveles están separados por continentes, y cada uno de los botones del nivel tiene el número de nivel y el número de estrellas conseguidas, inicialmente, 3 estrellas en color gris para luego rellenarse con estrellas doradas.</td>
 	</tr>
 	<tr>
-		<td>Botón de controles</td>
-		<td>En la esquina superior derecha tenemos el botón en forma mando, que al pulsar, nos lleva al menú de controles.</td>
+		<td>Botón de ajustes</td>
+		<td>En la esquina superior derecha tenemos el botón en forma de engranaje, que al pulsar, nos lleva al menú de ajustes.</td>
 	</tr>
 	<tr>
 		<td>Botón de tarjetas obtenidas</td>
-		<td>En la esquina superior derecha nos encontramos con un botón, en forma de globo terráqueo, que contiene el submenú de las tarjetas obtenidas. En este menú tendremos una lista con todas las tarjetas de todos los países que hemos visitado a lo largo de los niveles que hemos jugado. Las tarjetas se explicarán mejor en el apartado <a href="#841---explicación-de-los-elementos-de-la-interfaz-del-menú-de-información-y-su-funcionamiento"><b>8.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento</b></a></td>
+		<td>En la esquina superior derecha, debajo del botón de ajustes, nos encontramos con un botón, en forma de globo terráqueo, que contiene el submenú de las tarjetas obtenidas. En este menú tendremos una lista con todas las tarjetas de todos los países que hemos visitado a lo largo de los niveles que hemos jugado. Las tarjetas se explicarán mejor en el apartado <a href="#841---explicación-de-los-elementos-de-la-interfaz-del-menú-de-información-y-su-funcionamiento"><b>8.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento</b></a></td>
 	</tr>
 	<tr>
 		<td>Botón de volver atrás</td>
-		<td>En la esquina inferior izquierda tenemos el botón que nos permite volver atrás al menú inicial, donde podremos salir del juego.</td>
+		<td>En la esquina inferior izquierda tenemos el botón que nos permite volver atrás al menú inicial, donde podremos salir del juego. Este botón tiene forma de avión, simulando las típicas flechas de los menús de interfaces.</td>
 	</tr>
 </table>
 
 ### **8.4 - Mockup de la interfaz del menú de información**
 <figure>
 <p align="center"><img src="./imagenesGDD/menu_tarjetas.png" width=100% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 6</b> - Mockup del menú de información</i></p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 7</b> - Diseño final del menú de información</i></p></figcaption>
 </figure>
 
 #### **8.4.1 - Explicación de los elementos de la interfaz del menú de información y su funcionamiento**
@@ -291,12 +299,16 @@ El jugador puede pausar el juego en cualquier momento tocando la letra ‘P’.
 		<td>Tarjetas de información</td>
 		<td>El menú entero está ocupado por una lista de las tarjetas de los países, explicadas anteriormente en <a href="#74---tarjetas"><i>el apartado 7.4</i></a>.</td>
 	</tr>
+	<tr>
+		<td>Botón de volver atrás</td>
+		<td>En la esquina superior izquierda tenemos el botón que nos permite volver atrás al menú inicial, explicado anteriormente.</td>
+	</tr>
 </table>
 
 ### **8.5 - Mockup de la interfaz del menú de pausa**
 <figure>
 <p align="center"><img src="./imagenesGDD/menu_pausa.png" width=100% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 7</b> - Mockup del menú de pausa</i></p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 8</b> - Diseño final del menú de pausa</i></p></figcaption>
 </figure>
 
 #### **8.5.1 - Explicación de los elementos de la interfaz del menú de pausa y su funcionamiento**
@@ -306,27 +318,27 @@ El jugador puede pausar el juego en cualquier momento tocando la letra ‘P’.
 		<th><b>Explicación</b></th>
 	</tr>
 	<tr>
-		<td>Botón de volver al juego</td>
-		<td>Este botón nos permite volver al juego tal y donde lo dejamos.</td>
+		<td>Botón "Settings"</td>
+		<td>Este botón nos permite ir a los ajustes del juego.</td>
 	</tr>
 	<tr>
-		<td>Botón de controles</td>
-		<td>Este botón nos permite ir al menú de controles.</td>
-	</tr>
-	<tr>
-		<td>Botón de información</td>
+		<td>Botón "Info Cards"</td>
 		<td>Este botón nos permite ir al menú de información para poder consultar los países ya visitados en caso de que se nos olviden en mitad de la partida.</td>
 	</tr>
 	<tr>
-		<td>Botón de salir de la partida</td>
-		<td>Este botón nos permite volver al menú principal y abandonar el nivel en el que estamos actualmente.</td>
+		<td>Botón "Levels"</td>
+		<td>Este botón nos permite ir al menú de niveles/menú principal en caso de que querramos cambiar de nivel o salir del juego.</td>
+	</tr>
+	<tr>
+		<td>Botón "Back"</td>
+		<td>Este botón nos permite volver a la partida y retomarla tal y por donde estábamos.</td>
 	</tr>
 </table>
 
 ### **8.6 - Mockup de la interfaz del menú de controles**
 <figure>
 <p align="center"><img src="./imagenesGDD/menu_controles.png" width=100% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 8</b> - Mockup del menú de controles</i></p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 9</b> - Mockup del menú de controles</i></p></figcaption>
 </figure>
 
 #### **8.6.1 - Explicación de los elementos de la interfaz del menú de controles y su funcionamiento**
@@ -343,19 +355,35 @@ El jugador puede pausar el juego en cualquier momento tocando la letra ‘P’.
 
 
 ## **9 - Estética**
-La estética del juego se basa en un estilo cartoon, suave, sencillo y colorido, pero sobre todo atractivo para nuestro público objetivo ideal y permite al jugador centrarse en el aprendizaje.
-Este estilo se podrá ver en el diseño de las interfaces, las cuales están pensadas para ser sencillas y fáciles de usar y en el diseño de los clientes, los cuales tendrán pocos detalles y serán muy sencillos; 
-
-El mapa terrestre será realista y detallado, para que los jugadores puedan aprender también sobre la información física de los países.
+La estética del juego se basa en una mezcla de estilo cartoon, suave, sencillo y colorido, pero sobre todo atractivo para nuestro público objetivo ideal y permite al jugador centrarse en el aprendizaje, que se podrá ver en el diseño de las interfaces, las cuales están pensadas para ser sencillas y fáciles de usar y en el diseño de los clientes, los cuales tendrán pocos detalles y serán muy sencillos; mientras que también tenemos un estilo realista y detallado, el cual podremos ver exclusivamente en el mapa terrestre, para que los jugadores puedan aprender también sobre la información física de los países.
 
 ## **10- Menús y flujo de juego**
 <figure>
 <p align="center"><img src="./imagenesGDD/flujoJuego.png" width=100% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 9</b> - Diagrama de flujo de juego de todos los menús e interfaces</i></p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 10</b> - Diagrama de flujo de juego de todos los menús e interfaces</i></p></figcaption>
 </figure>
 
 ## **11 - Recursos**
 - [Mapas para la demo](https://www.mapsofindia.com/world-map/outline.html)
+- [Avatares 1 para clientes/jefe](https://www.freepik.com/free-vector/set-people-avatars-round-icons-with-faces-young-old-male-female-characters-diverse-men-women-with-different-hair-color-kids-teens-adult-isolated-line-art-flat-vector-portraits_25917849.htm)
+- [Avatares 2 para clientes/jefe](https://www.freepik.com/free-vector/people-avatars-social-media-profile_25845390.htm)
+- [Avión para la brújula](https://www.freepik.es/foto-gratis/avion-sobre-concepto-viaje-plano-fondo-rosa_38935972.htm#page=2&query=cartoon%20plane%20topdown&position=1&from_view=search&track=ais&uuid=cf770c24-d190-4e46-92d7-bbc06c71e781)
+- [Walkie-talkie](https://www.freepik.es/vector-gratis/elemento-guardaespaldas-dibujado-mano_41538556.htm#query=cartoon%20walkie%20talkie&position=2&from_view=search&track=ais&uuid=4bfa1e30-bbec-4878-82b1-adbb56b2af9c)
+- [Sonido de aterrizaje](https://freesound.org/people/estefypardo/sounds/707658/)
+- [Click de la UI](https://freesound.org/people/florianreichelt/sounds/683099/
+)
+- [Interferencias Walkie-Talkie 1](https://freesound.org/people/crcavol/sounds/154644/)
+- [Interferencias Walkie-Talkie 2](https://freesound.org/people/MiscPractice/sounds/676958/)
+- [Sonido de estática para el minimapa](https://freesound.org/people/DiscoverSound/sounds/273147/)
+- [Partida perdida](https://freesound.org/people/Rolly-SFX/sounds/626260/)
+- [Victoria](https://freesound.org/people/Rolly-SFX/sounds/626259/)
+- [Música de fondo 1](https://www.chosic.com/download-audio/28063/)
+- [Música de fondo 2](https://pixabay.com/users/29811401-29811401/)
+- [Música de fondo 3](https://pixabay.com/users/logigram-20199743/)
+- [Sonido papel tarjetas de información 1](https://freesound.org/people/gynation/sounds/82377/)
+- [Sonido papel tarjetas de información 2](https://freesound.org/people/SholeColtis/sounds/683427/)
+- [Sonido de pistas](https://freesound.org/people/djlprojects/sounds/413629/)
+- [Sonido de clientes](https://freesound.org/people/ValentinPetiteau/sounds/557373/)
 
 ## **12 - Referencias**
 ### **12.1 - Videojuegos**
@@ -363,3 +391,8 @@ El mapa terrestre será realista y detallado, para que los jugadores puedan apre
 - [*Geotastic* (2021)](https://geotastic.net/home), videojuego similar a *GeoGuessr* creado por [*Edutastic Games*](https://www.edutastic.de).
 - [*Geographical Adventures* (2022)](https://sebastian.itch.io/geographical-adventures), videojuego creado por [**Sebastian Lague**](https://www.youtube.com/@SebastianLague) en su serie de YouTube homónima.
 - [*Microsoft Flight Simulator*](https://www.flightsimulator.com), serie de videojuegos de simulación aérea creada por Microsoft.
+
+## **13 - Menciones**
+Este juego es un proyecto académico del Grado de Desarrollo de Videojuegos para la asignatura de Juegos Serios, perteneciente al [Departamento de Software e Inteligencia Artificial de la Facultad de Informática](https://www.ucm.es/disia) de la [Universidad Complutense de Madrid](https://ucm.es/).
+
+[En este enlace encontraremos unos 4 minutos de vídeo de la versión del juego a día 18 de diciembre de 2023, en el que se muestran las mecánicas más básicas, así como un poco de gameplay. **Este vídeo será será posteriormente actualizado para la entrega de enero de 2024 una vez el juego esté terminado**](https://drive.google.com/file/d/12M5Wh9xIxi0xBK4hUY-wDUiednbchgwa/view?usp=drive_link)
