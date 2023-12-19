@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     public int intentos = 0;
+    public int cliente = 0;
     [SerializeField]
     private GameObject[] _countries;
 
@@ -76,9 +77,13 @@ public class GameManager : MonoBehaviour
         if (_gameUI.HasMoreClients())
         {
             _gameUI.nextClient();
-            for (int i = 0; i < 3; ++i) _ClueObj[i].GetComponent<ButtonClue>().hasChangedClient();
+            for (int i = 0; i < 3; ++i)
+            {
+                _ClueObj[i].GetComponent<ButtonClue>().hasChangedClient();
+            }
             _hand.InstanciateHand();
             _planeTrail.Activate(true);
+            cliente++;
         }
         else
         {
@@ -127,7 +132,17 @@ public class GameManager : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "GameScene")
         {
             ++intentos;
-            for (int i = 0; i < 3; ++i) _ClueObj[i].GetComponent<ButtonClue>().intentoFallido(intentos);
+            int i = 0;
+            bool encontrado = false;
+            while(!encontrado && i < _ClueObj.Length)
+            {
+                if (!_ClueObj[i].GetComponent<ButtonClue>().isActive())
+                {
+                    encontrado = true;
+                    _ClueObj[i].GetComponent<ButtonClue>().setMaximumElapsedTime();
+                }
+                ++i;
+            }
         }
     }
     public bool hasMoreClients() { return _gameUI.HasMoreClients(); }

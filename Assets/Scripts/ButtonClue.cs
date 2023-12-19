@@ -18,9 +18,6 @@ public class ButtonClue : MonoBehaviour
     public bool active = false;
     private Button boton;
     private Image image;
-    private int intentos = 0;
-    [SerializeField]
-    private int intentosMax;
     private void Start()
     {
         boton = gameObject.transform.GetChild(2).gameObject.GetComponent<Button>();
@@ -28,6 +25,10 @@ public class ButtonClue : MonoBehaviour
         boton.interactable = false;
         text = gameObject.transform.GetChild(1).gameObject.GetComponent<Clue>();
         bckgrndText = gameObject.transform.GetChild(0).gameObject.GetComponent<Clue>();
+    }
+    public bool isActive()
+    {
+        return active; 
     }
     public void EnableButton()
     {
@@ -73,16 +74,18 @@ public class ButtonClue : MonoBehaviour
         _elapsedTime = 0;
         active = false;
     }
-    public void intentoFallido(int inte)
+
+    public void setMaximumElapsedTime()
     {
-        intentos = inte;
+        _elapsedTime = timeToActivate;
     }
+
     void Update()
     {
         if (!active)
         {
             _elapsedTime += Time.deltaTime;
-            if (_elapsedTime >= timeToActivate || intentosMax == intentos)
+            if (_elapsedTime >= timeToActivate)
             {
                 active = true;
                 EnableButton();

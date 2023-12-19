@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3690102, g: 0.7121892, b: 0.7786785, a: 1}
+  m_IndirectSpecularColor: {r: 0.36974454, g: 0.712222, b: 0.7786733, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -817,8 +817,8 @@ RectTransform:
   - {fileID: 448819844}
   - {fileID: 458726628}
   - {fileID: 1967117062}
-  - {fileID: 1787650914}
   - {fileID: 1203738097}
+  - {fileID: 1787650914}
   - {fileID: 553426202}
   - {fileID: 48787084}
   m_Father: {fileID: 1573435665}
@@ -3345,13 +3345,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641888323}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
+  m_LocalRotation: {x: 0.6532815, y: -0.27059805, z: 0.27059805, w: 0.6532815}
   m_LocalPosition: {x: 0, y: 100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969922380}
-  m_LocalEulerAnglesHint: {x: 90, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: -45, z: 0}
 --- !u!20 &641888327
 Camera:
   m_ObjectHideFlags: 0
@@ -3387,7 +3387,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 70
+  orthographic size: 40
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -5611,7 +5611,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 4a96e9202b254ee4484b633acd24e0ae, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8ea59c5ac11d201439c134d0f57c3c04, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -8606,7 +8606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 4a96e9202b254ee4484b633acd24e0ae, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8ea59c5ac11d201439c134d0f57c3c04, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -9501,7 +9501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 4a96e9202b254ee4484b633acd24e0ae, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8ea59c5ac11d201439c134d0f57c3c04, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0

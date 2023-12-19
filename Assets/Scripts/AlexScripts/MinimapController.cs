@@ -28,6 +28,7 @@ public class MinimapController : MonoBehaviour
         Vector3 targetPosition = _planeTransform.position + _planeTransform.position.normalized * heightOffset;
         transform.position = targetPosition;
         _minimapCamera.transform.LookAt(_planeTransform.position);
+        //_minimapCamera.GetComponent<Transform>().localRotation = initialRotation;
     }
 
     public void setMalfunction()
