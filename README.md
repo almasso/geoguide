@@ -74,7 +74,7 @@ Además, dentro de los propios niveles, nos aseguramos de que el jugador no se f
 	</tr>
 	<tr>
 		<td><b>Pilotar el avión</b></td>
-		<td>En cada nivel el avión se moverá constantemente hacia delante con una velocidad constante inicial. El usuario podrá girarlo hacia la derecha e izquierda con A y D respectivamente y podrá cambiar su velocidad con la W(aumentar) y S(reducir).</td>
+		<td>En cada nivel el avión se moverá constantemente hacia delante con una velocidad constante inicial. El usuario podrá girarlo hacia la derecha e izquierda con A y D respectivamente; y subir y bajar con W y S, respectivamente.</td>
 		<td>W A S D</td>
 	</tr>
 	<tr>
@@ -117,7 +117,7 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 	<tr>
 		<td>Minimapa</td>
 		<td><img src="./imagenesGDD/minimapa.png" width=50% height=50%></td>
-		<td>Pequeño globo que muestra la posición del jugador más alejada del suelo para ayudar al jugador a ubicarse por el mundo</td>
+		<td>Pequeño rectángulo, ubicado en la esquina inferior derecha del HUD, que muestra la posición del jugador más alejada del suelo para ayudar al jugador a ubicarse por el mundo, en vista bidimensional, al estilo de un mapa.</td>
 	</tr>
 	<tr>
 		<td>Cliente</td>
@@ -127,7 +127,7 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 				<figcaption><p align="left"><i>Depende del cliente</i></p>
 			</figure>
 		</td>
-		<td>Durante la partida, el cliente mencionará curiosidades geográficas sobre el país destino. Además, transcurrido un tiempo específico, para ayudar al jugador y así evitar frustrar, el cliente le proporcionará una pista. El número total de pistas será 3, en caso de necesitarlas. </td>
+		<td>Transcurrido un tiempo específico, establecido en un minuto, el cliente le proporcionará una pista al jugador para ayudar y así evitar frustrar. El número total de pistas será de 3, en caso de necesitarlas. </td>
 	</tr>
 	<tr>
 		<td>Aeropuerto</td>
@@ -135,9 +135,9 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 		<td>Zona circular roja donde podrás dejar a los clientes. Sólo podrás hacer ésto si pones el avión a velocidad lenta o “de aterrizaje”. Una vez hayas aterrizado, si el país fue el correcto se pasará al siguiente cliente en caso de haberlo, o terminará el nivel. Si se ha fallado, se notificará, se restará un intento y el jugador podrá continuar.</td>
 	</tr>
 	<tr>
-		<td>Jefe</td>
+		<td>Jefe / Walkie-talkie</td>
 		<td><img src="./imagenesGDD/cliente.png" width=50% height=50%></td>
-		<td>Personaje que te guiará en los niveles de aprendizaje. Te avisará de imprevistos meteorológicos y, pasado un tiempo suficientemente largo, te preguntará si quieres que te guíe al país destino para que el jugador no se sienta bloqueado, ni se atasque en algún nivel.</td>
+		<td>Personaje que te guiará en los niveles de aprendizaje. En el resto de niveles aparecerá mediante avisos en el walkie-talkie, donde te avisará de imprevistos meteorológicos y, si pasado un tiempo suficientemente largo no has adivinado el país o fallas una vez desbloqueadas las tres pistas, te preguntará si quieres que te guíe al país destino para que el jugador no se sienta bloqueado, ni se atasque en algún nivel.</td>
 	</tr>
 </table>
 
@@ -167,7 +167,7 @@ En los niveles **normales**, el jugador recibirá una misión de su cliente, pid
 
 En los niveles difíciles, el jugador tendrá varias misiones consecutivas en un mismo nivel y afrontará algunos *imprevistos*. La dificultad incrementará con cada nivel dentro de un mismo continente.
 #### **7.3.2 - Reparto de estrellas**
-En cada nivel el jugador podrá ganar hasta **tres estrellas**. El reparto de estas depende de los intentos acumulados, independientemente del tiempo transcurrido. Por tanto, si el jugador acierta el país a la primera ganará 3 estrellas, si lo adivina a la segunda 2 estrellas y a la tercera 1. Tras el tercer intento, o bien transcurrido ya mucho tiempo desde el inicio de la partida, el jefe preguntará si quiere que le guíe al país destino y el nivel se contará como **no completado**, teniendo que repetirlo para poder seguir adelante.
+En cada nivel el jugador podrá ganar hasta **tres estrellas**. El reparto de estas depende de los intentos acumulados, independientemente del tiempo transcurrido. Por tanto, si el jugador acierta el país a la primera ganará 3 estrellas, si lo adivina a la segunda 2 estrellas y a la tercera 1. Los fallos se acumulan si el nivel tiene varios países a los que visitar. Si se vuelve a fallar tras el tercer intento, o bien transcurrido ya mucho tiempo desde el inicio de la partida (3 minutos), el jefe preguntará si quiere que le guíe al país destino y el nivel se contará como **no completado**, teniendo que repetirlo para poder seguir adelante.
 
 El jugador solo necesitará **1 estrella** para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las **3 estrellas**, conseguirá un recuerdo del cliente para adornar su tarjeta de información.
 #### **7.3.3 - Pistas**

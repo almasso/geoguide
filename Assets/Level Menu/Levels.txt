@@ -4,15 +4,15 @@
 "index": 0,
 "name": "  Introductorio Europa",
 "estrella1":true,
-"estrella2":false,
-"estrella3":false
+"estrella2":true,
+"estrella3":true
 },
 {
 "index": 1,
 "name": "  Europa 1",
-"estrella1": false,
-"estrella2": false,
-"estrella3": false
+"estrella1":false,
+"estrella2":false,
+"estrella3":false
 },
 {
 "index": 2,

@@ -107,7 +107,7 @@
 		{
 			"index": 8,
 			"name": "Reino Unido",
-			"isActive": false,
+			"isActive": true,
 			"capital": "Londres",
 			"languaje": "Inglés",
 			"currency": "Libra Esterlina",
@@ -211,7 +211,7 @@
 		{
 			"index": 16,
 			"name": "República Checa",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Praga",
 			"languaje": "Checo",
 			"currency": "Corona Checa",
@@ -224,7 +224,7 @@
 		{
 			"index": 17,
 			"name": "Eslovaquia",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Bratislava",
 			"languaje": "Eslovaco",
 			"currency": "Euro",
@@ -237,7 +237,7 @@
 		{
 			"index": 18,
 			"name": "Hungría",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Budapest",
 			"languaje": "Húngaro",
 			"currency": "Forinto Húngaro",
@@ -250,7 +250,7 @@
 		{
 			"index": 19,
 			"name": "Rumanía",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Bucarest",
 			"languaje": "Rumano",
 			"currency": "Leu",
@@ -263,7 +263,7 @@
 		{
 			"index": 20,
 			"name": "Bulgaria",
-			"isActive": true,
+			"isActive": false,
 			"capital": "Sofía",
 			"languaje": "Búlgaro",
 			"currency": "Leva",
@@ -276,7 +276,7 @@
 		{
             "index": 21,
             "name": "Bélgica",
-            "isActive": true,
+            "isActive": false,
             "capital": "Bruselas",
             "languaje": "Neerlandés, Francés, Alemán",
             "currency": "Euro",
@@ -289,7 +289,7 @@
 		{
             "index": 22,
             "name": "Países Bajos",
-            "isActive": true,
+            "isActive": false,
             "capital": "Ámsterdam",
             "languaje": "Neerlandés",
             "currency": "Euro",
@@ -302,7 +302,7 @@
 		{
             "index": 23,
             "name": "Estonia",
-            "isActive": true,
+            "isActive": false,
             "capital": "Tallín",
             "languaje": "Estonio",
             "currency": "Euro",
