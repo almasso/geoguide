@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.36974454, g: 0.712222, b: 0.7786733, a: 1}
+  m_IndirectSpecularColor: {r: 0.37049243, g: 0.71225435, b: 0.778658, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4519,9 +4519,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1719638987}
         m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
-        m_MethodName: SettingsMenu
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4761,6 +4761,7 @@ MonoBehaviour:
   _rotationNode: {fileID: 1136655263}
   _planeModel: {fileID: 1214255469}
   _levelChanger: {fileID: 1620934367}
+  _airportEspana: {fileID: 1301886757}
   pitchSpeed: 1
   yawSpeed: 40
   diveSpeed: 5
@@ -8260,8 +8261,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749735833}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.38828418, y: 0.85342264, z: 0.14399742, w: -0.3164963}
-  m_LocalPosition: {x: -66.647285, y: 76.09431, z: 60.48047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 116.050964, z: 3.383186}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8269,7 +8270,7 @@ Transform:
   - {fileID: 1977609790}
   - {fileID: 1543382440}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 220.695, z: -48.928}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1763509945
 GameObject:
   m_ObjectHideFlags: 0

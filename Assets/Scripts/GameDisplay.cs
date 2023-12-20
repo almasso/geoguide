@@ -53,7 +53,7 @@ public class GameDisplay : Save_Load
         else if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
         {
             objetivo = gameObject.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
-            cliente.texture = AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/Clients/dad.png");
+            cliente.texture = Resources.Load<Texture2D>("dad");
             objetivo.text = myIntroLevelList.IntroLevel[0].Objective1;
             GameSceneInfo.setObjectiveCountry(myIntroLevelList.IntroLevel[0].Objective1);
         }
@@ -62,7 +62,7 @@ public class GameDisplay : Save_Load
     void AddClient()
     {
         var aux = myLevel_Info_List.nivel_Info[IndexController._index].clientes_Info[actualClient];
-        _myCliente = AssetDatabase.LoadAssetAtPath<Sprite>(aux.cliente);
+        _myCliente = Resources.Load<Sprite>(aux.cliente);
         cliente.texture = _myCliente.texture;
 
         texto_Pista1.text = aux.pista1;

@@ -25,7 +25,7 @@ namespace AYellowpaper.SerializedCollections.KeysGenerators
 
         private void OnEnable()
         {
-            VisualTreeAsset document = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Plugins/SerializedCollections/Editor/Assets/KeysGeneratorSelectorWindow.uxml");
+            VisualTreeAsset document = Resources.Load<VisualTreeAsset>("Assets/Plugins/SerializedCollections/Editor/Assets/KeysGeneratorSelectorWindow.uxml");
             var element = document.CloneTree();
             element.style.height = new StyleLength(new Length(100, LengthUnit.Percent));
             rootVisualElement.Add(element);

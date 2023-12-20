@@ -4,6 +4,7 @@ using System.Numerics;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class Scene_Manager : MonoBehaviour
 {
@@ -25,25 +26,18 @@ public class Scene_Manager : MonoBehaviour
     {
         _instance = this;
     }
-    private void Start()
-    {
-        refreshData();
-    }
-    public void refreshData()
-    {
-        AssetDatabase.Refresh();
-    }
+
     public void StartGame()
     {
-        refreshData();
+        checkLevelFile();
         SceneManager.LoadScene("LevelsScene");
-        IndexController.namePreviousScene = "LevelScene";
+        IndexController.namePreviousScene = "LevelsScene";
     }
 
     public void StartGamePause()
     {
         SceneManager.LoadScene("LevelsScene");
-        IndexController.namePreviousScene = "LevelScene";
+        IndexController.namePreviousScene = "LevelsScene";
     }
 
     public void PauseGame()
@@ -66,8 +60,6 @@ public class Scene_Manager : MonoBehaviour
 
     public void StartGamePrueba(int _i)
     {
-        refreshData();
-
         IndexController._index = _i;
         IndexController.namePreviousScene = "GameScene";
         if (IndexController._index == 0 || IndexController._index % 5 == 0) SceneManager.LoadScene("IntroductoryLevels");
@@ -75,13 +67,11 @@ public class Scene_Manager : MonoBehaviour
     }
     public void BackToMainMenu()
     {
-        refreshData();
-        IndexController.namePreviousScene = "LevelScene";
+        IndexController.namePreviousScene = "LevelsScene";
         SceneManager.LoadScene("MainMenuScene");
     }
     public void Tarjetasmenu()
     {
-        refreshData();
         SceneManager.LoadScene("MenuTarjetas");
     }
 
@@ -91,7 +81,6 @@ public class Scene_Manager : MonoBehaviour
     }
     public void SettingsMenu()
     {
-        refreshData();
         SceneManager.LoadScene("SettingsScene");
     }
 
@@ -108,6 +97,20 @@ public class Scene_Manager : MonoBehaviour
     public void UnloadScene(string nameScene)
     {
         SceneManager.UnloadSceneAsync(nameScene);
+    }
+
+    public void checkLevelFile()
+    {
+        var ruta1 = Path.Combine(Application.persistentDataPath, "nivel_Info.txt");
+        var ruta2 = Path.Combine(Application.persistentDataPath, "Levels.txt");
+        var ruta3 = Path.Combine(Application.persistentDataPath, "ClienteInfo.txt");
+        var ruta4 = Path.Combine(Application.persistentDataPath, "Cards_Info.txt");
+        var ruta5 = Path.Combine(Application.persistentDataPath, "IntroductoryLevels.txt");
+        if (!File.Exists(ruta1)) File.Copy("Assets/Level Menu/Resources/nivel_Info.txt", ruta1);
+        if (!File.Exists(ruta2)) File.Copy("Assets/Level Menu/Resources/Levels.txt", ruta2);
+        if (!File.Exists(ruta3)) File.Copy("Assets/Level Menu/Resources/ClienteInfo.txt", ruta3);
+        if (!File.Exists(ruta4)) File.Copy("Assets/Tarjetas Menu/InfoCards/Resources/Cards_Info.txt", ruta4);
+        if (!File.Exists(ruta5)) File.Copy("Assets/Introductory Game/Resources/IntroductoryLevels.txt", ruta5);
     }
     #endregion
 }

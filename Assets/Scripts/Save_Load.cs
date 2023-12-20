@@ -3,19 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using System.IO;
 
 public class Save_Load : MonoBehaviour
 {
     #region JSON_TEXTS
     
     //cartas
-    protected string cards_info_path = "Assets/Tarjetas Menu/InfoCards/Cards_Info.txt";
+    protected string cards_info_path = "Cards_Info";
+    protected string cards_info_path_real;
     //introLevels
-    protected string introLevels_path = "Assets/Introductory Game/IntroductoryLevels.txt";
+    protected string introLevels_path = "IntroductoryLevels";
+    protected string introLevels_path_real;
     //levels
-    protected string level_Info_path = "Assets/Level Menu/nivel_Info.txt";
-    protected string levels_path = "Assets/Level Menu/Levels.txt";
-    protected string clienteLevel_path = "Assets/Level Menu/ClienteInfo.txt";
+    protected string level_Info_path = "nivel_Info";
+    protected string level_Info_path_real;
+
+    protected string levels_path = "Levels";
+    protected string levels_path_real;
+
+    //clientes
+    protected string clienteLevel_path = "ClienteInfo";
+    protected string clienteLevel_path_real;
 
     #endregion
 
@@ -137,29 +146,45 @@ public class Save_Load : MonoBehaviour
     #endregion
     void Awake()
     {
+        cards_info_path_real = Path.Combine(Application.persistentDataPath, "Cards_Info.txt");
+        introLevels_path_real = Path.Combine(Application.persistentDataPath, "IntroductoryLevels.txt");
+        level_Info_path_real = Path.Combine(Application.persistentDataPath, "nivel_Info.txt");
+        levels_path_real = Path.Combine(Application.persistentDataPath, "Levels.txt");
+        clienteLevel_path_real = Path.Combine(Application.persistentDataPath, "ClienteInfo.txt");
+
         //levels
-        estrellaActivada = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png");
-        estrellaDesactivada = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s2.png");
+        estrellaActivada = Resources.Load<Sprite>("s1");
+        estrellaDesactivada = Resources.Load<Sprite>("s2");
 
-        TextAsset levels = AssetDatabase.LoadAssetAtPath<TextAsset>(levels_path);
-        myLevelList = JsonUtility.FromJson<NivelList>(levels.text);
+        //TextAsset levels = Resources.Load<TextAsset>(levels_path);
+        StreamReader reader = new StreamReader(levels_path_real);
+        myLevelList = JsonUtility.FromJson<NivelList>(reader.ReadToEnd());
+        reader.Close();
 
-        TextAsset level_Info = AssetDatabase.LoadAssetAtPath<TextAsset>(level_Info_path);
-        myLevel_Info_List = JsonUtility.FromJson<Nivel_Info_List>(level_Info.text);
+        //TextAsset level_Info = Resources.Load<TextAsset>(level_Info_path);
+        reader = new StreamReader(level_Info_path_real);
+        myLevel_Info_List = JsonUtility.FromJson<Nivel_Info_List>(reader.ReadToEnd());
+        reader.Close();
 
         //cartas
-        cartaActivada = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Tarjetas Menu/InfoCards/Tarjeta Pais.png");
-        cartaDesactivada = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Tarjetas Menu/InfoCards/Tarjeta Pais Bloqueada.png");
-        TextAsset cards_info = AssetDatabase.LoadAssetAtPath<TextAsset>(cards_info_path);
-        myCardList = JsonUtility.FromJson<CardList>(cards_info.text);
-        
+        cartaActivada = Resources.Load<Sprite>("Tarjeta Pais");
+        cartaDesactivada = Resources.Load<Sprite>("Tarjeta Pais Bloqueada");
+        //TextAsset cards_info = Resources.Load<TextAsset>(cards_info_path);
+        reader = new StreamReader(cards_info_path_real);
+        myCardList = JsonUtility.FromJson<CardList>(reader.ReadToEnd());
+        reader.Close();
+
         // introLevels
-        TextAsset introLevels_info = AssetDatabase.LoadAssetAtPath<TextAsset>(introLevels_path);
-        myIntroLevelList = JsonUtility.FromJson<IntroLevelList>(introLevels_info.text);
+        //TextAsset introLevels_info = Resources.Load<TextAsset>(introLevels_path);
+        reader = new StreamReader(introLevels_path_real);
+        myIntroLevelList = JsonUtility.FromJson<IntroLevelList>(reader.ReadToEnd());
+        reader.Close();
 
         // cliente
-        TextAsset cliente = AssetDatabase.LoadAssetAtPath<TextAsset>(clienteLevel_path);
-        myCliente_Info_List = JsonUtility.FromJson<Cliente_Info_List>(cliente.text);
+        //TextAsset cliente = Resources.Load<TextAsset>(clienteLevel_path);
+        reader = new StreamReader(clienteLevel_path_real);
+        myCliente_Info_List = JsonUtility.FromJson<Cliente_Info_List>(reader.ReadToEnd());
+        reader.Close();
     }
 
 }
