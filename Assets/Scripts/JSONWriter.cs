@@ -20,7 +20,7 @@ public class JSONWriter : Save_Load
         myLevel_writer.intentos = GameManager.Instance.GetTries().ToString();
         intentosActuales = GameManager.Instance.GetTries();
         string line = "";
-        using (var reader = new System.IO.StreamReader(level_Info_path_real))
+        using (var reader = new System.IO.StreamReader(level_Info_path))
         {
             while ((line = reader.ReadLine()) != null)
             {
@@ -41,13 +41,13 @@ public class JSONWriter : Save_Load
             }
         }
         if (intentosActuales < 3) cardJSON();
-        File.WriteAllText(level_Info_path_real, sbText.ToString());
+        File.WriteAllText(level_Info_path, sbText.ToString());
     }
 
     public void cardJSON()
     {
         string line = "";
-        using (var reader = new System.IO.StreamReader(cards_info_path_real))
+        using (var reader = new System.IO.StreamReader(cards_info_path))
         {
             while ((line = reader.ReadLine()) != null)
             {
@@ -68,7 +68,7 @@ public class JSONWriter : Save_Load
                 }
             }
         }
-        File.WriteAllText(cards_info_path_real, sbCard.ToString());
+        File.WriteAllText(cards_info_path, sbCard.ToString());
     }
 
     private bool buscaPais(string name)
@@ -85,7 +85,7 @@ public class JSONWriter : Save_Load
 
     private void changeLevelButton()
     {
-        using (var reader = new System.IO.StreamReader(levels_path_real))
+        using (var reader = new System.IO.StreamReader(levels_path))
         {
             string line2 = "";
             while ((line2 = reader.ReadLine()) != null)
@@ -130,6 +130,6 @@ public class JSONWriter : Save_Load
             }
         }
 
-        File.WriteAllText(levels_path_real, sbText2.ToString());
+        File.WriteAllText(levels_path, sbText2.ToString());
     }
 }

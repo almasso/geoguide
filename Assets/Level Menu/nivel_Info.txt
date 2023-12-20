@@ -8,13 +8,13 @@
 },
 {
 "name":"  Europa 1",
-"intentos":"4",
+"intentos":"0",
 "clientesTotales" : 3,
 "imprevistos" : false
 },
 {
 "name":"  Europa 2",
-"intentos":"4",
+"intentos":"1",
 "clientesTotales" : 3,
 "imprevistos" : false
 },

@@ -91,7 +91,6 @@ public class PlayerController : MonoBehaviour
         _canTiltDown = _canTiltUp = true;
         _lvlChngr = _levelChanger.GetComponent<LevelChanger>();
         iniminimumHeight = minimumHeight;
-        _planeNodeTransform.rotation = Quaternion.Euler(-47.027f, 128.629f, -24.238f);
     }
 
     void FixedUpdate()
@@ -111,7 +110,7 @@ public class PlayerController : MonoBehaviour
 
         if (_playerTransform.localPosition.y >= maximumHeight) _playerTransform.localPosition = new Vector3(0, Mathf.Abs(maximumHeight), 0);
         else if (_playerTransform.localPosition.y <= minimumHeight) _playerTransform.localPosition = new Vector3(0, Mathf.Abs(minimumHeight), 0);
-
+      
         if (_playerTransform.localPosition.y >= maximumHeight - 0.05f)
         {
             _canTiltUp = false;
@@ -150,7 +149,7 @@ public class PlayerController : MonoBehaviour
     private void InicializePlane()
     {
         //_playerTransform.localPosition = _planetToOrbit.GetComponent<Transform>().position + new Vector3(0, (minimumHeight + maximumHeight) / 2, 0) + _orbitOffset;
-        //_planeNodeTransform = _rotationNode.GetComponent<Transform>();
+        _planeNodeTransform = _rotationNode.GetComponent<Transform>();
         velocidadObjetivo = velocidadesAvion.minima;
         _canTiltDown = _canTiltUp = true;
         minimumHeight = iniminimumHeight;

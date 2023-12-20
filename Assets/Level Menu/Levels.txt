@@ -17,9 +17,9 @@
 {
 "index": 2,
 "name": "  Europa 2",
-"estrella1":false,
-"estrella2":false,
-"estrella3":false
+"estrella1": false,
+"estrella2": false,
+"estrella3": false
 },
 {
 "index": 3,
