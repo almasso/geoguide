@@ -4,6 +4,7 @@ using System.Numerics;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class Scene_Manager : MonoBehaviour
 {
@@ -38,7 +39,8 @@ public class Scene_Manager : MonoBehaviour
     }
     public void StartGame()
     {
-        refreshData();
+        //refreshData();
+        checkLevelFile();
         SceneManager.LoadScene("LevelsScene");
         IndexController.namePreviousScene = "LevelsScene";
     }
@@ -111,6 +113,16 @@ public class Scene_Manager : MonoBehaviour
     public void UnloadScene(string nameScene)
     {
         SceneManager.UnloadSceneAsync(nameScene);
+    }
+
+    public void checkLevelFile()
+    {
+        var ruta1 = Path.Combine(Application.persistentDataPath, "nivel_Info.txt");
+        var ruta2 = Path.Combine(Application.persistentDataPath, "Levels.txt");
+        var ruta3 = Path.Combine(Application.persistentDataPath, "ClienteInfo.txt");
+        var ruta4 = Path.Combine(Application.persistentDataPath, "Cards_Info.txt");
+        var ruta5 = Path.Combine(Application.persistentDataPath, "IntroductoryLevels.txt");
+        if (!File.Exists(ruta1)) File.Copy("Assets/Level_Menu/Resources/nivel_Info.txt", ruta1);
     }
     #endregion
 }
