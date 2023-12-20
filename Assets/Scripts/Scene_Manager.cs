@@ -44,8 +44,6 @@ public class Scene_Manager : MonoBehaviour
 
     public void StartGamePause()
     {
-        LevelChanger _lvlChngr = _levelChanger.GetComponent<LevelChanger>();
-        _lvlChngr.FadeScreen();
         SceneManager.LoadScene("LevelsScene");
         IndexController.namePreviousScene = "LevelScene";
     }
