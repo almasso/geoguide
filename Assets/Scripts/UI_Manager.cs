@@ -18,6 +18,7 @@ public class UI_Manager : MonoBehaviour
     private GameObject _pauseUIObj;
     [SerializeField]
     private GameObject _gameUIObj;
+    [SerializeField]
     private GameObject _gameObjetivoUI;
     [SerializeField]
     private GameObject _startButton;
@@ -56,6 +57,7 @@ public class UI_Manager : MonoBehaviour
             case "SettingsScene":; break;
             case "IntroductoryLevels":
                 _startButton.SetActive(false);
+                _gameObjetivoUI.SetActive(false);
                 LoreHUD();
                  break;
             default: break;
