@@ -34,6 +34,7 @@ public class Scene_Manager : MonoBehaviour
     public void refreshData()
     {
         AssetDatabase.Refresh();
+
     }
     public void StartGame()
     {

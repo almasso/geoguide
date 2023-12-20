@@ -3,7 +3,7 @@
 {
 	"name": "  Europa 1",
 	"pais": "Reino Unido",
-	"cliente": "Assets/Clients/client1.png",
+	"cliente": "client1",
 	"pista1": "Un monumento importante de este país es el Big Ben",
 	"pista2": "Está al noroeste europeo",
 	"pista3": "Es un país insular",
@@ -12,7 +12,7 @@
 {
 	"name": "  Europa 1",
 	"pais": "Portugal",
-	"cliente": "Assets/Clients/client2.png",
+	"cliente": "client2",
 	"pista1": "Es el país no insular más al oeste de Europa",
 	"pista2": "Tiene forma rectangular",
 	"pista3": "Es fronterizo al oeste con España",
@@ -21,7 +21,7 @@
 {
 	"name": "  Europa 1",
 	"pais": "Italia",
-	"cliente": "Assets/Clients/client3.png",
+	"cliente": "client3",
 	"pista1": "Está bañado por el Mediterráneo",
 	"pista2": "Está al sureste del país del Louvre",
 	"pista3": "Tiene una reconocible forma de bota",
@@ -30,7 +30,7 @@
 {
 	"name": "  Europa 2",
 	"pais": "Suiza",
-	"cliente": "Assets/Clients/client4.png",
+	"cliente": "client4",
 	"pista1": "Se habla Francés y Alemán, entre otros",
 	"pista2": "Está en plena Centroeuropa",
 	"pista3": "Está al norte de otro país con el que comparte los Alpes",
@@ -40,7 +40,7 @@
 {
 	"name": "  Europa 2",
 	"pais": "Bélgica",
-	"cliente": "Assets/Clients/client5.png",
+	"cliente": "client5",
 	"pista1": "Está al norte de Europa",
 	"pista2": "Su costa está al sureste de la de Reino Unido",
 	"pista3": "Algunos de sus idiomas oficiales son el francés y el alemán",
@@ -49,7 +49,7 @@
 {
 	"name": "  Europa 2",
 	"pais": "Austria",
-	"cliente": "Assets/Clients/client6.png",
+	"cliente": "client6",
 	"pista1": "El idioma predominante es el alemán",
 	"pista2": "Está en pleno centro de Europa",
 	"pista3": "Está al este de ambos países que comparten los Alpes",
@@ -58,7 +58,7 @@
 {
 	"name": "  Europa 2",
 	"pais": "Portugal",
-	"cliente": "Assets/Clients/client8.png",
+	"cliente": "client8",
 	"pista1": "Es el país no insular más al oeste de Europa",
 	"pista2": "Es fronterizo con España",
 	"pista3": "El país es Portugal",
@@ -67,7 +67,7 @@
 {
 	"name": "  Europa 3",
 	"pais": "Países Bajos",
-	"cliente": "Assets/Clients/client7.png",
+	"cliente": "client7",
 	"pista1": "Las capitales de sus países fronterizos son Berlin y Bruselas",
 	"pista2": "Su costa está al este de la de Reino Unido",
 	"pista3": "Está al norte de Bélgica",
@@ -77,7 +77,7 @@
 {
 	"name": "  Europa 3",
 	"pais": "Francia",
-	"cliente": "Assets/Clients/client9.png",
+	"cliente": "client9",
 	"pista1": "Está al oeste europeo",
 	"pista2": "Es fronterizo con España, Alemania e Italia",
 	"pista3": "El país es Francia",
@@ -86,7 +86,7 @@
 {
 	"name": "  Europa 3",
 	"pais": "República Checa",
-	"cliente": "Assets/Clients/client10.png",
+	"cliente": "client10",
 	"pista1": "Está en el centro de Europa",
 	"pista2": "Comparte frontera con sendos países germanoparlantes",
 	"pista3": "Está al norte de Austria",
@@ -95,7 +95,7 @@
 {
 	"name": "  Europa 3",
 	"pais": "Irlanda",
-	"cliente": "Assets/Clients/client11.png",
+	"cliente": "client11",
 	"pista1": "Es uno de los tres países insulares de Europa",
 	"pista2": "La parte norte de la isla pertenece a otro país",
 	"pista3": "Tiene frontera con Reino Unido",
@@ -104,7 +104,7 @@
 {
 	"name": "  Europa 3",
 	"pais": "Alemania",
-	"cliente": "Assets/Clients/client12.png",
+	"cliente": "client12",
 	"pista1": "Este monumento está en Berlín",
 	"pista2": "El país comparte frontera con Francia y Suiza",
 	"pista3": "El país es Alemania",
@@ -113,7 +113,7 @@
 {
 	"name": "  Europa 3",
 	"pais": "Reino Unido",
-	"cliente": "Assets/Clients/client13.png",
+	"cliente": "client13",
 	"pista1": "El país se sitúa en la isla de Gran Bretaña",
 	"pista2": "Comparte frontera con Irlanda",
 	"pista3": "El país es Reino Unido",
@@ -122,7 +122,7 @@
 {
 	"name": "  Europa 4",
 	"pais": "Italia",
-	"cliente": "Assets/Clients/client14.png",
+	"cliente": "client14",
 	"pista1": "Es un país bañado por el Mediterráneo",
 	"pista2": "Tiene una forma muy reconocible de bota",
 	"pista3": "El país es Italia",
@@ -131,7 +131,7 @@
 {
 	"name": "  Europa 4",
 	"pais": "Polonia",
-	"cliente": "Assets/Clients/client15.png",
+	"cliente": "client15",
 	"pista1": "Se encuentra en el noreste europeo",
 	"pista2": "Tiene frontera con Alemania, República Checa y Austria",
 	"pista3": "Está justo al este de Alemania",
@@ -141,7 +141,7 @@
 {
 	"name": "  Europa 4",
 	"pais": "Dinamarca",
-	"cliente": "Assets/Clients/client16.png",
+	"cliente": "client16",
 	"pista1": "Está en el centro norte europeo",
 	"pista2": "Le baña el Mar del Norte",
 	"pista3": "Está al norte de Alemania",
@@ -150,7 +150,7 @@
 {
 	"name": "  Europa 4",
 	"pais": "Suecia",
-	"cliente": "Assets/Clients/client17.png",
+	"cliente": "client17",
 	"pista1": "Está conectado al continente europeo por dos zonas",
 	"pista2": "Es un país del norte europeo",
 	"pista3": "Está al norte de Alemania y Dinamarca",
@@ -159,7 +159,7 @@
 {
 	"name": "  Europa 4",
 	"pais": "Noruega",
-	"cliente": "Assets/Clients/client18.png",
+	"cliente": "client18",
 	"pista1": "Es el país no insular más al norte de Europa",
 	"pista2": "Es uno de los países escandinavos",
 	"pista3": "Está al oeste de Suecia",
@@ -168,7 +168,7 @@
 {
 	"name": "  Europa 4",
 	"pais": "Finlandia",
-	"cliente": "Assets/Clients/client19.png",
+	"cliente": "client19",
 	"pista1": "Es uno de los tres países escandinavos",
 	"pista2": "El sueco es uno de sus idiomas oficiales",
 	"pista3": "Tiene frontera con Noruega y Suecia",
