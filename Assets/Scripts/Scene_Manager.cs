@@ -28,18 +28,9 @@ public class Scene_Manager : MonoBehaviour
     {
         _instance = this;
     }
-    private void Start()
-    {
-        refreshData();
-    }
-    public void refreshData()
-    {
-        AssetDatabase.Refresh();
 
-    }
     public void StartGame()
     {
-        refreshData();
         checkLevelFile();
         SceneManager.LoadScene("LevelsScene");
         IndexController.namePreviousScene = "LevelsScene";
@@ -71,8 +62,6 @@ public class Scene_Manager : MonoBehaviour
 
     public void StartGamePrueba(int _i)
     {
-        refreshData();
-
         IndexController._index = _i;
         IndexController.namePreviousScene = "GameScene";
         if (IndexController._index == 0 || IndexController._index % 5 == 0) SceneManager.LoadScene("IntroductoryLevels");
@@ -80,13 +69,11 @@ public class Scene_Manager : MonoBehaviour
     }
     public void BackToMainMenu()
     {
-        refreshData();
         IndexController.namePreviousScene = "LevelsScene";
         SceneManager.LoadScene("MainMenuScene");
     }
     public void Tarjetasmenu()
     {
-        refreshData();
         SceneManager.LoadScene("MenuTarjetas");
     }
 
@@ -96,7 +83,6 @@ public class Scene_Manager : MonoBehaviour
     }
     public void SettingsMenu()
     {
-        refreshData();
         SceneManager.LoadScene("SettingsScene");
     }
 
