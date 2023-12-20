@@ -40,13 +40,13 @@ public class Scene_Manager : MonoBehaviour
     {
         refreshData();
         SceneManager.LoadScene("LevelsScene");
-        IndexController.namePreviousScene = "LevelScene";
+        IndexController.namePreviousScene = "LevelsScene";
     }
 
     public void StartGamePause()
     {
         SceneManager.LoadScene("LevelsScene");
-        IndexController.namePreviousScene = "LevelScene";
+        IndexController.namePreviousScene = "LevelsScene";
     }
 
     public void PauseGame()
@@ -79,7 +79,7 @@ public class Scene_Manager : MonoBehaviour
     public void BackToMainMenu()
     {
         refreshData();
-        IndexController.namePreviousScene = "LevelScene";
+        IndexController.namePreviousScene = "LevelsScene";
         SceneManager.LoadScene("MainMenuScene");
     }
     public void Tarjetasmenu()
