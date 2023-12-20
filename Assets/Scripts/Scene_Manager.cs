@@ -8,8 +8,6 @@ using UnityEngine.SceneManagement;
 public class Scene_Manager : MonoBehaviour
 {
     public static List<string> _countriesToVisit;
-    [SerializeField] private GameObject _levelChanger;
-
 
     #region references
     static private Scene_Manager _instance;

@@ -18,6 +18,9 @@ public class UI_Manager : MonoBehaviour
     private GameObject _pauseUIObj;
     [SerializeField]
     private GameObject _gameUIObj;
+    private GameObject _gameObjetivoUI;
+    [SerializeField]
+    private GameObject _startButton;
 
     Color red = new Color32(255, 0, 0, 94);
     Color green = new Color32(0, 255, 0, 94);
@@ -52,10 +55,15 @@ public class UI_Manager : MonoBehaviour
             case "MenuTarjetas":; break;
             case "SettingsScene":; break;
             case "IntroductoryLevels":
+                _startButton.SetActive(false);
                 LoreHUD();
                  break;
             default: break;
         }
+    }
+    public void ActivateStartButton()
+    {
+        _startButton.SetActive(true);
     }
     public void StartGameHUD()
     {
@@ -64,12 +72,16 @@ public class UI_Manager : MonoBehaviour
     }
     public void LoreHUD()
     {
+        _gameUIObj.SetActive(false);
         _loreUIObj.SetActive(true);
+        _winHUD.SetActive(false);
     } 
     public void StartIntroductoryLevel()
     {
+        _gameUIObj.SetActive(true);
         _loreUIObj.SetActive(false);
         GameManager.Instance.changeCountryColor(green);
+        GameManager.Instance.ActivateIntro();
     }
 
     public void StartGame()
@@ -143,5 +155,6 @@ public class UI_Manager : MonoBehaviour
         _pauseUIObj.SetActive(false);
         _gameUIObj.SetActive(true);
     }
+ 
     #endregion
 }

@@ -46,11 +46,15 @@ public class GameManager : MonoBehaviour
     public int cliente = 0;
     [SerializeField]
     private GameObject[] _countries;
+    [SerializeField]
+    private GameObject _introObj;
+    private IntroductoryLevels _introductoryLevel;
 
     Color red = new Color32(255, 0, 0, 94);
     Color green = new Color32(0, 255, 0, 94);
     void Start()
     {
+        _introductoryLevel = _introObj.GetComponent<IntroductoryLevels>();
         _planeController = _player.GetComponent<PlayerController>();
         _planeTrail = _player.GetComponent<PlaneTrail>();
         _game = _gameObj.GetComponent<GameDisplay>();
@@ -140,6 +144,8 @@ public class GameManager : MonoBehaviour
     public void PauseState() {
         UI_Manager.Instance.PauseState();
     }
+    public void ActivateStartButtonIntro() { UI_Manager.Instance.ActivateStartButton(); }
+    public void ActivateIntro() { _introductoryLevel.actiavteIntro(); }
     public void returnToGame() {
         UI_Manager.Instance.returnToGame();
     }
