@@ -2063,6 +2063,7 @@ MonoBehaviour:
   _loreUIObj: {fileID: 1148405060}
   _pauseUIObj: {fileID: 0}
   _gameUIObj: {fileID: 598711877}
+  _gameObjetivoUI: {fileID: 89917689}
   _startButton: {fileID: 1318490518}
 --- !u!4 &527769230
 Transform:
