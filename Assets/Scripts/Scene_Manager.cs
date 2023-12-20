@@ -122,7 +122,7 @@ public class Scene_Manager : MonoBehaviour
         var ruta3 = Path.Combine(Application.persistentDataPath, "ClienteInfo.txt");
         var ruta4 = Path.Combine(Application.persistentDataPath, "Cards_Info.txt");
         var ruta5 = Path.Combine(Application.persistentDataPath, "IntroductoryLevels.txt");
-        if (!File.Exists(ruta1)) File.Copy("Assets/Level_Menu/Resources/nivel_Info.txt", ruta1);
+        if (!File.Exists(ruta1)) File.Copy("Assets/Level Menu/Resources/nivel_Info.txt", ruta1);
     }
     #endregion
 }
