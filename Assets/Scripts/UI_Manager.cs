@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UI_Manager : MonoBehaviour
@@ -9,6 +10,18 @@ public class UI_Manager : MonoBehaviour
     #region references
     [SerializeField] private GameObject _winHUD;
     [SerializeField] private GameObject _looseHUD;
+    [SerializeField]
+    private GameObject _endUIObj;
+    [SerializeField]
+    private GameObject _loreUIObj;
+    [SerializeField]
+    private GameObject _pauseUIObj;
+    [SerializeField]
+    private GameObject _gameUIObj;
+
+    Color red = new Color32(255, 0, 0, 94);
+    Color green = new Color32(0, 255, 0, 94);
+
     static private UI_Manager _instance;
     static public UI_Manager Instance
     {
@@ -24,11 +37,41 @@ public class UI_Manager : MonoBehaviour
     {
         _instance = this;
     }
+    private void Start()
+    {
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "GameScene":
+                StartGameHUD();
+                _gameUIObj.SetActive(true);
+                _endUIObj.SetActive(false);
+                _pauseUIObj.SetActive(false);
+                break;
+            case "LevelScene":; break;
+            case "MainMenuScene":; break;
+            case "MenuTarjetas":; break;
+            case "SettingsScene":; break;
+            case "IntroductoryLevels":
+                LoreHUD();
+                 break;
+            default: break;
+        }
+    }
     public void StartGameHUD()
     {
         _winHUD.SetActive(false);
         _looseHUD.SetActive(false);
     }
+    public void LoreHUD()
+    {
+        _loreUIObj.SetActive(true);
+    } 
+    public void StartIntroductoryLevel()
+    {
+        _loreUIObj.SetActive(false);
+        GameManager.Instance.changeCountryColor(green);
+    }
+
     public void StartGame()
     {
         Scene_Manager.Instance.StartGame();
@@ -55,6 +98,8 @@ public class UI_Manager : MonoBehaviour
     }
     public void EndGameHUD(bool win)
     {
+        _gameUIObj.SetActive(false);
+        _endUIObj.SetActive(true);
         if (win)
         {
             _winHUD.SetActive(true);
@@ -86,6 +131,17 @@ public class UI_Manager : MonoBehaviour
         {
             estrella1.texture = Resources.Load<Sprite>("s1").texture;
         }
+    }
+
+    public void PauseState()
+    {
+        _pauseUIObj.SetActive(true);
+        _gameUIObj.SetActive(false);
+    }
+    public void returnToGame()
+    {
+        _pauseUIObj.SetActive(false);
+        _gameUIObj.SetActive(true);
     }
     #endregion
 }

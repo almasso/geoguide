@@ -27,13 +27,8 @@ public class GameManager : MonoBehaviour
         _instance = this;
     }
     [SerializeField]
-    private GameObject _gameUIObj;
-    private GameDisplay _gameUI;
-    [SerializeField]
-    private GameObject _endUIObj;
-    [SerializeField]
-    private GameObject _pauseUIObj;
-
+    private GameObject _gameObj;
+    private GameDisplay _game;
     [SerializeField]
     private GameObject[] _ClueObj;
 
@@ -56,27 +51,20 @@ public class GameManager : MonoBehaviour
     Color green = new Color32(0, 255, 0, 94);
     void Start()
     {
-        _gameUI = _gameUIObj.GetComponentInChildren<GameDisplay>();
         _planeController = _player.GetComponent<PlayerController>();
         _planeTrail = _player.GetComponent<PlaneTrail>();
-        //Debug.Log(_gameUI);
-        _gameUIObj.SetActive(true);
-        _endUIObj.SetActive(false);
-        _pauseUIObj.SetActive(false);
+        _game = _gameObj.GetComponent<GameDisplay>();
         _hand = _HandObj.GetComponent<HandWave>();
-        if (SceneManager.GetActiveScene().name == "GameScene") UI_Manager.Instance.StartGameHUD();
         _planeTrail.Activate(true);
-        Debug.Log(_gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country1);
-        GameSceneInfo.setObjectiveCountry(_gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country1);
+        GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country1);
         updateCountryObject(GameSceneInfo.getObjectiveCountry());
-        if(SceneManager.GetActiveScene().name == "IntroductoryLevels") changeCountryColor(green);
     }
 
     public void ChangeClient()
     {
-        if (_gameUI.HasMoreClients())
+        if (_game.HasMoreClients())
         {
-            _gameUI.nextClient();
+            _game.nextClient();
             for (int i = 0; i < 3; ++i)
             {
                 _ClueObj[i].GetComponent<ButtonClue>().hasChangedClient();
@@ -94,8 +82,6 @@ public class GameManager : MonoBehaviour
     public void fail()
     {
         UI_Manager.Instance.EndGameHUD(intentos < 3);
-        _gameUIObj.SetActive(false);
-        _endUIObj.SetActive(true);
         _planeController.DeactivatePlayer();
         _planeTrail.Activate(false);
     }
@@ -103,14 +89,14 @@ public class GameManager : MonoBehaviour
     public void updateIntroCountry(string country)
     {
         changeCountryColor(red);
-        if (country == _gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country1) GameSceneInfo.setObjectiveCountry(_gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country2);
-        else if (country == _gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country2) GameSceneInfo.setObjectiveCountry(_gameUI.myIntroLevelList.IntroLevel[_gameUI.introIndex].Country3);
-        else Scene_Manager.Instance.StartGame();
+        if (country == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country1) GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country2);
+        else if (country == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country2) GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country3);
+        else Scene_Manager.Instance.StartGame();    
 
         updateCountryObject(GameSceneInfo.getObjectiveCountry());
         changeCountryColor(green);
 
-        _gameUI.updateIntroObjective();
+        _game.updateIntroObjective();
     }
 
     public void updateCountryObject(string country)
@@ -129,7 +115,7 @@ public class GameManager : MonoBehaviour
     }
 
    public void WrongCountry() { 
-        if(SceneManager.GetActiveScene().name == "GameScene")
+        if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "GameScene")
         {
             ++intentos;
             int i = 0;
@@ -145,21 +131,17 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    public bool hasMoreClients() { return _gameUI.HasMoreClients(); }
+    public bool hasMoreClients() { return _game.HasMoreClients(); }
     public void DeactivateTrails()
     {
         _planeTrail.Activate(false);
     }
     public int GetTries(){ return intentos; }
-
     public void PauseState() {
-        _pauseUIObj.SetActive(true);
-        _gameUIObj.SetActive(false);
+        UI_Manager.Instance.PauseState();
     }
-
-    public void returnToGame() { 
-        _pauseUIObj.SetActive(false);
-        _gameUIObj.SetActive(true);
+    public void returnToGame() {
+        UI_Manager.Instance.returnToGame();
     }
     #endregion
 }
