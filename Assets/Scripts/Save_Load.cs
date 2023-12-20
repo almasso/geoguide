@@ -11,20 +11,20 @@ public class Save_Load : MonoBehaviour
     
     //cartas
     protected string cards_info_path = "Cards_Info";
-    protected string cards_info_path_real = Path.Combine(Application.persistentDataPath, "Cards_Info.txt");
+    protected string cards_info_path_real;
     //introLevels
     protected string introLevels_path = "IntroductoryLevels";
-    protected string introLevels_path_real = Path.Combine(Application.persistentDataPath, "IntroductoryLevels.txt");
+    protected string introLevels_path_real;
     //levels
     protected string level_Info_path = "nivel_Info";
-    protected string level_Info_path_real = Path.Combine(Application.persistentDataPath, "nivel_Info.txt");
+    protected string level_Info_path_real;
 
     protected string levels_path = "Levels";
-    protected string levels_path_real = Path.Combine(Application.persistentDataPath, "Levels.txt");
+    protected string levels_path_real;
 
     //clientes
     protected string clienteLevel_path = "ClienteInfo";
-    protected string clienteLevel_path_real = Path.Combine(Application.persistentDataPath, "ClienteInfo.txt");
+    protected string clienteLevel_path_real;
 
     #endregion
 
@@ -146,6 +146,12 @@ public class Save_Load : MonoBehaviour
     #endregion
     void Awake()
     {
+        cards_info_path_real = Path.Combine(Application.persistentDataPath, "Cards_Info.txt");
+        introLevels_path_real = Path.Combine(Application.persistentDataPath, "IntroductoryLevels.txt");
+        level_Info_path_real = Path.Combine(Application.persistentDataPath, "nivel_Info.txt");
+        levels_path_real = Path.Combine(Application.persistentDataPath, "Levels.txt");
+        clienteLevel_path_real = Path.Combine(Application.persistentDataPath, "ClienteInfo.txt");
+
         //levels
         estrellaActivada = Resources.Load<Sprite>("s1");
         estrellaDesactivada = Resources.Load<Sprite>("s2");
