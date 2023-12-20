@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject _rotationNode;
     [SerializeField] private GameObject _planeModel;
     [SerializeField] private GameObject _levelChanger;
-    [SerializeField] private GameObject _airportEspana;
     [Header("Ajustes del avion")]
     [SerializeField] private float pitchSpeed = 0.01f;
     [SerializeField] private float yawSpeed = 0.5f;
@@ -44,7 +43,6 @@ public class PlayerController : MonoBehaviour
     private Transform _planeTransform;
     private Transform _playerTransform;
     private Transform _planeNodeTransform;
-    private Transform _airportEspanaTransform;
 
     private LevelChanger _lvlChngr;
 
@@ -85,7 +83,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _airportEspanaTransform = _airportEspana.GetComponent<Transform>();
         _playerTransform = this.GetComponent<Transform>();
         _planeTransform = this._planeModel.GetComponent<Transform>();
         _playerTransform.position = _planetToOrbit.GetComponent<Transform>().position + new Vector3(0, (minimumHeight + maximumHeight)/2, 0) + _orbitOffset;
@@ -94,7 +91,6 @@ public class PlayerController : MonoBehaviour
         _canTiltDown = _canTiltUp = true;
         _lvlChngr = _levelChanger.GetComponent<LevelChanger>();
         iniminimumHeight = minimumHeight;
-        //_planeNodeTransform.LookAt(-_airportEspanaTransform.position);
         _planeNodeTransform.rotation = Quaternion.Euler(-47.027f, 128.629f, -24.238f);
     }
 
