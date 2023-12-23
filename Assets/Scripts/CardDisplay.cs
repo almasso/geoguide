@@ -47,9 +47,9 @@ public class CardDisplay : Save_Load
             currencyText.text = myCardList.card[index].currency;
             climateText.text = myCardList.card[index].climate;
             infoText.text = myCardList.card[index].info;
-            mapPosImage.sprite = Resources.Load<Sprite>(myCardList.card[index].mapPos);
-            flagImage.sprite = Resources.Load<Sprite>(myCardList.card[index].flag);
-            memoryImage.sprite = Resources.Load<Sprite>(myCardList.card[index].memory);
+            mapPosImage.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(myCardList.card[index].mapPos);
+            flagImage.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(myCardList.card[index].flag);
+            memoryImage.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(myCardList.card[index].memory);
         }
         else
         {
