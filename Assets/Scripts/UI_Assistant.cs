@@ -6,9 +6,9 @@ public class UI_Assistant : MonoBehaviour
 {
     
     private Text messagetext;
-    private string textToWrite=  "Hijo, ¡por fin estas preparado para heredar la empresa! \n" +
+    private string textToWrite=  "Hijo, ¡Por fin estas preparado para heredar la empresa! \n" +
         "Sé que no controlas mucho los modelos de avión de la compañía asi que te recuerdo cómo pilotarlo. \n" +
-        "Te iré dando más información por el walkie, ¿preparado?";
+        "Te iré dando más información por el walkie. ¿Preparado?";
     private float timer = 0f;
     private bool active = true;
 

@@ -77,6 +77,7 @@ public class UI_Manager : MonoBehaviour
         _loreUIObj.SetActive(false);
         _endloreUIObj.SetActive(true);
         _gameUIObj.SetActive(false);
+        _airportsUI.SetActive(false);
     }
     public void ActivateAirportsIntroductory()
     {

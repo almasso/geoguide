@@ -61,12 +61,12 @@ public class SpeechBubbleController : MonoBehaviour
                 case Frases.GADGET_BROKEN: sentence = $"¡Parece ser que tu {brokenGadget} ha dejado de funcionar! Debería arreglarse en unos segundos. ¡Ten más cuidado a la próxima!"; break;
                 case Frases.COUNTRY_FAILED: sentence = "¡Ups! Parece que ese país no es tu objetivo"; break;
                 case Frases.MISSION_FAILED: sentence = "¡No te preocupes, estás aprendiendo! Te he marcado tu objetivo. ¡Seguro que te irá mejor si lo vuelves a intentar!"; break;
-                case Frases.CONTROLES: sentence = "Podrás moverte hacia los lados pulsando A y D. También podrás subir (S) y bajar (W) el avión."; break; 
+                case Frases.CONTROLES: sentence = "Podrás moverte hacia los lados pulsando (A) y (D). También podrás subir (S) y bajar (W) el avión."; break; 
                 case Frases.VELOCIDAD: sentence = "Podrás cambiar de velocidad con los botones 1(más lenta), 2 y 3 (más rápida)."; break; 
-                case Frases.ATERRIZAR: sentence = "Recuerda que solo podrán aterrizar (tecla ESPACIO) en un aeropuerto mientras estés con la velocidad 1."; break; 
-                case Frases.OBJETIVO: sentence = "Arriba saldrá en todo momento el país al que quiere ir tu cliente! Llevales correctamente hijo!"; break; 
-                case Frases.PISTAS: sentence = "No te preocupes si te equivocas, a la derecha te iré dando pistas por si fallas y, a las malas, te guiaré al país!"; break; 
-                case Frases.READY: sentence = "Venga! Vamos a poner en marcha lo aprendido, a Europa!"; break; 
+                case Frases.ATERRIZAR: sentence = "Recuerda que solo podrás aterrizar (tecla ESPACIO) en un aeropuerto mientras estés en la velocidad 1."; break; 
+                case Frases.OBJETIVO: sentence = "Arriba saldrá en todo momento el país al que quiere ir tu cliente ¡Llévales correctamente hijo!"; break; 
+                case Frases.PISTAS: sentence = "No te preocupes si te equivocas, a la derecha te iré dando pistas por si fallas y, a las malas, te guiaré al país."; break; 
+                case Frases.READY: sentence = "¡Venga! Vamos a poner en marcha lo aprendido. ¡A Europa!"; break; 
             }
             _isPlaying = true;
             _img.enabled = true;
