@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static PlayerController;
 
 public class IntroductoryLevels : MonoBehaviour
 {
@@ -16,13 +17,11 @@ public class IntroductoryLevels : MonoBehaviour
     {
         _walkieController = _walkieGO.GetComponent<WalkieController>();
         listaDeMensajes.Add(SpeechBubbleController.Frases.CONTROLES);
-        listaDeMensajes.Add(SpeechBubbleController.Frases.BRUJULA);
         listaDeMensajes.Add(SpeechBubbleController.Frases.VELOCIDAD);
-        listaDeMensajes.Add(SpeechBubbleController.Frases.ATERRIZAR_1);
-        listaDeMensajes.Add(SpeechBubbleController.Frases.ATERRIZAR_2);
-        listaDeMensajes.Add(SpeechBubbleController.Frases.MINIMAPA);
+        listaDeMensajes.Add(SpeechBubbleController.Frases.ATERRIZAR);
         listaDeMensajes.Add(SpeechBubbleController.Frases.OBJETIVO);
         listaDeMensajes.Add(SpeechBubbleController.Frases.PISTAS);
+        listaDeMensajes.Add(SpeechBubbleController.Frases.READY);
         active = false;
     }
    
@@ -47,7 +46,7 @@ public class IntroductoryLevels : MonoBehaviour
                     ++mensajeActual;
                     timer = 0;
                 }
-                else active = false;
+                else { active = false; UI_Manager.Instance.ActivateAirportsIntroductory(); }
             }
         }
     }

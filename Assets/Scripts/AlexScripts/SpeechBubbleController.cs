@@ -8,7 +8,7 @@ using UnityEditor.Experimental.GraphView;
 
 public class SpeechBubbleController : MonoBehaviour
 {
-    public enum Frases {RADAR_DETECCION = 0, OBSTACLE_END = 1, GADGET_BROKEN = 2, COUNTRY_FAILED = 3, MISSION_FAILED = 4, CONTROLES = 5, BRUJULA = 6, VELOCIDAD = 7, MINIMAPA = 8, OBJETIVO = 9, PISTAS = 10, ATERRIZAR_1 =11, ATERRIZAR_2 = 12}; 
+    public enum Frases {RADAR_DETECCION = 0, OBSTACLE_END = 1, GADGET_BROKEN = 2, COUNTRY_FAILED = 3, MISSION_FAILED = 4, CONTROLES = 5, VELOCIDAD = 6, ATERRIZAR = 7, OBJETIVO  = 8, PISTAS = 9, READY = 10}; 
     [SerializeField] GameObject _obstacleGenGO;
     [SerializeField] private float _showSpeed = 0.01f;
     private string sentence;
@@ -62,13 +62,11 @@ public class SpeechBubbleController : MonoBehaviour
                 case Frases.COUNTRY_FAILED: sentence = "¡Ups! Parece que ese país no es tu objetivo"; break;
                 case Frases.MISSION_FAILED: sentence = "¡No te preocupes, estás aprendiendo! Te he marcado tu objetivo. ¡Seguro que te irá mejor si lo vuelves a intentar!"; break;
                 case Frases.CONTROLES: sentence = "Podrás moverte hacia los lados pulsando A y D. También podrás subir (S) y bajar (W) el avión."; break; 
-                case Frases.BRUJULA: sentence = "Para poder orientarte mejor, tendrás a la izquierda una brújula!"; break; 
                 case Frases.VELOCIDAD: sentence = "Podrás cambiar de velocidad con los botones 1(más lenta), 2 y 3 (más rápida)."; break; 
-                case Frases.ATERRIZAR_1: sentence = "Recuerda que solo podrán aterrizar en un aeropuerto mientras estés con la velocidad 1."; break; 
-                case Frases.ATERRIZAR_2: sentence = "Cuando pases por por aeropuerto podrás aterrizar presionando el tecla de ESPACIO"; break; 
-                case Frases.MINIMAPA: sentence = "Para situar mejor los paises y tu posición en el mundo, a la derecha tendrás un mini mapa!"; break; 
+                case Frases.ATERRIZAR: sentence = "Recuerda que solo podrán aterrizar (tecla ESPACIO) en un aeropuerto mientras estés con la velocidad 1."; break; 
                 case Frases.OBJETIVO: sentence = "Arriba saldrá en todo momento el país al que quiere ir tu cliente! Llevales correctamente hijo!"; break; 
                 case Frases.PISTAS: sentence = "No te preocupes si te equivocas, a la derecha te iré dando pistas por si fallas y, a las malas, te guiaré al país!"; break; 
+                case Frases.READY: sentence = "Venga! Vamos a poner en marcha lo aprendido, a Europa!"; break; 
             }
             _isPlaying = true;
             _img.enabled = true;
