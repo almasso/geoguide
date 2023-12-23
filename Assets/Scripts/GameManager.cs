@@ -97,7 +97,7 @@ public class GameManager : MonoBehaviour
         changeCountryColor(red);
         if (country == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country1) GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country2);
         else if (country == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country2) GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country3);
-        else Scene_Manager.Instance.StartGame();    
+        else UI_Manager.Instance.endLoreUI();    
 
         updateCountryObject(GameSceneInfo.getObjectiveCountry());
         changeCountryColor(green);

@@ -15,6 +15,8 @@ public class UI_Manager : MonoBehaviour
     [SerializeField]
     private GameObject _loreUIObj;
     [SerializeField]
+    private GameObject _endloreUIObj;
+    [SerializeField]
     private GameObject _pauseUIObj;
     [SerializeField]
     private GameObject _gameUIObj;
@@ -62,12 +64,19 @@ public class UI_Manager : MonoBehaviour
             case "IntroductoryLevels":
                 _startButton.SetActive(false);
                 _gameObjetivoUI.SetActive(false);
+                _endloreUIObj.SetActive(false);
                 _airportsUI.SetActive(false);
                 _gameObjetivoBackgroundUI.SetActive(false);
                 LoreHUD();
                  break;
             default: break;
         }
+    }
+    public void endLoreUI()
+    {
+        _loreUIObj.SetActive(false);
+        _endloreUIObj.SetActive(true);
+        _gameUIObj.SetActive(false);
     }
     public void ActivateAirportsIntroductory()
     {
