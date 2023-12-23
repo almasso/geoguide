@@ -55,7 +55,7 @@ public class GameDisplay : Save_Load
             objetivo = gameObject.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
             cliente.texture = AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/Clients/dad.png");
             objetivo.text = myIntroLevelList.IntroLevel[0].Objective1;
-            GameSceneInfo.setObjectiveCountry(myIntroLevelList.IntroLevel[0].Objective1);
+            GameSceneInfo.setObjectiveCountry(myIntroLevelList.IntroLevel[0].Country1);
         }
 
     }

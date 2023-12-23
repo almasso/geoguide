@@ -54,7 +54,9 @@ public class GameManager : MonoBehaviour
     Color green = new Color32(0, 255, 0, 94);
     void Start()
     {
-        _introductoryLevel = _introObj.GetComponent<IntroductoryLevels>();
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
+            _introductoryLevel = _introObj.GetComponent<IntroductoryLevels>();
+
         _planeController = _player.GetComponent<PlayerController>();
         _planeTrail = _player.GetComponent<PlaneTrail>();
         _game = _gameObj.GetComponent<GameDisplay>();

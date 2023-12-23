@@ -21,6 +21,10 @@ public class UI_Manager : MonoBehaviour
     [SerializeField]
     private GameObject _gameObjetivoUI;
     [SerializeField]
+    private GameObject _gameObjetivoBackgroundUI;
+    [SerializeField]
+    private GameObject _airportsUI;
+    [SerializeField]
     private GameObject _startButton;
 
     Color red = new Color32(255, 0, 0, 94);
@@ -58,10 +62,18 @@ public class UI_Manager : MonoBehaviour
             case "IntroductoryLevels":
                 _startButton.SetActive(false);
                 _gameObjetivoUI.SetActive(false);
+                _airportsUI.SetActive(false);
+                _gameObjetivoBackgroundUI.SetActive(false);
                 LoreHUD();
                  break;
             default: break;
         }
+    }
+    public void ActivateAirportsIntroductory()
+    {
+        _airportsUI.SetActive(true);
+        _gameObjetivoUI.SetActive(true);
+        _gameObjetivoBackgroundUI.SetActive(true);
     }
     public void ActivateStartButton()
     {
