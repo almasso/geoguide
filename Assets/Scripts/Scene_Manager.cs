@@ -30,6 +30,7 @@ public class Scene_Manager : MonoBehaviour
     public void StartGame()
     {
         checkLevelFile();
+        Time.timeScale = 1;
         SceneManager.LoadScene("LevelsScene");
         IndexController.namePreviousScene = "LevelsScene";
     }
