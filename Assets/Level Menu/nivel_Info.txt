@@ -2,19 +2,19 @@
 "nivel_Info" : [
 {
 "name":"  Introductorio Europa",
-"intentos":"3",
+"intentos":"0",
 "clientesTotales" : 1,
 "imprevistos" : false
 },
 {
 "name":"  Europa 1",
-"intentos":"0",
+"intentos":"4",
 "clientesTotales" : 3,
 "imprevistos" : false
 },
 {
 "name":"  Europa 2",
-"intentos":"1",
+"intentos":"4",
 "clientesTotales" : 3,
 "imprevistos" : false
 },
@@ -32,7 +32,7 @@
 },
 {
 "name":"  Introductorio America",
-"intentos":"4",
+"intentos":"0",
 "clientesTotales" : 1,
 "imprevistos" : false
 },
@@ -62,7 +62,7 @@
 },
 {
 "name":"  Introductorio Asia",
-"intentos":"4",
+"intentos":"0",
 "clientesTotales" : 1,
 "imprevistos" : false
 },
@@ -92,7 +92,7 @@
 },
 {
 "name":"  Introductorio Africa",
-"intentos":"4",
+"intentos":"0",
 "clientesTotales" : 1,
 "imprevistos" : false
 },
@@ -122,7 +122,7 @@
 },
 {
 "name":"  Introductorio Oceania",
-"intentos":"4",
+"intentos":"0",
 "clientesTotales" : 1,
 "imprevistos" : false
 },

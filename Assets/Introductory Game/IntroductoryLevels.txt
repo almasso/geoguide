@@ -3,11 +3,11 @@
 		{
 			"Continent": "Europa",
 			"Country1" : "Francia",
-			"Objective1" : "Como primera misión, intenta llegar a Francia",
+			"Objective1" : "Primero intenta llegar a Francia",
 			"Country2" : "Alemania",
 			"Objective2" : "Ahora viajaremos hasta Alemania",
 			"Country3" : "Reino Unido",
-			"Objective3" : "Por último, tendrás que llevarnos a Reino Unido"
+			"Objective3" : "Por último, vamos a Reino Unido"
 			
 		},
 		{

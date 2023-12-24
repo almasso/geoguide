@@ -1086,6 +1086,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1055912270}
+        m_TargetAssemblyTypeName: JSONWriter, Assembly-CSharp
+        m_MethodName: outputJSON
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 527769229}
         m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
         m_MethodName: StartGame
@@ -2260,8 +2272,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 444.8}
-  m_SizeDelta: {x: 100, y: 190.45}
+  m_AnchoredPosition: {x: 0, y: 477.03632}
+  m_SizeDelta: {x: 100, y: 99.8985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &506412222
 MonoBehaviour:
@@ -5051,6 +5063,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6700295268305292467, guid: 1c966003077a75d4f95716f676e8065b, type: 3}
   m_PrefabInstance: {fileID: 1050145911}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1055912269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1055912271}
+  - component: {fileID: 1055912270}
+  m_Layer: 0
+  m_Name: SaveInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1055912270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055912269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c98ee3bd29999429c70f5107191897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myLevelList:
+    nivel: []
+  myCardList:
+    card: []
+  myIntroLevelList:
+    IntroLevel: []
+  myCliente_Info_List:
+    cliente_Info: []
+  myLevel_Info_List:
+    nivel_Info: []
+  myLevel_writer:
+    name: 
+    intentos: 
+    clientesTotales: 0
+    imprevistos: 0
+    pais: 
+    clientes_Info: []
+  myCard_writer:
+    index: 0
+    name: 
+    isActive: 0
+    capital: 
+    languaje: 
+    currency: 
+    climate: 
+    info: 
+    mapPos: 
+    flag: 
+    memory: 
+--- !u!4 &1055912271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055912269}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 970.72626, y: 561.9269, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070370600
 GameObject:
   m_ObjectHideFlags: 0
@@ -9074,3 +9159,4 @@ SceneRoots:
   - {fileID: 2096462085}
   - {fileID: 1974643422}
   - {fileID: 1344752022}
+  - {fileID: 1055912271}
