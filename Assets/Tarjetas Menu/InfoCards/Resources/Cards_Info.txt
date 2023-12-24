@@ -9,9 +9,9 @@
 			"currency": "Euro",
 			"climate": "Clima templado, mas fresco en el norte y cálido en el sur",
 			"info": "País mediterráneo, al extremo Oeste de Europa, fronterizo con Francia y Portugal. Dos lugares famosos son la Alhambra y la Sagrada Familia",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/españa.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png" ,
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "espanaMap",
+			"flag": "espanaFlag" ,
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 1,
@@ -22,9 +22,9 @@
 			"currency": "Euro",
 			"climate": "Oceánico/mediterráneo, con inviernos suaves y lluvias frecuentes",
 			"info": "País del oeste europeo, fronterizo con España, Alemania e Italia entre otros. Famoso por la conocida Torre Eiffel y el Museo del Louvre, donde se encuentra la Mona Lisa",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/francia.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/francia.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "franciaMap",
+			"flag": "franciaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 2,
@@ -35,9 +35,9 @@
 			"currency": "Euro",
 			"climate": "Templado, con inviernos fríos y temperatura media de 8,5",
 			"info": "País de centro-Europa, fronterizo con Francia, Polonia y Suiza entre otros. Son lugares famosos la Puerta de Brandeburgo y la Catedral de Colonia",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/alemania.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/alemania.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "alemaniaMap",
+			"flag": "alemaniaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 3,
@@ -48,9 +48,9 @@
 			"currency": "Euro",
 			"climate": "Mediterráneo, con temperaturas suaves y estaciones diferenciadas",
 			"info": "País del extremo Oeste de Europa, fronterizo con España. Son lugares conocidos la Torre de Belém y el Palácio da Regaleira",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/portugal.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/portugal.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "portugalMap",
+			"flag": "portugalFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 4,
@@ -61,9 +61,9 @@
 			"currency": "Euro",
 			"climate": "Mediterráneo, pero frío en el norte, debido a la cordillera de los Alpes",
 			"info": "País del sur de Europa fronterizo con Francia, Suiza y Austria entre otros, fácilmente reconocible por su curiosa forma, que parece una bota de tacón. Son lugares famosos el Coliseo y la Torre de Pisa",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/italia.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/italia.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "italiaMap",
+			"flag": "italiaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 5,
@@ -74,9 +74,9 @@
 			"currency": "Euro",
 			"climate": "Mediterráneo templado. Con inviernos suaves y veranos secos",
 			"info": "País del sureste europeo, reconocible por su gran cantidad de islas, fronterizo con Bulgaria entre otros. Es famoso por las ruinas del Partenón y la Acrópolis y por la isla de Santorini",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/grecia.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/grecia.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "greciaMap",
+			"flag": "greciaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 6,
@@ -87,9 +87,9 @@
 			"currency": "Franco Suizo",
 			"climate": "Continental alpino, variable debido a su gran altura, pero templado en general",
 			"info": "País del centro de Europa, fronterizo con Francia, Italia y Alemania entre otros. Famoso por su ubicación en la cordillera de los Alpes y por su delicioso chocolate",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/suiza.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/suiza.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "suizaMap",
+			"flag": "suizaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 7,
@@ -100,9 +100,9 @@
 			"currency": "Esloti",
 			"climate": "Continental húmedo, con inviernos fríos y muchas precipitaciones",
 			"info": "País del noreste europeo, fronterizo con Alemania y República Checa entre otros. Son lugares famosos el Castillo de Malbork y la Basílica de Santa María",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/polonia.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/polonia.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "poloniaMap",
+			"flag": "poloniaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 8,
@@ -113,9 +113,9 @@
 			"currency": "Libra Esterlina",
 			"climate": "Oceánico, con inviernos frescos y precipitaciones durante todo el año",
 			"info": "País insular, del noroeste europeo, fronterizo con Irlanda, y conectado con Francia por debajo del mar. Son lugares famosos el gran reloj Big Ben y el Palacio de Buckingham",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/reinoUnido.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/reinoUnido.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "reinoUnidoMap",
+			"flag": "reinoUnidoFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 9,
@@ -126,9 +126,9 @@
 			"currency": "Euro",
 			"climate": "Oceánico templado, con temperaturas estables y estaciones suaves",
 			"info": "País insular, del noreste europeo, fronterizo con Reino Unido. Son lugares reconocibles la Calzada de los Gigantes y la Roca de Cashel",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/irlanda.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/irlanda.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "irlandaMap",
+			"flag": "irlandaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 10,
@@ -139,9 +139,9 @@
 			"currency": "Corona Islandesa",
 			"climate": "Subpolar oceánico, con temperaturas frías y húmedas",
 			"info": "País insular, del noroeste europeo, aunque no comparte fronteras con ningún otro país europeo debido a su lejanía del continente. Algunos lugares famosos son las termas de Blue Lagoon y Gullfoss",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/islandia.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/islandia.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "islandiaMap",
+			"flag": "islandiaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 11,
@@ -152,9 +152,9 @@
 			"currency": "Euro",
 			"climate": "Continental, con veranos cálidos e inviernos fríos",
 			"info": "País del centro europeo, fronterizo con Italia, Alemania y Suiza entre otros. Algunos lugares reconocibles son las Cataratas Krimml y la Catedral de Salzburgo",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/austria.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/austria.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "austriaMap",
+			"flag": "austriaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 12,
@@ -165,9 +165,9 @@
 			"currency": "Corona Danesa",
 			"climate": "Continental templado, con veranos suaves e inviernos fríos",
 			"info": "País peninsular del centro/norte europeo, fronterizo con Alemania y Suecia. Son lugares reconocibles la Estatua de la Sirenita y el Castillo de Rosenborg",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/dinamarca.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/dinamarca.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "dinamarcaMap",
+			"flag": "dinamarcaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 13,
@@ -178,9 +178,9 @@
 			"currency": "Corona Noruega",
 			"climate": "Polar/Glacial, con inviernos gélidos y veranos fíos",
 			"info": "País del norte europeo, fronterizo con Suecia, Finlandia y Rusia. Son lugares famosos la Ópera de Oslo y los Fiordos como el Aurlandsfjord",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/noruega.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/noruega.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "noruegaMap",
+			"flag": "noruegaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 14,
@@ -191,9 +191,9 @@
 			"currency": "Corona Sueca",
 			"climate": "Subpolar al norte, y temperaturas suaves en el resto del país",
 			"info": "País del norte europeo, fronterizo con Noruega, Finlandia y Dinamarca. Son lugares famosos el Palacio Real de Estocolmo y las Piedras de Ale",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/suecia.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/suecia.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "sueciaMap",
+			"flag": "sueciaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 15,
@@ -204,9 +204,9 @@
 			"currency": "Euro",
 			"climate": "Subpolar, de inviernos húmedos y fríos",
 			"info": "País del norte europeo, fronterizo con Noruega, Suecia y Rusia. Son lugares famosos la Aldea de Santa Claus y el Castillo de Olavinlinna",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/finlandia.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/finlandia.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "finlandiaMap",
+			"flag": "finlandiaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 16,
@@ -217,9 +217,9 @@
 			"currency": "Corona Checa",
 			"climate": "Continental templado, con veranos cálidos e inviernos fríos.",
 			"info": "País del centro europeo, fronterizo con Alemania, Polonia y Austria entre otros. Son lugares famosos la Casa Danzante y el Monasterio de Strahov",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/repúblicaCheca.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/repúblicaCheca.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "republicaChecaMap",
+			"flag": "republicaChecaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 17,
@@ -230,9 +230,9 @@
 			"currency": "Euro",
 			"climate": "Continental templado, con veranos cálidos e inviernos húmedos.",
 			"info": "País del centro/este europeo, fronterizo con Polonia, Chequia y Hungría entro otros. Son lugares famosos el Castillo de Devín y y la Catedral de Santa Isabel",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/eslovaquia.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/eslovaquia.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "eslovaquiaMap",
+			"flag": "eslovaquiaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 18,
@@ -243,9 +243,9 @@
 			"currency": "Forinto Húngaro",
 			"climate": "Continental templado, con veranos calurosos e inviernos fríos.",
 			"info": "País del centro/este europeo, fronterizo con Austria, Eslovaquia y Rumanía entro otros. Son lugares famosos el Castillo de Buda y el Mercado Central de Budapest",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/hungría.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/hungría.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "hungriaMap",
+			"flag": "hungriaFlag",
+			"memory": "espanaFlag"
 		},
 		{
 			"index": 19,
@@ -256,9 +256,9 @@
 			"currency": "Leu",
 			"climate": "Continental, con veranos húmedos e inviernos templados.",
 			"info": "País del este europeo, fronterizo con Hungría y Bulgaria entro otros. Son lugares famosos el Castillo de Bran y el Castillo de Hunedoara",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/rumanía.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/rumanía.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "rumaniaMap",
+			"flag": "rumaniaFlag",
+			"memory": "españaFlag"
 		},
 		{
 			"index": 20,
@@ -269,9 +269,9 @@
 			"currency": "Leva",
 			"climate": "Continental, con veranos secos e inviernos duros y fríos.",
 			"info": "País del sureste europeo, fronterizo con Rumanía y Grecia entro otros. Son lugares famosos el Monasterio de Rila y la Catedral de San Alejandro Nevski de Sofía",
-			"mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/bulgaria.png",
-			"flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/bulgaria.png",
-			"memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+			"mapPos": "bulgariaMap",
+			"flag": "bulgariaFlag",
+			"memory": "espanaFlag"
 		},
 		{
             "index": 21,
@@ -282,9 +282,9 @@
             "currency": "Euro",
             "climate": "Marítimo templado, nuboso y precipitaciones regulares",
             "info": "País del norte europeo, fronterizo con Paises Bajos, Francia y Alemania entre otros. Son lugares reconocibles el Atonium y la ciudad de Brujas",
-            "mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/bélgica.png",
-            "flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/bélgica.png",
-            "memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+            "mapPos": "belgicaMap",
+            "flag": "belgicaFlag",
+            "memory": "espanaFlag"
         },
 		{
             "index": 22,
@@ -295,9 +295,9 @@
             "currency": "Euro",
             "climate": "Oceánico con veranos frescos e inviernos lluviosos.",
             "info": "País del norte europeo, fronterizo con Alemania y Bélgica. Son lugares famosos la casa de Anne Frank y el Museo de Van Gogh",
-            "mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/paísesBajos.png",
-            "flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/paísesBajos.png",
-            "memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+            "mapPos": "paisesBajosMap",
+            "flag": "paisesBajosFlag",
+            "memory": "espanaFlag"
         },
 		{
             "index": 23,
@@ -308,9 +308,9 @@
             "currency": "Euro",
             "climate": "Atlántico continental, con temperaturas suaves e inviernos fríos",
             "info": "País del noreste europeo, fronterizo con Rusia entre otros. Son lugares famosos el parque Nacional Lahemaa y el Castillo de Kuressaare",
-            "mapPos": "Assets/Tarjetas Menu/InfoCards/Cards/Map Positions/estonia.png",
-            "flag": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/estonia.png",
-            "memory": "Assets/Tarjetas Menu/InfoCards/Cards/Flags/españa.png"
+            "mapPos": "estoniaMap",
+            "flag": "estoniaFlag",
+            "memory": "espanaFlag"
         }
 
 	]
