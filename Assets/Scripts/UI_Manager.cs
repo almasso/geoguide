@@ -153,19 +153,19 @@ public class UI_Manager : MonoBehaviour
         int tries = GameManager.Instance.GetTries();
         if (tries == 0)
         {
-            estrella1.texture = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png").texture;
-            estrella2.texture = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png").texture;
-            estrella3.texture = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png").texture;
+            estrella1.texture = Resources.Load<Sprite>("s1").texture;
+            estrella2.texture = Resources.Load<Sprite>("s1").texture;
+            estrella3.texture = Resources.Load<Sprite>("s1").texture;
            
         }
         else if(tries == 1)
         {
-            estrella1.texture = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png").texture;
-            estrella2.texture = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png").texture;
+            estrella1.texture = Resources.Load<Sprite>("s1").texture;
+            estrella2.texture = Resources.Load<Sprite>("s1").texture;
         }
         else if(tries == 2)
         {
-            estrella1.texture = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Level Menu/s1.png").texture;
+            estrella1.texture = Resources.Load<Sprite>("s1").texture;
         }
     }
 
