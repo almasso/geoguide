@@ -32,7 +32,7 @@
 		},
 		{
 			"Continent": "África",
-			"Country1" : "Algeria",
+			"Country1" : "Argelia",
 			"Objective1" : "Primero llévanos a Argelia",
 			"Country2" : "Egipto",
 			"Objective2" : "Ahora intenta llegar a Egipto",

@@ -11,7 +11,7 @@
 			"info": "País mediterráneo, al extremo Oeste de Europa, fronterizo con Francia y Portugal. Dos lugares famosos son la Alhambra y la Sagrada Familia",
 			"mapPos": "espanaMap",
 			"flag": "espanaFlag" ,
-			"memory": "espanaFlag"
+			"memory": "recuerdoEuropa"
 		},
 		{
 			"index": 1,
@@ -24,7 +24,7 @@
 			"info": "País del oeste europeo, fronterizo con España, Alemania e Italia entre otros. Famoso por la conocida Torre Eiffel y el Museo del Louvre, donde se encuentra la Mona Lisa",
 			"mapPos": "franciaMap",
 			"flag": "franciaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 2,
@@ -37,7 +37,7 @@
 			"info": "País de centro-Europa, fronterizo con Francia, Polonia y Suiza entre otros. Son lugares famosos la Puerta de Brandeburgo y la Catedral de Colonia",
 			"mapPos": "alemaniaMap",
 			"flag": "alemaniaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 3,
@@ -50,7 +50,7 @@
 			"info": "País del extremo Oeste de Europa, fronterizo con España. Son lugares conocidos la Torre de Belém y el Palácio da Regaleira",
 			"mapPos": "portugalMap",
 			"flag": "portugalFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 4,
@@ -63,7 +63,7 @@
 			"info": "País del sur de Europa fronterizo con Francia, Suiza y Austria entre otros, fácilmente reconocible por su curiosa forma, que parece una bota de tacón. Son lugares famosos el Coliseo y la Torre de Pisa",
 			"mapPos": "italiaMap",
 			"flag": "italiaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 5,
@@ -76,7 +76,7 @@
 			"info": "País del sureste europeo, reconocible por su gran cantidad de islas, fronterizo con Bulgaria entre otros. Es famoso por las ruinas del Partenón y la Acrópolis y por la isla de Santorini",
 			"mapPos": "greciaMap",
 			"flag": "greciaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 6,
@@ -89,7 +89,7 @@
 			"info": "País del centro de Europa, fronterizo con Francia, Italia y Alemania entre otros. Famoso por su ubicación en la cordillera de los Alpes y por su delicioso chocolate",
 			"mapPos": "suizaMap",
 			"flag": "suizaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 7,
@@ -102,7 +102,7 @@
 			"info": "País del noreste europeo, fronterizo con Alemania y República Checa entre otros. Son lugares famosos el Castillo de Malbork y la Basílica de Santa María",
 			"mapPos": "poloniaMap",
 			"flag": "poloniaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 8,
@@ -115,7 +115,7 @@
 			"info": "País insular, del noroeste europeo, fronterizo con Irlanda, y conectado con Francia por debajo del mar. Son lugares famosos el gran reloj Big Ben y el Palacio de Buckingham",
 			"mapPos": "reinoUnidoMap",
 			"flag": "reinoUnidoFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 9,
@@ -128,7 +128,7 @@
 			"info": "País insular, del noreste europeo, fronterizo con Reino Unido. Son lugares reconocibles la Calzada de los Gigantes y la Roca de Cashel",
 			"mapPos": "irlandaMap",
 			"flag": "irlandaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 10,
@@ -141,7 +141,7 @@
 			"info": "País insular, del noroeste europeo, aunque no comparte fronteras con ningún otro país europeo debido a su lejanía del continente. Algunos lugares famosos son las termas de Blue Lagoon y Gullfoss",
 			"mapPos": "islandiaMap",
 			"flag": "islandiaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 11,
@@ -154,7 +154,7 @@
 			"info": "País del centro europeo, fronterizo con Italia, Alemania y Suiza entre otros. Algunos lugares reconocibles son las Cataratas Krimml y la Catedral de Salzburgo",
 			"mapPos": "austriaMap",
 			"flag": "austriaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 12,
@@ -167,7 +167,7 @@
 			"info": "País peninsular del centro/norte europeo, fronterizo con Alemania y Suecia. Son lugares reconocibles la Estatua de la Sirenita y el Castillo de Rosenborg",
 			"mapPos": "dinamarcaMap",
 			"flag": "dinamarcaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 13,
@@ -180,7 +180,7 @@
 			"info": "País del norte europeo, fronterizo con Suecia, Finlandia y Rusia. Son lugares famosos la Ópera de Oslo y los Fiordos como el Aurlandsfjord",
 			"mapPos": "noruegaMap",
 			"flag": "noruegaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 14,
@@ -193,7 +193,7 @@
 			"info": "País del norte europeo, fronterizo con Noruega, Finlandia y Dinamarca. Son lugares famosos el Palacio Real de Estocolmo y las Piedras de Ale",
 			"mapPos": "sueciaMap",
 			"flag": "sueciaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 15,
@@ -206,7 +206,7 @@
 			"info": "País del norte europeo, fronterizo con Noruega, Suecia y Rusia. Son lugares famosos la Aldea de Santa Claus y el Castillo de Olavinlinna",
 			"mapPos": "finlandiaMap",
 			"flag": "finlandiaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 16,
@@ -219,7 +219,7 @@
 			"info": "País del centro europeo, fronterizo con Alemania, Polonia y Austria entre otros. Son lugares famosos la Casa Danzante y el Monasterio de Strahov",
 			"mapPos": "republicaChecaMap",
 			"flag": "republicaChecaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 17,
@@ -232,7 +232,7 @@
 			"info": "País del centro/este europeo, fronterizo con Polonia, Chequia y Hungría entro otros. Son lugares famosos el Castillo de Devín y y la Catedral de Santa Isabel",
 			"mapPos": "eslovaquiaMap",
 			"flag": "eslovaquiaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 18,
@@ -245,7 +245,7 @@
 			"info": "País del centro/este europeo, fronterizo con Austria, Eslovaquia y Rumanía entro otros. Son lugares famosos el Castillo de Buda y el Mercado Central de Budapest",
 			"mapPos": "hungriaMap",
 			"flag": "hungriaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 19,
@@ -258,7 +258,7 @@
 			"info": "País del este europeo, fronterizo con Hungría y Bulgaria entro otros. Son lugares famosos el Castillo de Bran y el Castillo de Hunedoara",
 			"mapPos": "rumaniaMap",
 			"flag": "rumaniaFlag",
-			"memory": "españaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
 			"index": 20,
@@ -271,7 +271,7 @@
 			"info": "País del sureste europeo, fronterizo con Rumanía y Grecia entro otros. Son lugares famosos el Monasterio de Rila y la Catedral de San Alejandro Nevski de Sofía",
 			"mapPos": "bulgariaMap",
 			"flag": "bulgariaFlag",
-			"memory": "espanaFlag"
+			"memory": "recuerdoBloqueado"
 		},
 		{
             "index": 21,
@@ -284,7 +284,7 @@
             "info": "País del norte europeo, fronterizo con Paises Bajos, Francia y Alemania entre otros. Son lugares reconocibles el Atonium y la ciudad de Brujas",
             "mapPos": "belgicaMap",
             "flag": "belgicaFlag",
-            "memory": "espanaFlag"
+            "memory": "recuerdoBloqueado"
         },
 		{
             "index": 22,
@@ -297,7 +297,7 @@
             "info": "País del norte europeo, fronterizo con Alemania y Bélgica. Son lugares famosos la casa de Anne Frank y el Museo de Van Gogh",
             "mapPos": "paisesBajosMap",
             "flag": "paisesBajosFlag",
-            "memory": "espanaFlag"
+            "memory": "recuerdoBloqueado"
         },
 		{
             "index": 23,
@@ -310,7 +310,7 @@
             "info": "País del noreste europeo, fronterizo con Rusia entre otros. Son lugares famosos el parque Nacional Lahemaa y el Castillo de Kuressaare",
             "mapPos": "estoniaMap",
             "flag": "estoniaFlag",
-            "memory": "espanaFlag"
+            "memory": "recuerdoBloqueado"
         }
 
 	]
