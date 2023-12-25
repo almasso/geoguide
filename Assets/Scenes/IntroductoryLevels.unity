@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3690102, g: 0.7121892, b: 0.7786785, a: 1}
+  m_IndirectSpecularColor: {r: 0.36926168, g: 0.71220255, b: 0.7786766, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3310,13 +3310,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0e70244c3eea649b6aa3ddfe204b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loreUIObj: {fileID: 1148405060}
+  _endloreUIObj: {fileID: 2096462081}
   _winHUD: {fileID: 1400148032}
   _looseHUD: {fileID: 0}
   _endUIObj: {fileID: 175214729}
-  _loreUIObj: {fileID: 1148405060}
-  _endloreUIObj: {fileID: 2096462081}
-  _pauseUIObj: {fileID: 0}
-  _gameUIObj: {fileID: 598711877}
   _gameObjetivoUI: {fileID: 89917689}
   _gameObjetivoBackgroundUI: {fileID: 506412220}
   _airportsUI: {fileID: 563674194}
@@ -8011,6 +8009,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameObj: {fileID: 992036129}
   _ClueObj: []
+  _pauseUIObj: {fileID: 0}
+  _gameUIObj: {fileID: 598711877}
   _HandObj: {fileID: 1043789848}
   _player: {fileID: 969922379}
   intentos: 0

@@ -15,10 +15,11 @@ public class SoundManager : MonoBehaviour
     private void Awake()
     {
         _instance = this;
-    }
+        planeEngineSource.clip = planeFlying;
 
-    [Header("---------- Audio Source ----------")]
-    [SerializeField] AudioSource musicSource;
+    }
+ 
+    [SerializeField] AudioSource musicSource = null;
     [SerializeField] AudioSource SFXSource;
     [SerializeField] AudioSource planeEngineSource;
 
@@ -38,21 +39,20 @@ public class SoundManager : MonoBehaviour
     public AudioClip successSound;
     public AudioClip failSound;
 
-    private void Start()
+    public void changeMusic()
     {
-        if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "GameScene" || UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
+        if (IndexController._audioActual != musicSource)
         {
-            musicSource.clip = backgroundGame;
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "GameScene" || UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
+            {
+                musicSource.clip = backgroundGame;
+                planeEngineSource.Play();
+                planeEngineSource.volume = 0.33f;
+            }
+            else { musicSource.clip = backgroundMenu; planeEngineSource.Stop(); }
             musicSource.Play();
+            IndexController._audioActual = musicSource;
 
-            planeEngineSource.clip = planeFlying;
-            planeEngineSource.Play();
-            planeEngineSource.volume = 0.33f;
-        }
-        else
-        {
-            musicSource.clip = backgroundMenu;
-            musicSource.Play();
         }
     }
 
@@ -63,7 +63,6 @@ public class SoundManager : MonoBehaviour
 
     public void PlaySFX(AudioClip clip)
     {
-        //SFXSource.volume = 0.5f;
         SFXSource.PlayOneShot(clip);
     }
 

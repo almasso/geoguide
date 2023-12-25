@@ -33,6 +33,12 @@ public class GameManager : MonoBehaviour
     private GameObject[] _ClueObj;
 
     [SerializeField]
+    public GameObject _pauseUIObj;
+    [SerializeField]
+    public GameObject _gameUIObj;
+   
+
+    [SerializeField]
     private GameObject _HandObj;
     private HandWave _hand;
 
@@ -54,6 +60,8 @@ public class GameManager : MonoBehaviour
     Color green = new Color32(0, 255, 0, 94);
     void Start()
     {
+
+        SoundManager.Instance.changeMusic();
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
             _introductoryLevel = _introObj.GetComponent<IntroductoryLevels>();
 
@@ -144,13 +152,16 @@ public class GameManager : MonoBehaviour
     }
     public int GetTries(){ return intentos; }
     public void PauseState() {
-        UI_Manager.Instance.PauseState();
+        _pauseUIObj.SetActive(true);
+        _gameUIObj.SetActive(false);
     }
     public void ActivateStartButtonIntro() { UI_Manager.Instance.ActivateStartButton(); }
     public void ActivateIntro() { _introductoryLevel.actiavteIntro(); }
     public void returnToGame() {
-        UI_Manager.Instance.returnToGame();
+        _pauseUIObj.SetActive(false);
+        _gameUIObj.SetActive(true);
     }
+   
     #endregion
 }
 

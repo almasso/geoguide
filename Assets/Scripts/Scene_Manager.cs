@@ -33,12 +33,15 @@ public class Scene_Manager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("LevelsScene");
         IndexController.namePreviousScene = "LevelsScene";
+        IndexController.nameActualScene = "LevelsScene";
     }
 
     public void StartGamePause()
     {
         SceneManager.LoadScene("LevelsScene");
         IndexController.namePreviousScene = "LevelsScene";
+        IndexController.nameActualScene = "LevelsScene";
+
     }
 
     public void PauseGame()
@@ -49,8 +52,29 @@ public class Scene_Manager : MonoBehaviour
 
     public void BackToPause() {
         if (IndexController.namePreviousScene == "GameScene")
+        {
+            IndexController.nameActualScene = "GameScene";
             UnloadScene("MenuTarjetas");
-        else StartGame();
+        }
+        else
+        {
+            StartGame();
+            IndexController.nameActualScene = "LevelsScene";
+        }
+    }
+    public void BackToPauseSettings()
+    {
+        if (IndexController.namePreviousScene == "GameScene")
+        {
+            IndexController.nameActualScene = "GameScene";
+            UnloadScene("SettingsScene");
+        }
+        else
+        {
+            StartGame();
+            IndexController.nameActualScene = "LevelsScene";
+
+        }
     }
 
     public void BackToGame()
@@ -63,6 +87,7 @@ public class Scene_Manager : MonoBehaviour
     {
         IndexController._index = _i;
         IndexController.namePreviousScene = "GameScene";
+        IndexController.nameActualScene = "GameScene";
         if (IndexController._index == 0 || IndexController._index % 5 == 0) SceneManager.LoadScene("IntroductoryLevels");
         else SceneManager.LoadScene("GameScene");
     }
@@ -70,19 +95,27 @@ public class Scene_Manager : MonoBehaviour
     {
         IndexController.namePreviousScene = "LevelsScene";
         SceneManager.LoadScene("MainMenuScene");
+        IndexController.nameActualScene = "MainMenuScene";
     }
     public void Tarjetasmenu()
     {
         SceneManager.LoadScene("MenuTarjetas");
+        IndexController.nameActualScene = "MenuTarjetas";
     }
 
     public void TarjetasDesdePausa()
     {
         PlayScene("MenuTarjetas");
     }
+
+    public void SettingsDesdePausa()
+    {
+        PlayScene("SettingsScene");
+    }
     public void SettingsMenu()
     {
         SceneManager.LoadScene("SettingsScene");
+        IndexController.nameActualScene = "SettingsScene";
     }
 
     public void QuitGame()
@@ -93,6 +126,8 @@ public class Scene_Manager : MonoBehaviour
     public void PlayScene(string nameScene)
     {
         SceneManager.LoadSceneAsync(nameScene, LoadSceneMode.Additive);
+        IndexController.nameActualScene = nameScene;
+
     }
 
     public void UnloadScene(string nameScene)

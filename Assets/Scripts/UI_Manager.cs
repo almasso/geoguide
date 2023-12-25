@@ -8,18 +8,17 @@ using UnityEngine.UI;
 public class UI_Manager : MonoBehaviour
 {
     #region references
-    [SerializeField] private GameObject _winHUD;
-    [SerializeField] private GameObject _looseHUD;
-    [SerializeField]
-    private GameObject _endUIObj;
     [SerializeField]
     private GameObject _loreUIObj;
     [SerializeField]
     private GameObject _endloreUIObj;
+
     [SerializeField]
-    private GameObject _pauseUIObj;
+    public GameObject _winHUD;
     [SerializeField]
-    private GameObject _gameUIObj;
+    public GameObject _looseHUD;
+    [SerializeField]
+    public GameObject _endUIObj;
     [SerializeField]
     private GameObject _gameObjetivoUI;
     [SerializeField]
@@ -29,7 +28,6 @@ public class UI_Manager : MonoBehaviour
     [SerializeField]
     private GameObject _startButton;
 
-    Color red = new Color32(255, 0, 0, 94);
     Color green = new Color32(0, 255, 0, 94);
 
     static private UI_Manager _instance;
@@ -53,9 +51,9 @@ public class UI_Manager : MonoBehaviour
         {
             case "GameScene":
                 StartGameHUD();
-                _gameUIObj.SetActive(true);
+                GameManager.Instance._gameUIObj.SetActive(true);
                 _endUIObj.SetActive(false);
-                _pauseUIObj.SetActive(false);
+                GameManager.Instance._pauseUIObj.SetActive(false);
                 break;
             case "LevelScene":; break;
             case "MainMenuScene":; break;
@@ -76,7 +74,7 @@ public class UI_Manager : MonoBehaviour
     {
         _loreUIObj.SetActive(false);
         _endloreUIObj.SetActive(true);
-        _gameUIObj.SetActive(false);
+        GameManager.Instance._gameUIObj.SetActive(false);
         _airportsUI.SetActive(false);
     }
     public void ActivateAirportsIntroductory()
@@ -91,23 +89,31 @@ public class UI_Manager : MonoBehaviour
     }
     public void StartGameHUD()
     {
-        _winHUD.SetActive(false);
-        _looseHUD.SetActive(false);
+        //if(_winHUD != null)
+        {
+            _winHUD.SetActive(false);
+            _looseHUD.SetActive(false);
+        }
     }
     public void LoreHUD()
     {
-        _gameUIObj.SetActive(false);
         _loreUIObj.SetActive(true);
+        GameManager.Instance._gameUIObj.SetActive(false);
         _winHUD.SetActive(false);
     } 
     public void StartIntroductoryLevel()
     {
-        _gameUIObj.SetActive(true);
+        GameManager.Instance._gameUIObj.SetActive(true);
         _loreUIObj.SetActive(false);
         GameManager.Instance.changeCountryColor(green);
         GameManager.Instance.ActivateIntro();
     }
 
+    public void BackToPauseSettings()
+    {
+        Scene_Manager.Instance.BackToPauseSettings();
+
+    }
     public void StartGame()
     {
         Scene_Manager.Instance.StartGame();
@@ -120,10 +126,7 @@ public class UI_Manager : MonoBehaviour
     {
         Scene_Manager.Instance.QuitGame();
     }
-    public void ExpandCard()
-    {
-        CardManager.Instance.ExpandCard(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject);
-    }
+   
     public void SettingsMenu()
     {
         Scene_Manager.Instance.SettingsMenu();
@@ -134,7 +137,7 @@ public class UI_Manager : MonoBehaviour
     }
     public void EndGameHUD(bool win)
     {
-        _gameUIObj.SetActive(false);
+        GameManager.Instance._gameUIObj.SetActive(false);
         _endUIObj.SetActive(true);
         if (win)
         {
@@ -169,16 +172,7 @@ public class UI_Manager : MonoBehaviour
         }
     }
 
-    public void PauseState()
-    {
-        _pauseUIObj.SetActive(true);
-        _gameUIObj.SetActive(false);
-    }
-    public void returnToGame()
-    {
-        _pauseUIObj.SetActive(false);
-        _gameUIObj.SetActive(true);
-    }
+   
  
     #endregion
 }
