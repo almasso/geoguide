@@ -44,8 +44,8 @@
 			"Continent": "Oceanía",
 			"Country1" : "Australia",
 			"Objective1" : "Empezemos llendo hasta Australia",
-			"Country2" : "Indonesia",
-			"Objective2" : "Ahora vayamos a Indonesia",
+			"Country2" : "Papúa Nueva Guinea",
+			"Objective2" : "Ahora vayamos a Papúa Nueva Guinea",
 			"Country3" : "Nueva Zelanda",
 			"Objective3" : "Como última misión, llévanos a Nueva Zelanda"
 			
