@@ -156,7 +156,7 @@ public class GameManager : MonoBehaviour
         _gameUIObj.SetActive(false);
     }
     public void ActivateStartButtonIntro() { UI_Manager.Instance.ActivateStartButton(); }
-    public void ActivateIntro() { _introductoryLevel.actiavteIntro(); }
+    public void ActivateIntro() { if(IndexController._index == 0) _introductoryLevel.actiavteIntro(); }
     public void returnToGame() {
         _pauseUIObj.SetActive(false);
         _gameUIObj.SetActive(true);

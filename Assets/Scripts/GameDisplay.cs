@@ -54,7 +54,7 @@ public class GameDisplay : Save_Load
         {
             objetivo = gameObject.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
             cliente.texture = Resources.Load<Texture2D>("dad");
-            objetivo.text = myIntroLevelList.IntroLevel[0].Objective1;
+            objetivo.text = myIntroLevelList.IntroLevel[IndexController._index/5].Objective1;
             GameSceneInfo.setObjectiveCountry(myIntroLevelList.IntroLevel[0].Country1);
         }
 

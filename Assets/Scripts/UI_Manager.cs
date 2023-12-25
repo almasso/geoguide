@@ -60,12 +60,17 @@ public class UI_Manager : MonoBehaviour
             case "MenuTarjetas":; break;
             case "SettingsScene":; break;
             case "IntroductoryLevels":
-                _startButton.SetActive(false);
-                _gameObjetivoUI.SetActive(false);
                 _endloreUIObj.SetActive(false);
-                _airportsUI.SetActive(false);
-                _gameObjetivoBackgroundUI.SetActive(false);
-                LoreHUD();
+                _loreUIObj.SetActive(false);
+                _winHUD.SetActive(false);
+                if (IndexController._index == 0)
+                {
+                    _startButton.SetActive(false);
+                    _gameObjetivoUI.SetActive(false);
+                    _airportsUI.SetActive(false);
+                    _gameObjetivoBackgroundUI.SetActive(false);
+                    LoreHUD();
+                }
                  break;
             default: break;
         }
@@ -89,11 +94,8 @@ public class UI_Manager : MonoBehaviour
     }
     public void StartGameHUD()
     {
-        //if(_winHUD != null)
-        {
-            _winHUD.SetActive(false);
-            _looseHUD.SetActive(false);
-        }
+        _winHUD.SetActive(false);
+        _looseHUD.SetActive(false);
     }
     public void LoreHUD()
     {
@@ -104,9 +106,12 @@ public class UI_Manager : MonoBehaviour
     public void StartIntroductoryLevel()
     {
         GameManager.Instance._gameUIObj.SetActive(true);
-        _loreUIObj.SetActive(false);
+        if(IndexController._index == 0)
+        {
+            _loreUIObj.SetActive(false);
+            GameManager.Instance.ActivateIntro();
+        }
         GameManager.Instance.changeCountryColor(green);
-        GameManager.Instance.ActivateIntro();
     }
 
     public void BackToPauseSettings()

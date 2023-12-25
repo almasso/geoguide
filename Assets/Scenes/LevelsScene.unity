@@ -5984,13 +5984,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0e70244c3eea649b6aa3ddfe204b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loreUIObj: {fileID: 0}
+  _endloreUIObj: {fileID: 0}
   _winHUD: {fileID: 0}
   _looseHUD: {fileID: 0}
   _endUIObj: {fileID: 0}
-  _loreUIObj: {fileID: 0}
-  _endloreUIObj: {fileID: 0}
-  _pauseUIObj: {fileID: 0}
-  _gameUIObj: {fileID: 0}
   _gameObjetivoUI: {fileID: 0}
   _gameObjetivoBackgroundUI: {fileID: 0}
   _airportsUI: {fileID: 0}
