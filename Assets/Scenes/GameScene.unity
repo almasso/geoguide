@@ -2007,7 +2007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _obstacleGenGO: {fileID: 1971902936}
-  _showSpeed: 0.01
+  _showSpeed: 0.0001
 --- !u!1 &349605298
 GameObject:
   m_ObjectHideFlags: 0
@@ -5590,7 +5590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69270d797b4f1d478738f9d20bd623a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showTime: 5
   _showSpeed: 3
 --- !u!1001 &830641583
 PrefabInstance:

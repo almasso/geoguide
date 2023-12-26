@@ -31,10 +31,13 @@ public class SpeechBubbleController : MonoBehaviour
 
     private IEnumerator ShowBubbleText()
     {
+
+        float newSpeed = _showSpeed * (1 / Time.deltaTime);
+        Debug.Log(newSpeed);
         foreach(char letter in sentence.ToCharArray())
         {
             _textMesh.text += letter;
-            yield return new WaitForSeconds(_showSpeed);
+            yield return new WaitForSeconds(newSpeed);
         }
 
         yield return new WaitForSeconds(3.0f);
