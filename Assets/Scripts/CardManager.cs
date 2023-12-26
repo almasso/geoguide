@@ -24,9 +24,6 @@ public class CardManager : MonoBehaviour
     GameObject myCard = null;
     bool cardExpanded = false;
 
-    [SerializeField]
-    private GameObject _UIManager;
-    private UI_Manager _myUIManager;
 #endregion
 
 
@@ -76,11 +73,6 @@ public class CardManager : MonoBehaviour
         cardExpanded = false;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        _myUIManager = _UIManager.GetComponent<UI_Manager>();
-    }
 
     // Update is called once per frame
     void Update()

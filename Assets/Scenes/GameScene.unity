@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3690102, g: 0.7121892, b: 0.7786785, a: 1}
+  m_IndirectSpecularColor: {r: 0.36926168, g: 0.71220255, b: 0.7786766, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 144501603}
   - component: {fileID: 144501606}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: MainGame Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5957,9 +5957,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1719638988}
-        m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
-        m_MethodName: SettingsMenu
+      - m_Target: {fileID: 1763509946}
+        m_TargetAssemblyTypeName: Scene_Manager, Assembly-CSharp
+        m_MethodName: SettingsDesdePausa
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8452,6 +8452,8 @@ MonoBehaviour:
   - {fileID: 1486768500}
   - {fileID: 196074170}
   - {fileID: 1325562384}
+  _pauseUIObj: {fileID: 1876810410}
+  _gameUIObj: {fileID: 598711877}
   _HandObj: {fileID: 1936919470}
   _player: {fileID: 969922379}
   intentos: 0
@@ -8626,7 +8628,7 @@ GameObject:
   - component: {fileID: 1265291893}
   - component: {fileID: 1265291892}
   m_Layer: 0
-  m_Name: EventSystem
+  m_Name: EventGameSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11374,13 +11376,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0e70244c3eea649b6aa3ddfe204b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loreUIObj: {fileID: 0}
+  _endloreUIObj: {fileID: 0}
   _winHUD: {fileID: 117205971}
   _looseHUD: {fileID: 1525852297}
   _endUIObj: {fileID: 1573435661}
-  _loreUIObj: {fileID: 0}
-  _endloreUIObj: {fileID: 0}
-  _pauseUIObj: {fileID: 1876810410}
-  _gameUIObj: {fileID: 598711877}
   _gameObjetivoUI: {fileID: 0}
   _gameObjetivoBackgroundUI: {fileID: 0}
   _airportsUI: {fileID: 0}
@@ -12004,9 +12004,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1719638988}
-        m_TargetAssemblyTypeName: UI_Manager, Assembly-CSharp
-        m_MethodName: StartGame
+      - m_Target: {fileID: 1763509946}
+        m_TargetAssemblyTypeName: Scene_Manager, Assembly-CSharp
+        m_MethodName: StartGamePause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

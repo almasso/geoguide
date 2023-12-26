@@ -55,7 +55,7 @@ public class TextWriter : MonoBehaviour
         }
         public bool Update()
         {
-            if (active)
+            if (active && IndexController._index == 0)
             {
                 timer -= Time.deltaTime;
                 while(timer <= 0f)

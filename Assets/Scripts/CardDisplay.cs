@@ -20,6 +20,7 @@ public class CardDisplay : Save_Load
     private Image mapPosImage;
     private Image flagImage;
     private Image memoryImage;
+    private Button button;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,8 @@ public class CardDisplay : Save_Load
         mapPosImage = gameObject.transform.GetChild(6).gameObject.transform.GetComponent<Image>();
         flagImage = gameObject.transform.GetChild(7).gameObject.transform.GetComponent<Image>();
         memoryImage = gameObject.transform.GetChild(8).gameObject.transform.GetComponent<Image>();
+        button = gameObject.transform.GetChild(9).gameObject.GetComponent<Button>();
+        button.onClick.AddListener(delegate () { CardManager.Instance.ExpandCard(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject); });
 
 
         if (myCardList.card[index].isActive == true)

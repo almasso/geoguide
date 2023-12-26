@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5860,7 +5860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d012296868e56704181f3664658cd976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelChanger: {fileID: 0}
 --- !u!1 &1574482535
 GameObject:
   m_ObjectHideFlags: 0
@@ -5875,6 +5874,7 @@ GameObject:
   - component: {fileID: 1574482536}
   - component: {fileID: 1574482540}
   - component: {fileID: 1574482541}
+  - component: {fileID: 1574482542}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5984,8 +5984,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0e70244c3eea649b6aa3ddfe204b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _loreUIObj: {fileID: 0}
+  _endloreUIObj: {fileID: 0}
   _winHUD: {fileID: 0}
   _looseHUD: {fileID: 0}
+  _endUIObj: {fileID: 0}
+  _gameObjetivoUI: {fileID: 0}
+  _gameObjetivoBackgroundUI: {fileID: 0}
+  _airportsUI: {fileID: 0}
+  _startButton: {fileID: 0}
 --- !u!114 &1574482541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6008,6 +6015,18 @@ MonoBehaviour:
     cliente_Info: []
   myLevel_Info_List:
     nivel_Info: []
+--- !u!114 &1574482542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574482535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd89d58d470c044429db70a587128dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1706996919
 GameObject:
   m_ObjectHideFlags: 0
