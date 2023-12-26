@@ -40,6 +40,7 @@ public class PlaneColliderCheck : MonoBehaviour
         _currentVisitedCountry = other.gameObject;
         if (_obstacleGenerator.checkForObstacle(other.gameObject) && !_isAffected)
         {
+            SoundManager.Instance.PlaySFX(SoundManager.Instance.staticSound);
             _isAffected = true;
             int rand = Random.Range(0, 3);
             switch (rand)

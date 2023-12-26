@@ -151,10 +151,15 @@ public class UI_Manager : MonoBehaviour
         _endUIObj.SetActive(true);
         if (win)
         {
+            SoundManager.Instance.PlaySFX(SoundManager.Instance.youWon);
             _winHUD.SetActive(true);
             AssignStarts();
         }
-        else _looseHUD.SetActive(true);
+        else
+        {
+            SoundManager.Instance.PlaySFX(SoundManager.Instance.youFailed);
+            _looseHUD.SetActive(true);
+        }
 
       
     }

@@ -33,6 +33,7 @@ public class AirportManager : MonoBehaviour
                 Debug.Log("Donde estoy: " + airports[go]);
                 if (airports[go] == GameSceneInfo.getObjectiveCountry())
                 {
+                    SoundManager.Instance.PlaySFX(SoundManager.Instance.successSound);
                     if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
                     {
                         GameManager.Instance.updateIntroCountry(GameSceneInfo.getObjectiveCountry());
@@ -45,12 +46,14 @@ public class AirportManager : MonoBehaviour
                 }
                 else if(GameManager.Instance.GetTries() < 3)
                 {
+                    SoundManager.Instance.PlaySFX(SoundManager.Instance.failSound);
                     SpeechBubbleController.setShowString(SpeechBubbleController.Frases.COUNTRY_FAILED);
                     _walkieController.showWalkie();
                     GameManager.Instance.WrongCountry();
                 }
                 else
                 {
+                    SoundManager.Instance.PlaySFX(SoundManager.Instance.failSound);
                     SpeechBubbleController.setShowString(SpeechBubbleController.Frases.MISSION_FAILED);
                     _walkieController.showWalkie();
                     GameManager.Instance.updateCountryObject(GameSceneInfo.getObjectiveCountry());

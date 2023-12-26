@@ -56,6 +56,14 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            SFXSource.PlayOneShot(click);
+        }
+    }
+
     public void ChangePlaneSpeedSound(int speed)
     {
         planeEngineSource.volume = 0.33f * speed;
