@@ -15,7 +15,9 @@ public class SoundSettings : MonoBehaviour
             EventSystem eventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
             eventSystem.enabled = false;
         }
-        else SoundManager.Instance.changeMusic();
+        else {
+            SoundManager.Instance.changeMusic(); 
+        }
     }
 
 }
