@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.36926168, g: 0.71220255, b: 0.7786766, a: 1}
+  m_IndirectSpecularColor: {r: 0.36974454, g: 0.712222, b: 0.7786733, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5591,6 +5591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showTime: 5
+  _showSpeed: 3
 --- !u!1001 &830641583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5727,9 +5728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b198eafc1d8fc1941a386ca89cc4619c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 1613268553}
-  SFXSource: {fileID: 3624002}
-  planeEngineSource: {fileID: 1053216295}
   backgroundMenu: {fileID: 8300000, guid: 347b622a152b4974195c1269caa70b98, type: 3}
   backgroundGame: {fileID: 8300000, guid: b2f5125ce02ac414dbefc6625753c6b9, type: 3}
   click: {fileID: 8300000, guid: ecbecf4d7b65dd140a76fc0726ad6a87, type: 3}
