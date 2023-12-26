@@ -8,8 +8,6 @@ public class WalkieController : MonoBehaviour
     private float mostrado, escondido;
     private bool mostrar = false;
     private bool posFinal = false;
-    private float _elapsedTime;
-    [SerializeField] private float _showTime;
     [SerializeField] private float _showSpeed;
     void Start()
     {
@@ -35,17 +33,6 @@ public class WalkieController : MonoBehaviour
         {
             posFinal = false;
             _myTransform.localPosition = Vector3.Lerp(_myTransform.localPosition, new Vector3(_myTransform.localPosition.x, escondido, _myTransform.localPosition.z), _showSpeed * Time.fixedDeltaTime);
-        }
-    }
-
-    private void Update()
-    {
-        if (posFinal) _elapsedTime += Time.deltaTime;
-
-        if(_elapsedTime >= _showTime)
-        {
-            hideWalkie();
-            _elapsedTime = 0.0f;
         }
     }
 }
