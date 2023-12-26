@@ -25,12 +25,16 @@ public class TextWriter : MonoBehaviour
     }
     private void Update()
     {
-        for(int i = 0; i < textWriterSingleList.Count; i++)
+        if (active && IndexController._index == 0)
         {
-            bool destroyInstance = textWriterSingleList[i].Update();
-            if(destroyInstance) {
-                textWriterSingleList.RemoveAt(i);
-                i--;
+            for (int i = 0; i < textWriterSingleList.Count; i++)
+            {
+                bool destroyInstance = textWriterSingleList[i].Update();
+                if (destroyInstance)
+                {
+                    textWriterSingleList.RemoveAt(i);
+                    i--;
+                }
             }
         }
     }

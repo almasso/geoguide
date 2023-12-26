@@ -27,7 +27,7 @@ public class UI_Assistant : MonoBehaviour
 
     private void Update()
     {
-        if(active)
+        if(active && IndexController._index == 0)
         {
             timer += Time.deltaTime;
             if(timer >= 11f)

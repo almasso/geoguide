@@ -29,6 +29,8 @@ public class AirportManager : MonoBehaviour
             if (canLand)
             {
                 active = true;
+                Debug.Log("Objetivo: " + GameSceneInfo.getObjectiveCountry());
+                Debug.Log("Donde estoy: " + airports[go]);
                 if (airports[go] == GameSceneInfo.getObjectiveCountry())
                 {
                     if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
