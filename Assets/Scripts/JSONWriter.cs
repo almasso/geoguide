@@ -60,6 +60,31 @@ public class JSONWriter : Save_Load
                         line = reader.ReadLine();
                         line = "\"isActive\"" + ":" + " " + "true" + ",";
                         sbCard.AppendLine(line);
+                        if (intentosActuales == 0)
+                        {
+                            for (int i = 0; i < 7; ++i)
+                            {
+                                line = reader.ReadLine();
+                                sbCard.AppendLine(line);
+                            }
+                            line = reader.ReadLine();
+                            string memoria = " ";
+                            switch (IndexController._index/5)
+                            {
+                                case 0:
+                                    memoria = "recuerdoEuropa"; break;
+                                case 1:
+                                    memoria = "recuerdoAmerica"; break;
+                                case 2:
+                                    memoria = "recuerdoAsia"; break;
+                                case 3:
+                                    memoria = "recuerdoAfrica"; break;
+                                case 4:
+                                    memoria = "recuerdoOceania"; break;
+                            }
+                            line = "\"memory\"" + ":" + " " + "\""+ memoria + "\"";
+                            sbCard.AppendLine(line);
+                        }
                     }
                 }
                 else
