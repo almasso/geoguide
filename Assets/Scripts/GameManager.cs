@@ -134,7 +134,7 @@ public class GameManager : MonoBehaviour
 
     public void changeCountryColor(Color c)
     {
-        actualCountryObject.GetComponent<MeshRenderer>().material.color = c;
+        actualCountryObject.transform.GetChild(0).gameObject.GetComponent<MeshRenderer>().material.color = c;
     }
 
    public void WrongCountry() { 
