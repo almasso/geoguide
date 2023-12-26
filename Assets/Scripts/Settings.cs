@@ -7,10 +7,7 @@ using UnityEngine.UI;
 public class Settings : MonoBehaviour
 {
     [SerializeField] Slider _volumeSlider;
-    //public void Awake()
-    //{
-    //    DontDestroyOnLoad(this);
-    //}
+   
     public void Start()
     {
         _volumeSlider.value = IndexController._volume;

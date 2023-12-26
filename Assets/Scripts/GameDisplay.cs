@@ -18,7 +18,6 @@ public class GameDisplay : Save_Load
     int actualClient = 0;
     int clientesTotales = 1;
     int index = 0;
-    public int introIndex = 0;
 
     void Start()
     {
@@ -39,7 +38,6 @@ public class GameDisplay : Save_Load
 
             while (myCliente_Info_List.cliente_Info[index].name != myLevel_Info_List.nivel_Info[IndexController._index].name)
             {
-                Debug.Log(index);
                 ++index; 
             } 
 
@@ -55,7 +53,11 @@ public class GameDisplay : Save_Load
             objetivo = gameObject.transform.GetChild(1).gameObject.GetComponent<TMPro.TextMeshProUGUI>();
             cliente.texture = Resources.Load<Texture2D>("dad");
             objetivo.text = myIntroLevelList.IntroLevel[IndexController._index/5].Objective1;
-            GameSceneInfo.setObjectiveCountry(myIntroLevelList.IntroLevel[0].Country1);
+
+            IndexController.paisesPorNivel.Add(myIntroLevelList.IntroLevel[IndexController._index / 5].Country1);
+            IndexController.paisesPorNivel.Add(myIntroLevelList.IntroLevel[IndexController._index / 5].Country2);
+            IndexController.paisesPorNivel.Add(myIntroLevelList.IntroLevel[IndexController._index / 5].Country3);
+            GameSceneInfo.setObjectiveCountry(myIntroLevelList.IntroLevel[IndexController._index / 5].Country1);
         }
 
     }
@@ -80,7 +82,7 @@ public class GameDisplay : Save_Load
     public bool HasMoreClients() { return actualClient < clientesTotales - 1;}
 
     public void updateIntroObjective() {
-        if (objetivo.text == myIntroLevelList.IntroLevel[introIndex].Objective1) objetivo.text = myIntroLevelList.IntroLevel[introIndex].Objective2;
-        else if (objetivo.text == myIntroLevelList.IntroLevel[introIndex].Objective2) objetivo.text = myIntroLevelList.IntroLevel[introIndex].Objective3;
+        if (objetivo.text == myIntroLevelList.IntroLevel[IndexController._index / 5].Objective1) objetivo.text = myIntroLevelList.IntroLevel[IndexController._index / 5].Objective2;
+        else if (objetivo.text == myIntroLevelList.IntroLevel[IndexController._index / 5].Objective2) objetivo.text = myIntroLevelList.IntroLevel[IndexController._index / 5].Objective3;
     }
 }

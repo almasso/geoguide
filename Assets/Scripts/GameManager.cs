@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static Save_Load;
 
 public class GameManager : MonoBehaviour
 {
@@ -60,18 +61,22 @@ public class GameManager : MonoBehaviour
     Color green = new Color32(0, 255, 0, 94);
     void Start()
     {
-
         SoundManager.Instance.changeMusic();
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
+        {
             _introductoryLevel = _introObj.GetComponent<IntroductoryLevels>();
+        }
 
         _planeController = _player.GetComponent<PlayerController>();
         _planeTrail = _player.GetComponent<PlaneTrail>();
         _game = _gameObj.GetComponent<GameDisplay>();
         _hand = _HandObj.GetComponent<HandWave>();
         _planeTrail.Activate(true);
-        GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country1);
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
+            GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[IndexController._index / 5].Country1);
+        Debug.Log("Hola: " +GameSceneInfo.getObjectiveCountry());
         updateCountryObject(GameSceneInfo.getObjectiveCountry());
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels" && IndexController._index != 0) changeCountryColor(green);
     }
 
     public void ChangeClient()
@@ -103,9 +108,12 @@ public class GameManager : MonoBehaviour
     public void updateIntroCountry(string country)
     {
         changeCountryColor(red);
-        if (country == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country1) GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country2);
-        else if (country == _game.myIntroLevelList.IntroLevel[_game.introIndex].Country2) GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[_game.introIndex].Country3);
-        else UI_Manager.Instance.endLoreUI();    
+        if (country == _game.myIntroLevelList.IntroLevel[IndexController._index / 5].Country1) GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[IndexController._index / 5].Country2);
+        else if (country == _game.myIntroLevelList.IntroLevel[IndexController._index / 5].Country2) GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[IndexController._index / 5].Country3);
+        else {
+            if (IndexController._index == 0) UI_Manager.Instance.endLoreUI();
+            else { intentos = 0; UI_Manager.Instance.EndGameHUD(true); }
+        }
 
         updateCountryObject(GameSceneInfo.getObjectiveCountry());
         changeCountryColor(green);
@@ -117,6 +125,7 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < _countries.Length; i++)
         {
+            //Debug.Log(_countries[i].name + " " + country);
             if (_countries[i].name == country) {
                 actualCountryObject = _countries[i].gameObject; 
             }
@@ -125,7 +134,7 @@ public class GameManager : MonoBehaviour
 
     public void changeCountryColor(Color c)
     {
-        actualCountryObject.GetComponent<MeshRenderer>().material.color = c;
+        actualCountryObject.transform.GetChild(0).gameObject.GetComponent<MeshRenderer>().material.color = c;
     }
 
    public void WrongCountry() { 

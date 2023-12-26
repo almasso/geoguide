@@ -12,6 +12,10 @@ public class UI_Manager : MonoBehaviour
     private GameObject _loreUIObj;
     [SerializeField]
     private GameObject _endloreUIObj;
+    [SerializeField]
+    public GameObject _endPrimeroUIObj;
+    [SerializeField]
+    public GameObject _endNormalUIObj;
 
     [SerializeField]
     public GameObject _winHUD;
@@ -19,6 +23,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject _looseHUD;
     [SerializeField]
     public GameObject _endUIObj;
+
     [SerializeField]
     private GameObject _gameObjetivoUI;
     [SerializeField]
@@ -63,15 +68,15 @@ public class UI_Manager : MonoBehaviour
                 _endloreUIObj.SetActive(false);
                 _loreUIObj.SetActive(false);
                 _winHUD.SetActive(false);
+                _startButton.SetActive(false);
                 if (IndexController._index == 0)
                 {
-                    _startButton.SetActive(false);
                     _gameObjetivoUI.SetActive(false);
                     _airportsUI.SetActive(false);
                     _gameObjetivoBackgroundUI.SetActive(false);
                     LoreHUD();
                 }
-                 break;
+                break;
             default: break;
         }
     }
@@ -101,7 +106,6 @@ public class UI_Manager : MonoBehaviour
     {
         _loreUIObj.SetActive(true);
         GameManager.Instance._gameUIObj.SetActive(false);
-        _winHUD.SetActive(false);
     } 
     public void StartIntroductoryLevel()
     {
@@ -112,6 +116,7 @@ public class UI_Manager : MonoBehaviour
             GameManager.Instance.ActivateIntro();
         }
         GameManager.Instance.changeCountryColor(green);
+
     }
 
     public void BackToPauseSettings()
