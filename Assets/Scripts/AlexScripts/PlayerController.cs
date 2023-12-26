@@ -136,6 +136,7 @@ public class PlayerController : MonoBehaviour
 
     public void SecuenciaAterrizaje()
     {
+        SoundManager.Instance.PlaySFX(SoundManager.Instance.planeLanding);
         detectInput = false;
         descendAnim = true;
         moving = false;
