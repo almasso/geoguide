@@ -9,7 +9,6 @@ public class IntroductoryLevels : MonoBehaviour
     [SerializeField] private GameObject _walkieGO;
     private WalkieController _walkieController;
     private bool active;
-    private float timer = 16f;
     public int mensajeActual = 0;
 
     // Start is called before the first frame update
@@ -36,15 +35,13 @@ public class IntroductoryLevels : MonoBehaviour
     {
         if (active)
         {
-            timer += Time.deltaTime;
-            if (timer >= 11f)
+            if (!_walkieController.hasBeenCalled() && _walkieController.isAtInitialPos())
             {
                 if (mensajeActual < listaDeMensajes.Count)
                 {
                     SpeechBubbleController.setShowString(listaDeMensajes[mensajeActual]);
                     _walkieController.showWalkie();
                     ++mensajeActual;
-                    timer = 0;
                 }
                 else { active = false; UI_Manager.Instance.ActivateAirportsIntroductory(); }
             }

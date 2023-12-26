@@ -18,6 +18,11 @@ public class WalkieController : MonoBehaviour
     }
 
     public bool isCompletelyShown() { return posFinal; }
+    public bool isDoingShowingAnim() { return mostrar && !posFinal; }
+    public bool isDoingHidingAnim() { return !mostrar && !posFinal; }
+    public bool hasBeenCalled() { return mostrar; }
+
+    public bool isAtInitialPos() { return (_myTransform.localPosition.y - escondido) < 2f; }
 
     public void showWalkie() { mostrar = true; SoundManager.Instance.PlaySFX(SoundManager.Instance.walkieTalkie); }
     public void hideWalkie() { mostrar = false; }
