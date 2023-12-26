@@ -36,6 +36,10 @@ public class SpeechBubbleController : MonoBehaviour
             _textMesh.text += letter;
             yield return new WaitForSeconds(_showSpeed);
         }
+
+        yield return new WaitForSeconds(3.0f);
+
+        _walkieController.hideWalkie();
     }
 
     static public void setShowString(Frases f)
@@ -72,7 +76,7 @@ public class SpeechBubbleController : MonoBehaviour
             _textMesh.enabled = true;
             StartCoroutine(ShowBubbleText());
         }
-        else if(!_walkieController.isCompletelyShown())
+        else if (!_walkieController.isCompletelyShown())
         {
             _img.enabled = false;
             _textMesh.enabled = false;
