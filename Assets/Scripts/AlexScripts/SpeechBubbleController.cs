@@ -33,11 +33,10 @@ public class SpeechBubbleController : MonoBehaviour
     {
 
         float newSpeed = _showSpeed * (1 / Time.deltaTime);
-        Debug.Log(newSpeed);
         foreach(char letter in sentence.ToCharArray())
         {
             _textMesh.text += letter;
-            yield return new WaitForSeconds(newSpeed);
+            yield return new WaitForSeconds(0.02191253f);
         }
 
         yield return new WaitForSeconds(3.0f);
