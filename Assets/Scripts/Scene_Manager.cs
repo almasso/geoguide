@@ -38,6 +38,7 @@ public class Scene_Manager : MonoBehaviour
 
     public void StartGamePause()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("LevelsScene");
         IndexController.namePreviousScene = "LevelsScene";
         IndexController.nameActualScene = "LevelsScene";

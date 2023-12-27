@@ -18,6 +18,10 @@ public class SpeechBubbleController : MonoBehaviour
     bool _isPlaying = false;
     static private int sentenceToShow = 0;
     static private string brokenGadget = "";
+    private bool isPaused = false;
+    private float timeAtPause = 0.0f;
+    private IEnumerator coroutine;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,17 +33,37 @@ public class SpeechBubbleController : MonoBehaviour
         _textMesh.enabled = false;
     }
 
+    public void PauseSpeech() {
+        if (coroutine != null)
+        {
+            isPaused = true;
+            StopCoroutine(coroutine);
+        }
+    }
+    public void ResumeSpeech() {
+        if (coroutine != null)
+        {
+            isPaused = false;
+            StartCoroutine(coroutine);
+        }
+    }
+
     private IEnumerator ShowBubbleText()
     {
-
+        int progress = 0;
         float newSpeed = _showSpeed * (1 / Time.deltaTime);
-        foreach(char letter in sentence.ToCharArray())
+        while(progress < sentence.Length)
         {
-            _textMesh.text += letter;
-            yield return new WaitForSeconds(newSpeed);
+            Debug.Log(isPaused);
+            if(!isPaused)
+            {
+                _textMesh.text += sentence[progress];
+                progress++;
+            }
+            yield return new WaitForSecondsRealtime(newSpeed); 
         }
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSecondsRealtime(1.5f);
 
         _walkieController.hideWalkie();
     }
@@ -76,10 +100,12 @@ public class SpeechBubbleController : MonoBehaviour
             _isPlaying = true;
             _img.enabled = true;
             _textMesh.enabled = true;
-            StartCoroutine(ShowBubbleText());
+            coroutine = ShowBubbleText();
+            StartCoroutine(coroutine);
         }
         else if (!_walkieController.isCompletelyShown())
         {
+            coroutine = null;
             _img.enabled = false;
             _textMesh.enabled = false;
             _textMesh.text = string.Empty;
