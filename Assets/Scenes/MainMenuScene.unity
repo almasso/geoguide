@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1267,7 +1267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUIT
+  m_text: salir
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a54d8fdba0ac7374381f3a2583939651, type: 2}
   m_sharedMaterial: {fileID: -2313111908581579479, guid: a54d8fdba0ac7374381f3a2583939651, type: 2}
@@ -1472,9 +1472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b198eafc1d8fc1941a386ca89cc4619c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 1755922896}
-  SFXSource: {fileID: 121579204}
-  planeEngineSource: {fileID: 476865062}
   backgroundMenu: {fileID: 8300000, guid: 347b622a152b4974195c1269caa70b98, type: 3}
   backgroundGame: {fileID: 8300000, guid: b2f5125ce02ac414dbefc6625753c6b9, type: 3}
   click: {fileID: 8300000, guid: ecbecf4d7b65dd140a76fc0726ad6a87, type: 3}
@@ -1674,7 +1671,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: START
+  m_text: inicio
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a54d8fdba0ac7374381f3a2583939651, type: 2}
   m_sharedMaterial: {fileID: -2313111908581579479, guid: a54d8fdba0ac7374381f3a2583939651, type: 2}
@@ -1936,7 +1933,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: START
+  m_text: inicio
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a54d8fdba0ac7374381f3a2583939651, type: 2}
   m_sharedMaterial: {fileID: -2313111908581579479, guid: a54d8fdba0ac7374381f3a2583939651, type: 2}
@@ -2204,7 +2201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUIT
+  m_text: salir
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a54d8fdba0ac7374381f3a2583939651, type: 2}
   m_sharedMaterial: {fileID: -2313111908581579479, guid: a54d8fdba0ac7374381f3a2583939651, type: 2}
