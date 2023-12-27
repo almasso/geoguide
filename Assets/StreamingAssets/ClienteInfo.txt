@@ -257,12 +257,12 @@
 },
 {
 	"name": "  Asia 2",
-	"pais": "Arabia Saudita",
+	"pais": "Arabia Saudí",
 	"cliente": "client8",
 	"pista1": "Es un país desértico",
 	"pista2": "Es el país más grande de la Península Arábiga",
 	"pista3": "Está entre Asia y África",
-	"objetivo": "Quiero visitar Dammam, en Arabia Saudita"
+	"objetivo": "Quiero visitar Dammam, en Arabia Saudí"
 },
 {
 	"name": "  Asia 3",
@@ -311,11 +311,11 @@
 },
 {
 	"name": "  Asia 4",
-	"pais": "Arabia Saudita",
+	"pais": "Arabia Saudí",
 	"cliente": "client13",
 	"pista1": "Está en Oriente Próximo",
 	"pista2": "Está entre Asia y África",
-	"pista3": "El país es Arabia Saudita",
+	"pista3": "El país es Arabia Saudí",
 	"objetivo": "Quiero visitar la Meca"
 },
 {
