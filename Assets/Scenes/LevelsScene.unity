@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4642,7 +4642,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2047316637}
   m_HandleRect: {fileID: 2047316636}
   m_Direction: 2
-  m_Value: 0.49999997
+  m_Value: 1.0000001
   m_Size: 0.23226029
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5986,6 +5986,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _loreUIObj: {fileID: 0}
   _endloreUIObj: {fileID: 0}
+  _endPrimeroUIObj: {fileID: 0}
+  _endNormalUIObj: {fileID: 0}
   _winHUD: {fileID: 0}
   _looseHUD: {fileID: 0}
   _endUIObj: {fileID: 0}
@@ -6139,7 +6141,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 107, y: 0.000061035156}
+  m_AnchoredPosition: {x: 107, y: -1385.655}
   m_SizeDelta: {x: 1305.31, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1756895852
@@ -6487,9 +6489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b198eafc1d8fc1941a386ca89cc4619c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 299364646}
-  SFXSource: {fileID: 752812416}
-  planeEngineSource: {fileID: 1894072652}
   backgroundMenu: {fileID: 8300000, guid: 347b622a152b4974195c1269caa70b98, type: 3}
   backgroundGame: {fileID: 8300000, guid: b2f5125ce02ac414dbefc6625753c6b9, type: 3}
   click: {fileID: 8300000, guid: ecbecf4d7b65dd140a76fc0726ad6a87, type: 3}
