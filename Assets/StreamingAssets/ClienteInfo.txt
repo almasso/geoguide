@@ -177,7 +177,7 @@
 {
 	"name": "  America 1",
 	"pais": "Venezuela",
-	"cliente": "cliente20",
+	"cliente": "client20",
 	"pista1": "Se encuentra en Sudamérica",
 	"pista2": "Es un país costero con forma de T hinchada",
 	"pista3": "Está al norte de Brasil",
@@ -186,7 +186,7 @@
 {
 	"name": "  America 2",
 	"pais": "Canadá",
-	"cliente": "cliente5",
+	"cliente": "client5",
 	"pista1": "Tiene un clima polar porque está cerca del Polo Norte",
 	"pista2": "Es el país más al norte de América",
 	"pista3": "Está al norte de los Estados Unidos",
@@ -195,7 +195,7 @@
 {
 	"name": "  America 3",
 	"pais": "México",
-	"cliente": "cliente10",
+	"cliente": "client10",
 	"pista1": "Es el único país hispanohablante de Norteamérica",
 	"pista2": "Conecta Norteamérica con Centroamérica",
 	"pista3": "Está al sur de los Estados Unidos",
@@ -204,7 +204,7 @@
 {
 	"name": "  America 3",
 	"pais": "Argentina",
-	"cliente": "cliente15",
+	"cliente": "client15",
 	"pista1": "El Calafate y un glaciar son otros lugares famosos",
 	"pista2": "Tiene una frontera con Brasil",
 	"pista3": "El país es Argentina",
@@ -213,7 +213,7 @@
 {
 	"name": "  America 4",
 	"pais": "Colombia",
-	"cliente": "cliente3",
+	"cliente": "client3",
 	"pista1": "Es un país costero del norte de Sudamérica",
 	"pista2": "Tiene una frontera con Brasil",
 	"pista3": "Está al oeste de Venezuela",
@@ -222,7 +222,7 @@
 {
 	"name": "  America 4",
 	"pais": "Estados Unidos",
-	"cliente": "cliente7",
+	"cliente": "client7",
 	"pista1": "Tiene varios tipos de clima por su gran tamaño",
 	"pista2": "Su capital es Washington D.C",
 	"pista3": "El país es Estados Unidos",
@@ -231,7 +231,7 @@
 {
 	"name": "  America 4",
 	"pais": "Canadá",
-	"cliente": "cliente12",
+	"cliente": "client12",
 	"pista1": "Es un país con clima subártico",
 	"pista2": "Su capital es Ottawa",
 	"pista3": "El país es Canadá",
@@ -240,7 +240,7 @@
 {
 	"name": "  America 4",
 	"pais": "Brasil",
-	"cliente": "cliente17",
+	"cliente": "client17",
 	"pista1": "Está en América del Sur",
 	"pista2": "Colombia o Argentina tienen frontera con él",
 	"pista3": "El país es Brasil",
@@ -249,7 +249,7 @@
 {
 	"name": "  Asia 1",
 	"pais": "Japón",
-	"cliente": "cliente1",
+	"cliente": "client1",
 	"pista1": "Es una isla",
 	"pista2": "Su escritura es similar a la china",
 	"pista3": "Su costa está enfrente de las de Rusia y China",
@@ -258,7 +258,7 @@
 {
 	"name": "  Asia 2",
 	"pais": "Arabia Saudita",
-	"cliente": "cliente8",
+	"cliente": "client8",
 	"pista1": "Es un país desértico",
 	"pista2": "Es el país más grande de la Península Arábiga",
 	"pista3": "Está entre Asia y África",
@@ -267,7 +267,7 @@
 {
 	"name": "  Asia 3",
 	"pais": "Rusia",
-	"cliente": "cliente11",
+	"cliente": "client11",
 	"pista1": "Es el país más grande de Asia del Norte",
 	"pista2": "Limita con China",
 	"pista3": "El país es Rusia",
@@ -276,7 +276,7 @@
 {
 	"name": "  Asia 3",
 	"pais": "Kazajistán",
-	"cliente": "cliente16",
+	"cliente": "client16",
 	"pista1": "Está en Asia continental",
 	"pista2": "Comparte frontera con Rusia y China",
 	"pista3": "Está al sur de Rusia",
@@ -285,7 +285,7 @@
 {
 	"name": "  Asia 4",
 	"pais": "Indonesia",
-	"cliente": "cliente12",
+	"cliente": "client12",
 	"pista1": "Está formado por muchas islas",
 	"pista2": "Está entre Asia y Oceanía",
 	"pista3": "Su costa está al sur de la de China",
@@ -294,7 +294,7 @@
 {
 	"name": "  Asia 4",
 	"pais": "India",
-	"cliente": "cliente2",
+	"cliente": "client2",
 	"pista1": "Está en Asia continental",
 	"pista2": "Comparte frontera al suroeste de China",
 	"pista3": "El país es la India",
@@ -303,7 +303,7 @@
 {
 	"name": "  Asia 4",
 	"pais": "China",
-	"cliente": "cliente6",
+	"cliente": "client6",
 	"pista1": "Está en Asia continental",
 	"pista2": "Comparte frontera con Rusia, y costa con Japón",
 	"pista3": "El país es China",
@@ -312,7 +312,7 @@
 {
 	"name": "  Asia 4",
 	"pais": "Arabia Saudita",
-	"cliente": "cliente13",
+	"cliente": "client13",
 	"pista1": "Está en Oriente Próximo",
 	"pista2": "Está entre Asia y África",
 	"pista3": "El país es Arabia Saudita",
@@ -321,7 +321,7 @@
 {
 	"name": "  Africa 1",
 	"pais": "Marruecos",
-	"cliente": "cliente14",
+	"cliente": "client14",
 	"pista1": "Está al norte de África",
 	"pista2": "Tiene frontera con Argelia",
 	"pista3": "Está al sur de España",
@@ -330,7 +330,7 @@
 {
 	"name": "  Africa 2",
 	"pais": "Madagascar",
-	"cliente": "cliente18",
+	"cliente": "client18",
 	"pista1": "Es la isla africana más grande",
 	"pista2": "Está al sudeste del continente",
 	"pista3": "Está al este de Sudáfrica",
@@ -339,7 +339,7 @@
 {
 	"name": "  Africa 3",
 	"pais": "Nigeria",
-	"cliente": "cliente6",
+	"cliente": "client6",
 	"pista1": "Está al oeste del continente",
 	"pista2": "Es un país costero",
 	"pista3": "Está al sur de Argelia, aunque no comparten frontera",
@@ -348,7 +348,7 @@
 {
 	"name": "  Africa 3",
 	"pais": "Egipto",
-	"cliente": "cliente3",
+	"cliente": "client3",
 	"pista1": "La Esfinge es otro monumento famoso",
 	"pista2": "Está al norte de África, al lado de Arabia",
 	"pista3": "El país es Egipto",
@@ -357,7 +357,7 @@
 {
 	"name": "  Africa 4",
 	"pais": "Argelia",
-	"cliente": "cliente5",
+	"cliente": "client5",
 	"pista1": "Está bañado por el Mediterráneo",
 	"pista2": "Está al noreste de África",
 	"pista3": "El país es Argelia",
@@ -366,7 +366,7 @@
 {
 	"name": "  Africa 4",
 	"pais": "Kenia",
-	"cliente": "cliente9",
+	"cliente": "client9",
 	"pista1": "Está al sur del cuerno de África, una zona con forma de cuerno",
 	"pista2": "Es un país costero",
 	"pista3": "Se sitúa al este",
@@ -375,7 +375,7 @@
 {
 	"name": "  Africa 4",
 	"pais": "Sudáfrica",
-	"cliente": "cliente11",
+	"cliente": "client11",
 	"pista1": "Es un país con cuatro idiomas oficiales",
 	"pista2": "Está en el extremo sur",
 	"pista3": "El país es Sudáfrica",
@@ -384,7 +384,7 @@
 {
 	"name": "  Africa 4",
 	"pais": "Madagascar",
-	"cliente": "cliente10",
+	"cliente": "client10",
 	"pista1": "Es una isla",
 	"pista2": "Está al este de Sudáfrica",
 	"pista3": "El país es Madagascar",
@@ -393,7 +393,7 @@
 {
 	"name": "  Oceania 1",
 	"pais": "Islas Salomón",
-	"cliente": "cliente5",
+	"cliente": "client5",
 	"pista1": "Está compuesto por más de 900 islas",
 	"pista2": "Están al noreste de Australia",
 	"pista3": "Están al este de Papúa Nueva Guinea",
@@ -402,7 +402,7 @@
 {
 	"name": "  Oceania 2",
 	"pais": "Islas Marshall",
-	"cliente": "cliente13",
+	"cliente": "client13",
 	"pista1": "Están en medio del Pacífico",
 	"pista2": "Está compuesto por 1152 islas",
 	"pista3": "Están al norte de las Islas Salomón",
@@ -411,7 +411,7 @@
 {
 	"name": "  Oceania 3",
 	"pais": "Australia",
-	"cliente": "cliente17",
+	"cliente": "client17",
 	"pista1": "Es el país más grande de Oceanía",
 	"pista2": "La Gran Barrera de Coral se encuentra en sus costas",
 	"pista3": "El país es Australia",
@@ -420,7 +420,7 @@
 {
 	"name": "  Oceania 3",
 	"pais": "Fiyi",
-	"cliente": "cliente12",
+	"cliente": "client12",
 	"pista1": "Es un país insular",
 	"pista2": "Está al este de las Islas Salomón",
 	"pista3": "Está al norte de Nueva Zelanda",
@@ -429,7 +429,7 @@
 {
 	"name": "  Oceania 4",
 	"pais": "Palaos",
-	"cliente": "cliente7",
+	"cliente": "client7",
 	"pista1": "Es un país insular",
 	"pista2": "Está al norte de Indonesia",
 	"pista3": "Está al oeste de las Islas Marshall",
@@ -438,7 +438,7 @@
 {
 	"name": "  Oceania 4",
 	"pais": "Nueva Zelanda",
-	"cliente": "cliente1",
+	"cliente": "client1",
 	"pista1": "Es el segundo país más grande de Oceanía",
 	"pista2": "Está al sureste de Australia",
 	"pista3": "El país es Nueva Zelanda",
@@ -447,7 +447,7 @@
 {
 	"name": "  Oceania 4",
 	"pais": "Islas Marshall",
-	"cliente": "cliente3",
+	"cliente": "client3",
 	"pista1": "Esta isla es una de las 1152 islas de este país",
 	"pista2": "Está al noreste de las Islas Salomón",
 	"pista3": "El país son las Islas Marshall",
@@ -456,7 +456,7 @@
 {
 	"name": "  Oceania 4",
 	"pais": "Papúa Nueva Guinea",
-	"cliente": "cliente21",
+	"cliente": "client21",
 	"pista1": "Su capital es Puerto Moresby",
 	"pista2": "Tiene frontera con Indonesia",
 	"pista3": "El país es Papúa Nueva Guinea",
