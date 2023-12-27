@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
         _planeTrail.Activate(true);
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels")
             GameSceneInfo.setObjectiveCountry(_game.myIntroLevelList.IntroLevel[IndexController._index / 5].Country1);
-        Debug.Log("Hola: " +GameSceneInfo.getObjectiveCountry());
+        //Debug.Log("Hola: " +GameSceneInfo.getObjectiveCountry());
         updateCountryObject(GameSceneInfo.getObjectiveCountry());
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "IntroductoryLevels" && IndexController._index != 0) changeCountryColor(green);
     }

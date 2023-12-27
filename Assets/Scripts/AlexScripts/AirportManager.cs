@@ -29,8 +29,8 @@ public class AirportManager : MonoBehaviour
             if (canLand)
             {
                 active = true;
-                Debug.Log("Objetivo: " + GameSceneInfo.getObjectiveCountry());
-                Debug.Log("Donde estoy: " + airports[go]);
+                //Debug.Log("Objetivo: " + GameSceneInfo.getObjectiveCountry());
+                //Debug.Log("Donde estoy: " + airports[go]);
                 if (airports[go] == GameSceneInfo.getObjectiveCountry())
                 {
                     SoundManager.Instance.PlaySFX(SoundManager.Instance.successSound);
