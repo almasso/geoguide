@@ -461,6 +461,6 @@
 	"pista2": "Tiene frontera con Indonesia",
 	"pista3": "El país es Papúa Nueva Guinea",
 	"objetivo": "Quiero hacerle unas fotos a la Mezquita Hohola. ¿Serías capaz de llevarme?"
-},
+}
 ]
 }
