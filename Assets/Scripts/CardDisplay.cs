@@ -42,7 +42,7 @@ public class CardDisplay : Save_Load
 
         if (myCardList.card[index].isActive == true)
         {
-            Debug.Log(cartaActivada);
+            //Debug.Log(cartaActivada);
             cardImage.sprite = cartaActivada;
             nameText.text = myCardList.card[index].name;
             capitalText.text = myCardList.card[index].capital;

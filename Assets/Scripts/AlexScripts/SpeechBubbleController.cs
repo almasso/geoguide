@@ -19,7 +19,6 @@ public class SpeechBubbleController : MonoBehaviour
     static private int sentenceToShow = 0;
     static private string brokenGadget = "";
     private bool isPaused = false;
-    private float timeAtPause = 0.0f;
     private IEnumerator coroutine;
 
     // Start is called before the first frame update
@@ -54,7 +53,6 @@ public class SpeechBubbleController : MonoBehaviour
         float newSpeed = _showSpeed * (1 / Time.deltaTime);
         while(progress < sentence.Length)
         {
-            Debug.Log(isPaused);
             if(!isPaused)
             {
                 _textMesh.text += sentence[progress];

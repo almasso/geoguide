@@ -81,8 +81,8 @@ public class SoundManager : MonoBehaviour
     public void PlaySFX(AudioClip clip)
     {
         SFXSource = gameObject.transform.GetChild(1).GetComponent<AudioSource>();
-        Debug.Log(clip.name);
-        Debug.Log(SFXSource);
+        //Debug.Log(clip.name);
+        //Debug.Log(SFXSource);
         SFXSource.PlayOneShot(clip);
     }
 
