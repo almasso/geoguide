@@ -571,7 +571,7 @@
 		"languaje": "Zulú/Xhosa/Afrikáans/Inglés",
 		"currency": "Rand",
 		"climate": "Subtropical en el norte y templado en el sur",
-		"info": "País del extremo sur africano, . Son lugares famosos la Playa de Boulders, famosa por la presencia de pinguinos y el Cabo de Buena Esperanza",
+		"info": "País del extremo sur africano. Son lugares famosos la Playa de Boulders, famosa por la presencia de pinguinos y el Cabo de Buena Esperanza",
 		"mapPos": "sudafricaMap",
 		"flag": "sudafricaFlag",
 		"memory": "recuerdoBloqueado"
@@ -597,7 +597,7 @@
 		"languaje": "Inglés",
 		"currency": "Dólar australiano",
 		"climate": "Templado al sur, Tropical al norte y desértico al interior",
-		"info": "País insular más grande de Oceanía y sexto del mundo, . Son lugares famosos la Ópera de Sydney, la Gran Barrera de Coral y la Isla Canguro, donde pueden verse estos famosos animales, entre otros",
+		"info": "País insular más grande de Oceanía y sexto del mundo. Son lugares famosos la Ópera de Sydney, la Gran Barrera de Coral y la Isla Canguro, donde pueden verse estos famosos animales, entre otros",
 		"mapPos": "australiaMap",
 		"flag": "australiaFlag",
 		"memory": "recuerdoBloqueado"

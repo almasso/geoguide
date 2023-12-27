@@ -6,14 +6,14 @@
 	"cliente": "client1",
 	"pista1": "Un monumento importante de este país es el Big Ben",
 	"pista2": "Está al noroeste europeo",
-	"pista3": "Es un país insular",
+	"pista3": "Es una isla",
 	"objetivo": "¿Podrías viajar hasta Reino Unido?"
 },
 {
 	"name": "  Europa 1",
 	"pais": "Portugal",
 	"cliente": "client2",
-	"pista1": "Es el país no insular más al oeste de Europa",
+	"pista1": "Es el país continental más al oeste de Europa",
 	"pista2": "Tiene forma rectangular",
 	"pista3": "Es fronterizo al oeste con España",
 	"objetivo": "Me gustaría visitar la Torre de Belém en Portugal. ¿Podrías llevarme?"
@@ -24,8 +24,8 @@
 	"cliente": "client3",
 	"pista1": "Está bañado por el Mediterráneo",
 	"pista2": "Está al sureste del país del Louvre",
-	"pista3": "Tiene una reconocible forma de bota",
-	"objetivo": "He oído que el Coliseo romano es precioso. ¿Puedes volar hasta Italia para que lo vea?"
+	"pista3": "Tiene forma de bota",
+	"objetivo": "He oído que el Coliseo es precioso. ¿Puedes volar hasta Italia para que lo vea?"
 },
 {
 	"name": "  Europa 2",
@@ -34,7 +34,7 @@
 	"pista1": "Se habla Francés y Alemán, entre otros",
 	"pista2": "Está en plena Centroeuropa",
 	"pista3": "Está al norte de otro país con el que comparte los Alpes",
-	"objetivo": "He quedado con unos amigos para esquiar en los Alpes suizos. ¿Podemos volar hasta allí?"
+	"objetivo": "Quiero ir a esquiar en los Alpes suizos. ¿Podemos volar hasta allí?"
 },
 
 {
@@ -50,7 +50,7 @@
 	"name": "  Europa 2",
 	"pais": "Austria",
 	"cliente": "client6",
-	"pista1": "El idioma predominante es el alemán",
+	"pista1": "Su idioma oficial es el alemán",
 	"pista2": "Está en pleno centro de Europa",
 	"pista3": "Está al este de ambos países que comparten los Alpes",
 	"objetivo": "He visto en internet que Viena es preciosa. ¿Podrías conducirme hasta Austria?"
@@ -59,10 +59,10 @@
 	"name": "  Europa 2",
 	"pais": "Portugal",
 	"cliente": "client8",
-	"pista1": "Es el país no insular más al oeste de Europa",
+	"pista1": "Es el país continental más al oeste de Europa",
 	"pista2": "Es fronterizo con España",
 	"pista3": "El país es Portugal",
-	"objetivo": "Me he comprado un libro que dice que el Palácio da Regaleira es muy bonito. ¿Podrías llevarme a verlo?"
+	"objetivo": "Tengo una entrada para el Palácio da Regaleira. ¿Podrías llevarme a su país?"
 },
 {
 	"name": "  Europa 3",
@@ -71,7 +71,7 @@
 	"pista1": "Las capitales de sus países fronterizos son Berlin y Bruselas",
 	"pista2": "Su costa está al este de la de Reino Unido",
 	"pista3": "Está al norte de Bélgica",
-	"objetivo": "Soy un fan acérrimo de Van Gogh y he oído que su museo está en los Países Bajos. ¿Sabrías volar hasta allí?"
+	"objetivo": "Soy fan de Van Gogh y su museo está en los Países Bajos. ¿Sabrías volar hasta allí?"
 
 },
 {
@@ -81,14 +81,14 @@
 	"pista1": "Está al oeste europeo",
 	"pista2": "Es fronterizo con España, Alemania e Italia",
 	"pista3": "El país es Francia",
-	"objetivo": "Hay una exposición nueva en el Louvre y no me la quiero perder. ¿Serías capaz de llevarme?"
+	"objetivo": "Hay una sección nueva en el Louvre y la quiero ver. ¿Serías capaz de llevarme?"
 },
 {
 	"name": "  Europa 3",
 	"pais": "República Checa",
 	"cliente": "client10",
 	"pista1": "Está en el centro de Europa",
-	"pista2": "Comparte frontera con sendos países germanoparlantes",
+	"pista2": "Comparte frontera con los dos países que hablan alemán",
 	"pista3": "Está al norte de Austria",
 	"objetivo": "Praga es espectacular. ¿Podríamos ir a la República Checa?"
 },
@@ -117,7 +117,7 @@
 	"pista1": "El país se sitúa en la isla de Gran Bretaña",
 	"pista2": "Comparte frontera con Irlanda",
 	"pista3": "El país es Reino Unido",
-	"objetivo": "He oído que el aeropuerto más visitado de Europa está en Londres. ¿Es mucha molestia que me lleves allí?"
+	"objetivo": "El aeropuerto más visitado de Europa está en Londres. ¿Podemos ir?"
 },
 {
 	"name": "  Europa 4",
@@ -143,9 +143,9 @@
 	"pais": "Dinamarca",
 	"cliente": "client16",
 	"pista1": "Está en el centro norte europeo",
-	"pista2": "Le baña el Mar del Norte",
+	"pista2": "Es un país pequeño con algunas islas",
 	"pista3": "Está al norte de Alemania",
-	"objetivo": "Me gustaría visitar la Estatua de la Sirenita, que está en Dinamarca. ¿Podrías llevarme?"
+	"objetivo": "Me gustaría visitar la Estatua de la Sirenita, en Dinamarca. ¿Podrías llevarme?"
 },
 {
 	"name": "  Europa 4",
@@ -160,7 +160,7 @@
 	"name": "  Europa 4",
 	"pais": "Noruega",
 	"cliente": "client18",
-	"pista1": "Es el país no insular más al norte de Europa",
+	"pista1": "Es el país continental más al norte de Europa",
 	"pista2": "Es uno de los países escandinavos",
 	"pista3": "Está al oeste de Suecia",
 	"objetivo": "Quiero visitar los famosos fiordos noruegos. ¿Podrías acercarme?"
@@ -172,7 +172,295 @@
 	"pista1": "Es uno de los tres países escandinavos",
 	"pista2": "El sueco es uno de sus idiomas oficiales",
 	"pista3": "Tiene frontera con Noruega y Suecia",
-	"objetivo": "Me gustaría viajar a la Aldea de Santa Claus, ahora que se acercan las Navidades, que está en Finlandia. ¿Te importaría llevarme?"
-}
+	"objetivo": "Me gustaría conocer a Santa Claus, que vive en Finlandia. ¿Te importaría llevarme?"
+},
+{
+	"name": "  America 1",
+	"pais": "Venezuela",
+	"cliente": "cliente20",
+	"pista1": "Se encuentra en Sudamérica",
+	"pista2": "Es un país costero con forma de T hinchada",
+	"pista3": "Está al norte de Brasil",
+	"objetivo": "Quiero visitar el Canaima, en Venezuela. ¿Podrías llevarme?"
+},
+{
+	"name": "  America 2",
+	"pais": "Canadá",
+	"cliente": "cliente5",
+	"pista1": "Tiene un clima polar porque está cerca del Polo Norte",
+	"pista2": "Es el país más al norte de América",
+	"pista3": "Está al norte de los Estados Unidos",
+	"objetivo": "¿Sabrías ir a Canadá? He oído que hace mucho frío."
+},
+{
+	"name": "  America 3",
+	"pais": "México",
+	"cliente": "cliente10",
+	"pista1": "Es el único país hispanohablante de Norteamérica",
+	"pista2": "Conecta Norteamérica con Centroamérica",
+	"pista3": "Está al sur de los Estados Unidos",
+	"objetivo": "Quiero probar los verdaderos tacos mexicanos. ¿Me llevas?"
+},
+{
+	"name": "  America 3",
+	"pais": "Argentina",
+	"cliente": "cliente15",
+	"pista1": "El Calafate y un glaciar son otros lugares famosos",
+	"pista2": "Tiene una frontera con Brasil",
+	"pista3": "El país es Argentina",
+	"objetivo": "¿Me llevarías a escalar el Aconcagua?"
+},
+{
+	"name": "  America 4",
+	"pais": "Colombia",
+	"cliente": "cliente3",
+	"pista1": "Es un país costero del norte de Sudamérica",
+	"pista2": "Tiene una frontera con Brasil",
+	"pista3": "Está al oeste de Venezuela",
+	"objetivo": "Quiero visitar Colombia. ¿Sabrías llevarme?"
+},
+{
+	"name": "  America 4",
+	"pais": "Estados Unidos",
+	"cliente": "cliente7",
+	"pista1": "Tiene varios tipos de clima por su gran tamaño",
+	"pista2": "Su capital es Washington D.C",
+	"pista3": "El país es Estados Unidos",
+	"objetivo": "¿Podrías llevarme a los casinos de Las Vegas?"
+},
+{
+	"name": "  America 4",
+	"pais": "Canadá",
+	"cliente": "cliente12",
+	"pista1": "Es un país con clima subártico",
+	"pista2": "Su capital es Ottawa",
+	"pista3": "El país es Canadá",
+	"objetivo": "¿Sabrías llevarme hasta Montreal?"
+},
+{
+	"name": "  America 4",
+	"pais": "Brasil",
+	"cliente": "cliente17",
+	"pista1": "Está en América del Sur",
+	"pista2": "Colombia o Argentina tienen frontera con él",
+	"pista3": "El país es Brasil",
+	"objetivo": "Quiero ver al Cristo Redentor"
+},
+{
+	"name": "  Asia 1",
+	"pais": "Japón",
+	"cliente": "cliente1",
+	"pista1": "Es una isla",
+	"pista2": "Su escritura es similar a la china",
+	"pista3": "Su costa está enfrente de las de Rusia y China",
+	"objetivo": "Me gustaría ver la Torre de Tokio, en Japón"
+},
+{
+	"name": "  Asia 2",
+	"pais": "Arabia Saudita",
+	"cliente": "cliente8",
+	"pista1": "Es un país desértico",
+	"pista2": "Es el país más grande de la Península Arábiga",
+	"pista3": "Está entre Asia y África",
+	"objetivo": "Quiero visitar Dammam, en Arabia Saudita"
+},
+{
+	"name": "  Asia 3",
+	"pais": "Rusia",
+	"cliente": "cliente11",
+	"pista1": "Es el país más grande de Asia del Norte",
+	"pista2": "Limita con China",
+	"pista3": "El país es Rusia",
+	"objetivo": "Me gustaría ver el Museo del Hermitage"
+},
+{
+	"name": "  Asia 3",
+	"pais": "Kazajistán",
+	"cliente": "cliente16",
+	"pista1": "Está en Asia continental",
+	"pista2": "Comparte frontera con Rusia y China",
+	"pista3": "Está al sur de Rusia",
+	"objetivo": "¿Podemos volar hasta Almatý, en Kazajistán?"
+},
+{
+	"name": "  Asia 4",
+	"pais": "Indonesia",
+	"cliente": "cliente12",
+	"pista1": "Está formado por muchas islas",
+	"pista2": "Está entre Asia y Oceanía",
+	"pista3": "Su costa está al sur de la de China",
+	"objetivo": "¿Sabrías llevarme hasta Indonesia?"
+},
+{
+	"name": "  Asia 4",
+	"pais": "India",
+	"cliente": "cliente2",
+	"pista1": "Está en Asia continental",
+	"pista2": "Comparte frontera al suroeste de China",
+	"pista3": "El país es la India",
+	"objetivo": "¿Podríamos visitar el Taj Mahal?"
+},
+{
+	"name": "  Asia 4",
+	"pais": "China",
+	"cliente": "cliente6",
+	"pista1": "Está en Asia continental",
+	"pista2": "Comparte frontera con Rusia, y costa con Japón",
+	"pista3": "El país es China",
+	"objetivo": "¿Te importaría llevarme a la Gran Muralla?"
+},
+{
+	"name": "  Asia 4",
+	"pais": "Arabia Saudita",
+	"cliente": "cliente13",
+	"pista1": "Está en Oriente Próximo",
+	"pista2": "Está entre Asia y África",
+	"pista3": "El país es Arabia Saudita",
+	"objetivo": "Quiero visitar la Meca"
+},
+{
+	"name": "  Africa 1",
+	"pais": "Marruecos",
+	"cliente": "cliente14",
+	"pista1": "Está al norte de África",
+	"pista2": "Tiene frontera con Argelia",
+	"pista3": "Está al sur de España",
+	"objetivo": "He oído que Marruecos está cerca, ¿es cierto?"
+},
+{
+	"name": "  Africa 2",
+	"pais": "Madagascar",
+	"cliente": "cliente18",
+	"pista1": "Es la isla africana más grande",
+	"pista2": "Está al sudeste del continente",
+	"pista3": "Está al este de Sudáfrica",
+	"objetivo": "Quiero ir a Madagascar a ver si de verdad hay pingüinos. ¿Me llevas?"
+},
+{
+	"name": "  Africa 3",
+	"pais": "Nigeria",
+	"cliente": "cliente6",
+	"pista1": "Está al oeste del continente",
+	"pista2": "Es un país costero",
+	"pista3": "Está al sur de Argelia, aunque no comparten frontera",
+	"objetivo": "Quiero hacerle unas fotos a la Mezquita de Abuya, en Nigeria. ¿Puedes llevarme?"
+},
+{
+	"name": "  Africa 3",
+	"pais": "Egipto",
+	"cliente": "cliente3",
+	"pista1": "La Esfinge es otro monumento famoso",
+	"pista2": "Está al norte de África, al lado de Arabia",
+	"pista3": "El país es Egipto",
+	"objetivo": "Toda mi vida he querido ver las Pirámides. ¿Podemos volar hasta allí?"
+},
+{
+	"name": "  Africa 4",
+	"pais": "Argelia",
+	"cliente": "cliente5",
+	"pista1": "Está bañado por el Mediterráneo",
+	"pista2": "Está al noreste de África",
+	"pista3": "El país es Argelia",
+	"objetivo": "¿Sabrías volar hasta el país más grande de África?"
+},
+{
+	"name": "  Africa 4",
+	"pais": "Kenia",
+	"cliente": "cliente9",
+	"pista1": "Está al sur del cuerno de África, una zona con forma de cuerno",
+	"pista2": "Es un país costero",
+	"pista3": "Se sitúa al este",
+	"objetivo": "Quiero ver animales exóticos en Kenia. ¿Puedes guiarme hasta allí?"
+},
+{
+	"name": "  Africa 4",
+	"pais": "Sudáfrica",
+	"cliente": "cliente11",
+	"pista1": "Es un país con cuatro idiomas oficiales",
+	"pista2": "Está en el extremo sur",
+	"pista3": "El país es Sudáfrica",
+	"objetivo": "Me gustaría ver el Cabo de Buena Esperanza con mis propios ojos. ¿Me llevas?"
+},
+{
+	"name": "  Africa 4",
+	"pais": "Madagascar",
+	"cliente": "cliente10",
+	"pista1": "Es una isla",
+	"pista2": "Está al este de Sudáfrica",
+	"pista3": "El país es Madagascar",
+	"objetivo": "¿Sabrías volar hasta la Avenida de los Baobabs?"
+},
+{
+	"name": "  Oceania 1",
+	"pais": "Islas Salomón",
+	"cliente": "cliente5",
+	"pista1": "Está compuesto por más de 900 islas",
+	"pista2": "Están al noreste de Australia",
+	"pista3": "Están al este de Papúa Nueva Guinea",
+	"objetivo": "He oído hablar que en las Islas Salomón hay unas cataratas brutales. ¿Vamos?"
+},
+{
+	"name": "  Oceania 2",
+	"pais": "Islas Marshall",
+	"cliente": "cliente13",
+	"pista1": "Están en medio del Pacífico",
+	"pista2": "Está compuesto por 1152 islas",
+	"pista3": "Están al norte de las Islas Salomón",
+	"objetivo": "¿Me llevarías a ver los atolones en las Islas Marshall?"
+},
+{
+	"name": "  Oceania 3",
+	"pais": "Australia",
+	"cliente": "cliente17",
+	"pista1": "Es el país más grande de Oceanía",
+	"pista2": "La Gran Barrera de Coral se encuentra en sus costas",
+	"pista3": "El país es Australia",
+	"objetivo": "Tengo una entrada para un concierto en la Ópera de Sídney. ¿Puedes llevarme?"
+},
+{
+	"name": "  Oceania 3",
+	"pais": "Fiyi",
+	"cliente": "cliente12",
+	"pista1": "Es un país insular",
+	"pista2": "Está al este de las Islas Salomón",
+	"pista3": "Está al norte de Nueva Zelanda",
+	"objetivo": "Navala, en Fiyi es un asentamiento tradicional. ¿Podemos volar hasta allí?"
+},
+{
+	"name": "  Oceania 4",
+	"pais": "Palaos",
+	"cliente": "cliente7",
+	"pista1": "Es un país insular",
+	"pista2": "Está al norte de Indonesia",
+	"pista3": "Está al oeste de las Islas Marshall",
+	"objetivo": "Me gustaría visitar el Lago de las Medusas de Palaos"
+},
+{
+	"name": "  Oceania 4",
+	"pais": "Nueva Zelanda",
+	"cliente": "cliente1",
+	"pista1": "Es el segundo país más grande de Oceanía",
+	"pista2": "Está al sureste de Australia",
+	"pista3": "El país es Nueva Zelanda",
+	"objetivo": "¿Me llevas a escalar el Monte Cook?"
+},
+{
+	"name": "  Oceania 4",
+	"pais": "Islas Marshall",
+	"cliente": "cliente3",
+	"pista1": "Esta isla es una de las 1152 islas de este país",
+	"pista2": "Está al noreste de las Islas Salomón",
+	"pista3": "El país son las Islas Marshall",
+	"objetivo": "¿Podríamos visitar la isla Kili?"
+},
+{
+	"name": "  Oceania 4",
+	"pais": "Papúa Nueva Guinea",
+	"cliente": "cliente21",
+	"pista1": "Su capital es Puerto Moresby",
+	"pista2": "Tiene frontera con Indonesia",
+	"pista3": "El país es Papúa Nueva Guinea",
+	"objetivo": "Quiero hacerle unas fotos a la Mezquita Hohola. ¿Serías capaz de llevarme?"
+},
 ]
 }

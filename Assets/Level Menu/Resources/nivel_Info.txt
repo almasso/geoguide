@@ -15,20 +15,20 @@
 {
 "name":"  Europa 2",
 "intentos":"4",
-"clientesTotales" : 3,
-"imprevistos" : false
+"clientesTotales" : 4,
+"imprevistos" : true
 },
 {
 "name":"  Europa 3",
 "intentos":"4",
-"clientesTotales" : 1,
-"imprevistos" : false
+"clientesTotales" : 6,
+"imprevistos" : true
 },
 {
 "name":"  Europa 4",
 "intentos":"4",
-"clientesTotales" : 1,
-"imprevistos" : false
+"clientesTotales" : 6,
+"imprevistos" : true
 },
 {
 "name":"  Introductorio America",
@@ -46,19 +46,19 @@
 "name":"  America 2",
 "intentos":"4",
 "clientesTotales" : 1,
-"imprevistos" : false
+"imprevistos" : true
 },
 {
 "name":"  America 3",
 "intentos":"4",
-"clientesTotales" : 1,
-"imprevistos" : false
+"clientesTotales" : 2,
+"imprevistos" : true
 },
 {
 "name":"  America 4",
 "intentos":"4",
-"clientesTotales" : 1,
-"imprevistos" : false
+"clientesTotales" : 4,
+"imprevistos" : true
 },
 {
 "name":"  Introductorio Asia",
@@ -76,19 +76,19 @@
 "name":"  Asia 2",
 "intentos":"4",
 "clientesTotales" : 1,
-"imprevistos" : false
+"imprevistos" : true
 },
 {
 "name":"  Asia 3",
 "intentos":"4",
-"clientesTotales" : 1,
-"imprevistos" : false
+"clientesTotales" : 2,
+"imprevistos" : true
 },
 {
 "name":"  Asia 4",
 "intentos":"4",
-"clientesTotales" : 1,
-"imprevistos" : false
+"clientesTotales" : 4,
+"imprevistos" : true
 },
 {
 "name":"  Introductorio Africa",
@@ -106,19 +106,19 @@
 "name":"  Africa 2",
 "intentos":"4",
 "clientesTotales" : 1,
-"imprevistos" : false
+"imprevistos" : true
 },
 {
 "name":"  Africa 3",
 "intentos":"4",
-"clientesTotales" : 1,
-"imprevistos" : false
+"clientesTotales" : 2,
+"imprevistos" : true
 },
 {
 "name":"  Africa 4",
 "intentos":"4",
-"clientesTotales" : 1,
-"imprevistos" : false
+"clientesTotales" : 4,
+"imprevistos" : true
 },
 {
 "name":"  Introductorio Oceania",
@@ -136,19 +136,19 @@
 "name":"  Oceania 2",
 "intentos":"4",
 "clientesTotales" : 1,
-"imprevistos" : false
+"imprevistos" : true
 },
 {
 "name":"  Oceania 3",
 "intentos":"4",
-"clientesTotales" : 1,
-"imprevistos" : false
+"clientesTotales" : 2,
+"imprevistos" : true
 },
 {
 "name":"  Oceania 4",
 "intentos":"4",
-"clientesTotales" : 1,
-"imprevistos" : false
+"clientesTotales" : 4,
+"imprevistos" : true
 }
 ]
 }

@@ -31,7 +31,7 @@ public class CompassController : MonoBehaviour
         }
         else
         {
-            compassTransform.Rotate(0, 0, Random.Range(0, 3));
+            compassTransform.eulerAngles = Vector3.forward * Random.Range(1.0f, 360.0f);
         }
     }
 
