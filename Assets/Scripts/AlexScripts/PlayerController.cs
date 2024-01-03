@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float animMinimumHeight = 650;
     [SerializeField] private Velocidades velocidadesAvion;
     [Header("Ajustes del castigo por imprevisto")]
-    [SerializeField] private float _malfunctioningTime = 6.0f;
+    [SerializeField] private float _malfunctioningTime = 15.0f;
     [SerializeField] private float betweenClients = 10.0f;
 
     private float velocidadObjetivo;
