@@ -108,7 +108,7 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 	<tr>
 		<td>Brújula</td>
 		<td><img src="./imagenesGDD/brujula.png" width=50% height=50%></td>
-		<td>Elemento que será útil para misiones que describan la ubicación del país destino como “al norte/sur/este/oeste de …”. La parte central es estática y simboliza la dirección en la que siempre está mirando el avión; mientras que la exterior rota conforme la dirección en la que va mirando el propio avión.</td>
+		<td>Elemento que será útil para misiones que describan la ubicación del país destino como “al norte/sur/este/oeste de …”. La parte central es estática y simboliza la dirección en la que se mueve el avión, mientras que la exterior rota conforme su dirección al mundo.</td>
 	</tr>
 	<tr>
 		<td>Velocímetro</td>
@@ -128,12 +128,12 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 				<figcaption><p align="left"><i>Depende del cliente</i></p>
 			</figure>
 		</td>
-		<td>Transcurrido un tiempo específico, establecido en un minuto, el cliente le proporcionará una pista al jugador para ayudar y así evitar frustrar. El número total de pistas será de 3, en caso de necesitarlas. Solo aparecen en los niveles normales y nunca en los introductorios. En total hay 22 modelos distintos de cliente.</td>
+		<td>Transcurrido un tiempo específico, establecido en un minuto, o si el jugador falla de país objetivo, el cliente le proporcionará una pista al jugador para ayudar y así evitar frustrar. El número total de pistas será de 3, en caso de necesitarlas. Solo aparecen en los niveles normales y nunca en los introductorios. En total hay 22 modelos distintos de cliente.</td>
 	</tr>
 	<tr>
 		<td>Aeropuerto</td>
 		<td><img src="./imagenesGDD/aeropuerto.png" width=100% height=100%></td>
-		<td>Esfera flotante, que marcará el lugar en el que el jugador debe aterrizar en cada país. Sólo podrás hacer ésto si pones el avión a velocidad lenta o “de aterrizaje”. Una vez hayas aterrizado, si el país fue el correcto se pasará al siguiente cliente en caso de haberlo, o terminará el nivel. Si se ha fallado, se notificará, se restará un intento y el jugador podrá continuar. Los aeropuertos, tendrán todos color rojo, excepto, en los niveles introductorios o una vez que tu jefe te guíe al país destino, en cuyo caso, el aeropuerto destino se iluminará de color verde, resaltando entre los demás para facilitar la vista del objetivo.</td>
+		<td>Marcador flotante, que establece el lugar en el que el jugador debe aterrizar en cada país. Sólo podrás hacer ésto si pones el avión a velocidad lenta o “de aterrizaje”. Una vez hayas aterrizado, si el país fue el correcto se pasará al siguiente cliente en caso de haberlo, o terminará el nivel. Si se ha fallado, se notificará, se restará un intento y el jugador podrá continuar. Los aeropuertos, tendrán todos color rojo, excepto, en los niveles introductorios o una vez que tu jefe te guíe al país destino, en cuyo caso, el aeropuerto destino se iluminará de color verde, resaltando entre los demás para facilitar la vista del objetivo.</td>
 	</tr>
 	<tr>
 		<td>Jefe</td>
