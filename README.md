@@ -44,7 +44,7 @@
 - **Género**: Juego serio de simulación
 - **Público objetivo**: Estudiantes de 8 a 15 años interesados en el aprendizaje de Geografía, sin necesidad de una base previa, de forma dinámica y entretenida.
 - **Rating**: PEGI 7
-- **Plataforma**: PC (Windows)
+- **Plataforma**: PC (Windows), Resolución remomendada: 16:9 (1920 x 080).
 - **Modos de juego**:
 	- Un jugador.
 
