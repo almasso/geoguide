@@ -153,9 +153,7 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 ## **6 - Historia y personaje principal**
 Como jugador encarnarás al hijo de un director (en otros apartados aparecerá como “Jefe”) de una agencia de viajes aérea, que ha decidido jubilarse y dejar el negocio familiar en tus manos. Has estudiado muy duro, pero apenas tienes práctica, por lo que entrarás a la flota como piloto júnior. Es por eso que tu padre ha diseñado un plan para que llegues a ser un piloto sénior en el menor tiempo posible antes de delegar la empresa en ti. Este plan tiene como objetivo dominar los mandos del avión y aprender qué rutas ofrece la empresa a los distintos países.
 
-Este plan en la historia se relaciona de manera directa con el gameplay del juego: que el protagonista aprenda a dominar los mandos del avión se relaciona con que el jugador humano aprenda los controles físicos (teclado) del avión; mientras que las rutas que se ofrecen son el contenido educativo geográfico que se plantea enseñar en nuestro juego.
-
-A lo largo del juego, el jugador irá aprendiendo y superando los diferentes niveles hasta que, finalmente, tras superarlos todos es nombrado piloto sénior, heredando la empresa y acabando con la historia.
+Este plan en la historia se relaciona de manera directa con el gameplay del juego: que el protagonista aprenda a dominar los mandos del avión se relaciona con que el usuario aprenda los controles físicos (teclado) del avión; mientras que las rutas que se ofrecen son el contenido educativo geográfico que se plantea enseñar en nuestro juego.
 
 ## **7 - Diseño de nivel**
 La historia comienza en Europa, el primer nivel (introductorio), donde el jefe le dará la enhorabuena al jugador (su hijo) por estar preparado al fin para aceptar el puesto de piloto junior y heredar así su agencia turística de viajes. El jefe le explicará al usuario cómo pilotar este tipo de avión, y le asegurará que él se encargará de enseñarle lo básico.
@@ -164,7 +162,7 @@ A continuación, el jefe enseñará al jugador los controles básicos para manej
 ### **7.1 - Organización de niveles por continentes**
 Los niveles del juego estarán organizados por continentes (Europa, Asia, África, América, Oceanía), cada uno conteniendo un número de niveles definido (por ejemplo, 3). Antes de empezar las misiones normales de un nuevo continente, el jugador tendrá que jugar un nivel introductorio. Para desbloquear los siguientes niveles, tanto dentro de un mismo continente, como entre continentes, será necesario tener un mínimo de **una** estrella en el nivel previamente desbloqueado.
 ### **7.2 - Descripción del nivel introductorio**
-En los niveles introductorios, el jefe te irá guiando por los “principales” países de ese continente, de los cuales ganarás tarjetas de información para consultar posteriormente. Estas tarjetas incluirán recuerdos, pero la foto mostrará a tu jefe en lugar de un cliente.
+En los niveles introductorios, el jefe te irá guiando por los “principales” países de ese continente, de los cuales ganarás tarjetas de información para consultar posteriormente. Estas tarjetas también incluirán recuerdos.
 ### **7.3 - Descripción de niveles posteriores**
 #### **7.3.1 - Objetivo**
 El **objetivo** de cada nivel es llevar al cliente o clientes a sus destinos deseados.
@@ -175,7 +173,7 @@ En los niveles difíciles, el jugador tendrá varias misiones consecutivas en un
 #### **7.3.2 - Reparto de estrellas**
 En cada nivel el jugador podrá ganar hasta **tres estrellas**. El reparto de estas depende de los intentos acumulados, independientemente del tiempo transcurrido. Por tanto, si el jugador acierta el país a la primera ganará 3 estrellas, si lo adivina a la segunda 2 estrellas y a la tercera 1. Los fallos se acumulan si el nivel tiene varios países a los que visitar. Si se vuelve a fallar tras el tercer intento, o bien transcurrido ya mucho tiempo desde el inicio de la partida (4 minutos), el jefe guiará al jugador al país destino y el nivel se contará como **no completado**, teniendo que repetirlo para poder seguir adelante.
 
-El jugador solo necesitará **1 estrella** para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las **3 estrellas**, conseguirá un recuerdo del cliente para adornar su tarjeta de información.
+El jugador solo necesitará **1 estrella** para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las **3 estrellas**, conseguirá un recuerdo para adornar su tarjeta de información.
 #### **7.3.3 - Pistas**
 Si el jugador tarda mucho en encontrar el país o falla, el cliente le irá dando pistas para facilitar encontrarlo. Estas pistas estarán repartidas durante el juego usando un cronómetro interno o por intentos fallidos. Por ejemplo: pasado 1 minuto, si el jugador aún no sabe dónde ir, se dará la primera para evitar que se frustre e intentar guiarlo. Pasado 1 minuto desde la primera pista o si se falla se proporcionará la siguiente y, tras otro minuto o si se vuelve a fallar, la última.
 
