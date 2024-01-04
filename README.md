@@ -355,7 +355,7 @@ Además, el hecho de que las postales sólo aparecen si consigues las 3 estrella
 ## **9 - Estética**
 La estética del juego se basa en una mezcla de estilo cartoon, suave, sencillo y colorido, pero sobre todo atractivo para nuestro público objetivo ideal y permite al jugador centrarse en el aprendizaje, que se podrá ver en el diseño de las interfaces, las cuales están pensadas para ser sencillas y fáciles de usar y en el diseño de los clientes, los cuales tendrán pocos detalles y serán muy sencillos; mientras que también tenemos un estilo realista y detallado, el cual podremos ver exclusivamente en el mapa terrestre, para que los jugadores puedan aprender también sobre la información física de los países.
 
-## **10- Menús y flujo de juego**
+## **10 - Menús y flujo de juego**
 <figure>
 <p align="center"><img src="./imagenesGDD/flujoJuego.png" width=100% height=100%></p>
 <figcaption><p align="center"><i><b>Imagen 10</b> - Diagrama de flujo de juego de todos los menús e interfaces</i></p></figcaption>
