@@ -94,7 +94,7 @@ Además, dentro de los propios niveles, nos aseguramos de que el jugador no se f
 La vista del juego será en tercera persona con respecto al avión, girando y moviéndose para mantener al jugador en el centro de la pantalla y mirando hacia delante en todo momento. 
 
 <figure>
-<p align="center"><img src="./imagenesGDD/vistaCamara.png" width=50% height=50%></p>
+<p align="center"><img src="./imagenesGDD/hud_partida.png" width=50% height=50%></p>
 <figcaption><p align="center"><i><b>Imagen 1</b> - Ejemplo de vista en tercera persona de nuestro juego</i></p></figcaption>
 </figure>
 
@@ -194,12 +194,12 @@ Cada país que visitemos en alguno de los niveles nos proporcionará una tarjeta
 Una vez conseguida cada tarjeta, esta estará disponible en el menú de información, al que podremos acceder tanto antes como durante los niveles de juego, y su información nos será útil tanto para encontrar otros países colindantes como para repasar lo aprendido.
 Además, el hecho de que las postales sólo aparecen si consigues las 3 estrellas, motivará al jugador a intentar conseguirlas para completar el álbum y tener un memento de su esfuerzo y su aprendizaje.
 <figure>
-<p align="center"><img src="./imagenesGDD/tarjetas.png" width=100% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 2</b> - Mockup inicial de tarjeta de información española</i></p></figcaption>
+<p align="center"><img src="./imagenesGDD/Tarjeta Pais Bloqueada.png" width=100% height=100%></p>
+<figcaption><p align="center"><i><b>Imagen 2</b> - Ejemplo de tarjeta bloqueada</i></p></figcaption>
 </figure>
 <figure>
-<p align="center"><img src="./imagenesGDD/tarjetas-fin.png" width=50% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 3</b> - Implementación final de las tarjetas de información. Nótese que el apartado "recuerdo del viaje" sigue en desarrollo.</i></p></figcaption>
+<p align="center"><img src="./imagenesGDD/tarjeta.png" width=50% height=100%></p>
+<figcaption><p align="center"><i><b>Imagen 3</b> - Implementación final de las tarjetas de información.</i></p></figcaption>
 </figure>
 
 ## **8 - Interfaz**
