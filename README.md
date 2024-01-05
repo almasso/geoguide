@@ -393,4 +393,4 @@ La estética del juego se basa en una mezcla de estilo cartoon, suave, sencillo 
 ## **13 - Menciones**
 Este juego es un proyecto académico del Grado de Desarrollo de Videojuegos para la asignatura de Juegos Serios, perteneciente al [Departamento de Software e Inteligencia Artificial de la Facultad de Informática](https://www.ucm.es/disia) de la [Universidad Complutense de Madrid](https://ucm.es/).
 
-[En este enlace encontraremos unos 4 minutos de vídeo de la versión del juego a día 18 de diciembre de 2023, en el que se muestran las mecánicas más básicas, así como un poco de gameplay. **Este vídeo será será posteriormente actualizado para la entrega de enero de 2024 una vez el juego esté terminado**](https://drive.google.com/file/d/12M5Wh9xIxi0xBK4hUY-wDUiednbchgwa/view?usp=drive_link)
+[VÍDEO DE LA ENTREGA FINAL - 8 MINUTOS](https://youtu.be/w-DX-6kCYtc)
