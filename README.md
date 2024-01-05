@@ -195,11 +195,11 @@ Una vez conseguida cada tarjeta, esta estará disponible en el menú de informac
 Además, el hecho de que las postales sólo aparecen si consigues las 3 estrellas, motivará al jugador a intentar conseguirlas para completar el álbum y tener un memento de su esfuerzo y su aprendizaje.
 <figure>
 <p align="center"><img src="./imagenesGDD/Tarjeta Pais Bloqueada.png" width=100% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 2</b> - Mockup inicial de tarjeta de información española</i></p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 2</b> - Ejemplo de tarjeta bloqueada</i></p></figcaption>
 </figure>
 <figure>
 <p align="center"><img src="./imagenesGDD/tarjeta.png" width=50% height=100%></p>
-<figcaption><p align="center"><i><b>Imagen 3</b> - Implementación final de las tarjetas de información. Nótese que el apartado "recuerdo del viaje" sigue en desarrollo.</i></p></figcaption>
+<figcaption><p align="center"><i><b>Imagen 3</b> - Implementación final de las tarjetas de información.</i></p></figcaption>
 </figure>
 
 ## **8 - Interfaz**
