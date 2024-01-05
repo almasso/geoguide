@@ -44,7 +44,7 @@
 - **Género**: Juego serio de simulación
 - **Público objetivo**: Estudiantes de 8 a 15 años interesados en el aprendizaje de Geografía, sin necesidad de una base previa, de forma dinámica y entretenida.
 - **Rating**: PEGI 7
-- **Plataforma**: PC (Windows)
+- **Plataforma**: PC (Windows), Resolución remomendada: 16:9 (1920 x 080).
 - **Modos de juego**:
 	- Un jugador.
 
@@ -108,7 +108,7 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 	<tr>
 		<td>Brújula</td>
 		<td><img src="./imagenesGDD/brujula.png" width=50% height=50%></td>
-		<td>Elemento que será útil para misiones que describan la ubicación del país destino como “al norte/sur/este/oeste de …”. La parte central es estática y simboliza la dirección en la que siempre está mirando el avión; mientras que la exterior rota conforme la dirección en la que va mirando el propio avión.</td>
+		<td>Elemento que será útil para misiones que describan la ubicación del país destino como “al norte/sur/este/oeste de …”. La parte central es estática y simboliza la dirección en la que se mueve el avión, mientras que la exterior rota conforme su dirección al mundo.</td>
 	</tr>
 	<tr>
 		<td>Velocímetro</td>
@@ -128,12 +128,12 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 				<figcaption><p align="left"><i>Depende del cliente</i></p>
 			</figure>
 		</td>
-		<td>Transcurrido un tiempo específico, establecido en un minuto, el cliente le proporcionará una pista al jugador para ayudar y así evitar frustrar. El número total de pistas será de 3, en caso de necesitarlas. Solo aparecen en los niveles normales y nunca en los introductorios. En total hay 22 modelos distintos de cliente.</td>
+		<td>Transcurrido un tiempo específico, establecido en un minuto, o si el jugador falla de país objetivo, el cliente le proporcionará una pista al jugador para ayudar y así evitar frustrar. El número total de pistas será de 3, en caso de necesitarlas. Solo aparecen en los niveles normales y nunca en los introductorios. En total hay 22 modelos distintos de cliente.</td>
 	</tr>
 	<tr>
 		<td>Aeropuerto</td>
 		<td><img src="./imagenesGDD/aeropuerto.png" width=100% height=100%></td>
-		<td>Esfera flotante, que marcará el lugar en el que el jugador debe aterrizar en cada país. Sólo podrás hacer ésto si pones el avión a velocidad lenta o “de aterrizaje”. Una vez hayas aterrizado, si el país fue el correcto se pasará al siguiente cliente en caso de haberlo, o terminará el nivel. Si se ha fallado, se notificará, se restará un intento y el jugador podrá continuar. Los aeropuertos, tendrán todos color rojo, excepto, en los niveles introductorios o una vez que tu jefe te guíe al país destino, en cuyo caso, el aeropuerto destino se iluminará de color verde, resaltando entre los demás para facilitar la vista del objetivo.</td>
+		<td>Marcador flotante, que establece el lugar en el que el jugador debe aterrizar en cada país. Sólo podrás hacer ésto si pones el avión a velocidad lenta o “de aterrizaje”. Una vez hayas aterrizado, si el país fue el correcto se pasará al siguiente cliente en caso de haberlo, o terminará el nivel. Si se ha fallado, se notificará, se restará un intento y el jugador podrá continuar. Los aeropuertos, tendrán todos color rojo, excepto, en los niveles introductorios o una vez que tu jefe te guíe al país destino, en cuyo caso, el aeropuerto destino se iluminará de color verde, resaltando entre los demás para facilitar la vista del objetivo.</td>
 	</tr>
 	<tr>
 		<td>Jefe</td>
@@ -153,9 +153,7 @@ La vista del juego será en tercera persona con respecto al avión, girando y mo
 ## **6 - Historia y personaje principal**
 Como jugador encarnarás al hijo de un director (en otros apartados aparecerá como “Jefe”) de una agencia de viajes aérea, que ha decidido jubilarse y dejar el negocio familiar en tus manos. Has estudiado muy duro, pero apenas tienes práctica, por lo que entrarás a la flota como piloto júnior. Es por eso que tu padre ha diseñado un plan para que llegues a ser un piloto sénior en el menor tiempo posible antes de delegar la empresa en ti. Este plan tiene como objetivo dominar los mandos del avión y aprender qué rutas ofrece la empresa a los distintos países.
 
-Este plan en la historia se relaciona de manera directa con el gameplay del juego: que el protagonista aprenda a dominar los mandos del avión se relaciona con que el jugador humano aprenda los controles físicos (teclado) del avión; mientras que las rutas que se ofrecen son el contenido educativo geográfico que se plantea enseñar en nuestro juego.
-
-A lo largo del juego, el jugador irá aprendiendo y superando los diferentes niveles hasta que, finalmente, tras superarlos todos es nombrado piloto sénior, heredando la empresa y acabando con la historia.
+Este plan en la historia se relaciona de manera directa con el gameplay del juego: que el protagonista aprenda a dominar los mandos del avión se relaciona con que el usuario aprenda los controles físicos (teclado) del avión; mientras que las rutas que se ofrecen son el contenido educativo geográfico que se plantea enseñar en nuestro juego.
 
 ## **7 - Diseño de nivel**
 La historia comienza en Europa, el primer nivel (introductorio), donde el jefe le dará la enhorabuena al jugador (su hijo) por estar preparado al fin para aceptar el puesto de piloto junior y heredar así su agencia turística de viajes. El jefe le explicará al usuario cómo pilotar este tipo de avión, y le asegurará que él se encargará de enseñarle lo básico.
@@ -164,7 +162,7 @@ A continuación, el jefe enseñará al jugador los controles básicos para manej
 ### **7.1 - Organización de niveles por continentes**
 Los niveles del juego estarán organizados por continentes (Europa, Asia, África, América, Oceanía), cada uno conteniendo un número de niveles definido (por ejemplo, 3). Antes de empezar las misiones normales de un nuevo continente, el jugador tendrá que jugar un nivel introductorio. Para desbloquear los siguientes niveles, tanto dentro de un mismo continente, como entre continentes, será necesario tener un mínimo de **una** estrella en el nivel previamente desbloqueado.
 ### **7.2 - Descripción del nivel introductorio**
-En los niveles introductorios, el jefe te irá guiando por los “principales” países de ese continente, de los cuales ganarás tarjetas de información para consultar posteriormente. Estas tarjetas incluirán recuerdos, pero la foto mostrará a tu jefe en lugar de un cliente.
+En los niveles introductorios, el jefe te irá guiando por los “principales” países de ese continente, de los cuales ganarás tarjetas de información para consultar posteriormente. Estas tarjetas también incluirán recuerdos.
 ### **7.3 - Descripción de niveles posteriores**
 #### **7.3.1 - Objetivo**
 El **objetivo** de cada nivel es llevar al cliente o clientes a sus destinos deseados.
@@ -175,7 +173,7 @@ En los niveles difíciles, el jugador tendrá varias misiones consecutivas en un
 #### **7.3.2 - Reparto de estrellas**
 En cada nivel el jugador podrá ganar hasta **tres estrellas**. El reparto de estas depende de los intentos acumulados, independientemente del tiempo transcurrido. Por tanto, si el jugador acierta el país a la primera ganará 3 estrellas, si lo adivina a la segunda 2 estrellas y a la tercera 1. Los fallos se acumulan si el nivel tiene varios países a los que visitar. Si se vuelve a fallar tras el tercer intento, o bien transcurrido ya mucho tiempo desde el inicio de la partida (4 minutos), el jefe guiará al jugador al país destino y el nivel se contará como **no completado**, teniendo que repetirlo para poder seguir adelante.
 
-El jugador solo necesitará **1 estrella** para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las **3 estrellas**, conseguirá un recuerdo del cliente para adornar su tarjeta de información.
+El jugador solo necesitará **1 estrella** para desbloquear el siguiente nivel y ganar una(s) tarjeta(s). En caso de ganar las **3 estrellas**, conseguirá un recuerdo para adornar su tarjeta de información.
 #### **7.3.3 - Pistas**
 Si el jugador tarda mucho en encontrar el país o falla, el cliente le irá dando pistas para facilitar encontrarlo. Estas pistas estarán repartidas durante el juego usando un cronómetro interno o por intentos fallidos. Por ejemplo: pasado 1 minuto, si el jugador aún no sabe dónde ir, se dará la primera para evitar que se frustre e intentar guiarlo. Pasado 1 minuto desde la primera pista o si se falla se proporcionará la siguiente y, tras otro minuto o si se vuelve a fallar, la última.
 
@@ -357,7 +355,7 @@ Además, el hecho de que las postales sólo aparecen si consigues las 3 estrella
 ## **9 - Estética**
 La estética del juego se basa en una mezcla de estilo cartoon, suave, sencillo y colorido, pero sobre todo atractivo para nuestro público objetivo ideal y permite al jugador centrarse en el aprendizaje, que se podrá ver en el diseño de las interfaces, las cuales están pensadas para ser sencillas y fáciles de usar y en el diseño de los clientes, los cuales tendrán pocos detalles y serán muy sencillos; mientras que también tenemos un estilo realista y detallado, el cual podremos ver exclusivamente en el mapa terrestre, para que los jugadores puedan aprender también sobre la información física de los países.
 
-## **10- Menús y flujo de juego**
+## **10 - Menús y flujo de juego**
 <figure>
 <p align="center"><img src="./imagenesGDD/flujoJuego.png" width=100% height=100%></p>
 <figcaption><p align="center"><i><b>Imagen 10</b> - Diagrama de flujo de juego de todos los menús e interfaces</i></p></figcaption>
